@@ -1,0 +1,2740 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Política de Privacidad — Medical Linares</title>
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,500&display=swap">
+  <style>
+    :root {
+      --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --color-black: #272727;
+      --color-white: #fff;
+      --spacing: .25rem;
+      --container-sm: 24rem;
+      --container-md: 28rem;
+      --container-xl: 36rem;
+      --container-3xl: 48rem;
+      --container-4xl: 56rem;
+      --container-6xl: 72rem;
+      --container-7xl: 80rem;
+      --text-xs: .75rem;
+      --text-xs--line-height: calc(1 / .75);
+      --text-sm: .875rem;
+      --text-sm--line-height: calc(1.25 / .875);
+      --text-base: 1rem;
+      --text-base--line-height: calc(1.5 / 1);
+      --text-lg: 1.125rem;
+      --text-lg--line-height: calc(1.75 / 1.125);
+      --text-xl: 1.25rem;
+      --text-xl--line-height: calc(1.75 / 1.25);
+      --text-2xl: 1.5rem;
+      --text-2xl--line-height: calc(2 / 1.5);
+      --text-3xl: 1.875rem;
+      --text-3xl--line-height: calc(2.25 / 1.875);
+      --text-4xl: 2.25rem;
+      --text-4xl--line-height: calc(2.5 / 2.25);
+      --text-5xl: 3rem;
+      --text-5xl--line-height: 1;
+      --font-weight-normal: 400;
+      --font-weight-medium: 500;
+      --tracking-tight: -.05em;
+      --tracking-normal: -.03em;
+      --tracking-widest: .02em;
+      --radius-xs: .125rem;
+      --radius-sm: .25rem;
+      --radius-md: .375rem;
+      --radius-lg: .5rem;
+      --radius-3xl: 1.5rem;
+      --ease-in: cubic-bezier(.4, 0, 1, 1);
+      --ease-out: cubic-bezier(0, 0, .2, 1);
+      --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+      --blur-sm: 8px;
+      --blur-md: 12px;
+      --perspective-midrange: 800px;
+      --aspect-video: 16 / 9;
+      --default-transition-duration: .15s;
+      --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+      --default-font-family: var(--font-sans);
+      --default-mono-font-family: var(--font-mono);
+      --color-cream: #e6e4e2;
+      --color-grey-light: #9c9c9c;
+      --color-grey-line: #434343;
+      --color-cream-line: #d8d8d8;
+      --color-dark-font: #434343;
+      --color-light-font: #d8d8d8;
+      --animate-arrowPulse: arrowPulse 1.8s ease-in-out infinite;
+      --pl-black: #000;
+      --pl-white: #fff;
+      --pl-panel-gray: #c8c8c8;
+      --pl-line-gray: #434343;
+      --pl-corner-plus-offset: calc(-6px - 6.5px);
+      --pl-mono: "Space Mono", monospace;
+      --pl-display: "Bebas Neue", sans-serif;
+      --size: 750;
+      --bg: #040508;
+      --white: #fff;
+      --ink-soft: #0a0a0a8c;
+      --glass-line: #ffffff2e;
+      --ease-soft: cubic-bezier(.22, 1, .36, 1);
+      --ts-color-bg: #040508;
+      --ts-color-hint: #d8d8d8bf;
+      --ts-color-name: #c8c8c8;
+      --ts-color-role: #d8d8d880;
+      --ts-color-scan-id: #d8d8d8bf;
+      --ts-color-detected: #d8d8d8eb;
+      --font-neue: "Neue Montreal", "Neue Haas Grotesk Display", "neueHaas Fallback", var(--font-sans);
+      --font-ppeditorial: "ppEditorial", "ppEditorial Fallback", serif;
+      --font-martian: "martianMono", "martianMono Fallback", var(--font-mono);
+      --font-familjen: "familjen", "familjen Fallback", var(--font-sans);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    html,
+    body {
+      background: var(--bg);
+      color: var(--color-light-font);
+      font-family: var(--font-neue);
+      letter-spacing: var(--tracking-normal);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    .wrap {
+      max-width: 100%;
+      margin-inline: 0;
+      padding-inline: calc(var(--spacing) * 10);
+    }
+
+    /* ---------- BUTTON (glass pill) ---------- */
+    .button_wrapper {
+      position: relative;
+      width: fit-content;
+    }
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      background: linear-gradient(180deg, rgba(55, 55, 55, .85) 0%, rgba(5, 5, 5, .95) 100%);
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 999px;
+      padding: .3rem .3rem .3rem 1.6rem;
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .25),
+        inset 0 -6px 10px rgba(0, 0, 0, .4),
+        0 10px 24px rgba(0, 0, 0, .35);
+      transition: box-shadow .35s var(--ease-soft), transform .35s var(--ease-soft);
+    }
+
+    .btn:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .35),
+        inset 0 -6px 10px rgba(0, 0, 0, .45),
+        0 14px 30px rgba(0, 0, 0, .45);
+      transform: translateY(-1px);
+    }
+
+    .btn .word {
+      position: relative;
+      display: inline-flex;
+      font-weight: var(--font-weight-medium);
+      white-space: nowrap;
+    }
+
+    .btn .arrow-circle {
+      position: relative;
+      flex-shrink: 0;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .55), rgba(255, 255, 255, .05) 55%),
+        rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      overflow: hidden;
+      transition: transform .4s var(--ease-soft), background .4s var(--ease-soft);
+    }
+
+    .btn .arrow-circle svg {
+      position: relative;
+      transition: transform .4s var(--ease-soft);
+    }
+
+    .btn:hover .arrow-circle {
+      transform: scale(1.06);
+    }
+
+    .btn:hover .arrow-circle svg {
+      transform: translate(2px, -2px);
+    }
+
+    /* ---------- PEDIR CITA: version verde corporativa del boton ---------- */
+    .btn-negative {
+      color: #fff;
+      background: linear-gradient(180deg, #4a9c7a 0%, #2c6b52 100%);
+      border: 1px solid rgba(255, 255, 255, .18);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .3),
+        inset 0 -6px 10px rgba(0, 0, 0, .2),
+        0 10px 24px rgba(20, 60, 45, .35);
+    }
+
+    .btn-negative:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .4),
+        inset 0 -6px 10px rgba(0, 0, 0, .25),
+        0 14px 30px rgba(20, 60, 45, .45);
+    }
+
+    .btn-negative .arrow-circle {
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .55), rgba(255, 255, 255, .08) 55%),
+        rgba(255, 255, 255, .14);
+      border-color: rgba(255, 255, 255, .28);
+    }
+
+    /* ---------- VER ESPECIALIDADES: version verde del boton, solo aqui ---------- */
+    .btn-green {
+      color: #fff;
+      background: linear-gradient(180deg, #4a9c7a 0%, #2c6b52 100%);
+      border: 1px solid rgba(255, 255, 255, .18);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .3),
+        inset 0 -6px 10px rgba(0, 0, 0, .2),
+        0 10px 24px rgba(20, 60, 45, .35);
+    }
+
+    .btn-green:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .4),
+        inset 0 -6px 10px rgba(0, 0, 0, .25),
+        0 14px 30px rgba(20, 60, 45, .45);
+    }
+
+    .btn-green .arrow-circle {
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .55), rgba(255, 255, 255, .08) 55%),
+        rgba(255, 255, 255, .14);
+      border-color: rgba(255, 255, 255, .28);
+    }
+
+    /* ---------- TOP NAV ---------- */
+    .topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 60;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem calc(var(--spacing) * 10);
+      border-bottom: 1px solid rgba(255, 255, 255, .18);
+    }
+
+    .topnav-brand {
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+    }
+
+    .topnav-logo-link {
+      display: flex;
+      align-items: center;
+    }
+
+    .topnav-logo {
+      height: 2.1rem;
+      width: auto;
+      display: block;
+      filter: brightness(0) invert(1);
+      transition: filter .4s var(--ease-soft);
+    }
+
+    .topnav.on-light .topnav-logo {
+      filter: none;
+    }
+
+    .topnav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.85rem;
+    }
+
+    .nav-link {
+      position: relative;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      opacity: 1;
+      padding-bottom: .5rem;
+      transition: color .4s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .nav-link:hover {
+      opacity: .7;
+    }
+
+    .topnav.on-light .nav-link {
+      color: #000;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .6s var(--ease-soft);
+    }
+
+    .topnav.on-light .nav-link::after {
+      background: #000;
+    }
+
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }
+
+    .topnav .btn .arrow-circle {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    .topnav .btn .word {
+      font-size: var(--text-xs);
+    }
+
+    /* ---------- BOTON HAMBURGUESA (solo movil) ---------- */
+    .nav-toggle {
+      display: none;
+      position: relative;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background .3s var(--ease-soft);
+    }
+
+    .nav-toggle:hover {
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .nav-toggle-bar {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.15rem;
+      height: 1px;
+      background: #fff;
+      transform: translate(-50%, -50%);
+      transition: transform .35s var(--ease-soft), opacity .25s var(--ease-soft), margin-top .35s var(--ease-soft);
+    }
+
+    .nav-toggle-bar:nth-child(1) {
+      margin-top: -6px;
+    }
+
+    .nav-toggle-bar:nth-child(3) {
+      margin-top: 6px;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(3) {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    /* ---------- MENU PRINCIPAL EN MOVIL: se convierte en desplegable ---------- */
+    @media(max-width: 840px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      .topnav-actions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgba(4, 5, 8, .97);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, .14);
+        padding: .5rem calc(var(--spacing) * 10) 1.75rem;
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .35s var(--ease-soft), transform .35s var(--ease-soft), visibility 0s linear .35s;
+      }
+
+      .topnav-actions.is-open {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity .35s var(--ease-soft), transform .35s var(--ease-soft), visibility 0s linear 0s;
+      }
+
+      .topnav-actions .nav-link {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .08);
+      }
+
+      .topnav-actions .nav-link::after {
+        display: none;
+      }
+
+      .topnav-actions .button_wrapper {
+        margin-top: 1.25rem;
+        width: 100%;
+      }
+
+      .topnav-actions .btn {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    /* ---------- FLOWING MENU: desplegable de "Especialidades" ---------- */
+    .flowing-menu-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: #120F17;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .5s var(--ease-soft), visibility 0s linear .5s;
+    }
+
+    .flowing-menu-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .5s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    .flowing-menu-close {
+      position: absolute;
+      top: 1.85rem;
+      right: calc(var(--spacing) * 10);
+      z-index: 2;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      color: #fff;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft), transform .4s var(--ease-soft);
+    }
+
+    .flowing-menu-close:hover {
+      background: rgba(255, 255, 255, .18);
+      transform: rotate(90deg);
+    }
+
+    .menu-wrap {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+      padding: 0 calc(var(--spacing) * 10);
+      list-style: none;
+    }
+
+    .menu__item {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid;
+    }
+
+    .menu__item:first-child {
+      border-top: none;
+    }
+
+    .menu__item-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: clamp(1.3rem, 4vh, 2.6rem);
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .menu__item-link:hover {
+      color: inherit;
+    }
+
+    .menu__item-link:focus:not(:focus-visible) {
+      color: inherit;
+    }
+
+    .marquee {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      transform: translate3d(0, 101%, 0);
+    }
+
+    .marquee__inner-wrap {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .marquee__inner {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 100%;
+      width: fit-content;
+      will-change: transform;
+    }
+
+    .marquee__part {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .marquee span {
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: clamp(1.3rem, 4vh, 2.6rem);
+      line-height: 1;
+      padding: 0 1vw;
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .marquee__img {
+      width: 200px;
+      height: 7vh;
+      margin: 2em 2vw;
+      padding: 1em 0;
+      border-radius: 50px;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+
+    @media(max-width: 900px) {
+
+      .menu__item-link,
+      .marquee span {
+        font-size: clamp(1.05rem, 3.2vh, 1.7rem);
+      }
+
+      .marquee__img {
+        width: 130px;
+      }
+    }
+
+    /* ---------- FOOTER: version pasada por Saul (aurora esmeralda, grid, marquee) ---------- */
+    .site-footer {
+      position: relative;
+      background: linear-gradient(180deg, #061710 0%, #030d09 45%, #000 100%);
+      overflow: hidden;
+      isolation: isolate;
+      padding-block: calc(var(--spacing) * 26) calc(var(--spacing) * 8);
+    }
+
+    .specialty-submenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .specialty-row.is-open .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    /* Cirugía Estética: el submenú (Lipoláser) se despliega al pasar el ratón, no con clic */
+    .specialty-row.has-sub-hover:hover .specialty-submenu,
+    .specialty-row.has-sub-hover:focus-within .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    .specialty-sublink {
+      display: block;
+      font-size: var(--text-base);
+      color: #171717;
+      opacity: .65;
+      text-decoration: none;
+      padding: .6rem calc(var(--spacing) * 9) .6rem calc(var(--spacing) * 15);
+      transition: background .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .specialty-sublink:hover {
+      background: #f1f1ef;
+      opacity: 1;
+    }
+
+
+    .footer-aurora {
+      position: absolute;
+      left: 50%;
+      top: 38%;
+      width: 78vw;
+      height: 52vh;
+      transform: translate(-50%, -50%) scale(1);
+      background: radial-gradient(circle at 50% 50%, rgba(52, 211, 153, .2) 0%, rgba(16, 163, 127, .12) 45%, transparent 72%);
+      border-radius: 50%;
+      filter: blur(70px);
+      z-index: 0;
+      pointer-events: none;
+      animation: footer-breathe 9s ease-in-out infinite alternate;
+    }
+
+    @keyframes footer-breathe {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: .55;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1.14);
+        opacity: .9;
+      }
+    }
+
+    .footer-grid-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-size: 60px 60px;
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, .045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, .045) 1px, transparent 1px);
+      -webkit-mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      pointer-events: none;
+    }
+
+    .footer-giant-text {
+      position: absolute;
+      left: 50%;
+      bottom: -3.2vw;
+      transform: translateX(-50%);
+      font-size: 11vw;
+      line-height: .8;
+      font-weight: 700;
+      letter-spacing: -.03em;
+      white-space: nowrap;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, .07);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .1) 0%, transparent 65%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .footer-marquee {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+      padding-block: .9rem;
+      margin-bottom: calc(var(--spacing) * 16);
+      background: rgba(255, 255, 255, .02);
+      transform: rotate(-1deg) scale(1.03);
+    }
+
+    .footer-marquee-track {
+      display: flex;
+      width: max-content;
+      animation: footer-marquee 34s linear infinite;
+    }
+
+    .footer-marquee-group {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding-inline: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .footer-marquee-group span {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .55;
+      white-space: nowrap;
+    }
+
+    .footer-marquee-group .dot {
+      opacity: .35;
+    }
+
+    @keyframes footer-marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-title {
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      line-height: 1.1;
+      font-weight: var(--font-weight-normal);
+      letter-spacing: var(--tracking-tight);
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, .35) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 24px rgba(255, 255, 255, .12));
+      margin-bottom: calc(var(--spacing) * 12);
+      width: fit-content;
+    }
+
+    .footer-locations {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 3rem;
+      padding-bottom: calc(var(--spacing) * 14);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .footer-loc {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+    }
+
+    .footer-loc-name {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+    }
+
+    .footer-loc-address {
+      font-size: var(--text-sm);
+      line-height: 1.55;
+      color: var(--color-light-font);
+      opacity: .7;
+      max-width: 20rem;
+    }
+
+    .footer-loc-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: .6rem;
+      font-size: var(--text-sm);
+    }
+
+    .footer-label {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .45;
+    }
+
+    .footer-value {
+      color: var(--color-light-font);
+      opacity: .85;
+      text-decoration: none;
+    }
+
+    /* pastilla de cristal (glass pill) reutilizable, con efecto iman via JS */
+    .footer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem 1.1rem;
+      border-radius: 999px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .06) 0%, rgba(255, 255, 255, .015) 100%);
+      border: 1px solid rgba(255, 255, 255, .1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, .12), 0 8px 18px -8px rgba(0, 0, 0, .5);
+      text-decoration: none;
+      color: var(--color-light-font);
+      width: fit-content;
+      transition: background .4s var(--ease-soft), border-color .4s var(--ease-soft), color .3s var(--ease-soft);
+      cursor: pointer;
+    }
+
+    .footer-pill:hover {
+      background: linear-gradient(145deg, rgba(255, 255, 255, .12) 0%, rgba(255, 255, 255, .04) 100%);
+      border-color: rgba(255, 255, 255, .24);
+      color: #fff;
+    }
+
+    .footer-tel {
+      font-size: var(--text-sm);
+    }
+
+    .footer-treatments {
+      display: flex;
+      flex-direction: column;
+      gap: .65rem;
+    }
+
+    .footer-treatments a {
+      font-size: var(--text-sm);
+      color: var(--color-light-font);
+      opacity: .7;
+      text-decoration: none;
+      width: fit-content;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .footer-treatments a:hover {
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .footer-treatments a.footer-all {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding-top: calc(var(--spacing) * 8);
+    }
+
+    .footer-copy {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .5;
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+
+    .footer-legal a {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+    }
+
+    .footer-right-group {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+
+    .footer-icon-btn {
+      width: 3.1rem;
+      height: 3.1rem;
+      padding: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .footer-icon-btn svg {
+      transition: transform .3s var(--ease-soft);
+    }
+
+    .footer-icon-btn:hover svg {
+      transform: translateY(-2px);
+    }
+
+    .footer-top-btn:hover svg {
+      transform: translateY(-3px);
+    }
+
+    .footer-credit {
+      margin-top: calc(var(--spacing) * 6);
+      padding-top: calc(var(--spacing) * 6);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      text-align: center;
+      font-size: var(--text-xs);
+      color: var(--color-light-font);
+      opacity: .4;
+      text-transform: uppercase;
+    }
+
+    @media(max-width: 900px) {
+      .footer-locations {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-treatments {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media(max-width: 560px) {
+      .footer-locations {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-giant-text {
+        font-size: 18vw;
+      }
+    }
+
+    /* ---------- LEGAL: hero, tabs, secciones de contenido ---------- */
+    .legal-hero {
+      padding-block: calc(var(--spacing) * 34) calc(var(--spacing) * 10);
+    }
+
+    .legal-eyebrow {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .5;
+      margin-bottom: calc(var(--spacing) * 4);
+    }
+
+    .legal-hero h1 {
+      font-size: clamp(2.1rem, 5.2vw, 3.4rem);
+      line-height: 1.08;
+      font-weight: var(--font-weight-normal);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      max-width: 34rem;
+    }
+
+    .legal-hero p {
+      margin-top: calc(var(--spacing) * 6);
+      max-width: 32rem;
+      font-size: var(--text-sm);
+      line-height: 1.65;
+      color: var(--color-light-font);
+      opacity: .7;
+    }
+
+    .legal-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .65rem;
+      margin-top: calc(var(--spacing) * 11);
+      position: sticky;
+      top: 5.4rem;
+      z-index: 20;
+      padding-block: .75rem;
+      background: linear-gradient(180deg, var(--bg) 65%, transparent 100%);
+    }
+
+    .legal-tab {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      text-decoration: none;
+      padding: .7rem 1.3rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, .14);
+      background: rgba(255, 255, 255, .03);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: background .3s var(--ease-soft), border-color .3s var(--ease-soft), color .3s var(--ease-soft);
+    }
+
+    .legal-tab:hover {
+      background: rgba(255, 255, 255, .08);
+      color: #fff;
+    }
+
+    .legal-tab.active {
+      background: #fff;
+      color: #0a0a0c;
+      border-color: #fff;
+    }
+
+    .legal-section {
+      padding-block: calc(var(--spacing) * 15);
+      border-top: 1px solid rgba(255, 255, 255, .1);
+      scroll-margin-top: 7.25rem;
+    }
+
+    .legal-section:first-of-type {
+      border-top: none;
+    }
+
+    .legal-section-inner {
+      max-width: 42rem;
+    }
+
+    .legal-section h2 {
+      font-size: clamp(1.7rem, 3.6vw, 2.35rem);
+      font-weight: var(--font-weight-normal);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      margin-bottom: calc(var(--spacing) * 9);
+    }
+
+    .legal-summary {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem 2rem;
+      padding: calc(var(--spacing) * 8);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 1.25rem;
+      background: rgba(255, 255, 255, .02);
+      margin-bottom: calc(var(--spacing) * 12);
+    }
+
+    .legal-summary-item dt {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .45;
+      margin-bottom: .35rem;
+    }
+
+    .legal-summary-item dd {
+      font-size: var(--text-sm);
+      color: var(--color-light-font);
+      opacity: .9;
+      line-height: 1.55;
+    }
+
+    .legal-block {
+      margin-bottom: calc(var(--spacing) * 10);
+    }
+
+    .legal-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-block h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+      margin-bottom: calc(var(--spacing) * 3);
+    }
+
+    .legal-block p {
+      font-size: var(--text-sm);
+      line-height: 1.75;
+      color: var(--color-light-font);
+      opacity: .8;
+      margin-bottom: calc(var(--spacing) * 3.5);
+    }
+
+    .legal-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .legal-block ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .7rem;
+      margin: calc(var(--spacing) * 4) 0 calc(var(--spacing) * 5);
+    }
+
+    .legal-block ul li {
+      font-size: var(--text-sm);
+      line-height: 1.65;
+      color: var(--color-light-font);
+      opacity: .8;
+      padding-left: 1.15rem;
+      position: relative;
+    }
+
+    .legal-block ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: .55em;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .4);
+    }
+
+    .legal-block ul li strong {
+      color: #fff;
+      font-weight: var(--font-weight-medium);
+    }
+
+    .legal-block a {
+      color: #fff;
+      text-decoration-color: rgba(255, 255, 255, .35);
+      text-underline-offset: 3px;
+      word-break: break-word;
+      transition: text-decoration-color .3s var(--ease-soft);
+    }
+
+    .legal-block a:hover {
+      text-decoration-color: #fff;
+    }
+
+    .legal-browsers {
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+      margin: calc(var(--spacing) * 4) 0 calc(var(--spacing) * 5);
+    }
+
+    .legal-browsers div {
+      font-size: var(--text-sm);
+      color: var(--color-light-font);
+      opacity: .85;
+    }
+
+    .legal-browsers span {
+      display: inline-block;
+      min-width: 8.5rem;
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+      opacity: 1;
+    }
+
+    @media(max-width: 640px) {
+      .legal-summary {
+        grid-template-columns: 1fr;
+      }
+
+      .legal-tabs {
+        top: 4.5rem;
+      }
+    }
+
+    /* ---------- FONDO: Ferrofluid animado (WebGL / ogl) ---------- */
+    .site-ferrofluid {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: var(--bg);
+      pointer-events: none;
+    }
+
+    .site-ferrofluid canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .footer-bottom-extra {
+      margin-top: calc(var(--spacing, .25rem)*6);
+      padding-top: calc(var(--spacing, .25rem)*6);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-junta-link {
+      display: inline-block;
+      flex-shrink: 0;
+      line-height: 0;
+    }
+
+    .footer-junta-logo {
+      height: 2.8rem;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: .45;
+      transition: opacity .3s;
+    }
+
+    .footer-junta-link:hover .footer-junta-logo {
+      opacity: .75;
+    }
+
+    .footer-credit {
+      font-size: var(--text-xs, .75rem);
+      color: var(--color-light-font, #d8d8d8);
+      opacity: .4;
+      text-transform: uppercase;
+    }
+
+    /* ---------- ESPECIALIDADES: menu lateral off-canvas (blanco, minimalista) ---------- */
+    .specialties-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 95;
+      background: rgba(4, 5, 8, .35);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear .45s;
+    }
+
+    .specialties-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    body.specialties-open {
+      overflow: hidden;
+    }
+
+    .specialties-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100dvh;
+      width: min(26rem, 100vw);
+      background: #fff;
+      color: #171717;
+      z-index: 96;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform .55s var(--ease-soft);
+      overflow-y: auto;
+      box-shadow: -20px 0 60px rgba(0, 0, 0, .18);
+    }
+
+    .specialties-panel.is-open {
+      transform: translateX(0);
+    }
+
+    .specialties-header {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.85rem calc(var(--spacing) * 9) 1.5rem;
+    }
+
+    .specialties-eyebrow {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #171717;
+    }
+
+    .specialties-close {
+      flex-shrink: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      background: #e8e8e6;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft), transform .3s var(--ease-soft);
+    }
+
+    .specialties-close:hover {
+      background: #d9d9d6;
+      transform: rotate(90deg);
+    }
+
+    .specialties-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: calc(var(--spacing) * 10);
+    }
+
+    .specialty-row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .specialty-link,
+    .specialty-toggle {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: clamp(1.35rem, 4.6vw, 1.7rem);
+      letter-spacing: var(--tracking-normal);
+      color: #171717;
+      text-decoration: none;
+      cursor: pointer;
+      padding: .85rem calc(var(--spacing) * 9);
+      transition: background .3s var(--ease-soft);
+    }
+
+    .specialty-link:hover,
+    .specialty-toggle:hover {
+      background: #f1f1ef;
+    }
+
+    .specialty-submenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .specialty-row.is-open .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    .specialty-sublink {
+      display: block;
+      font-size: var(--text-base);
+      color: #171717;
+      opacity: .65;
+      text-decoration: none;
+      padding: .6rem calc(var(--spacing) * 9) .6rem calc(var(--spacing) * 15);
+      transition: background .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .specialty-sublink:hover {
+      background: #f1f1ef;
+      opacity: 1;
+    }
+
+    .specialties-footer {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem 1.5rem;
+      padding: 1.5rem calc(var(--spacing) * 9) 1.85rem;
+      border-top: 1px solid #ececea;
+    }
+
+    .specialties-social,
+    .specialties-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: var(--text-sm);
+      color: #171717;
+      text-decoration: none;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .specialties-phone span {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .specialties-social:hover,
+    .specialties-phone:hover {
+      opacity: .6;
+    }
+
+    @media (max-width: 480px) {
+      .specialties-header {
+        padding: 1.5rem calc(var(--spacing) * 7) 1.25rem;
+      }
+
+      .specialty-link,
+      .specialty-toggle {
+        padding: .8rem calc(var(--spacing) * 7);
+      }
+
+      .specialty-sublink {
+        padding-left: calc(var(--spacing) * 13);
+      }
+
+      .specialties-footer {
+        padding: 1.25rem calc(var(--spacing) * 7) 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="site-ferrofluid" id="siteFerrofluid" aria-hidden="true"></div>
+
+  <nav class="topnav" id="topnav">
+    <a class="topnav-logo-link" href="index.html" aria-label="Ir al inicio â€” Medical Linares"
+      title="Bienvenido a Medical Linares">
+      <img src="./img/medicalinareslogo.png" alt="Medical Linares" class="topnav-logo" id="topnavLogo">
+    </a>
+    <div class="topnav-actions" id="topnavActions">
+      <a class="nav-link" href="index.html#services-section" id="navEspecialidades">Especialidades</a>
+      <a class="nav-link" href="ciudades.html">Ciudades</a>
+      <a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+      <a class="nav-link" href="nuestro-origen.html">Nuestro origen</a>
+      <a class="nav-link" href="blog.html">Blog</a>
+
+      <div class="button_wrapper">
+        <a class="btn btn-negative" href="contacto.html">
+          <span class="word">Pedir cita</span>
+          <span class="arrow-circle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.44 1.32 4.94L2 22l5.24-1.37c1.44.79 3.06 1.2 4.8 1.2 5.5 0 9.96-4.45 9.96-9.96C22 6.46 17.54 2 12.04 2Zm0 18.2c-1.55 0-3.06-.42-4.38-1.2l-.31-.19-3.11.82.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.27-8.25 8.27Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29Z" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menÃº" aria-expanded="false"
+      aria-controls="topnavActions">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </nav>
+
+  <div class="specialties-overlay" id="specialtiesOverlay" aria-hidden="true"></div>
+  <aside class="specialties-panel" id="specialtiesPanel" aria-hidden="true" aria-label="Especialidades">
+    <div class="specialties-header">
+      <span class="specialties-eyebrow">Especialidades</span>
+      <button class="specialties-close" id="specialtiesClose" type="button" aria-label="Cerrar menÃº de especialidades">
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L13 13M13 1L1 13" stroke="#171717" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="specialties-body" aria-label="Lista de especialidades">
+      <div class="specialty-row">
+        <a class="specialty-link" href="injerto-capilar.html">Injerto Capilar</a>
+      </div>
+
+      <div class="specialty-row has-sub has-sub-hover">
+        <a class="specialty-link" href="cirugia-estetica.html">Cirugía Estética</a>
+        <div class="specialty-submenu">
+          <a class="specialty-sublink" href="cirugia-estetica.html#lipolaser">Lipoláser</a>
+        </div>
+      </div>
+
+
+      <div class="specialty-row has-sub has-sub-hover">
+        <a class="specialty-link" href="medicina-estetica.html">Medicina Estética</a>
+        <div class="specialty-submenu">
+          <a class="specialty-sublink" href="medicina-estetica.html#vascular">Vascular</a>
+        </div>
+      </div>
+
+      <div class="specialty-row">
+        <a class="specialty-link" href="dermatologia.html">Dermatología</a>
+      </div>
+
+      <div class="specialty-row">
+        <a class="specialty-link" href="ttos-faciales-y-corporales.html">Tratamientos Faciales &amp; Corporales</a>
+      </div>
+    </nav>
+
+    <div class="specialties-footer">
+      <a class="specialties-social" href="https://www.instagram.com/medical_linares/?hl=es" target="_blank"
+        rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span>Medical_linares</span>
+      </a>
+      <a class="specialties-phone" href="tel:+34645036752">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </svg>
+        <span>645 03 67 52</span>
+      </a>
+    </div>
+  </aside>
+
+
+
+  <!-- ---------- ESPECIALIDADES: menu desplegable (flowing menu) ---------- -->
+  <section class="legal-hero wrap">
+    <div class="legal-eyebrow">Medical Linares</div>
+    <h1>Información legal</h1>
+    <p>Cómo tratamos tus datos, qué cookies utilizamos y las condiciones de uso de este sitio web.</p>
+    <nav class="legal-tabs" aria-label="Documentos legales">
+      <a class="legal-tab" href="#cookies" data-legal-tab>Política de cookies</a>
+      <a class="legal-tab" href="#aviso-legal" data-legal-tab>Aviso legal</a>
+      <a class="legal-tab" href="#privacidad" data-legal-tab>Política de privacidad</a>
+    </nav>
+  </section>
+
+  <section class="legal-section wrap" id="cookies">
+    <div class="legal-section-inner">
+      <h2>Política de cookies</h2>
+
+      <div class="legal-block">
+        <p>En cumplimiento con el deber de información recogido en el apartado 2º del artículo 22 de la Ley 34/2002, de
+          11 de Julio, de Servicios de la Sociedad de la Información y del Comercio Electrónico, la presente política de
+          cookies tiene por finalidad informarle de manera clara y precisa sobre las cookies que se utilizan en la
+          página web de RAQUEL PEINADO FERNÁNDEZ.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Qué son las cookies?</h3>
+        <p>Una cookie es un fichero de pequeño tamaño que los sitios web envían al navegador y se descargan en su
+          ordenador. Las cookies permiten que la página web almacene y recupere la información sobre su visita, como su
+          idioma preferido y otras opciones, con el fin de mejorar los servicios que se ofrecen y contribuir a tener una
+          mejor experiencia de navegación para el usuario.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Tipos de cookies</h3>
+        <p>En función de quién gestione el dominio desde donde se envían las cookies y se traten los datos, se
+          distinguirá entre cookies propias y cookies de terceros.</p>
+        <p>Las cookies también pueden clasificarse según el plazo de tiempo que permanezcan almacenadas en el navegador
+          del usuario, distinguiéndose entre cookies de sesión o cookies persistentes.</p>
+        <p>Finalmente, en función de la finalidad para la que se trate la información recopilada, las cookies se pueden
+          clasificar en las siguientes categorías:</p>
+        <ul>
+          <li><strong>Cookies técnicas:</strong> permiten al usuario navegar por un sitio web y utilizar algunos de los
+            servicios ofrecidos por el mismo (como, por ejemplo, las que sirven para recordar los elementos integrantes
+            de un carrito de compra).</li>
+          <li><strong>Cookies de personalización:</strong> permiten que el usuario acceda al sitio web con unas
+            características determinadas, como puede ser el idioma.</li>
+          <li><strong>Cookies de seguridad:</strong> sirven para impedir o dificultar los ataques contra el sitio web.
+          </li>
+          <li><strong>Cookies de complemento para intercambiar contenidos sociales:</strong> los llamados plug-in, que
+            permiten compartir contenidos en redes sociales.</li>
+          <li><strong>Cookies de análisis:</strong> permiten al responsable el seguimiento del comportamiento del
+            usuario.</li>
+          <li><strong>Cookies publicitarias:</strong> permiten gestionar los espacios de publicidad del sitio web.</li>
+          <li><strong>Cookies de publicidad comportamental:</strong> como las anteriores, sirven para gestionar los
+            espacios de publicidad del sitio web en función de la información recogida sobre el comportamiento del
+            usuario y sus hábitos, adaptando la publicidad al perfil del usuario.</li>
+          <li><strong>Cookies de geolocalización:</strong> utilizadas para averiguar el país dónde se encuentra el
+            usuario.</li>
+        </ul>
+      </div>
+
+      <div class="legal-block">
+        <h3>Autorización para el uso de cookies</h3>
+        <p>De conformidad con el aviso de cookies que aparece en el sitio web, el usuario puede consentir expresamente
+          el uso de cookies que requieran consentimiento; sin embargo, el uso de cookies técnicas o necesarias no
+          requiere de consentimiento. Sin perjuicio de todo ello, el usuario puede modificar la configuración de su
+          navegador para rechazar el uso de las cookies.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Cómo modificar la configuración de las cookies</h3>
+        <p>Usted puede restringir, bloquear o borrar las cookies de MEDICAL LINARES o cualquier otra página web
+          utilizando su navegador. En cada navegador la operativa es diferente, puede encontrar cómo hacerlo en el menú
+          de ayuda de su navegador dónde se establece el procedimiento para su eliminación. Para más información:</p>
+        <div class="legal-browsers">
+          <div><span>Google Chrome:</span> <a
+              href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=es"
+              target="_blank" rel="noopener">support.google.com/chrome/answer/95647</a></div>
+          <div><span>Mozilla Firefox:</span> <a
+              href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias"
+              target="_blank" rel="noopener">support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies</a></div>
+          <div><span>Safari:</span> <a href="https://support.apple.com/es-es/guide/safari/sfri11471/mac" target="_blank"
+              rel="noopener">support.apple.com/es-es/guide/safari/sfri11471/mac</a></div>
+          <div><span>Internet Explorer:</span> <a
+              href="https://support.microsoft.com/es-es/help/278835/how-to-delete-cookie-files-in-internet-explorer"
+              target="_blank" rel="noopener">support.microsoft.com/es-es/help/278835</a></div>
+        </div>
+        <p>Es posible que al deshabilitar las cookies la página web no funcione correctamente o no pueda acceder a
+          determinadas funciones de la misma.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Cookies utilizadas en la web</h3>
+        <p>En el portal web se utilizan diferentes tipos de cookies con distintas finalidades, a continuación, se
+          enumeran las cookies empleadas:</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Modificación de las condiciones</h3>
+        <p>RAQUEL PEINADO FERNÁNDEZ se reserva expresamente el derecho a modificar unilateralmente, total o
+          parcialmente, sin necesidad de previo aviso, la presente Política de Cookies. El usuario reconoce y acepta que
+          es su responsabilidad revisar la presente Política de Cookies.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal-section wrap" id="aviso-legal">
+    <div class="legal-section-inner">
+      <h2>Aviso legal</h2>
+
+      <div class="legal-block">
+        <p>En cumplimiento con el deber de información recogido en artículo 10 de la Ley 34/2002, de 11 de Julio, de
+          Servicios de la Sociedad de la Información y del Comercio Electrónico, le informamos que el Sitio Web y el
+          portal de Internet www.medicallinares.com (en adelante, el «Web») es titularidad de RAQUEL PEINADO FERNÁNDEZ,
+          con domicilio social en C/ REPÚBLICA ARGENTINA, 7 con CIF nº 06249200P. El presente aviso legal regula las
+          condiciones de uso del citado portal de Internet.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Ley aplicable y jurisdicción</h3>
+        <p>Con carácter general las relaciones entre MEDICAL LINARES y los usuarios de sus servicios telemáticos,
+          presentes en la web, se encuentran sometidas a la legislación y jurisdicción españolas.</p>
+        <p>Las partes renuncian expresamente al fuero que les pudiera corresponder y someten expresamente a los Juzgados
+          y Tribunales de Linares para resolver cualquier controversia que pueda surgir en la interpretación o ejecución
+          de las presentes condiciones contractuales.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Aceptación del usuario</h3>
+        <p>Este Aviso Legal regula el acceso y utilización de la página web que MEDICAL LINARES pone a la disposición de
+          los usuarios de Internet. Se considera usuario la persona que acceda, navegue, utilice o participe en los
+          servicios y actividades de la página web.</p>
+        <p>El usuario queda informado, y acepta, que el acceso a la presente web no supone, en modo alguno, el inicio de
+          una relación comercial con MEDICAL LINARES.</p>
+        <p>El acceso y navegación en el sitio web por parte del usuario supone la aceptación de la totalidad de las
+          presentes Condiciones de Uso. En caso de desacuerdo con las condiciones debe abstenerse a usar el sitio web.
+        </p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Acceso a la web</h3>
+        <p>El acceso a la página web por parte de los usuarios es de carácter libre y gratuito. Algunos servicios pueden
+          encontrarse sujetos a contratación previa del servicio.</p>
+        <p>En caso de ser necesario que el usuario aporte datos personales para acceder a alguno de los servicios, la
+          recogida y el tratamiento de los datos se realizará de conformidad con la normativa vigente, en concreto con
+          el RGPD. Para más información, consulte nuestra <a href="#privacidad">política de privacidad</a>.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Contenido y uso</h3>
+        <p>La visita al sitio web por parte del usuario deberá hacerse de forma responsable y de conformidad a la
+          legalidad vigente, la buena fe, el presente Aviso Legal y respetando los derechos de propiedad intelectual e
+          industrial de titularidad de MEDICAL LINARES o cualquier otras personas físicas o jurídicas.</p>
+        <p>El uso de cualquiera de los contenidos del sitio web con finalidades que sean o pudieran ser ilícitas queda
+          totalmente prohibido, así como la realización de cualquier acción que cause o pueda causar daños o
+          alteraciones de cualquier tipo no consentidas por MEDICAL LINARES, al sitio web o a sus contenidos.</p>
+        <p>El titular del web no se identifica con las opiniones vertidas en el mismo por sus colaboradores. La empresa
+          se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en su Web,
+          pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través de la misma como
+          la forma en la que éstos aparezcan presentados o localizados en sus servidores.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Propiedad intelectual e industrial</h3>
+        <p>Los derechos de propiedad intelectual del contenido de las páginas web, su diseño gráfico y códigos son
+          titularidad de MEDICAL LINARES y, por tanto, queda prohibida su reproducción, distribución, comunicación
+          pública, transformación o cualquier otra actividad que se realice con los contenidos de la página web, ni
+          siquiera, aunque se citen las fuentes, salvo que se cuente con el consentimiento previo, expreso y por escrito
+          de MEDICAL LINARES. Todos los nombres comerciales, marcas o signos distintos de cualquier clase contenidos en
+          las páginas web de la empresa son propiedad de sus dueños y están protegidos por ley.</p>
+        <p>MEDICAL LINARES no concede ninguna licencia o autorización de uso de ninguna clase sobre sus derechos de
+          propiedad intelectual e industrial o sobre cualquier otra propiedad o derecho relacionado con el sitio web, y
+          en ningún caso se entenderá que el acceso y navegación de los usuarios implica una renuncia, transmisión,
+          licencia o cesión total ni parcial de dichos derechos por parte de MEDICAL LINARES.</p>
+        <p>Cualquier uso de esos contenidos no autorizado previamente por parte de MEDICAL LINARES será considerado un
+          incumplimiento grave de los derechos de propiedad intelectual o industrial y dará lugar a las
+          responsabilidades legalmente establecidas. MEDICAL LINARES se reserva el derecho de ejercitar frente al
+          usuario las acciones judiciales y extrajudiciales que correspondan.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Responsabilidad y garantías</h3>
+        <p>MEDICAL LINARES declara que ha adoptado las medidas necesarias que, dentro de sus posibilidades y el estado
+          de la tecnología, permitan el correcto funcionamiento de su sitio web, así como la ausencia de virus y
+          componentes dañinos. Sin embargo, MEDICAL LINARES no puede hacerse responsable de las siguientes situaciones
+          que se enumeran a título enunciativo, pero no limitativo:</p>
+        <ul>
+          <li>La continuidad y disponibilidad de los Contenidos.</li>
+          <li>La ausencia de errores en dichos Contenidos ni la corrección de cualquier defecto que pudiera ocurrir.
+          </li>
+          <li>La ausencia de virus y/o demás componentes dañinos.</li>
+          <li>Los daños o perjuicios que cause cualquier persona que vulnere los sistemas de seguridad de MEDICAL
+            LINARES.</li>
+          <li>El uso que los usuarios puedan hacer de los contenidos incluidos en el web. En consecuencia, MEDICAL
+            LINARES no garantiza que el uso que los usuarios puedan hacer de los contenidos que en su caso se incluyan
+            en el sitio web, se ajusten al presente aviso legal, ni que el uso del sitio web se realice de forma
+            diligente.</li>
+          <li>El uso por menores de edad del sitio web o del envío de sus datos personales sin el permiso de sus
+            tutores, siendo los tutores responsables del uso que hagan de Internet.</li>
+          <li>Los contenidos a los que el usuario pueda acceder a través de enlaces no autorizados o introducidos por
+            usuarios mediante comentarios o herramientas similares.</li>
+          <li>La introducción de datos erróneos por parte del usuario o de un tercero.</li>
+        </ul>
+        <p>MEDICAL LINARES podrá suspender temporalmente y sin previo aviso, la accesibilidad al sitio web con motivo de
+          operaciones de mantenimiento, reparación, actualización o mejora. No obstante, siempre que las circunstancias
+          lo permitan, MEDICAL LINARES comunicará al usuario, con antelación suficiente, la fecha prevista para la
+          suspensión de los contenidos.</p>
+        <p>Asimismo, de conformidad con los arts. 11 y 16 de la Ley 34/2002, de 11 de julio, de servicios de la sociedad
+          de la información y de comercio electrónico (LSSICE), MEDICAL LINARES se compromete a la eliminación o, en su
+          caso, bloqueo de los contenidos que pudieran afectar o ser contrarios a la legislación vigente, los derechos
+          de terceros o la moral y orden público.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Cookies</h3>
+        <p>MEDICAL LINARES utiliza cookies, a los efectos de optimizar y personalizar su navegación por el sitio web.
+          Las cookies son ficheros físicos de información que se alojan en el propio terminal del usuario, la
+          información recogida mediante las cookies sirve para facilitar la navegación del usuario por el portal y
+          optimizar la experiencia de navegación. Los datos recopilados mediante las cookies pueden ser compartidos con
+          los creadores de las mismas, pero en ningún caso la información obtenida por las mismas será asociada a datos
+          personales ni a datos que puedan identificar al usuario.</p>
+        <p>Sin embargo, si el usuario no desea que se instalen cookies en su disco duro, tiene la posibilidad de
+          configurar el navegador de tal modo que impida la instalación de estos archivos. Para obtener más información
+          consulte nuestra <a href="#cookies">Política de Cookies</a>.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Enlaces (links)</h3>
+        <p>La presencia de enlaces (links) en la página web de MEDICAL LINARES hacia otros sitios de Internet tiene
+          finalidad meramente informativa y en ningún caso suponen sugerencia, invitación o recomendación sobre los
+          mismos. MEDICAL LINARES no asumirá responsabilidad por los contenidos de un enlace perteneciente a un sitio
+          web ajeno, ni garantizará la fiabilidad, exactitud, amplitud, veracidad, validez y disponibilidad técnica.</p>
+        <p>En el caso de que en otros sitios web se establezcan enlaces a la página web de MEDICAL LINARES, no se
+          entenderá que MEDICAL LINARES ha autorizado el enlace o el contenido del sitio web en el que se contiene el
+          enlace, tampoco podrá incluirse en la página del enlace contenidos inapropiados, difamatorios, ilegales,
+          obscenos o ilícitos, ni otros contenidos que sean contrarios a la legalidad vigente.</p>
+        <p>MEDICAL LINARES se reserva la posibilidad de contactar con el propietario del sitio web en el que se
+          establezca el enlace si considera que se incumple la normativa, así como de ejercitar las correspondientes
+          acciones judiciales y extrajudiciales.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Modificación de las condiciones</h3>
+        <p>MEDICAL LINARES se reserva expresamente el derecho a modificar unilateralmente, total o parcialmente, sin
+          necesidad de previo aviso, el presente Aviso Legal. El usuario reconoce y acepta que es su responsabilidad
+          revisar periódicamente el presente Aviso Legal.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="legal-section wrap" id="privacidad">
+    <div class="legal-section-inner">
+      <h2>Política de privacidad</h2>
+
+      <dl class="legal-summary">
+        <div class="legal-summary-item">
+          <dt>Responsable</dt>
+          <dd>RAQUEL PEINADO FERNÁNDEZ</dd>
+        </div>
+        <div class="legal-summary-item">
+          <dt>Finalidad</dt>
+          <dd>Prestación de servicios online, gestión de usuarios web y comunicaciones comerciales relacionadas con
+            nuestros servicios.</dd>
+        </div>
+        <div class="legal-summary-item">
+          <dt>Legitimación</dt>
+          <dd>Consentimiento expreso e interés legítimo.</dd>
+        </div>
+        <div class="legal-summary-item">
+          <dt>Destinatarios</dt>
+          <dd>No se ceden datos a terceros, salvo obligación legal.</dd>
+        </div>
+        <div class="legal-summary-item">
+          <dt>Derechos</dt>
+          <dd>Acceder, rectificar y suprimir los datos, así como otros derechos, como se explica en la información
+            adicional.</dd>
+        </div>
+        <div class="legal-summary-item">
+          <dt>Información adicional</dt>
+          <dd>Puede consultar la información adicional y detallada sobre Protección de Datos en las cláusulas anexas que
+            se encuentran en www.medicallinares.com</dd>
+        </div>
+      </dl>
+
+      <div class="legal-block">
+        <p>En MEDICAL LINARES trabajamos para ofrecerte a través de nuestros productos y servicios la mejor experiencia
+          posible. En algunos casos, es necesario recabar información para conseguirlo. Nos importa tu privacidad y
+          creemos que debemos ser transparentes al respecto.</p>
+        <p>Por ello, y a efectos de lo previsto en el REGLAMENTO (UE) 2016/679 DEL PARLAMENTO EUROPEO Y DEL CONSEJO de
+          27 de abril de 2016 (en adelante, "RGPD") relativo a la protección de las personas físicas en lo que respecta
+          al tratamiento de datos personales y a la libre circulación de estos datos, y la LEY 34/2002, de 11 de julio,
+          de Servicios de la Sociedad de la información y de comercio electrónico (en adelante, "LSSI"), RAQUEL PEINADO
+          FERNÁNDEZ informa al usuario que, como responsable del tratamiento, incorporará los datos de carácter personal
+          facilitados por los usuarios en un fichero automatizado.</p>
+        <p>Nuestro compromiso empieza por explicarte lo siguiente:</p>
+        <ul>
+          <li>Se recogen tus datos para que la experiencia de usuario mejore, atendiendo a tus intereses y necesidades.
+          </li>
+          <li>Somos transparentes en relación a los datos que obtenemos acerca de ti y la razón por la que lo hacemos.
+          </li>
+          <li>Nuestra intención es ofrecerte la mejor experiencia posible. Por ello, cuando vayamos a usar tu
+            información personal lo haremos siempre cumpliendo la normativa, y cuando sea necesario, solicitaremos tu
+            consentimiento.</li>
+          <li>Entendemos que tus datos te pertenecen. Por tanto, si decides no autorizarnos a procesarlos puedes
+            solicitarnos que dejemos de tratarlos.</li>
+          <li>Nuestra prioridad consiste en garantizar tu seguridad y tratar tus datos de acuerdo con la normativa
+            europea.</li>
+        </ul>
+        <p>Si deseas obtener más información sobre el tratamiento de tus datos, consulta los distintos apartados de la
+          política de privacidad que se encuentran a continuación:</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Quién es el responsable del tratamiento de sus datos personales?</h3>
+        <ul>
+          <li><strong>Identidad:</strong> RAQUEL PEINADO FERNÁNDEZ</li>
+          <li><strong>Domicilio social:</strong> C/ REPÚBLICA ARGENTINA, 7</li>
+          <li><strong>C.I.F. nº:</strong> 06249200P</li>
+          <li><strong>Email:</strong> <a
+              href="mailto:medicinaesteticalinares@gmail.com">medicinaesteticalinares@gmail.com</a></li>
+        </ul>
+        <p>MEDICAL LINARES ha designado un Delegado de Protección de Datos o una persona de contacto interna dentro de
+          su organización. Si deseas hacer una consulta en relación al tratamiento de tus datos personales, puedes
+          ponerte en contacto con él mediante el correo <a
+            href="mailto:medicinaesteticalinares@gmail.com">medicinaesteticalinares@gmail.com</a></p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Qué datos personales recopilamos?</h3>
+        <p>Los datos personales que el usuario puede llegar a proporcionar:</p>
+        <ul>
+          <li>Nombre, dirección y fecha de nacimiento.</li>
+          <li>Número de teléfono y dirección de correo electrónico.</li>
+          <li>Ubicación.</li>
+          <li>Información relativa a pagos y devoluciones.</li>
+          <li>Dirección IP, fecha y hora en la que has accedido a nuestros servicios, navegador de internet que uses y
+            datos sobre el sistema operativo del dispositivo.</li>
+          <li>Cualquier otra información o datos que decidas compartir con nosotros.</li>
+        </ul>
+        <p>En algunos casos, es obligatoria la cumplimentación del formulario de registro para acceder y disfrutar de
+          determinados servicios ofrecidos en la web; asimismo, no facilitar los datos personales solicitados o el no
+          aceptar la presente política de protección de datos supone la imposibilidad de suscribirse, registrarse o
+          participar en cualquiera de las promociones en las que se soliciten datos carácter personal.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Por qué y para qué tratamos tus datos?</h3>
+        <p>En MEDICAL LINARES tratamos la información que nos facilitan las personas interesadas con las siguientes
+          finalidades:</p>
+        <ul>
+          <li>Gestionar pedidos o contratar alguno de nuestros servicios, ya sea online o en las tiendas físicas.</li>
+          <li>Gestionar el envío de la información que nos soliciten.</li>
+          <li>Desarrollar acciones comerciales y realizar el mantenimiento y gestión de la relación con el usuario, así
+            como la gestión de los servicios ofrecido a través del sitio web y las labores de información, pudiendo
+            realizar valoraciones automáticas, obtención de perfiles y labores de segmentación de los clientes con el
+            objeto de personalizar el trato conforme a sus características y necesidades y mejorar la experiencia en
+            línea del cliente.</li>
+          <li>Desarrollar y gestionar los concursos, sorteos u otras actividades promocionales que se puedan organizar.
+          </li>
+          <li>En algunos casos será necesario facilitar información a las Autoridades o terceras empresas por motivos de
+            auditoría, así como manejar datos personales de facturas, contratos y documentos para responder a
+            reclamaciones de clientes o de las Administraciones Públicas.</li>
+        </ul>
+        <p>Informamos que los datos personales que se obtengan como consecuencia de tu registro como usuario formarán
+          parte del Registro de Actividades y operaciones de Tratamiento (RAT), que se actualizará periódicamente de
+          acuerdo con lo establecido en el RGPD.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Cuál es la legitimación para el tratamiento de tus datos?</h3>
+        <p>El tratamiento de tus datos puede fundamentarse en las siguientes bases legales:</p>
+        <ul>
+          <li>Consentimiento del interesado para la contratación de servicios y productos, para los formularios de
+            contacto, las solicitudes de información o alta en e-newsletters.</li>
+          <li>Interés legítimo para el tratamiento de datos de nuestros clientes en acciones de marketing directo y
+            consentimiento expreso del interesado para todo lo relativo a las valoraciones automáticas y elaboración de
+            perfiles.</li>
+          <li>Cumplimiento de obligaciones legales para prevención del fraude, comunicación con Autoridades públicas y
+            reclamaciones de terceros.</li>
+        </ul>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Cuánto tiempo conservamos tus datos?</h3>
+        <p>El tratamiento de los datos con las finalidades descritas se mantendrá durante el tiempo necesario para
+          cumplir con la finalidad de su recogida (por ejemplo, mientras dure la relación comercial), así como para el
+          cumplimiento de las obligaciones legales que se deriven del tratamiento de los datos.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿A qué destinatarios se comunican tus datos?</h3>
+        <p>En algunos casos, solo cuando sea necesario, MEDICAL LINARES proporcionará datos de los usuarios a terceros.
+          Sin embargo, nunca se venderán los datos a terceros. Los proveedores de servicios externos (por ejemplo,
+          proveedores de pago o empresas de reparto) con los que MEDICAL LINARES trabaje pueden usar los datos para
+          proporcionar los servicios correspondientes, sin embargo, no usarán dicha información para fines propios o
+          para cesión a terceros.</p>
+        <p>MEDICAL LINARES procura garantizar la seguridad de los datos personales cuando se envían fuera de la empresa
+          y se asegura que los terceros proveedores de servicio respetan la confidencialidad y cuentan con las medidas
+          adecuadas para proteger los datos personales. Dichos terceros tienen la obligación de garantizar que la
+          información se trata conforme con la normativa de privacidad de datos.</p>
+        <p>En algunos casos, la ley puede exigir que se revelen datos personales a organismos públicos u otras partes,
+          solo se revelará lo estrictamente necesario para el cumplimiento de dichas obligaciones legales.</p>
+        <p>Los datos personales obtenidos también podrán ser compartidos con otras empresas del grupo.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Dónde se almacenan tus datos?</h3>
+        <p>Con carácter general, los datos se almacenan dentro de la UE. Los datos que se envíen a terceros que no
+          pertenezcan a la UE, nos aseguraremos que ofrezcan un nivel de protección suficiente, ya sea porque cuentan
+          con Normas Corporativas Vinculantes (BCR) o porque se hayan adherido al "Privacy Shield".</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Qué derechos te asisten y cómo puedes ejercerlos?</h3>
+        <p>Puedes dirigir tus comunicaciones y ejercitar tus derechos mediante una petición en el siguiente correo
+          electrónico: <a href="mailto:medicinaesteticalinares@gmail.com">medicinaesteticalinares@gmail.com</a>.</p>
+        <p>En virtud de lo que establece el RGPD puedes solicitar:</p>
+        <ul>
+          <li><strong>Derecho de acceso:</strong> puedes pedir información de aquellos datos personales que dispongamos
+            acerca de ti.</li>
+          <li><strong>Derecho de rectificación:</strong> puedes comunicar cualquier cambio en tus datos personales.</li>
+          <li><strong>Derecho de supresión y al olvido:</strong> puedes solicitar la eliminación previo bloqueo de los
+            datos personales.</li>
+          <li><strong>Derecho de limitación al tratamiento:</strong> supone la restricción del tratamiento de los datos
+            personales.</li>
+          <li><strong>Derecho de oposición:</strong> puedes retirar el consentimiento del tratamiento de los datos,
+            oponiéndose a que se sigan tratando.</li>
+          <li><strong>Derecho a la portabilidad:</strong> en algunos casos, puedes pedir una copia de los datos
+            personales en un formato estructurado, de uso común y lectura mecánica para su transmisión a otro
+            responsable.</li>
+          <li><strong>Derecho a no ser objeto de decisiones individualizadas:</strong> puedes solicitar que no se tomen
+            decisiones que se basen únicamente en el tratamiento automatizado, incluyendo la elaboración de perfiles,
+            que produzca efectos jurídicos o afecte significativamente al interesado.</li>
+        </ul>
+        <p>En algunos casos, se podrá rechazar la solicitud si solicitas que se eliminen datos necesarios para el
+          cumplimiento de obligaciones legales.</p>
+        <p>Asimismo, si tienes alguna queja sobre el tratamiento de los datos puedes presentar una reclamación a la
+          autoridad de protección de datos.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Quién es el responsable de la exactitud y veracidad de los datos facilitados?</h3>
+        <p>El usuario es el único responsable de la veracidad y corrección de los datos incluidos, exonerando a MEDICAL
+          LINARES de cualquier responsabilidad al respecto. Los usuarios garantizan y responden, en cualquier caso, de
+          la exactitud, vigencia y autenticidad de los datos personales facilitados, y se comprometen a mantenerlos
+          debidamente actualizados. El usuario acepta proporcionar información completa y correcta en el formulario de
+          registro o suscripción. MEDICAL LINARES se reserva el derecho de finalizar los servicios contratados que se
+          hubiera celebrado con los usuarios, en caso que los datos que haya facilitado sean falsos, incompletos,
+          inexactos o no estén actualizados.</p>
+        <p>MEDICAL LINARES no responde de la veracidad de las informaciones que no sean de elaboración propia y de las
+          que se indique otra fuente, por lo que tampoco asume responsabilidad alguna en cuanto a hipotéticos perjuicios
+          que pudieran originarse por el uso de dicha información.</p>
+        <p>MEDICAL LINARES se reserva el derecho a actualizar, modificar o eliminar la información contenida en sus
+          páginas web pudiendo incluso limitar o no permitir el acceso a dicha información. Se exonera a MEDICAL LINARES
+          de responsabilidad ante cualquier daño o perjuicio que pudiera sufrir el usuario como consecuencia de errores,
+          defectos u omisiones, en la información facilitada por MEDICAL LINARES siempre que proceda de fuentes ajenas a
+          la misma.</p>
+        <p>Asimismo, el usuario certifica que es mayor de 14 años y que posee la capacidad legal necesaria para la
+          prestación del consentimiento en cuanto al tratamiento de sus datos de carácter personal.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Cómo tratamos los datos personales de los menores de edad?</h3>
+        <p>En principio nuestros servicios no van dirigidos específicamente a menores de edad. Sin embargo, en el
+          supuesto de que alguno de ellos se dirija a menores de catorce años, de conformidad con el artículo 8 del RGPD
+          y el artículo 7 de la LO3/2018, de 5 de diciembre (LOPDGDD), MEDICAL LINARES exigirá el consentimiento válido,
+          libre, inequívoco, específico e informado de sus tutores legales para tratar los datos personales de los
+          menores. En este caso, se exigirá el DNI u otra forma de identificación de quien preste el consentimiento.</p>
+        <p>En el caso de mayores de catorce años podrá procederse al tratamiento de los datos con el consentimiento del
+          usuario, exceptuando aquellos casos en los que la Ley exija la asistencia de los titulares de la patria
+          potestad o tutela.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Qué medidas de seguridad aplicamos para proteger tus datos personales?</h3>
+        <p>MEDICAL LINARES ha adoptado los niveles de seguridad de protección de los Datos Personales legalmente
+          requeridos, y procura instalar aquellos otros medios y medidas técnicas adicionales a su alcance para evitar
+          la pérdida, mal uso, alteración, acceso no autorizado y robo de los Datos Personales facilitados a MEDICAL
+          LINARES.</p>
+        <p>MEDICAL LINARES no es responsable de hipotéticos daños o perjuicios que se pudieran derivar de
+          interferencias, omisiones, interrupciones, virus informáticos, averías telefónicas o desconexiones en el
+          funcionamiento operativo de este sistema electrónico, motivadas por causas ajenas a MEDICAL LINARES; de
+          retrasos o bloqueos en el uso del presente sistema electrónico causados por deficiencias o sobrecargas de
+          líneas telefónicas o sobrecargas en el Centro de Procesos de Datos, en el sistema de Internet o en otros
+          sistemas electrónicos, así como de daños que puedan ser causados por terceras personas mediante intromisiones
+          ilegítimas fuera del control de MEDICAL LINARES. Ello, no obstante, el usuario debe ser consciente de que las
+          medidas de seguridad en Internet no son inexpugnables.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>Enlaces a otros sitios web</h3>
+        <p>En el sitio web www.medicallinares.com puede haber enlaces a otras páginas web. Al clicar en uno de estos
+          enlaces y acceder a un sitio web externo, la visita estará sujeta a la política de privacidad de dicho sitio
+          web, quedando MEDICAL LINARES desvinculada de cualquier tipo de responsabilidad acerca de su política de
+          privacidad.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Cómo utilizamos las cookies?</h3>
+        <p>El sitio web de MEDICAL LINARES utiliza cookies, a los efectos de optimizar y personalizar su navegación por
+          el mismo. Las cookies son ficheros físicos de información que se alojan en el propio terminal del usuario, la
+          información recogida mediante las cookies sirve para facilitar la navegación del usuario por el portal y
+          optimizar la experiencia de navegación. Los datos recopilados mediante las cookies pueden ser compartidos con
+          los creadores de las mismas, pero en ningún caso la información obtenida por las mismas será asociada a datos
+          personales ni a datos que puedan identificar al usuario.</p>
+        <p>Sin embargo, si el usuario no desea que se instalen cookies en su disco duro, tiene la posibilidad de
+          configurar el navegador de tal modo que impida la instalación de estos archivos. Para obtener más información
+          consulte nuestra <a href="#cookies">Política de Cookies</a>.</p>
+      </div>
+
+      <div class="legal-block">
+        <h3>¿Puede modificarse la política de privacidad?</h3>
+        <p>Esta política de privacidad puede modificarse. Te recomendamos que revises la política de privacidad con
+          cierta periodicidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-aurora" aria-hidden="true"></div>
+    <div class="footer-grid-bg" aria-hidden="true"></div>
+    <div class="footer-giant-text" id="footerGiantText" aria-hidden="true">Medical Linares</div>
+
+    <div class="footer-marquee" aria-hidden="true">
+      <div class="footer-marquee-track">
+        <div class="footer-marquee-group">
+          <span>Medicina Estética</span><span class="dot">✦</span>
+          <span>Dermatología</span><span class="dot">✦</span>
+          <span>Injerto Capilar</span><span class="dot">✦</span>
+          <span>Confianza</span><span class="dot">✦</span>
+          <span>Láser</span><span class="dot">✦</span>
+          <span>Cuidado Real</span><span class="dot">✦</span>
+        </div>
+        <div class="footer-marquee-group">
+          <span>Medicina Estética</span><span class="dot">✦</span>
+          <span>Dermatología</span><span class="dot">✦</span>
+          <span>Injerto Capilar</span><span class="dot">✦</span>
+          <span>Confianza</span><span class="dot">✦</span>
+          <span>Láser</span><span class="dot">✦</span>
+          <span>Cuidado Real</span><span class="dot">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap footer-inner" id="footerInner">
+      <div class="footer-title">¿Dónde estamos?</div>
+
+      <div class="footer-locations">
+        <div class="footer-loc">
+          <span class="footer-loc-name">Linares</span>
+          <p class="footer-loc-address">C. República Argentina, 7, 23700 Linares, Jaén.</p>
+          <div class="footer-loc-row">
+            <span class="footer-label">Horario L-V</span>
+            <span class="footer-value">09:30 – 13:15</span>
+            <span class="footer-value">17:00 – 20:00</span>
+          </div>
+          <a class="footer-pill footer-tel" href="tel:+34645036752">645 03 67 52</a>
+        </div>
+
+        <div class="footer-loc">
+          <span class="footer-loc-name">Granada</span>
+          <p class="footer-loc-address">Esquina Pablo Neruda, Av. Dr. López Cantarero Ballesteros, 1, 18200 Maracena,
+            Granada</p>
+          <div class="footer-loc-row">
+            <span class="footer-label">Horario L-V</span>
+            <span class="footer-value">09:30 – 13:15</span>
+            <span class="footer-value">17:00 – 20:00</span>
+          </div>
+          <a class="footer-pill footer-tel" href="tel:+34650064923">650 06 49 23</a>
+        </div>
+
+        <nav class="footer-loc footer-treatments" aria-label="Tratamientos">
+          <span class="footer-loc-name">Tratamientos</span>
+          <a href="https://medicallinares.com/injerto-capilar/" target="_blank" rel="noopener">Injerto Capilar</a>
+          <a href="https://medicallinares.com/lipolaser/" target="_blank" rel="noopener">Lipoláser</a>
+          <a href="https://medicallinares.com/medicina-estetica/" target="_blank" rel="noopener">Medicina Estética</a>
+          <a href="https://medicallinares.com/dermatologia/" target="_blank" rel="noopener">Dermatología</a>
+          <a href="https://medicallinares.com/ttos-faciales-y-corporales/" target="_blank" rel="noopener">Tratamientos
+            Faciales y Corporales</a>
+          <a href="https://medicallinares.com/vascular/" target="_blank" rel="noopener">Vascular</a>
+          <a href="https://medicallinares.com/laser/" target="_blank" rel="noopener">Láser</a>
+          <a class="footer-pill footer-all" href="https://medicallinares.com/servicios/" target="_blank"
+            rel="noopener">Todos →</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© Medical Linares</span>
+        <div class="footer-legal">
+          <a class="footer-pill" href="politicasdeprivacidad.html">Política de cookies</a>
+          <a class="footer-pill" href="politicasdeprivacidad.html">Aviso legal</a>
+          <a class="footer-pill" href="politicasdeprivacidad.html">Política de privacidad</a>
+        </div>
+        <div class="footer-right-group">
+          <div class="footer-social">
+            <a class="footer-pill footer-icon-btn" href="https://www.instagram.com/medical_linares" target="_blank"
+              rel="noopener" aria-label="Instagram de Medical Linares">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a class="footer-pill footer-icon-btn" href="https://www.facebook.com/medicallinares" target="_blank"
+              rel="noopener" aria-label="Facebook de Medical Linares">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+          <button class="footer-pill footer-icon-btn footer-top-btn" id="footerTopBtn" aria-label="Volver arriba"
+            type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom-extra">
+        <div class="footer-credit">Página creada y diseñada por Angel Mind SEO</div>
+        <a class="footer-junta-link" href="https://www.juntadeandalucia.es" target="_blank" rel="noopener"
+          aria-label="Junta de Andalucía">
+          <img src="https://www.juntadeandalucia.es/sites/default/files/2023-02/byn_1.png" alt="Junta de Andalucía"
+            class="footer-junta-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Menu: linea blanca que se forma de izquierda a derecha al seleccionar una opcion
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      if (link.id === 'navEspecialidadesToggle') return; // este abre el desplegable, no cambia de pagina
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.nav-link').forEach((l) => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // ---------- MENU MOVIL: boton hamburguesa que despliega el menu principal ----------
+    (function initMobileNav() {
+      const toggle = document.getElementById('navToggle');
+      const actions = document.getElementById('topnavActions');
+      if (!toggle || !actions) return;
+
+      function closeMobileNav() {
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        actions.classList.remove('is-open');
+      }
+      function openMobileNav() {
+        toggle.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        actions.classList.add('is-open');
+      }
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.contains('is-open') ? closeMobileNav() : openMobileNav();
+      });
+
+      // cerrar el desplegable al elegir cualquier opcion (incluida "Especialidades", que ademas abre su propio overlay)
+      actions.querySelectorAll('a, .btn').forEach((el) => {
+        el.addEventListener('click', closeMobileNav);
+      });
+
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape') closeMobileNav();
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 840) closeMobileNav();
+      });
+    })();
+
+    // ---------- ESPECIALIDADES: menu desplegable estilo Flowing Menu ----------
+    // ---------- ESPECIALIDADES: panel lateral off-canvas ----------
+    (function initSpecialtiesPanel() {
+      const overlay = document.getElementById('specialtiesOverlay');
+      const panel = document.getElementById('specialtiesPanel');
+      const closeBtn = document.getElementById('specialtiesClose');
+      const triggers = [
+        document.getElementById('navEspecialidades'),
+        document.getElementById('heroEspecialidadesToggle') // presente en la home; en el resto de paginas no existe y se ignora
+      ].filter(Boolean);
+      if (!overlay || !panel || !triggers.length) return;
+
+      function resetAccordion() {
+        panel.querySelectorAll('.specialty-row.is-open').forEach((row) => {
+          row.classList.remove('is-open');
+          const toggle = row.querySelector('.specialty-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      function openPanel(ev) {
+        if (ev) ev.preventDefault();
+        overlay.classList.add('is-open');
+        panel.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        panel.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('specialties-open');
+      }
+
+      function closePanel() {
+        overlay.classList.remove('is-open');
+        panel.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        panel.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('specialties-open');
+        setTimeout(resetAccordion, 400);
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', (ev) => {
+          ev.preventDefault();
+          panel.classList.contains('is-open') ? closePanel() : openPanel();
+        });
+      });
+      closeBtn?.addEventListener('click', closePanel);
+      overlay.addEventListener('click', closePanel);
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape' && panel.classList.contains('is-open')) closePanel();
+      });
+
+      // Acordeon: Cirugia Estetica / Medicina Estetica
+      panel.querySelectorAll('.specialty-toggle').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const row = btn.closest('.specialty-row');
+          if (!row) return;
+          const willOpen = !row.classList.contains('is-open');
+          row.classList.toggle('is-open', willOpen);
+          btn.setAttribute('aria-expanded', String(willOpen));
+        });
+      });
+
+      // Cerrar el panel al navegar a un enlace real
+      panel.querySelectorAll('a.specialty-link, a.specialty-sublink').forEach((link) => {
+        link.addEventListener('click', closePanel);
+      });
+    })();
+    // ---------- FOOTER CINEMATICO: pastillas con efecto iman, parallax y reveal ----------
+    (function initCinematicFooter() {
+      if (typeof gsap === 'undefined') return;
+
+      // Efecto iman en las pastillas de cristal (tel, legal, redes, "todos", volver arriba)
+      document.querySelectorAll('.footer-pill').forEach((el) => {
+        el.addEventListener('mousemove', (e) => {
+          const rect = el.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          gsap.to(el, { x: x * 0.3, y: y * 0.3, duration: 0.4, ease: 'power2.out' });
+        });
+        el.addEventListener('mouseleave', () => {
+          gsap.to(el, { x: 0, y: 0, duration: 1, ease: 'elastic.out(1, 0.3)' });
+        });
+      });
+
+      // Texto gigante de fondo: entra con la sensacion de profundidad al hacer scroll
+      const giant = document.getElementById('footerGiantText');
+      if (giant) {
+        gsap.fromTo(giant, { y: '8vh', opacity: 0 }, {
+          y: '0vh', opacity: 1, ease: 'power1.out',
+          scrollTrigger: { trigger: '#site-footer', start: 'top 85%', end: 'top 25%', scrub: 1 }
+        });
+      }
+
+      // Contenido del footer: aparece de forma escalonada
+      const footerInner = document.getElementById('footerInner');
+      if (footerInner) {
+        gsap.fromTo([footerInner.querySelector('.footer-title'), footerInner.querySelector('.footer-locations')], { y: 40, opacity: 0 }, {
+          y: 0, opacity: 1, stagger: 0.15, ease: 'power3.out',
+          scrollTrigger: { trigger: '#site-footer', start: 'top 70%', end: 'top 25%', scrub: 1 }
+        });
+      }
+
+      // Volver arriba
+      document.getElementById('footerTopBtn')?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+
+    // ---------- BLUR REVEAL: entrada difuminada del texto al hacer scroll ----------
+    (function initBlurReveal() {
+      if (typeof gsap === 'undefined') return;
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      function splitWordsBr(el) {
+        const lineParts = el.innerHTML.split(/<br\s*\/?>/i);
+        el.innerHTML = '';
+        lineParts.forEach((lineHtml, li) => {
+          const tmp = document.createElement('span');
+          tmp.innerHTML = lineHtml;
+          const words = tmp.textContent.trim().split(/\s+/).filter(Boolean);
+          words.forEach((w, wi) => {
+            const span = document.createElement('span');
+            span.className = 'br-word';
+            span.textContent = w;
+            el.appendChild(span);
+            if (wi < words.length - 1) el.appendChild(document.createTextNode(' '));
+          });
+          if (li < lineParts.length - 1) el.appendChild(document.createElement('br'));
+        });
+        return el.querySelectorAll('.br-word');
+      }
+
+      function onVisible(el, cb, opts) {
+        opts = opts || {};
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              cb();
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: opts.threshold || 0.15, rootMargin: opts.rootMargin || '0px 0px -8% 0px' });
+        io.observe(el);
+      }
+
+      function revealWords(el, opts) {
+        if (!el) return;
+        opts = opts || {};
+        const words = splitWordsBr(el);
+        if (!words.length) return;
+        if (reduce) { gsap.set(words, { opacity: 1 }); return; }
+        gsap.set(words, { display: 'inline-block', opacity: 0, y: 18, filter: 'blur(9px)' });
+        onVisible(el, () => {
+          gsap.to(words, { opacity: 1, y: 0, filter: 'blur(0px)', duration: 0.85, ease: 'power3.out', stagger: 0.045 });
+        }, opts);
+      }
+
+      function revealGroup(list, opts) {
+        opts = opts || {};
+        const items = Array.prototype.filter.call(list || [], Boolean);
+        if (!items.length) return;
+        if (reduce) { gsap.set(items, { opacity: 1 }); return; }
+        items.forEach((el, idx) => {
+          gsap.set(el, { opacity: 0, y: opts.y || 22, filter: 'blur(8px)' });
+          onVisible(el, () => {
+            gsap.to(el, {
+              opacity: 1, y: 0, filter: 'blur(0px)',
+              duration: opts.duration || 0.75, ease: 'power3.out',
+              delay: (idx % 3) * 0.07
+            });
+          }, opts);
+        });
+      }
+
+      // Titulares: brillo palabra a palabra (hero + cada documento legal)
+      revealWords(document.querySelector('.legal-hero h1'));
+      document.querySelectorAll('.legal-section h2').forEach((h2) => revealWords(h2));
+
+      // Bloques de contenido (pregunta + parrafos): aparecen escalonados segun se hace scroll
+      document.querySelectorAll('.legal-section').forEach((section) => {
+        revealGroup(section.querySelectorAll('.legal-block, .legal-summary'), { rootMargin: '0px 0px -10% 0px' });
+      });
+    })();
+
+    // ---------- TABS: resalta el documento legal que se esta leyendo ----------
+    (function initLegalTabs() {
+      const tabs = Array.prototype.slice.call(document.querySelectorAll('[data-legal-tab]'));
+      const sections = Array.prototype.slice.call(document.querySelectorAll('.legal-section'));
+      if (!tabs.length || !sections.length) return;
+
+      function setActive(id) {
+        tabs.forEach((tab) => {
+          tab.classList.toggle('active', tab.getAttribute('href') === '#' + id);
+        });
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      }, { rootMargin: '-40% 0px -50% 0px', threshold: 0 });
+
+      sections.forEach((section) => io.observe(section));
+      setActive(sections[0].id);
+    })();
+
+    // ---------- FONDO: Ferrofluid animado (WebGL / ogl) ----------
+    (function initFerrofluidBackground() {
+      const container = document.getElementById('siteFerrofluid');
+      if (!container) return;
+
+      const MAX_COLORS = 8;
+
+      const hexToRGB = (hex) => {
+        const c = hex.replace('#', '').padEnd(6, '0');
+        const r = parseInt(c.slice(0, 2), 16) / 255;
+        const g = parseInt(c.slice(2, 4), 16) / 255;
+        const b = parseInt(c.slice(4, 6), 16) / 255;
+        return [r, g, b];
+      };
+
+      const prepColors = (input) => {
+        const base = (input && input.length ? input : ['#4F46E5', '#06B6D4', '#E0F2FE']).slice(0, MAX_COLORS);
+        const count = base.length;
+        const arr = [];
+        for (let i = 0; i < MAX_COLORS; i++) arr.push(hexToRGB(base[Math.min(i, base.length - 1)]));
+        const avg = [0, 0, 0];
+        for (let i = 0; i < count; i++) {
+          avg[0] += arr[i][0];
+          avg[1] += arr[i][1];
+          avg[2] += arr[i][2];
+        }
+        avg[0] /= count; avg[1] /= count; avg[2] /= count;
+        return { arr, count, avg };
+      };
+
+      const flowVec = (d) => {
+        switch (d) {
+          case 'up': return [0, 1];
+          case 'down': return [0, -1];
+          case 'left': return [-1, 0];
+          case 'right': return [1, 0];
+          default: return [0, -1];
+        }
+      };
+
+      const vertex = `
+attribute vec2 position;
+attribute vec2 uv;
+varying vec2 vUv;
+void main() {
+  vUv = uv;
+  gl_Position = vec4(position, 0.0, 1.0);
+}
+`;
+
+      const fragment = `
+precision highp float;
+
+uniform vec3  iResolution;
+uniform vec2  iMouse;
+uniform float iTime;
+
+uniform vec3  uColor0;
+uniform vec3  uColor1;
+uniform vec3  uColor2;
+uniform vec3  uColor3;
+uniform vec3  uColor4;
+uniform vec3  uColor5;
+uniform vec3  uColor6;
+uniform vec3  uColor7;
+uniform int   uColorCount;
+
+uniform vec3  uMouseColor;
+uniform vec2  uFlow;
+uniform float uSpeed;
+uniform float uScale;
+uniform float uTurbulence;
+uniform float uFluidity;
+uniform float uRimWidth;
+uniform float uSharpness;
+uniform float uShimmer;
+uniform float uGlow;
+uniform float uOpacity;
+uniform float uMouseEnabled;
+uniform float uMouseStrength;
+uniform float uMouseRadius;
+
+varying vec2 vUv;
+
+#define PI 3.14159265
+
+vec3 palette(float h) {
+  int count = uColorCount;
+  if (count < 1) count = 1;
+  int idx = int(floor(clamp(h, 0.0, 0.999999) * float(count)));
+  if (idx <= 0) return uColor0;
+  if (idx == 1) return uColor1;
+  if (idx == 2) return uColor2;
+  if (idx == 3) return uColor3;
+  if (idx == 4) return uColor4;
+  if (idx == 5) return uColor5;
+  if (idx == 6) return uColor6;
+  return uColor7;
+}
+
+float hash(vec3 p3) {
+  p3 = fract(p3 * 0.1031);
+  p3 += dot(p3, p3.zyx + 33.33);
+  return fract((p3.x + p3.y) * p3.z);
+}
+
+float smin(float a, float b, float k) {
+  float r = exp2(-a / k) + exp2(-b / k);
+  return -k * log2(r);
+}
+
+float sinlerp(float a, float b, float w) {
+  return mix(a, b, (sin(w * PI - PI / 2.0) + 1.0) / 2.0);
+}
+
+float vn(vec2 p, float s, float seed) {
+  vec2 cellp = floor(p / s);
+  vec2 relp = mod(p, s);
+  float g1 = hash(vec3(cellp, seed));
+  float g2 = hash(vec3(cellp.x + 1.0, cellp.y, seed));
+  float g3 = hash(vec3(cellp.x + 1.0, cellp.y + 1.0, seed));
+  float g4 = hash(vec3(cellp.x, cellp.y + 1.0, seed));
+  float bx = sinlerp(g1, g2, relp.x / s);
+  float tx = sinlerp(g4, g3, relp.x / s);
+  return sinlerp(bx, tx, relp.y / s);
+}
+
+float dbn(vec2 p, float s, float seed) {
+  float o = s / 2.0;
+  float n0 = vn(p, s, seed);
+  float n1 = vn(p + vec2(o, o), s, seed + 0.1);
+  float n2 = vn(p + vec2(-o, o), s, seed + 0.2);
+  float n3 = vn(p + vec2(o, -o), s, seed + 0.3);
+  float n4 = vn(p + vec2(-o, -o), s, seed + 0.4);
+  return (2.0 * n0 + 1.5 * n1 + 1.25 * n2 + 1.125 * n3 + n4) / 7.0;
+}
+
+void mainImage(out vec4 fragColor, in vec2 fragCoord) {
+  float ref = 700.0 / max(uScale, 0.05);
+  vec2 p = fragCoord / iResolution.y * ref;
+
+  float spd = 200.0 * uSpeed;
+  float t = iTime;
+
+  vec2 dir = uFlow;
+  vec2 perp = vec2(-dir.y, dir.x);
+
+  float distort1 = vn(p + perp * (t * spd), 60.0, 10.0) * 50.0 * uTurbulence;
+  float distort2 = vn(p - perp * (t * spd), 120.0, 15.0) * 100.0 * uTurbulence;
+
+  float peaks = dbn(p + distort1 + dir * (t * spd * 0.5), 40.0, 1.0);
+  float peaks2 = dbn(p + distort2 - dir * (t * spd * 0.5), 40.0, 0.0);
+
+  float mapeaks = smin(peaks, peaks2, max(uFluidity, 0.001));
+
+  float mGlow = 0.0;
+  if (uMouseEnabled > 0.5) {
+    vec2 mp = iMouse / iResolution.y * ref;
+    float md = length(p - mp) / ref;
+    float rr = max(uMouseRadius, 0.02);
+    mGlow = exp(-md * md / (rr * rr)) * uMouseStrength;
+  }
+
+  float band = (uRimWidth - abs((mapeaks - 0.4) * 2.0)) * 5.0;
+  float ltn = clamp(band - vn(p + dir * (t * spd * 0.5), 60.0, 12.0) * uShimmer, 0.0, 1.0);
+  ltn = pow(ltn, uSharpness) * uGlow;
+  ltn *= clamp(1.0 - mGlow, 0.0, 1.0);
+
+  float h = clamp(0.5 + (peaks - peaks2) * 0.8, 0.0, 1.0);
+  vec3 col = palette(h);
+
+  vec3 outc = col * ltn;
+  float a = clamp(max(outc.r, max(outc.g, outc.b)), 0.0, 1.0);
+  fragColor = vec4(outc, a * uOpacity);
+}
+
+void main() {
+  vec4 color;
+  mainImage(color, vUv * iResolution.xy);
+  gl_FragColor = color;
+}
+`;
+
+      // Ajustes (los del "Usage" que pasaste)
+      const settings = {
+        colors: ['#ffffff', '#ffffff', '#ffffff'],
+        speed: 0.5,
+        scale: 1.6,
+        turbulence: 1,
+        fluidity: 0.1,
+        rimWidth: 0.2,
+        sharpness: 2.5,
+        shimmer: 1.5,
+        glow: 2,
+        flowDirection: 'down',
+        opacity: 1,
+        mouseInteraction: true,
+        mouseStrength: 1,
+        mouseRadius: 0.35,
+        mouseDampening: 0.15
+      };
+
+      import('https://esm.sh/ogl@1.0.11').then(({ Renderer, Program, Mesh, Triangle }) => {
+        const renderer = new Renderer({
+          dpr: Math.min(window.devicePixelRatio || 1, 2),
+          alpha: true,
+          antialias: true
+        });
+        const gl = renderer.gl;
+        gl.clearColor(0, 0, 0, 0);
+        const canvas = gl.canvas;
+        canvas.style.width = '100%';
+        canvas.style.height = '100%';
+        canvas.style.display = 'block';
+        container.appendChild(canvas);
+
+        const { arr, count, avg } = prepColors(settings.colors);
+
+        const uniforms = {
+          iResolution: { value: [gl.drawingBufferWidth, gl.drawingBufferHeight, 1] },
+          iMouse: { value: [0, 0] },
+          iTime: { value: 0 },
+          uColor0: { value: arr[0] },
+          uColor1: { value: arr[1] },
+          uColor2: { value: arr[2] },
+          uColor3: { value: arr[3] },
+          uColor4: { value: arr[4] },
+          uColor5: { value: arr[5] },
+          uColor6: { value: arr[6] },
+          uColor7: { value: arr[7] },
+          uColorCount: { value: count },
+          uMouseColor: { value: avg },
+          uFlow: { value: flowVec(settings.flowDirection) },
+          uSpeed: { value: settings.speed },
+          uScale: { value: settings.scale },
+          uTurbulence: { value: settings.turbulence },
+          uFluidity: { value: settings.fluidity },
+          uRimWidth: { value: settings.rimWidth },
+          uSharpness: { value: settings.sharpness },
+          uShimmer: { value: settings.shimmer },
+          uGlow: { value: settings.glow },
+          uOpacity: { value: settings.opacity },
+          uMouseEnabled: { value: settings.mouseInteraction ? 1 : 0 },
+          uMouseStrength: { value: settings.mouseStrength },
+          uMouseRadius: { value: settings.mouseRadius }
+        };
+
+        const program = new Program(gl, { vertex, fragment, uniforms });
+        const geometry = new Triangle(gl);
+        const mesh = new Mesh(gl, { geometry, program });
+
+        function resize() {
+          const rect = container.getBoundingClientRect();
+          renderer.setSize(rect.width, rect.height);
+          uniforms.iResolution.value = [gl.drawingBufferWidth, gl.drawingBufferHeight, 1];
+        }
+        resize();
+        const ro = new ResizeObserver(resize);
+        ro.observe(container);
+
+        // Escuchamos en window (el contenedor tiene pointer-events:none para no
+        // bloquear el resto de la pagina), asi el efecto reacciona al raton este
+        // encima del elemento que este.
+        const mouseTarget = [0, 0];
+        function onPointerMove(e) {
+          const rect = container.getBoundingClientRect();
+          const sc = renderer.dpr || 1;
+          mouseTarget[0] = (e.clientX - rect.left) * sc;
+          mouseTarget[1] = (rect.height - (e.clientY - rect.top)) * sc;
+        }
+        if (settings.mouseInteraction) {
+          window.addEventListener('pointermove', onPointerMove);
+        }
+
+        let raf = 0;
+        let isPageVisible = !document.hidden;
+        let lastTime = 0;
+
+        function loop(t) {
+          const dt = lastTime ? (t - lastTime) / 1000 : 0;
+          lastTime = t;
+          uniforms.iTime.value = t * 0.001;
+
+          const tau = Math.max(1e-4, settings.mouseDampening);
+          let factor = 1 - Math.exp(-dt / tau);
+          if (factor > 1) factor = 1;
+          const cur = uniforms.iMouse.value;
+          cur[0] += (mouseTarget[0] - cur[0]) * factor;
+          cur[1] += (mouseTarget[1] - cur[1]) * factor;
+
+          try { renderer.render({ scene: mesh }); } catch (err) { console.error(err); }
+          raf = requestAnimationFrame(loop);
+        }
+        const tryStart = () => { if (isPageVisible && raf === 0) raf = requestAnimationFrame(loop); };
+        const tryStop = () => { if (raf !== 0) { cancelAnimationFrame(raf); raf = 0; } };
+
+        document.addEventListener('visibilitychange', () => {
+          isPageVisible = !document.hidden;
+          isPageVisible ? tryStart() : tryStop();
+        });
+
+        tryStart();
+      }).catch((err) => {
+        console.error('No se pudo cargar el fondo Ferrofluid:', err);
+      });
+    })();
+  </script>
+</body>
+
+</html>

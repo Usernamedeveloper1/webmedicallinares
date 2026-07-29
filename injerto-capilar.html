@@ -1,0 +1,3713 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Injerto Capilar — Medical Linares</title>
+  <link rel="icon" type="image/x-icon" href="./logo_medicalinares.ico">
+  <link rel="icon" type="image/png" href="./logo_medicallinares.png">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,500&display=swap">
+  <style>
+    :root {
+      --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --color-black: #272727;
+      --color-white: #fff;
+      --spacing: .25rem;
+      --container-sm: 24rem;
+      --container-md: 28rem;
+      --container-xl: 36rem;
+      --container-3xl: 48rem;
+      --container-4xl: 56rem;
+      --container-6xl: 72rem;
+      --container-7xl: 80rem;
+      --text-xs: .75rem;
+      --text-xs--line-height: calc(1 / .75);
+      --text-sm: .875rem;
+      --text-sm--line-height: calc(1.25 / .875);
+      --text-base: 1rem;
+      --text-base--line-height: calc(1.5 / 1);
+      --text-lg: 1.125rem;
+      --text-lg--line-height: calc(1.75 / 1.125);
+      --text-xl: 1.25rem;
+      --text-xl--line-height: calc(1.75 / 1.25);
+      --text-2xl: 1.5rem;
+      --text-2xl--line-height: calc(2 / 1.5);
+      --text-3xl: 1.875rem;
+      --text-3xl--line-height: calc(2.25 / 1.875);
+      --text-4xl: 2.25rem;
+      --text-4xl--line-height: calc(2.5 / 2.25);
+      --text-5xl: 3rem;
+      --text-5xl--line-height: 1;
+      --font-weight-normal: 400;
+      --font-weight-medium: 500;
+      --tracking-tight: -.05em;
+      --tracking-normal: -.03em;
+      --tracking-widest: .008em;
+      --radius-xs: .125rem;
+      --radius-sm: .25rem;
+      --radius-md: .375rem;
+      --radius-lg: .5rem;
+      --radius-3xl: 1.5rem;
+      --ease-in: cubic-bezier(.4, 0, 1, 1);
+      --ease-out: cubic-bezier(0, 0, .2, 1);
+      --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+      --blur-sm: 8px;
+      --blur-md: 12px;
+      --perspective-midrange: 800px;
+      --aspect-video: 16 / 9;
+      --default-transition-duration: .15s;
+      --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+      --default-font-family: var(--font-sans);
+      --default-mono-font-family: var(--font-mono);
+      --color-cream: #e6e4e2;
+      --color-grey-light: #9c9c9c;
+      --color-grey-line: #434343;
+      --color-cream-line: #d8d8d8;
+      --color-dark-font: #434343;
+      --color-light-font: #d8d8d8;
+      --animate-arrowPulse: arrowPulse 1.8s ease-in-out infinite;
+      --pl-black: #000;
+      --pl-white: #fff;
+      --pl-panel-gray: #c8c8c8;
+      --pl-line-gray: #434343;
+      --pl-corner-plus-offset: calc(-6px - 6.5px);
+      --pl-mono: "Space Mono", monospace;
+      --pl-display: "Bebas Neue", sans-serif;
+      --size: 750;
+      --bg: #040508;
+      --white: #fff;
+      --ink-soft: #0a0a0a8c;
+      --glass-line: #ffffff2e;
+      --ease-soft: cubic-bezier(.22, 1, .36, 1);
+      --ts-color-bg: #040508;
+      --ts-color-hint: #d8d8d8bf;
+      --ts-color-name: #c8c8c8;
+      --ts-color-role: #d8d8d880;
+      --ts-color-scan-id: #d8d8d8bf;
+      --ts-color-detected: #d8d8d8eb;
+      --font-neue: "Neue Montreal", "Neue Haas Grotesk Display", "neueHaas Fallback", var(--font-sans);
+      --font-ppeditorial: "ppEditorial", "ppEditorial Fallback", serif;
+      --font-martian: "martianMono", "martianMono Fallback", var(--font-mono);
+      --font-familjen: "familjen", "familjen Fallback", var(--font-sans);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      background: var(--bg);
+      color: var(--color-light-font);
+      font-family: var(--font-neue);
+      letter-spacing: var(--tracking-normal);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    .wrap {
+      max-width: 100%;
+      margin-inline: 0;
+      padding-inline: calc(var(--spacing) * 10);
+    }
+
+    /* ---------- BUTTON (glass pill) ---------- */
+    .button_wrapper {
+      position: relative;
+      width: fit-content;
+    }
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      background: linear-gradient(180deg, rgba(55, 55, 55, .85) 0%, rgba(5, 5, 5, .95) 100%);
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 999px;
+      padding: .3rem .3rem .3rem 1.6rem;
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .25),
+        inset 0 -6px 10px rgba(0, 0, 0, .4),
+        0 10px 24px rgba(0, 0, 0, .35);
+      transition: box-shadow .35s var(--ease-soft), transform .35s var(--ease-soft);
+    }
+
+    .btn:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .35),
+        inset 0 -6px 10px rgba(0, 0, 0, .45),
+        0 14px 30px rgba(0, 0, 0, .45);
+      transform: translateY(-1px);
+    }
+
+    .btn .word {
+      position: relative;
+      display: inline-flex;
+      font-weight: var(--font-weight-medium);
+      white-space: nowrap;
+    }
+
+    .btn .arrow-circle {
+      position: relative;
+      flex-shrink: 0;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .55), rgba(255, 255, 255, .05) 55%),
+        rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      overflow: hidden;
+      transition: transform .4s var(--ease-soft), background .4s var(--ease-soft);
+    }
+
+    .btn .arrow-circle svg {
+      position: relative;
+      transition: transform .4s var(--ease-soft);
+    }
+
+    .btn:hover .arrow-circle {
+      transform: scale(1.06);
+    }
+
+    .btn:hover .arrow-circle svg {
+      transform: translate(2px, -2px);
+    }
+
+    /* ---------- PEDIR CITA: version verde corporativa del boton ---------- */
+    .btn-negative {
+      color: #fff;
+      background: linear-gradient(180deg, #4a9c7a 0%, #2c6b52 100%);
+      border: 1px solid rgba(255, 255, 255, .18);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .3),
+        inset 0 -6px 10px rgba(0, 0, 0, .2),
+        0 10px 24px rgba(20, 60, 45, .35);
+    }
+
+    .btn-negative:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .4),
+        inset 0 -6px 10px rgba(0, 0, 0, .25),
+        0 14px 30px rgba(20, 60, 45, .45);
+    }
+
+    .btn-negative .arrow-circle {
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .55), rgba(255, 255, 255, .08) 55%),
+        rgba(255, 255, 255, .14);
+      border-color: rgba(255, 255, 255, .28);
+    }
+
+    /* ---------- CONTACTANOS (hero): version verde del boton ---------- */
+    .btn-green {
+      color: #fff;
+      background: linear-gradient(180deg, #4a9c7a 0%, #2c6b52 100%);
+      border: 1px solid rgba(255, 255, 255, .18);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .3),
+        inset 0 -6px 10px rgba(0, 0, 0, .2),
+        0 10px 24px rgba(20, 60, 45, .35);
+    }
+
+    .btn-green:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .4),
+        inset 0 -6px 10px rgba(0, 0, 0, .25),
+        0 14px 30px rgba(20, 60, 45, .45);
+    }
+
+    .btn-green .arrow-circle {
+      background:
+        radial-gradient(circle at 32% 28%, rgba(0, 0, 0, .35), rgba(0, 0, 0, .08) 55%),
+        rgba(0, 0, 0, .18);
+      border-color: rgba(255, 255, 255, .22);
+    }
+
+    /* ---------- RESERVAR CONSULTA: version verde corporativa, mismo estilo (bordes/sombras/hover) que .btn ---------- */
+    .btn-reservar {
+      background: linear-gradient(180deg, #4a9c7a 0%, #2c6b52 100%);
+      border: 1px solid rgba(255, 255, 255, .18);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .3),
+        inset 0 -6px 10px rgba(0, 0, 0, .2),
+        0 10px 24px rgba(20, 60, 45, .35);
+    }
+
+    .btn-reservar:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .4),
+        inset 0 -6px 10px rgba(0, 0, 0, .25),
+        0 14px 30px rgba(20, 60, 45, .45);
+    }
+
+    /* legacy classes kept as no-ops so old markup references don't break */
+    .underline,
+    .u-right,
+    .u-left {
+      display: none;
+    }
+
+    /* ---------- TOP NAV ---------- */
+    .topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 60;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem calc(var(--spacing) * 10);
+      background: linear-gradient(180deg, rgba(4, 5, 8, .7) 0%, rgba(4, 5, 8, .5) 100%);
+      backdrop-filter: blur(18px) saturate(140%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      border-bottom: 1px solid rgba(255, 255, 255, .18);
+    }
+
+    .topnav-brand {
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+    }
+
+    .topnav-logo-link {
+      display: flex;
+      align-items: center;
+    }
+
+    .topnav-logo {
+      height: 2.1rem;
+      width: auto;
+      display: block;
+      filter: brightness(0) invert(1);
+      transition: filter .4s var(--ease-soft);
+    }
+
+    .topnav.on-light .topnav-logo {
+      filter: none;
+    }
+
+    .topnav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.85rem;
+    }
+
+    .nav-link {
+      position: relative;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      opacity: 1;
+      padding-bottom: .5rem;
+      transition: color .4s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .nav-link:hover {
+      color: #4a9c7a;
+      opacity: 1;
+    }
+
+    .topnav.on-light .nav-link {
+      color: #000;
+    }
+
+    .topnav.on-light .nav-link:hover {
+      color: #4a9c7a;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .6s var(--ease-soft);
+    }
+
+    .topnav.on-light .nav-link::after {
+      background: #000;
+    }
+
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }
+
+    .topnav .btn .arrow-circle {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    .topnav .btn .word {
+      font-size: var(--text-xs);
+    }
+
+    /* ---------- BOTON HAMBURGUESA (solo movil) ---------- */
+    .nav-toggle {
+      display: none;
+      position: relative;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background .3s var(--ease-soft);
+    }
+
+    .nav-toggle:hover {
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .nav-toggle-bar {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.15rem;
+      height: 1px;
+      background: #fff;
+      transform: translate(-50%, -50%);
+      transition: transform .35s var(--ease-soft), opacity .25s var(--ease-soft), margin-top .35s var(--ease-soft);
+    }
+
+    .nav-toggle-bar:nth-child(1) {
+      margin-top: -6px;
+    }
+
+    .nav-toggle-bar:nth-child(3) {
+      margin-top: 6px;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(3) {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    /* ---------- MENU PRINCIPAL EN MOVIL: se convierte en desplegable ---------- */
+    @media(max-width: 840px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      .topnav-actions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgba(4, 5, 8, .97);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, .14);
+        padding: .5rem calc(var(--spacing) * 10) 1.75rem;
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .35s var(--ease-soft), transform .35s var(--ease-soft), visibility 0s linear .35s;
+      }
+
+
+      .topnav-actions.is-open {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity .35s var(--ease-soft), transform .35s var(--ease-soft), visibility 0s linear 0s;
+      }
+
+      .topnav-actions .nav-link {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .08);
+      }
+
+      .topnav-actions .nav-link::after {
+        display: none;
+      }
+
+      .topnav-actions .button_wrapper {
+        margin-top: 1.25rem;
+        width: 100%;
+      }
+
+      .topnav-actions .btn {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    /* ---------- ESPECIALIDADES: menu lateral off-canvas (blanco, minimalista) ---------- */
+    .specialties-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 95;
+      background: rgba(4, 5, 8, .35);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear .45s;
+    }
+
+    .specialty-submenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .specialty-row.is-open .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    /* Cirugía Estética: el submenú (Lipoláser) se despliega al pasar el ratón, no con clic */
+    .specialty-row.has-sub-hover:hover .specialty-submenu,
+    .specialty-row.has-sub-hover:focus-within .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    .specialty-sublink {
+      display: block;
+      font-size: var(--text-base);
+      color: #171717;
+      opacity: .65;
+      text-decoration: none;
+      padding: .6rem calc(var(--spacing) * 9) .6rem calc(var(--spacing) * 15);
+      transition: background .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .specialty-sublink:hover {
+      background: #f1f1ef;
+      opacity: 1;
+    }
+
+
+    .specialties-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    body.specialties-open {
+      overflow: hidden;
+    }
+
+    .specialties-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100dvh;
+      width: min(26rem, 100vw);
+      background: #fff;
+      color: #171717;
+      z-index: 96;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform .55s var(--ease-soft);
+      overflow-y: auto;
+      box-shadow: -20px 0 60px rgba(0, 0, 0, .18);
+    }
+
+    .specialties-panel.is-open {
+      transform: translateX(0);
+    }
+
+    .specialties-header {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.85rem calc(var(--spacing) * 9) 1.5rem;
+    }
+
+    .specialties-eyebrow {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #171717;
+    }
+
+    .specialties-close {
+      flex-shrink: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      background: #e8e8e6;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft), transform .3s var(--ease-soft);
+    }
+
+    .specialties-close:hover {
+      background: #d9d9d6;
+      transform: rotate(90deg);
+    }
+
+    .specialties-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: calc(var(--spacing) * 10);
+    }
+
+    .specialty-row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .specialty-link,
+    .specialty-toggle {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: clamp(1.35rem, 4.6vw, 1.7rem);
+      letter-spacing: var(--tracking-normal);
+      color: #171717;
+      text-decoration: none;
+      cursor: pointer;
+      padding: .85rem calc(var(--spacing) * 9);
+      transition: background .3s var(--ease-soft);
+    }
+
+    .specialty-link:hover,
+    .specialty-toggle:hover {
+      background: #f1f1ef;
+    }
+
+    .specialty-submenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .specialty-row.is-open .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    .specialty-sublink {
+      display: block;
+      font-size: var(--text-base);
+      color: #171717;
+      opacity: .65;
+      text-decoration: none;
+      padding: .6rem calc(var(--spacing) * 9) .6rem calc(var(--spacing) * 15);
+      transition: background .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .specialty-sublink:hover {
+      background: #f1f1ef;
+      opacity: 1;
+    }
+
+    .specialties-footer {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem 1.5rem;
+      padding: 1.5rem calc(var(--spacing) * 9) 1.85rem;
+      border-top: 1px solid #ececea;
+    }
+
+    .specialties-social,
+    .specialties-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: var(--text-sm);
+      color: #171717;
+      text-decoration: none;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .specialties-phone span {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .specialties-social:hover,
+    .specialties-phone:hover {
+      opacity: .6;
+    }
+
+    @media (max-width: 480px) {
+      .specialties-header {
+        padding: 1.5rem calc(var(--spacing) * 7) 1.25rem;
+      }
+
+      .specialty-link,
+      .specialty-toggle {
+        padding: .8rem calc(var(--spacing) * 7);
+      }
+
+      .specialty-sublink {
+        padding-left: calc(var(--spacing) * 13);
+      }
+
+      .specialties-footer {
+        padding: 1.25rem calc(var(--spacing) * 7) 1.5rem;
+      }
+    }
+
+    /* ---------- INJERTO CAPILAR: portada ---------- */
+    .ic-hero {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .ic-hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .ic-hero-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ic-hero-media::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, .32) 42%, rgba(0, 0, 0, .3) 62%, rgba(0, 0, 0, .72) 100%);
+    }
+
+    .ic-hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+      padding-inline: calc(var(--spacing) * 10);
+    }
+
+    .ic-hero-kicker {
+      display: block;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      opacity: 1;
+      margin-bottom: 1.4rem;
+    }
+
+    .ic-hero-title {
+      font-size: clamp(2.6rem, 7vw, 5.5rem);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.02;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    /* Titular del hero: base blanca, brillo en movimiento verde claro (solo aqui, no afecta a otros .shiny-text) */
+    .ic-hero-title.shiny-text {
+      background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 32%, #7ee8b0 50%, #ffffff 68%, #ffffff 100%);
+      color: #ffffff;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ic-hero-title.shiny-text {
+        animation: none;
+        -webkit-text-fill-color: #ffffff;
+      }
+    }
+
+    .ic-hero-content .button_wrapper {
+      margin: 2.25rem auto 0;
+    }
+
+    .ic-hero-caption {
+      position: absolute;
+      left: 50%;
+      bottom: clamp(2.5rem, 6vw, 4.5rem);
+      transform: translateX(-50%);
+      z-index: 2;
+      width: 100%;
+      max-width: 34rem;
+      text-align: center;
+      padding-inline: calc(var(--spacing) * 10);
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.7;
+      color: var(--color-light-font);
+      opacity: .75;
+    }
+
+    @media(max-width: 640px) {
+      .ic-hero-title {
+        font-size: clamp(2.2rem, 11vw, 3rem);
+      }
+
+      .ic-hero-caption {
+        bottom: 2rem;
+        font-size: .68rem;
+      }
+    }
+
+    /* ---------- FOOTER: estilo cinematico (aurora, grid, marquee, glass pills) ---------- */
+    .site-footer {
+      position: relative;
+      background: linear-gradient(180deg, #061710 0%, #030d09 45%, #000 100%);
+      overflow: hidden;
+      isolation: isolate;
+      padding-block: calc(var(--spacing) * 26) calc(var(--spacing) * 8);
+    }
+
+    .footer-aurora {
+      position: absolute;
+      left: 50%;
+      top: 38%;
+      width: 78vw;
+      height: 52vh;
+      transform: translate(-50%, -50%) scale(1);
+      background: radial-gradient(circle at 50% 50%, rgba(52, 211, 153, .2) 0%, rgba(16, 163, 127, .12) 45%, transparent 72%);
+      border-radius: 50%;
+      filter: blur(70px);
+      z-index: 0;
+      pointer-events: none;
+      animation: footer-breathe 9s ease-in-out infinite alternate;
+    }
+
+    @keyframes footer-breathe {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: .55;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1.14);
+        opacity: .9;
+      }
+    }
+
+    .footer-grid-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-size: 60px 60px;
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, .045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, .045) 1px, transparent 1px);
+      -webkit-mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      pointer-events: none;
+    }
+
+    .footer-giant-text {
+      position: absolute;
+      left: 50%;
+      bottom: -3.2vw;
+      transform: translateX(-50%);
+      font-size: 11vw;
+      line-height: .8;
+      font-weight: 700;
+      letter-spacing: -.03em;
+      white-space: nowrap;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, .07);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .1) 0%, transparent 65%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .footer-marquee {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+      padding-block: .9rem;
+      margin-bottom: calc(var(--spacing) * 16);
+      background: rgba(255, 255, 255, .02);
+      transform: rotate(-1deg) scale(1.03);
+    }
+
+    .footer-marquee-track {
+      display: flex;
+      width: max-content;
+      animation: footer-marquee 34s linear infinite;
+    }
+
+    .footer-marquee-group {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding-inline: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .footer-marquee-group span {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .55;
+      white-space: nowrap;
+    }
+
+    .footer-marquee-group .dot {
+      opacity: .35;
+    }
+
+    @keyframes footer-marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-title {
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      line-height: 1.1;
+      font-weight: var(--font-weight-normal);
+      letter-spacing: var(--tracking-tight);
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, .35) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 24px rgba(255, 255, 255, .12));
+      margin-bottom: calc(var(--spacing) * 12);
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .footer-title-icon {
+      height: 2.4rem;
+      width: auto;
+      display: inline-block;
+      flex-shrink: 0;
+      filter: brightness(0) invert(1);
+      -webkit-text-fill-color: initial;
+      opacity: .85;
+    }
+
+    .footer-locations {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 3rem;
+      padding-bottom: calc(var(--spacing) * 14);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .footer-loc {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+    }
+
+    .footer-loc-name {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+    }
+
+    .footer-loc-address {
+      font-size: var(--text-sm);
+      line-height: 1.55;
+      color: var(--color-light-font);
+      opacity: .7;
+      max-width: 20rem;
+    }
+
+    .footer-loc-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: .6rem;
+      font-size: var(--text-sm);
+    }
+
+    .footer-label {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .45;
+    }
+
+    .footer-value {
+      color: var(--color-light-font);
+      opacity: .85;
+      text-decoration: none;
+    }
+
+    /* pastilla de cristal (glass pill) reutilizable, con efecto iman via JS */
+    .footer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem 1.1rem;
+      border-radius: 999px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .06) 0%, rgba(255, 255, 255, .015) 100%);
+      border: 1px solid rgba(255, 255, 255, .1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, .12), 0 8px 18px -8px rgba(0, 0, 0, .5);
+      text-decoration: none;
+      color: var(--color-light-font);
+      width: fit-content;
+      transition: background .4s var(--ease-soft), border-color .4s var(--ease-soft), color .3s var(--ease-soft);
+      cursor: pointer;
+    }
+
+    .footer-pill:hover {
+      background: linear-gradient(145deg, rgba(255, 255, 255, .12) 0%, rgba(255, 255, 255, .04) 100%);
+      border-color: rgba(255, 255, 255, .24);
+      color: #fff;
+    }
+
+    .footer-tel {
+      font-size: var(--text-sm);
+    }
+
+    .footer-treatments {
+      display: flex;
+      flex-direction: column;
+      gap: .65rem;
+    }
+
+    .footer-treatments a {
+      font-size: var(--text-sm);
+      color: var(--color-light-font);
+      opacity: .7;
+      text-decoration: none;
+      width: fit-content;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .footer-treatments a:hover {
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .footer-treatments a.footer-all {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding-top: calc(var(--spacing) * 8);
+    }
+
+    .footer-copy {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .5;
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+
+    .footer-legal a {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+    }
+
+    .footer-right-group {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+
+    .footer-icon-btn {
+      width: 3.1rem;
+      height: 3.1rem;
+      padding: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .footer-icon-btn svg {
+      transition: transform .3s var(--ease-soft);
+    }
+
+    .footer-icon-btn:hover svg {
+      transform: translateY(-2px);
+    }
+
+    .footer-top-btn:hover svg {
+      transform: translateY(-3px);
+    }
+
+    .footer-credit {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .4;
+    }
+
+    .footer-bottom-extra {
+      margin-top: calc(var(--spacing) * 6);
+      padding-top: calc(var(--spacing) * 6);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-junta-link {
+      display: inline-block;
+      flex-shrink: 0;
+      line-height: 0;
+    }
+
+    .footer-junta-logo {
+      height: 2.8rem;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: .45;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .footer-junta-link:hover .footer-junta-logo {
+      opacity: .75;
+    }
+
+    @media(max-width: 900px) {
+      .footer-locations {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-treatments {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media(max-width: 560px) {
+      .footer-locations {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-giant-text {
+        font-size: 18vw;
+      }
+    }
+
+    /* componente ScrollReveal generico: cada bloque .scroll-reveal revela sus palabras al hacer scroll */
+    .scroll-reveal {
+      margin: 0;
+    }
+
+    .scroll-reveal-text {
+      font-size: clamp(1.6rem, 4vw, 3rem);
+      line-height: 1.5;
+      font-weight: var(--font-weight-medium);
+    }
+
+    .word {
+      display: inline-block;
+    }
+
+    /* ---------- VIDEO SHOWCASE: sustituye a la seccion del doctor, video a pantalla completa en bucle con boton de sonido ---------- */
+    .video-showcase-section {
+      position: relative;
+      height: 100vh;
+      min-height: 32rem;
+      max-height: 56rem;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .video-showcase-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .video-showcase-el {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: none;
+    }
+
+    .video-showcase-desktop {
+      display: block;
+    }
+
+    .video-showcase-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(180deg, var(--bg) 0%, rgba(4, 5, 8, .88) 10%, rgba(4, 5, 8, .5) 24%, rgba(4, 5, 8, .08) 42%, rgba(0, 0, 0, .1) 70%, rgba(0, 0, 0, .55) 100%);
+      pointer-events: none;
+    }
+
+    .video-showcase-sound {
+      position: absolute;
+      right: calc(var(--spacing) * 10);
+      bottom: calc(var(--spacing) * 10);
+      z-index: 3;
+      width: 3.4rem;
+      height: 3.4rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(180deg, rgba(55, 55, 55, .85) 0%, rgba(5, 5, 5, .95) 100%);
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, .18);
+      color: #fff;
+      cursor: pointer;
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, .25), inset 0 -6px 10px rgba(0, 0, 0, .4), 0 10px 24px rgba(0, 0, 0, .35);
+      transition: transform .35s var(--ease-soft), box-shadow .35s var(--ease-soft);
+    }
+
+    .video-showcase-sound:hover {
+      transform: translateY(-2px);
+    }
+
+    .video-showcase-sound svg {
+      display: block;
+    }
+
+    .video-showcase-sound .icon-unmuted {
+      display: none;
+    }
+
+    .video-showcase-sound:not(.is-muted) .icon-muted {
+      display: none;
+    }
+
+    .video-showcase-sound:not(.is-muted) .icon-unmuted {
+      display: block;
+    }
+
+    @media(max-width: 780px) {
+      .video-showcase-section {
+        max-height: 44rem;
+      }
+
+      .video-showcase-desktop {
+        display: none;
+      }
+
+      .video-showcase-mobile {
+        display: block;
+      }
+    }
+
+    /* ---------- TEXTO INTRO CAPILAR: bloque de 2 columnas bajo el video ---------- */
+    .tx-intro-section {
+      position: relative;
+      padding: clamp(4rem, 8vw, 6.5rem) calc(var(--spacing) * 10);
+    }
+
+    .tx-intro-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2.5rem, 6vw, 5rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .tx-intro-col p {
+      font-size: var(--text-base);
+      line-height: 1.75;
+      color: var(--color-light-font);
+      opacity: .85;
+      font-weight: var(--font-weight-normal);
+    }
+
+    .tx-intro-col .tx-title {
+      display: block;
+      font-size: clamp(1.4rem, 2.6vw, 1.9rem);
+      font-weight: var(--font-weight-medium);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 1.25rem;
+    }
+
+    .tx-highlight {
+      color: #4a9c7a;
+      font-weight: 600;
+    }
+
+    @media(max-width: 900px) {
+      .tx-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+      }
+    }
+
+    /* ---------- TRATAMIENTOS CAPILARES: tarjetas de 2 en 2, la ultima centrada, Scroll Reveal ---------- */
+    .tc-section {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Side Rays: capa decorativa de luz de fondo para toda la seccion de tratamientos */
+    .tc-rays {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      mix-blend-mode: screen;
+      opacity: .8;
+    }
+
+    .tc-rays canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tc-rays {
+        opacity: .45;
+      }
+    }
+
+    .tc-intro {
+      position: relative;
+      z-index: 2;
+      padding-top: clamp(4.5rem, 9vw, 7rem);
+      padding-bottom: clamp(2rem, 5vw, 3rem);
+      padding-inline: calc(var(--spacing) * 10);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .tc-kicker {
+      display: block;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .55;
+    }
+
+    /* grid de 2 columnas con los 4 primeros tratamientos */
+    .tc-items {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(3.5rem, 6vw, 5.5rem) clamp(2.5rem, 6vw, 5rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+      padding-inline: calc(var(--spacing) * 10);
+      padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
+    }
+
+    .tc-divider {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, .14);
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .tc-plus {
+      position: absolute;
+      left: 50%;
+      width: 11px;
+      height: 11px;
+      transform: translate(-50%, -50%);
+    }
+
+    .tc-plus::before,
+    .tc-plus::after {
+      content: '';
+      position: absolute;
+      background: rgba(255, 255, 255, .4);
+    }
+
+    .tc-plus::before {
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      transform: translateX(-50%);
+    }
+
+    .tc-plus::after {
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    .tc-plus-top {
+      top: var(--pl-corner-plus-offset);
+    }
+
+    .tc-plus-bottom {
+      bottom: var(--pl-corner-plus-offset);
+      top: auto;
+    }
+
+    /* tarjeta individual: imagen arriba, texto debajo */
+    .tc-item {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    /* grid de 3 columnas con los 3 tratamientos restantes, debajo del grupo de 4 */
+    .tc-items-3 {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(3rem, 5vw, 4rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+      padding-inline: calc(var(--spacing) * 10);
+      padding-top: clamp(3.5rem, 6vw, 5.5rem);
+      padding-bottom: clamp(4rem, 8vw, 6.5rem);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .tc-media {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      width: 100%;
+      background: var(--pl-panel-gray);
+      border: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .tc-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.15);
+    }
+
+    .tc-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .tc-block-title {
+      margin-bottom: 1.5rem;
+    }
+
+    .scroll-reveal-text.tc-title {
+      font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .tc-block-lead {
+      margin-bottom: .15rem;
+      max-width: 26rem;
+    }
+
+    .scroll-reveal-text.tc-lead-highlight {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .tc-block-lead-desc {
+      margin-bottom: 1.75rem;
+      max-width: 26rem;
+    }
+
+    .scroll-reveal-text.tc-lead-desc {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      color: var(--color-light-font);
+      line-height: 1.6;
+    }
+
+    .tc-focus {
+      margin-bottom: 1.85rem;
+      max-width: 26rem;
+    }
+
+    .tc-block-label {
+      margin-bottom: .65rem;
+    }
+
+    .scroll-reveal-text.tc-label {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .5;
+    }
+
+    .scroll-reveal-text.tc-small {
+      font-size: var(--text-sm);
+      line-height: 1.65;
+      color: var(--color-light-font);
+      opacity: .75;
+      font-weight: var(--font-weight-normal);
+    }
+
+    .tc-cta {
+      margin-top: .25rem;
+    }
+
+    @media(max-width: 900px) {
+      .tc-items {
+        grid-template-columns: 1fr;
+        gap: 3.25rem;
+      }
+
+      .tc-items-3 {
+        grid-template-columns: 1fr;
+        gap: 3.25rem;
+        padding-top: 3.25rem;
+      }
+
+      .tc-divider {
+        display: none;
+      }
+    }
+
+    /* ---------- BLUR TEXT: revelado por palabras al entrar en pantalla (secciones de equipo/FAQ) ---------- */
+    .blur-text {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .blur-text .bt-word {
+      display: inline-block;
+      filter: blur(10px);
+      opacity: 0;
+      transform: translateY(50px);
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      will-change: transform, filter, opacity;
+    }
+
+    .blur-text[data-direction="top"] .bt-word {
+      transform: translateY(-50px);
+    }
+
+    .blur-text.is-visible .bt-word {
+      animation-name: blurTextInBottom;
+      animation-duration: .7s;
+    }
+
+    .blur-text[data-direction="top"].is-visible .bt-word {
+      animation-name: blurTextInTop;
+    }
+
+    @keyframes blurTextInBottom {
+      0% {
+        filter: blur(10px);
+        opacity: 0;
+        transform: translateY(50px);
+      }
+
+      50% {
+        filter: blur(5px);
+        opacity: .5;
+        transform: translateY(-5px);
+      }
+
+      100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes blurTextInTop {
+      0% {
+        filter: blur(10px);
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+
+      50% {
+        filter: blur(5px);
+        opacity: .5;
+        transform: translateY(5px);
+      }
+
+      100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ---------- EQUIPO: intro "Mas informacion sobre nuestro equipo" ---------- */
+    .eq-intro {
+      position: relative;
+      padding: clamp(6rem, 12vw, 9rem) calc(var(--spacing) * 10) clamp(5rem, 9vw, 7.5rem);
+    }
+
+    .eq-intro-top {
+      display: flex;
+      justify-content: center;
+      margin-bottom: clamp(5rem, 11vw, 8.5rem);
+    }
+
+    .eq-intro-heading-wrap {
+      max-width: 34rem;
+      text-align: center;
+    }
+
+    .eq-intro-heading .blur-text {
+      justify-content: center;
+      font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.3;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .eq-intro-desc {
+      margin-top: 1.75rem;
+      max-width: 24rem;
+      margin-inline: auto;
+      text-align: center;
+    }
+
+    .eq-intro-desc .blur-text {
+      justify-content: center;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.8;
+      color: var(--color-light-font);
+      opacity: .7;
+    }
+
+    .eq-intro-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1.6fr;
+      gap: clamp(3rem, 6vw, 5rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .eq-intro-col-title .blur-text {
+      font-size: clamp(1.5rem, 2.6vw, 2rem);
+      font-weight: var(--font-weight-medium);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      margin-bottom: 1.4rem;
+    }
+
+    .eq-intro-col-text .blur-text {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.85;
+      color: var(--color-light-font);
+      opacity: .7;
+      max-width: 28rem;
+    }
+
+    .eq-intro-detail-pair {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .eq-intro-detail-divider {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, .14);
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .eq-intro-sub-title .blur-text {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .eq-intro-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .95rem;
+    }
+
+    .eq-intro-list li {
+      padding-bottom: .95rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .eq-intro-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .eq-intro-list li .blur-text {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .75;
+    }
+
+    @media(max-width: 900px) {
+      .eq-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .eq-intro-detail-pair {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .eq-intro-detail-divider {
+        display: none;
+      }
+    }
+
+    /* ---------- PREGUNTAS FRECUENTES: acordeon ---------- */
+    .faq-section {
+      position: relative;
+      padding: clamp(2rem, 5vw, 3.5rem) calc(var(--spacing) * 10) clamp(6rem, 10vw, 8rem);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      align-items: center;
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .faq-label .blur-text {
+      font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+      font-weight: var(--font-weight-medium);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+    }
+
+    .faq-item {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: .75rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 1.1rem 1.5rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      color: #fff;
+      transition: background .3s var(--ease-soft);
+    }
+
+    .faq-question:hover {
+      background: rgba(255, 255, 255, .03);
+    }
+
+    .faq-question-text.blur-text {
+      font-size: var(--text-sm);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.4;
+    }
+
+    .faq-icon {
+      position: relative;
+      flex-shrink: 0;
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+
+    .faq-icon::before,
+    .faq-icon::after {
+      content: '';
+      position: absolute;
+      background: #fff;
+      opacity: .8;
+      transition: transform .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .faq-icon::before {
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    .faq-icon::after {
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+
+    .faq-item.is-open .faq-icon::after {
+      opacity: 0;
+      transform: translateX(-50%) rotate(90deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .faq-answer-inner {
+      padding: 0 1.5rem 1.35rem;
+      font-size: var(--text-sm);
+      line-height: 1.7;
+      color: var(--color-light-font);
+      opacity: .8;
+    }
+
+    @media(max-width: 780px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 1.75rem;
+      }
+    }
+
+    /* ---------- RESULTADO FINAL: foto de cierre (sin CSS en el original, estilo minimo añadido) ---------- */
+    .cs-section {
+      position: relative;
+      padding: 0 calc(var(--spacing) * 10) clamp(6rem, 10vw, 8rem);
+    }
+
+    .cs-inner {
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .cs-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .cs-card-inner {
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .cs-card-inner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .cs-kicker {
+      text-align: center;
+      margin-bottom: 1.75rem;
+    }
+
+    .cs-kicker-after {
+      margin-bottom: 0;
+      margin-top: 1.75rem;
+    }
+
+    /* ---------- SHINY TEXT: brillo animado que recorre el texto en bucle ---------- */
+    .shiny-text {
+      display: inline-block;
+      background-image: linear-gradient(120deg, var(--color-grey-light) 0%, var(--color-grey-light) 32%, #fff 50%, var(--color-grey-light) 68%, var(--color-grey-light) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: var(--color-grey-light);
+      animation: shinySweep 3.8s linear infinite;
+    }
+
+    @keyframes shinySweep {
+      0% {
+        background-position: 150% center;
+      }
+
+      100% {
+        background-position: -50% center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .shiny-text {
+        animation: none;
+        -webkit-text-fill-color: var(--color-grey-light);
+      }
+    }
+
+    /* ---------- TODO LO QUE TRATAMOS: 7 a la izquierda, 7 a la derecha, titulo en medio ---------- */
+    .tw-section {
+      position: relative;
+      padding: clamp(5rem, 10vw, 7.5rem) calc(var(--spacing) * 10);
+    }
+
+    .tw-inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: clamp(2rem, 5vw, 4rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .tw-col {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .tw-col-left {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .tw-col-right {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .tw-col .shiny-text {
+      font-size: clamp(.95rem, 1.3vw, 1.15rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-normal);
+    }
+
+    .tw-title {
+      font-size: clamp(1.9rem, 4vw, 3.2rem);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: var(--tracking-tight);
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      max-width: 15rem;
+    }
+
+    @media(max-width: 900px) {
+      .tw-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .tw-title {
+        order: -1;
+        max-width: none;
+        margin-bottom: .5rem;
+      }
+
+      .tw-col-left,
+      .tw-col-right {
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+
+    /* ---------- TW POPUP: panel lateral desde la izquierda con info de cada tratamiento de "Todo lo que tratamos" ---------- */
+    .tw-col .shiny-text {
+      cursor: pointer;
+      text-align: inherit;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .tw-col .shiny-text:hover {
+      opacity: .75;
+    }
+
+    .tw-col .shiny-text:focus-visible {
+      outline: 1px solid rgba(255, 255, 255, .55);
+      outline-offset: 5px;
+      border-radius: 2px;
+    }
+
+    .tw-popup-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 95;
+      background: rgba(4, 5, 8, .55);
+      backdrop-filter: blur(2px);
+      -webkit-backdrop-filter: blur(2px);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear .45s;
+    }
+
+    .tw-popup-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    body.tw-popup-open {
+      overflow: hidden;
+    }
+
+    .tw-popup-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100dvh;
+      width: min(26rem, 100vw);
+      z-index: 96;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, rgba(20, 26, 23, .94) 0%, rgba(4, 5, 8, .98) 100%);
+      backdrop-filter: blur(20px) saturate(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(140%);
+      border-right: 1px solid rgba(255, 255, 255, .12);
+      color: var(--color-light-font);
+      transform: translateX(-100%);
+      transition: transform .55s var(--ease-soft);
+      overflow-y: auto;
+      box-shadow: 20px 0 60px rgba(0, 0, 0, .4);
+    }
+
+    .tw-popup-panel.is-open {
+      transform: translateX(0);
+    }
+
+    .tw-popup-header {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.85rem calc(var(--spacing) * 9) 1.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .tw-popup-eyebrow {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .55;
+    }
+
+    .tw-popup-close {
+      flex-shrink: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .14);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: #fff;
+      transition: background .3s var(--ease-soft), transform .3s var(--ease-soft);
+    }
+
+    .tw-popup-close:hover {
+      background: rgba(255, 255, 255, .16);
+      transform: rotate(90deg);
+    }
+
+    .tw-popup-body {
+      flex: 1;
+      padding: calc(var(--spacing) * 10) calc(var(--spacing) * 9);
+    }
+
+    .tw-popup-eyebrow-tag {
+      display: inline-block;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #4a9c7a;
+      margin-bottom: 1rem;
+    }
+
+    .tw-popup-title {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: var(--font-weight-medium);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      margin-bottom: 1.25rem;
+    }
+
+    .tw-popup-desc {
+      font-size: var(--text-base);
+      line-height: 1.7;
+      color: var(--color-light-font);
+      opacity: .85;
+    }
+
+    @media(max-width: 480px) {
+      .tw-popup-header {
+        padding: 1.5rem calc(var(--spacing) * 7) 1.25rem;
+      }
+
+      .tw-popup-body {
+        padding: calc(var(--spacing) * 8) calc(var(--spacing) * 7);
+      }
+    }
+
+    /* ---------- CURSOR VERDE: circulo verde borroso que sigue al raton a partir del final de "Tratamientos capilares" ---------- */
+    .green-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 260px;
+      height: 260px;
+      margin-left: -130px;
+      margin-top: -130px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(52, 211, 153, .55) 0%, rgba(52, 211, 153, .28) 45%, rgba(52, 211, 153, 0) 72%);
+      filter: blur(28px);
+      mix-blend-mode: screen;
+      pointer-events: none;
+      z-index: 45;
+      opacity: 0;
+      transition: opacity .4s var(--ease-soft);
+      will-change: transform, opacity;
+    }
+
+    .green-cursor.is-active {
+      opacity: 1;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .green-cursor {
+        display: none;
+      }
+    }
+
+    @media (hover: none) {
+      .green-cursor {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="topnav" id="topnav">
+    <a class="topnav-logo-link" href="index.html" aria-label="Ir al inicio â€” Medical Linares"
+      title="Bienvenido a Medical Linares">
+      <img src="./img/medicalinareslogo.png" alt="Medical Linares" class="topnav-logo" id="topnavLogo">
+    </a>
+    <div class="topnav-actions" id="topnavActions">
+      <a class="nav-link" href="index.html#services-section" id="navEspecialidades">Especialidades</a>
+      <a class="nav-link" href="ciudades.html">Ciudades</a>
+      <a class="nav-link" href="sobre-nosotros.html">Nosotros</a>
+      <a class="nav-link" href="nuestro-origen.html">Nuestro origen</a>
+      <a class="nav-link" href="blog.html">Blog</a>
+
+      <div class="button_wrapper">
+        <a class="btn btn-negative" href="contacto.html">
+          <span class="word">Pedir cita</span>
+          <span class="arrow-circle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.44 1.32 4.94L2 22l5.24-1.37c1.44.79 3.06 1.2 4.8 1.2 5.5 0 9.96-4.45 9.96-9.96C22 6.46 17.54 2 12.04 2Zm0 18.2c-1.55 0-3.06-.42-4.38-1.2l-.31-.19-3.11.82.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.27-8.25 8.27Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29Z" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menÃº" aria-expanded="false"
+      aria-controls="topnavActions">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </nav>
+
+  <div class="specialties-overlay" id="specialtiesOverlay" aria-hidden="true"></div>
+  <aside class="specialties-panel" id="specialtiesPanel" aria-hidden="true" aria-label="Especialidades">
+    <div class="specialties-header">
+      <span class="specialties-eyebrow">Especialidades</span>
+      <button class="specialties-close" id="specialtiesClose" type="button" aria-label="Cerrar menú de especialidades">
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L13 13M13 1L1 13" stroke="#171717" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="specialties-body" aria-label="Lista de especialidades">
+      <div class="specialty-row">
+        <a class="specialty-link" href="injerto-capilar.html">Injerto Capilar</a>
+      </div>
+
+      <div class="specialty-row has-sub has-sub-hover">
+        <a class="specialty-link" href="cirugia-estetica.html">Cirugía Estética</a>
+        <div class="specialty-submenu">
+          <a class="specialty-sublink" href="cirugia-estetica.html#lipolaser">Lipoláser</a>
+        </div>
+      </div>
+
+      <div class="specialty-row has-sub has-sub-hover">
+        <a class="specialty-link" href="medicina-estetica.html">Medicina Estética</a>
+        <div class="specialty-submenu">
+          <a class="specialty-sublink" href="medicina-estetica.html#vascular">Vascular</a>
+        </div>
+      </div>
+
+      <div class="specialty-row">
+        <a class="specialty-link" href="dermatologia.html">Dermatología</a>
+      </div>
+
+      <div class="specialty-row">
+        <a class="specialty-link" href="ttos-faciales-y-corporales.html">Tratamientos Faciales &amp; Corporales</a>
+      </div>
+    </nav>
+
+    <div class="specialties-footer">
+      <a class="specialties-social" href="https://www.instagram.com/medical_linares/?hl=es" target="_blank"
+        rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span>Medical_linares</span>
+      </a>
+      <a class="specialties-phone" href="tel:+34645036752">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </svg>
+        <span>645 03 67 52</span>
+      </a>
+    </div>
+  </aside>
+
+  <div class="tw-popup-overlay" id="twPopupOverlay" aria-hidden="true"></div>
+  <aside class="tw-popup-panel" id="twPopupPanel" aria-hidden="true" aria-label="Información del tratamiento">
+    <div class="tw-popup-header">
+      <span class="tw-popup-eyebrow">Medical Linares</span>
+      <button class="tw-popup-close" id="twPopupClose" type="button" aria-label="Cerrar">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+          stroke-linecap="round">
+          <path d="M6 6l12 12M18 6L6 18" />
+        </svg>
+      </button>
+    </div>
+    <div class="tw-popup-body">
+      <span class="tw-popup-eyebrow-tag">Sobre este tratamiento</span>
+      <h3 class="tw-popup-title" id="twPopupTitle"></h3>
+      <p class="tw-popup-desc" id="twPopupDesc"></p>
+    </div>
+  </aside>
+
+  <main>
+
+    <section class="ic-hero">
+      <div class="ic-hero-media" aria-hidden="true">
+        <img src="./img/services/injerto-capilar-hero.jpg" alt="">
+      </div>
+      <div class="ic-hero-content">
+        <span class="ic-hero-kicker">Recupera densidad y línea frontal</span>
+        <h1 class="ic-hero-title shiny-text">Injerto Capilar</h1>
+        <div class="button_wrapper">
+          <a class="btn btn-green" href="./contacto.html" id="heroContactCta">
+            <span class="word">Contactanos</span>
+            <span class="arrow-circle">
+              <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 10L10 2M10 2H3.5M10 2V8.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                  stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <p class="ic-hero-caption">Tratamiento mínimamente invasivo con tecnología FUE de última generación para restaurar
+        el cabello con resultados naturales y sin cicatriz lineal.</p>
+    </section>
+
+    <section class="video-showcase-section" id="videoShowcase">
+      <div class="video-showcase-media" aria-hidden="true">
+        <video class="video-showcase-el video-showcase-desktop" id="videoShowcaseDesktop"
+          src="./img/video-headerdoctor-horizontal.mp4" autoplay muted loop playsinline preload="auto"></video>
+        <video class="video-showcase-el video-showcase-mobile" id="videoShowcaseMobile"
+          src="./img/video-headerdoctor-vertical.mp4" autoplay muted loop playsinline preload="auto"></video>
+      </div>
+      <div class="video-showcase-overlay" aria-hidden="true"></div>
+      <button class="video-showcase-sound is-muted" id="videoShowcaseSound" type="button" aria-pressed="false"
+        aria-label="Activar sonido">
+        <svg class="icon-muted" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="4 9 8 9 12 5 12 19 8 15 4 15 4 9"></polygon>
+          <line x1="16.5" y1="9" x2="21.5" y2="15"></line>
+          <line x1="21.5" y1="9" x2="16.5" y2="15"></line>
+        </svg>
+        <svg class="icon-unmuted" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <polygon points="4 9 8 9 12 5 12 19 8 15 4 15 4 9"></polygon>
+          <path d="M16 8.5a4.5 4.5 0 0 1 0 7"></path>
+          <path d="M18.5 6a8 8 0 0 1 0 12"></path>
+        </svg>
+      </button>
+    </section>
+
+    <section class="tx-intro-section" id="tx-intro-section">
+      <div class="tx-intro-grid">
+        <div class="tx-intro-col">
+          <p class="tx-title">Unidad Médica de Salud Capilar de <span class="tx-highlight">Medical Linares</span></p>
+          <p>En <span class="tx-highlight">Medical Linares</span> tratamos la caída del cabello en hombres y mujeres
+            mediante un enfoque médico, personalizado y basado en un diagnóstico previo. Cada paciente presenta un tipo
+            de alopecia diferente, por lo que diseñamos protocolos individualizados dirigidos por el <span
+              class="tx-highlight">Dr. Alfonso Rodríguez Jiménez</span> y su equipo, adaptando el tratamiento a las
+            necesidades de cada caso.</p>
+        </div>
+        <div class="tx-intro-col">
+          <p>Nuestra Unidad Capilar es un referente para pacientes de <span class="tx-highlight">Linares</span>, <span
+              class="tx-highlight">Jaén</span>, <span class="tx-highlight">Úbeda</span>, <span
+              class="tx-highlight">Baeza</span>, <span class="tx-highlight">Andújar</span>, <span
+              class="tx-highlight">Granada</span> y toda <span class="tx-highlight">Andalucía Oriental</span>,
+            ofreciendo las técnicas más avanzadas para preservar, fortalecer y mejorar la salud capilar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tc-section" id="tratamientos-capilares">
+
+      <div class="tc-rays" id="tcRaysContainer" aria-hidden="true"></div>
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Tratamientos capilares</h2>
+      </div>
+
+      <div class="tc-items">
+        <div class="tc-divider" aria-hidden="true">
+          <span class="tc-plus tc-plus-top"></span>
+          <span class="tc-plus tc-plus-bottom"></span>
+        </div>
+
+        <!-- 1. Injerto Capilar FUE -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/injerto1.webp" alt="Injerto Capilar FUE — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Injerto Capilar FUE</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Resultados naturales.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Extracción folículo a folículo para repoblar entradas y
+                coronilla con un diseño capilar personalizado.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">Enfoque del tratamiento</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Técnica mínimamente invasiva, cicatriz casi imperceptible y
+                  seguimiento post para consolidar un resultado natural.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Injerto Capilar DHI -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/injerto2.webp" alt="Injerto Capilar DHI — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Injerto Capilar DHI</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Precisión en la implantación.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Técnica de alta precisión para un injerto más denso y natural,
+                con recuperación rápida.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">Técnica avanzada de implantación directa</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Es una opción ideal para hombres y mujeres que buscan un
+                  trasplante capilar con planificación personalizada y un postoperatorio orientado a una recuperación
+                  más rápida.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Vasodilatador -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/injerto3.webp" alt="Vasodilatador capilar — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Vasodilatador</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Estímulo de crecimiento.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Activa el crecimiento y mejora la densidad.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">Vasodilatador capilar</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Pauta tópica y, cuando procede, microdosis oral personalizada.
+                  Favorece la fase anágena, reduce la caída y aumenta la densidad desde 8–12 semanas con seguimiento
+                  médico.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Mesoterapia capilar -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/injerto4.webp" alt="Mesoterapia capilar — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Mesoterapia Capilar</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Nutrición al folículo.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Bloqueo local de DHT.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">Mesoterapia capilar</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Infiltración intradérmica en áreas con alopecia androgenética.
+                  Fase de choque cada 4–6 semanas y mantenimiento según respuesta. Baja exposición sistémica y alta
+                  eficacia clínica.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="tc-items-3">
+
+        <!-- 5. Tratamiento regenerativo (PRP) -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/injerto5.webp" alt="Tratamiento regenerativo capilar — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Tratamiento Regenerativo</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Regeneración.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Reconstrucción biológica.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">¿Qué trabajamos?</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Concentramos tus plaquetas y las infiltramos para estimular el
+                  folículo, frenar la caída y engrosar el cabello. Protocolo habitual: 3 sesiones (cada 4–6 semanas) +
+                  mantenimiento.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Exomas -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/injerto6.webp" alt="Exomas capilares — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Exomas</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Bioestimulación avanzada.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Terapia regenerativa avanzada.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">¿Qué tratamos?</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">La terapia de exosomas capilar es una opción regenerativa
+                  avanzada, solemos integrarla en planes combinados cuando buscamos potenciar anclaje folicular y
+                  calidad del cuero cabelludo.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Plan Domiciliario -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/injerto7.webp" alt="Plan domiciliario capilar — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Plan Domiciliario</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Mantenimiento en casa.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Rutina + controles.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">¿Para qué sirve?</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Combinamos lociones, champús coadyuvantes y fármacos según
+                  necesidad. Nuestro tratamiento anticaída capilar incluye controles fotográficos/tricoscópicos para
+                  medir avances.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="tw-section" id="todo-lo-que-tratamos">
+      <div class="tw-inner">
+
+        <div class="tw-col tw-col-left">
+          <span class="shiny-text" style="animation-delay:0s" role="button" tabindex="0"
+            data-tw-topic="aga-masculina">Alopecia androgenética masculina</span>
+          <span class="shiny-text" style="animation-delay:-.5s" role="button" tabindex="0"
+            data-tw-topic="aga-femenina">Alopecia androgenética femenina</span>
+          <span class="shiny-text" style="animation-delay:-1s" role="button" tabindex="0"
+            data-tw-topic="caida-difusa">Caída capilar difusa</span>
+          <span class="shiny-text" style="animation-delay:-1.5s" role="button" tabindex="0"
+            data-tw-topic="efluvio-estacional">Efluvio estacional</span>
+          <span class="shiny-text" style="animation-delay:-2s" role="button" tabindex="0"
+            data-tw-topic="dermatitis-seborreica">Dermatitis seborreica asociada a caída capilar</span>
+          <span class="shiny-text" style="animation-delay:-2.5s" role="button" tabindex="0"
+            data-tw-topic="diagnostico-capilar">Diagnóstico capilar médico</span>
+          <span class="shiny-text" style="animation-delay:-3s" role="button" tabindex="0"
+            data-tw-topic="tricoscopia-digital">Tricoscopia digital</span>
+          <span class="shiny-text" style="animation-delay:-3.5s" role="button" tabindex="0"
+            data-tw-topic="injerto-barba">Injerto de barba</span>
+        </div>
+
+        <p class="tw-title">Todo lo que tratamos</p>
+
+        <div class="tw-col tw-col-right">
+          <span class="shiny-text" style="animation-delay:-.3s" role="button" tabindex="0"
+            data-tw-topic="injerto-fue">Injerto capilar FUE</span>
+          <span class="shiny-text" style="animation-delay:-.8s" role="button" tabindex="0"
+            data-tw-topic="prp-capilar">PRP capilar</span>
+          <span class="shiny-text" style="animation-delay:-1.3s" role="button" tabindex="0"
+            data-tw-topic="mesoterapia-capilar">Mesoterapia capilar</span>
+          <span class="shiny-text" style="animation-delay:-1.8s" role="button" tabindex="0"
+            data-tw-topic="mesoterapia-tratamiento-autonomo">Mesoterapia con tratamiento autónomo</span>
+          <span class="shiny-text" style="animation-delay:-2.3s" role="button" tabindex="0"
+            data-tw-topic="exosomas-capilares">Exosomas capilares</span>
+          <span class="shiny-text" style="animation-delay:-2.8s" role="button" tabindex="0"
+            data-tw-topic="tratamientos-medicos">Tratamientos médicos capilares</span>
+          <span class="shiny-text" style="animation-delay:-3.3s" role="button" tabindex="0"
+            data-tw-topic="vitaminas-biotina">Vitaminas y biotina capilar</span>
+          <span class="shiny-text" style="animation-delay:-3.8s" role="button" tabindex="0"
+            data-tw-topic="injerto-cejas">Injerto de cejas</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="eq-intro">
+
+      <div class="eq-intro-top">
+        <div class="eq-intro-heading-wrap">
+          <div class="eq-intro-heading">
+            <p class="blur-text" data-direction="bottom" data-delay="80">Más información</p>
+            <p class="blur-text" data-direction="bottom" data-delay="80">sobre nuestro equipo</p>
+          </div>
+          <div class="eq-intro-desc">
+            <p class="blur-text" data-direction="bottom" data-delay="30">Conoce a nuestro equipo médico especializado en
+              cirugía capilar y a nuestro quirófano adaptado para tratamientos capilares de última generación.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="eq-intro-grid">
+
+        <div class="eq-intro-col eq-intro-col-main">
+          <div class="eq-intro-col-title">
+            <h2 class="blur-text" data-direction="bottom" data-delay="60">¿Qué tratamos?</h2>
+          </div>
+          <div class="eq-intro-col-text">
+            <p class="blur-text" data-direction="bottom" data-delay="20">En Medical Linares somos referencia en injerto
+              capilar, así como en caída capilar y tratamiento anticaída capilar. Evaluamos tu caso de forma médica y
+              diseñamos un plan que combine diagnóstico, terapia y mantenimiento para que recuperes densidad y grosor
+              con resultados naturales y duraderos.</p>
+          </div>
+        </div>
+
+        <div class="eq-intro-detail-pair">
+          <div class="eq-intro-detail-divider" aria-hidden="true"></div>
+
+          <div class="eq-intro-col">
+            <div class="eq-intro-sub-title">
+              <h2 class="blur-text" data-direction="bottom" data-delay="60">Diagnóstico capilar médico</h2>
+            </div>
+            <ul class="eq-intro-list">
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Historial clínico</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Antecedentes</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Estado del cuero cabelludo</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Salud capilar</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Tricoscopia</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Diagnóstico médico</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Tratamientos personalizados</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="eq-intro-col">
+            <div class="eq-intro-sub-title">
+              <h2 class="blur-text" data-direction="bottom" data-delay="60">Injerto Capilar FUE</h2>
+            </div>
+            <ul class="eq-intro-list">
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Historia clínica</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Exploración</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Análisis orientado al cabello</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Plan personalizado</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Objetivos del tratamiento</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-grid">
+        <div class="faq-label">
+          <h2 class="blur-text" data-direction="bottom" data-delay="40">Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1"
+              id="faq-question-1">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Cuánto tiempo debo usar
+                vasodilatador?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+              <p class="faq-answer-inner">Mientras quieras mantener los resultados. Ajustamos formato (tópico u oral en
+                baja dosis) y dosis según tolerancia. Los cambios se notan a partir de 8–12 semanas; puede haber un
+                shedding inicial transitorio. Revisamos cada 3–6 meses para optimizar eficacia y minimizar efectos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2"
+              id="faq-question-2">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Mesoterapia capilar
+                tiene efectos sistémicos?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+              <p class="faq-answer-inner">La intradérmica limita la exposición sistémica, por lo que el riesgo es muy
+                bajo. Aun así, trabajamos con dosis controladas, historia clínica y consentimiento informado. Indicamos
+                fase de choque cada 4–6 semanas y mantenimiento personalizado, evitando el tratamiento en casos
+                contraindicados.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3"
+              id="faq-question-3">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Bioestimulación capilar
+                y exosoma capilar se pueden combinar?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+              <p class="faq-answer-inner">Sí. La bioestimulación aporta factores de crecimiento y los exosomas mejoran
+                el microentorno folicular; juntos pueden potenciar densidad y calidad del cabello. Suele pautarse cada
+                4–6 semanas y 1–2 sesiones de exosomas al año, según respuesta y tipo de alopecia.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4"
+              id="faq-question-4">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Sirven las vitaminas y
+                la biotina si no tengo déficit?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+              <p class="faq-answer-inner">No las indicamos como tratamiento único sin carencias demostradas. Primero
+                valoramos analítica (ferritina, vitamina D, B12, zinc…). Si están normales, priorizamos tratamiento
+                médico y hábitos (dieta, estrés, sueño); la suplementación se usa solo como coadyuvante para no caer en
+                sobredosificación innecesaria.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5"
+              id="faq-question-5">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿El injerto capilar es
+                definitivo?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+              <p class="faq-answer-inner">El cabello trasplantado procede de la zona donante, resistente a la DHT, y su
+                resultado es permanente. El crecimiento comienza a los 3–4 meses y el aspecto final llega entre 9–12
+                meses. Para preservar la densidad global, recomendamos mantenimiento médico del pelo nativo y revisiones
+                periódicas.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" id="csSection">
+      <div class="cs-inner">
+        <h2 class="tc-kicker cs-kicker">Resultados y tiempos de respuesta</h2>
+        <div class="cs-card" id="csCard">
+          <div class="cs-card-inner">
+            <img src="./img/fotofinalinjerto.png" alt="Resultado final del injerto capilar — Medical Linares">
+          </div>
+        </div>
+        <h2 class="tc-kicker cs-kicker cs-kicker-after">Reserva tu tratamiento de injerto capilar</h2>
+      </div>
+    </section>
+
+    <!-- Las siguientes secciones (fondo negro) se iran añadiendo aqui -->
+
+  </main>
+
+  <div class="green-cursor" id="greenCursor" aria-hidden="true"></div>
+
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-aurora" aria-hidden="true"></div>
+    <div class="footer-grid-bg" aria-hidden="true"></div>
+    <div class="footer-giant-text" id="footerGiantText" aria-hidden="true">Medical Linares</div>
+
+    <div class="footer-marquee" aria-hidden="true">
+      <div class="footer-marquee-track">
+        <div class="footer-marquee-group">
+          <span>Medicina Estética</span><span class="dot">✦</span>
+          <span>Dermatología</span><span class="dot">✦</span>
+          <span>Injerto Capilar</span><span class="dot">✦</span>
+          <span>Confianza</span><span class="dot">✦</span>
+          <span>Láser</span><span class="dot">✦</span>
+          <span>Cuidado Real</span><span class="dot">✦</span>
+        </div>
+        <div class="footer-marquee-group">
+          <span>Medicina Estética</span><span class="dot">✦</span>
+          <span>Dermatología</span><span class="dot">✦</span>
+          <span>Injerto Capilar</span><span class="dot">✦</span>
+          <span>Confianza</span><span class="dot">✦</span>
+          <span>Láser</span><span class="dot">✦</span>
+          <span>Cuidado Real</span><span class="dot">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap footer-inner" id="footerInner">
+      <div class="footer-title"><img src="./img/IconoMedical.png" alt="Medical Linares" class="footer-title-icon">
+        Medical Linares</div>
+
+      <div class="footer-locations">
+        <div class="footer-loc">
+          <span class="footer-loc-name">Linares</span>
+          <p class="footer-loc-address">C. República Argentina, 7, 23700 Linares, Jaén.</p>
+          <div class="footer-loc-row">
+            <span class="footer-label">Horario L-V</span>
+            <span class="footer-value">09:30 – 13:15</span>
+            <span class="footer-value">17:00 – 20:00</span>
+          </div>
+          <a class="footer-pill footer-tel" href="tel:+34645036752">645 03 67 52</a>
+        </div>
+
+        <div class="footer-loc">
+          <span class="footer-loc-name">Granada</span>
+          <p class="footer-loc-address">Esquina Pablo Neruda, Av. Dr. López Cantarero Ballesteros, 1, 18200 Maracena,
+            Granada</p>
+          <div class="footer-loc-row">
+            <span class="footer-label">Horario L-V</span>
+            <span class="footer-value">09:30 – 13:15</span>
+            <span class="footer-value">17:00 – 20:00</span>
+          </div>
+          <a class="footer-pill footer-tel" href="tel:+34650064923">650 06 49 23</a>
+        </div>
+
+        <nav class="footer-loc footer-treatments" aria-label="Tratamientos">
+          <span class="footer-loc-name">Tratamientos</span>
+          <a href="./injerto-capilar.html" target="_blank" rel="noopener">Injerto Capilar</a>
+          <a href="./lipolaser.html" target="_blank" rel="noopener">Lipoláser</a>
+          <a href="./medicina-estetica.html" target="_blank" rel="noopener">Medicina Estética</a>
+          <a href="./dermatologia.html" target="_blank" rel="noopener">Dermatología</a>
+          <a href="./ttos-faciales-y-corporales.html " target="_blank" rel="noopener">Tratamientos
+            Faciales y Corporales</a>
+          <a href="./vascular.html" target="_blank" rel="noopener">Vascular</a>
+          <a href="./laser.html" target="_blank" rel="noopener">Láser</a>
+          <a class="footer-pill footer-all" href="./index.html" target="_blank" rel="noopener">Todos →</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Medical Linares · Todos los derechos reservados</span>
+        <div class="footer-legal">
+          <a class="footer-pill" href="politicasdeprivacidad.html">Política de cookies</a>
+          <a class="footer-pill" href="politicasdeprivacidad.html">Aviso legal</a>
+          <a class="footer-pill" href="politicasdeprivacidad.html">Política de privacidad</a>
+        </div>
+        <div class="footer-right-group">
+          <div class="footer-social">
+            <a class="footer-pill footer-icon-btn" href="https://www.instagram.com/medical_linares" target="_blank"
+              rel="noopener" aria-label="Instagram de Medical Linares">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a class="footer-pill footer-icon-btn" href="https://www.facebook.com/medicallinares" target="_blank"
+              rel="noopener" aria-label="Facebook de Medical Linares">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+          <button class="footer-pill footer-icon-btn footer-top-btn" id="footerTopBtn" aria-label="Volver arriba"
+            type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom-extra">
+        <div class="footer-credit">Página creada y diseñada por Angel Mind SEO</div>
+        <a class="footer-junta-link" href="https://www.juntadeandalucia.es" target="_blank" rel="noopener"
+          aria-label="Junta de Andalucía">
+          <img src="https://www.juntadeandalucia.es/sites/default/files/2023-02/byn_1.png" alt="Junta de Andalucía"
+            class="footer-junta-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    // Menu: linea blanca que se forma de izquierda a derecha al seleccionar una opcion
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      if (link.id === 'navEspecialidades') return; // este abre el desplegable, no cambia de pagina
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.nav-link').forEach((l) => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // ---------- MENU MOVIL: boton hamburguesa que despliega el menu principal ----------
+    (function initMobileNav() {
+      const toggle = document.getElementById('navToggle');
+      const actions = document.getElementById('topnavActions');
+      if (!toggle || !actions) return;
+
+      function closeMobileNav() {
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        actions.classList.remove('is-open');
+      }
+      function openMobileNav() {
+        toggle.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        actions.classList.add('is-open');
+      }
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.contains('is-open') ? closeMobileNav() : openMobileNav();
+      });
+
+      // cerrar el desplegable al elegir cualquier opcion (incluida "Especialidades", que ademas abre su propio overlay)
+      actions.querySelectorAll('a, .btn').forEach((el) => {
+        el.addEventListener('click', closeMobileNav);
+      });
+
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape') closeMobileNav();
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 840) closeMobileNav();
+      });
+    })();
+
+    // ---------- ESPECIALIDADES: panel lateral off-canvas ----------
+    (function initSpecialtiesPanel() {
+      const overlay = document.getElementById('specialtiesOverlay');
+      const panel = document.getElementById('specialtiesPanel');
+      const closeBtn = document.getElementById('specialtiesClose');
+      const triggers = [
+        document.getElementById('navEspecialidades'),
+        document.getElementById('heroEspecialidadesToggle') // presente en la home; en el resto de paginas no existe y se ignora
+      ].filter(Boolean);
+      if (!overlay || !panel || !triggers.length) return;
+
+      function resetAccordion() {
+        panel.querySelectorAll('.specialty-row.is-open').forEach((row) => {
+          row.classList.remove('is-open');
+          const toggle = row.querySelector('.specialty-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      function openPanel(ev) {
+        if (ev) ev.preventDefault();
+        overlay.classList.add('is-open');
+        panel.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        panel.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('specialties-open');
+      }
+
+      function closePanel() {
+        overlay.classList.remove('is-open');
+        panel.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        panel.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('specialties-open');
+        setTimeout(resetAccordion, 400); // tras el cierre, para no verse en pleno cierre
+      }
+
+      // nota: el CTA "Contactanos" del hero usa su propio id (heroContactCta) y mantiene
+      // su enlace directo a contacto.html, sin abrir este panel.
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', (ev) => {
+          ev.preventDefault();
+          panel.classList.contains('is-open') ? closePanel() : openPanel();
+        });
+      });
+      closeBtn?.addEventListener('click', closePanel);
+      overlay.addEventListener('click', closePanel);
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape' && panel.classList.contains('is-open')) closePanel();
+      });
+
+      // Acordeon: Cirugia Estetica / Medicina Estetica / Tratamientos Faciales y Corporales
+      // despliegan su sub-tratamiento (Lipolaser / Vascular / Laser) al hacer clic
+      panel.querySelectorAll('.specialty-toggle').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const row = btn.closest('.specialty-row');
+          if (!row) return;
+          const willOpen = !row.classList.contains('is-open');
+          row.classList.toggle('is-open', willOpen);
+          btn.setAttribute('aria-expanded', String(willOpen));
+        });
+      });
+
+      // Cerrar el panel al navegar a un enlace real
+      panel.querySelectorAll('a.specialty-link, a.specialty-sublink').forEach((link) => {
+        link.addEventListener('click', closePanel);
+      });
+    })();
+  </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    (function initCinematicFooter() {
+      if (typeof gsap === 'undefined') return;
+
+      // Efecto iman en las pastillas de cristal (tel, legal, redes, "todos", volver arriba)
+      document.querySelectorAll('.footer-pill').forEach((el) => {
+        el.addEventListener('mousemove', (e) => {
+          const rect = el.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          gsap.to(el, { x: x * 0.3, y: y * 0.3, duration: 0.4, ease: 'power2.out' });
+        });
+        el.addEventListener('mouseleave', () => {
+          gsap.to(el, { x: 0, y: 0, duration: 1, ease: 'elastic.out(1, 0.3)' });
+        });
+      });
+
+      // Texto gigante de fondo: entra con la sensacion de profundidad al hacer scroll
+      const giant = document.getElementById('footerGiantText');
+      if (giant) {
+        gsap.fromTo(giant, { y: '8vh', opacity: 0 }, {
+          y: '0vh', opacity: 1, ease: 'power1.out',
+          scrollTrigger: { trigger: '#site-footer', start: 'top 85%', end: 'top 25%', scrub: 1 }
+        });
+      }
+
+      // Contenido del footer: aparece de forma escalonada
+      const footerInner = document.getElementById('footerInner');
+      if (footerInner) {
+        gsap.fromTo([footerInner.querySelector('.footer-title'), footerInner.querySelector('.footer-locations')], { y: 40, opacity: 0 }, {
+          y: 0, opacity: 1, stagger: 0.15, ease: 'power3.out',
+          scrollTrigger: { trigger: '#site-footer', start: 'top 70%', end: 'top 25%', scrub: 1 }
+        });
+      }
+
+      // Volver arriba
+      document.getElementById('footerTopBtn')?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+
+  <script>
+    // ---------- VIDEO SHOWCASE: video de fondo en bucle (escritorio/movil) con boton de silenciar/activar sonido ----------
+    (function initVideoShowcase() {
+      const desktopVideo = document.getElementById('videoShowcaseDesktop');
+      const mobileVideo = document.getElementById('videoShowcaseMobile');
+      const soundBtn = document.getElementById('videoShowcaseSound');
+      if (!desktopVideo || !mobileVideo || !soundBtn) return;
+
+      let isMuted = true;
+      const mq = window.matchMedia('(max-width: 780px)');
+      let activeVideo = mq.matches ? mobileVideo : desktopVideo;
+
+      function syncPlayback() {
+        [desktopVideo, mobileVideo].forEach((video) => {
+          video.muted = isMuted;
+          if (video === activeVideo) {
+            video.play().catch(() => { });
+          } else {
+            video.pause();
+          }
+        });
+      }
+
+      function updateSoundButton() {
+        soundBtn.classList.toggle('is-muted', isMuted);
+        soundBtn.setAttribute('aria-pressed', String(!isMuted));
+        soundBtn.setAttribute('aria-label', isMuted ? 'Activar sonido' : 'Silenciar vídeo');
+      }
+
+      mq.addEventListener('change', (e) => {
+        activeVideo = e.matches ? mobileVideo : desktopVideo;
+        syncPlayback();
+      });
+
+      soundBtn.addEventListener('click', () => {
+        isMuted = !isMuted;
+        syncPlayback();
+        updateSoundButton();
+      });
+
+      updateSoundButton();
+      syncPlayback();
+    })();
+  </script>
+
+
+  <script>
+    // ---------- BLUR TEXT: divide en palabras y revela al entrar en pantalla (equipo / FAQ) ----------
+    (function initBlurText() {
+      const containers = document.querySelectorAll('.blur-text');
+      if (!containers.length) return;
+
+      containers.forEach((el) => {
+        if (el.dataset.split === 'true') return;
+        const text = el.textContent.trim().replace(/\s+/g, ' ');
+        const words = text.split(' ');
+        el.textContent = '';
+        words.forEach((word, i) => {
+          const span = document.createElement('span');
+          span.className = 'bt-word';
+          span.textContent = word + (i < words.length - 1 ? '\u00A0' : '');
+          el.appendChild(span);
+        });
+        el.dataset.split = 'true';
+      });
+
+      if (!('IntersectionObserver' in window)) {
+        containers.forEach((el) => el.classList.add('is-visible'));
+        return;
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const delay = parseFloat(el.dataset.delay || '80');
+          el.querySelectorAll('.bt-word').forEach((span, i) => {
+            span.style.animationDelay = (i * delay) + 'ms';
+          });
+          el.classList.add('is-visible');
+          io.unobserve(el);
+        });
+      }, { threshold: 0.1 });
+
+      containers.forEach((el) => io.observe(el));
+    })();
+  </script>
+
+  <script>
+    // ---------- PREGUNTAS FRECUENTES: acordeon (uno abierto a la vez) ----------
+    (function initFaqAccordion() {
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        const btn = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        if (!btn || !answer) return;
+
+        btn.addEventListener('click', () => {
+          const isOpen = item.classList.contains('is-open');
+
+          document.querySelectorAll('.faq-item.is-open').forEach((openItem) => {
+            if (openItem !== item) {
+              openItem.classList.remove('is-open');
+              openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+              openItem.querySelector('.faq-answer').style.maxHeight = '0px';
+            }
+          });
+
+          if (isOpen) {
+            item.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+            answer.style.maxHeight = '0px';
+          } else {
+            item.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    // ---------- TW POPUPS: panel lateral (desde la izquierda) con info de cada elemento de "Todo lo que tratamos" ----------
+    (function initTwPopups() {
+      const overlay = document.getElementById('twPopupOverlay');
+      const panel = document.getElementById('twPopupPanel');
+      const closeBtn = document.getElementById('twPopupClose');
+      const titleEl = document.getElementById('twPopupTitle');
+      const descEl = document.getElementById('twPopupDesc');
+      const triggers = document.querySelectorAll('.tw-col .shiny-text[data-tw-topic]');
+      if (!overlay || !panel || !titleEl || !descEl || !triggers.length) return;
+
+      const CONTENT = {
+        'aga-masculina': {
+          title: 'Alopecia androgenética masculina',
+          desc: 'Es la causa más frecuente de caída de cabello en hombres, ligada a la sensibilidad genética a la DHT. Suele iniciarse por entradas y coronilla. Cuanto antes se diagnostica, más opciones hay para frenar su avance.'
+        },
+        'aga-femenina': {
+          title: 'Alopecia androgenética femenina',
+          desc: 'En mujeres se manifiesta como un adelgazamiento difuso, sobre todo en la zona central del cuero cabelludo. El abordaje combina diagnóstico hormonal, tratamiento médico y, si procede, bioestimulación.'
+        },
+        'caida-difusa': {
+          title: 'Caída capilar difusa',
+          desc: 'Pérdida de densidad repartida por todo el cuero cabelludo, sin un patrón localizado. Puede deberse a causas hormonales, nutricionales o de estrés. Analizamos tu caso para identificar el origen y frenarla.'
+        },
+        'efluvio-estacional': {
+          title: 'Efluvio estacional',
+          desc: 'Aumento temporal de la caída, típico en otoño y primavera, asociado a cambios de temperatura y luz. Suele resolverse solo, aunque un refuerzo médico puntual ayuda a acortar el proceso.'
+        },
+        'dermatitis-seborreica': {
+          title: 'Dermatitis seborreica asociada a caída capilar',
+          desc: 'La inflamación y el exceso de grasa en el cuero cabelludo pueden favorecer la caída. Tratamos primero la dermatitis con pautas específicas y, en paralelo, cuidamos la salud del folículo.'
+        },
+        'diagnostico-capilar': {
+          title: 'Diagnóstico capilar médico',
+          desc: 'Antes de cualquier tratamiento, valoramos tu historial clínico, antecedentes y estado del cuero cabelludo con tricoscopia digital, para diseñar un plan personalizado y con base médica real.'
+        },
+        'tricoscopia-digital': {
+          title: 'Tricoscopia digital',
+          desc: 'Exploración del cuero cabelludo y el folículo con aumento digital, sin necesidad de biopsia. Permite medir densidad, grosor y miniaturización capilar para ajustar el tratamiento con precisión.'
+        },
+        'injerto-fue': {
+          title: 'Injerto capilar FUE',
+          desc: 'Extracción folículo a folículo desde la zona donante para repoblar entradas y coronilla, con diseño capilar personalizado y cicatriz prácticamente imperceptible.'
+        },
+        'prp-capilar': {
+          title: 'PRP capilar',
+          desc: 'Concentramos tus propias plaquetas y las infiltramos en el cuero cabelludo para estimular el folículo y frenar la caída. Protocolo habitual de 3 sesiones con mantenimiento posterior.'
+        },
+        'mesoterapia-capilar': {
+          title: 'Mesoterapia capilar',
+          desc: 'Infiltración intradérmica de principios activos en las zonas con alopecia androgenética, con baja exposición sistémica. Se pauta en fase de choque y mantenimiento posterior.'
+        },
+        'mesoterapia-tratamiento-autonomo': {
+          title: 'Mesoterapia con tratamiento autónomo',
+          desc: 'Combina la mesoterapia clásica con un tratamiento autónomo a dosis controlada para bloquear localmente la DHT, reforzando el efecto anticaída en los casos que lo requieren.'
+        },
+        'exosomas-capilares': {
+          title: 'Exosomas capilares',
+          desc: 'Terapia regenerativa avanzada que potencia el anclaje folicular y la calidad del cuero cabelludo. Solemos integrarla en planes combinados junto a otros tratamientos capilares.'
+        },
+        'tratamientos-medicos': {
+          title: 'Tratamientos médicos capilares',
+          desc: 'Combinamos fármacos, lociones y champús coadyuvantes según cada caso, con controles fotográficos y tricoscópicos periódicos para medir la evolución real.'
+        },
+        'vitaminas-biotina': {
+          title: 'Vitaminas y biotina capilar',
+          desc: 'Solo las indicamos cuando una analítica confirma una carencia real. Como coadyuvante, ayudan a sostener el tratamiento principal, nunca como sustituto de un diagnóstico médico.'
+        },
+        'injerto-barba': {
+          title: 'Injerto de barba',
+          desc: 'Trasplante folículo a folículo para densificar y perfilar la barba, diseñando una línea natural adaptada a la forma de tu rostro.'
+        },
+        'injerto-cejas': {
+          title: 'Injerto de cejas',
+          desc: 'Reconstruimos o densificamos las cejas con folículos propios, respetando su dirección natural para lograr un resultado armonioso y duradero.'
+        }
+      };
+
+      function openPopup(key) {
+        const data = CONTENT[key];
+        if (!data) return;
+        titleEl.textContent = data.title;
+        descEl.textContent = data.desc;
+        overlay.classList.add('is-open');
+        panel.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        panel.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('tw-popup-open');
+      }
+
+      function closePopup() {
+        overlay.classList.remove('is-open');
+        panel.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        panel.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('tw-popup-open');
+      }
+
+      triggers.forEach((el) => {
+        el.addEventListener('click', () => openPopup(el.dataset.twTopic));
+        el.addEventListener('keydown', (ev) => {
+          if (ev.key === 'Enter' || ev.key === ' ') {
+            ev.preventDefault();
+            openPopup(el.dataset.twTopic);
+          }
+        });
+      });
+
+      closeBtn?.addEventListener('click', closePopup);
+      overlay.addEventListener('click', closePopup);
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape' && panel.classList.contains('is-open')) closePopup();
+      });
+    })();
+  </script>
+
+  <script>
+    // ---------- CURSOR VERDE: circulo verde borroso que sigue al raton a partir de que termina "Tratamientos capilares" ----------
+    (function initGreenCursor() {
+      const cursor = document.getElementById('greenCursor');
+      const boundaryEl = document.getElementById('tratamientos-capilares');
+      if (!cursor || !boundaryEl) return;
+      if (window.matchMedia('(hover: none)').matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+      let mouseX = -9999, mouseY = -9999;
+      let curX = -9999, curY = -9999;
+      let active = false;
+      let hasMouse = false;
+
+      function boundaryBottom() {
+        return boundaryEl.getBoundingClientRect().bottom + window.scrollY;
+      }
+
+      function refreshActive() {
+        if (!hasMouse) return;
+        const docY = mouseY + window.scrollY;
+        const shouldBeActive = docY > boundaryBottom();
+        if (shouldBeActive !== active) {
+          active = shouldBeActive;
+          cursor.classList.toggle('is-active', active);
+        }
+      }
+
+      window.addEventListener('mousemove', (ev) => {
+        mouseX = ev.clientX;
+        mouseY = ev.clientY;
+        hasMouse = true;
+        refreshActive();
+      }, { passive: true });
+
+      window.addEventListener('scroll', refreshActive, { passive: true });
+      window.addEventListener('resize', refreshActive);
+
+      function loop() {
+        curX += (mouseX - curX) * 0.18;
+        curY += (mouseY - curY) * 0.18;
+        cursor.style.transform = `translate3d(${curX}px, ${curY}px, 0)`;
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+    })();
+  </script>
+
+  <script>
+    // ---------- OGL (WebGL library), version 1.0.11 — recorte propio con Renderer, Program, Triangle y Mesh, ----------
+    // ---------- incrustado directamente para que el fondo Side Rays no dependa de ningun CDN externo ----------
+    (() => {
+      function V(e) { let t = e[0], i = e[1], r = e[2]; return Math.sqrt(t * t + i * i + r * r) } function Q(e, t) { return e[0] = t[0], e[1] = t[1], e[2] = t[2], e } function _t(e, t, i, r) { return e[0] = t, e[1] = i, e[2] = r, e } function tt(e, t, i) { return e[0] = t[0] + i[0], e[1] = t[1] + i[1], e[2] = t[2] + i[2], e } function et(e, t, i) { return e[0] = t[0] - i[0], e[1] = t[1] - i[1], e[2] = t[2] - i[2], e } function vt(e, t, i) { return e[0] = t[0] * i[0], e[1] = t[1] * i[1], e[2] = t[2] * i[2], e } function bt(e, t, i) { return e[0] = t[0] / i[0], e[1] = t[1] / i[1], e[2] = t[2] / i[2], e } function Z(e, t, i) { return e[0] = t[0] * i, e[1] = t[1] * i, e[2] = t[2] * i, e } function Ft(e, t) { let i = t[0] - e[0], r = t[1] - e[1], s = t[2] - e[2]; return Math.sqrt(i * i + r * r + s * s) } function Tt(e, t) { let i = t[0] - e[0], r = t[1] - e[1], s = t[2] - e[2]; return i * i + r * r + s * s } function it(e) { let t = e[0], i = e[1], r = e[2]; return t * t + i * i + r * r } function Rt(e, t) { return e[0] = -t[0], e[1] = -t[1], e[2] = -t[2], e } function zt(e, t) { return e[0] = 1 / t[0], e[1] = 1 / t[1], e[2] = 1 / t[2], e } function K(e, t) { let i = t[0], r = t[1], s = t[2], n = i * i + r * r + s * s; return n > 0 && (n = 1 / Math.sqrt(n)), e[0] = t[0] * n, e[1] = t[1] * n, e[2] = t[2] * n, e } function rt(e, t) { return e[0] * t[0] + e[1] * t[1] + e[2] * t[2] } function st(e, t, i) { let r = t[0], s = t[1], n = t[2], a = i[0], h = i[1], o = i[2]; return e[0] = s * o - n * h, e[1] = n * a - r * o, e[2] = r * h - s * a, e } function nt(e, t, i, r) { let s = t[0], n = t[1], a = t[2]; return e[0] = s + r * (i[0] - s), e[1] = n + r * (i[1] - n), e[2] = a + r * (i[2] - a), e } function Lt(e, t, i, r, s) { let n = Math.exp(-r * s), a = t[0], h = t[1], o = t[2]; return e[0] = i[0] + (a - i[0]) * n, e[1] = i[1] + (h - i[1]) * n, e[2] = i[2] + (o - i[2]) * n, e } function St(e, t, i) { let r = t[0], s = t[1], n = t[2], a = i[3] * r + i[7] * s + i[11] * n + i[15]; return a = a || 1, e[0] = (i[0] * r + i[4] * s + i[8] * n + i[12]) / a, e[1] = (i[1] * r + i[5] * s + i[9] * n + i[13]) / a, e[2] = (i[2] * r + i[6] * s + i[10] * n + i[14]) / a, e } function Pt(e, t, i) { let r = t[0], s = t[1], n = t[2], a = i[3] * r + i[7] * s + i[11] * n + i[15]; return a = a || 1, e[0] = (i[0] * r + i[4] * s + i[8] * n) / a, e[1] = (i[1] * r + i[5] * s + i[9] * n) / a, e[2] = (i[2] * r + i[6] * s + i[10] * n) / a, e } function Ct(e, t, i) { let r = t[0], s = t[1], n = t[2]; return e[0] = r * i[0] + s * i[3] + n * i[6], e[1] = r * i[1] + s * i[4] + n * i[7], e[2] = r * i[2] + s * i[5] + n * i[8], e } function Nt(e, t, i) { let r = t[0], s = t[1], n = t[2], a = i[0], h = i[1], o = i[2], l = i[3], c = h * n - o * s, f = o * r - a * n, u = a * s - h * r, p = h * u - o * f, d = o * c - a * u, m = a * f - h * c, g = l * 2; return c *= g, f *= g, u *= g, p *= 2, d *= 2, m *= 2, e[0] = r + c + p, e[1] = s + f + d, e[2] = n + u + m, e } var It = (function () { let e = [0, 0, 0], t = [0, 0, 0]; return function (i, r) { Q(e, i), Q(t, r), K(e, e), K(t, t); let s = rt(e, t); return s > 1 ? 0 : s < -1 ? Math.PI : Math.acos(s) } })(); function Ot(e, t) { return e[0] === t[0] && e[1] === t[1] && e[2] === t[2] } var y = class e extends Array { constructor(t = 0, i = t, r = t) { return super(t, i, r), this } get x() { return this[0] } get y() { return this[1] } get z() { return this[2] } set x(t) { this[0] = t } set y(t) { this[1] = t } set z(t) { this[2] = t } set(t, i = t, r = t) { return t.length ? this.copy(t) : (_t(this, t, i, r), this) } copy(t) { return Q(this, t), this } add(t, i) { return i ? tt(this, t, i) : tt(this, this, t), this } sub(t, i) { return i ? et(this, t, i) : et(this, this, t), this } multiply(t) { return t.length ? vt(this, this, t) : Z(this, this, t), this } divide(t) { return t.length ? bt(this, this, t) : Z(this, this, 1 / t), this } inverse(t = this) { return zt(this, t), this } len() { return V(this) } distance(t) { return t ? Ft(this, t) : V(this) } squaredLen() { return it(this) } squaredDistance(t) { return t ? Tt(this, t) : it(this) } negate(t = this) { return Rt(this, t), this } cross(t, i) { return i ? st(this, t, i) : st(this, this, t), this } scale(t) { return Z(this, this, t), this } normalize() { return K(this, this), this } dot(t) { return rt(this, t) } equals(t) { return Ot(this, t) } applyMatrix3(t) { return Ct(this, this, t), this } applyMatrix4(t) { return St(this, this, t), this } scaleRotateMatrix4(t) { return Pt(this, this, t), this } applyQuaternion(t) { return Nt(this, this, t), this } angle(t) { return It(this, t) } lerp(t, i) { return nt(this, this, t, i), this } smoothLerp(t, i, r) { return Lt(this, this, t, i, r), this } clone() { return new e(this[0], this[1], this[2]) } fromArray(t, i = 0) { return this[0] = t[i], this[1] = t[i + 1], this[2] = t[i + 2], this } toArray(t = [], i = 0) { return t[i] = this[0], t[i + 1] = this[1], t[i + 2] = this[2], t } transformDirection(t) { let i = this[0], r = this[1], s = this[2]; return this[0] = t[0] * i + t[4] * r + t[8] * s, this[1] = t[1] * i + t[5] * r + t[9] * s, this[2] = t[2] * i + t[6] * r + t[10] * s, this.normalize() } }; var Bt = new y, Ve = 1, Ue = 1, Vt = !1, R = class { constructor(t, i = {}) { t.canvas || console.error("gl not passed as first argument to Geometry"), this.gl = t, this.attributes = i, this.id = Ve++, this.VAOs = {}, this.drawRange = { start: 0, count: 0 }, this.instancedCount = 0, this.gl.renderer.bindVertexArray(null), this.gl.renderer.currentGeometry = null, this.glState = this.gl.renderer.state; for (let r in i) this.addAttribute(r, i[r]) } addAttribute(t, i) { if (this.attributes[t] = i, i.id = Ue++, i.size = i.size || 1, i.type = i.type || (i.data.constructor === Float32Array ? this.gl.FLOAT : i.data.constructor === Uint16Array ? this.gl.UNSIGNED_SHORT : this.gl.UNSIGNED_INT), i.target = t === "index" ? this.gl.ELEMENT_ARRAY_BUFFER : this.gl.ARRAY_BUFFER, i.normalized = i.normalized || !1, i.stride = i.stride || 0, i.offset = i.offset || 0, i.count = i.count || (i.stride ? i.data.byteLength / i.stride : i.data.length / i.size), i.divisor = i.instanced || 0, i.needsUpdate = !1, i.usage = i.usage || this.gl.STATIC_DRAW, i.buffer || this.updateAttribute(i), i.divisor) { if (this.isInstanced = !0, this.instancedCount && this.instancedCount !== i.count * i.divisor) return console.warn("geometry has multiple instanced buffers of different length"), this.instancedCount = Math.min(this.instancedCount, i.count * i.divisor); this.instancedCount = i.count * i.divisor } else t === "index" ? this.drawRange.count = i.count : this.attributes.index || (this.drawRange.count = Math.max(this.drawRange.count, i.count)) } updateAttribute(t) { let i = !t.buffer; i && (t.buffer = this.gl.createBuffer()), this.glState.boundBuffer !== t.buffer && (this.gl.bindBuffer(t.target, t.buffer), this.glState.boundBuffer = t.buffer), i ? this.gl.bufferData(t.target, t.data, t.usage) : this.gl.bufferSubData(t.target, 0, t.data), t.needsUpdate = !1 } setIndex(t) { this.addAttribute("index", t) } setDrawRange(t, i) { this.drawRange.start = t, this.drawRange.count = i } setInstancedCount(t) { this.instancedCount = t } createVAO(t) { this.VAOs[t.attributeOrder] = this.gl.renderer.createVertexArray(), this.gl.renderer.bindVertexArray(this.VAOs[t.attributeOrder]), this.bindAttributes(t) } bindAttributes(t) { t.attributeLocations.forEach((i, { name: r, type: s }) => { if (!this.attributes[r]) { console.warn(`active attribute ${r} not being supplied`); return } let n = this.attributes[r]; this.gl.bindBuffer(n.target, n.buffer), this.glState.boundBuffer = n.buffer; let a = 1; s === 35674 && (a = 2), s === 35675 && (a = 3), s === 35676 && (a = 4); let h = n.size / a, o = a === 1 ? 0 : a * a * 4, l = a === 1 ? 0 : a * 4; for (let c = 0; c < a; c++)this.gl.vertexAttribPointer(i + c, h, n.type, n.normalized, n.stride + o, n.offset + c * l), this.gl.enableVertexAttribArray(i + c), this.gl.renderer.vertexAttribDivisor(i + c, n.divisor) }), this.attributes.index && this.gl.bindBuffer(this.gl.ELEMENT_ARRAY_BUFFER, this.attributes.index.buffer) } draw({ program: t, mode: i = this.gl.TRIANGLES }) { this.gl.renderer.currentGeometry !== `${this.id}_${t.attributeOrder}` && (this.VAOs[t.attributeOrder] || this.createVAO(t), this.gl.renderer.bindVertexArray(this.VAOs[t.attributeOrder]), this.gl.renderer.currentGeometry = `${this.id}_${t.attributeOrder}`), t.attributeLocations.forEach((s, { name: n }) => { let a = this.attributes[n]; a.needsUpdate && this.updateAttribute(a) }); let r = 2; this.attributes.index?.type === this.gl.UNSIGNED_INT && (r = 4), this.isInstanced ? this.attributes.index ? this.gl.renderer.drawElementsInstanced(i, this.drawRange.count, this.attributes.index.type, this.attributes.index.offset + this.drawRange.start * r, this.instancedCount) : this.gl.renderer.drawArraysInstanced(i, this.drawRange.start, this.drawRange.count, this.instancedCount) : this.attributes.index ? this.gl.drawElements(i, this.drawRange.count, this.attributes.index.type, this.attributes.index.offset + this.drawRange.start * r) : this.gl.drawArrays(i, this.drawRange.start, this.drawRange.count) } getPosition() { let t = this.attributes.position; if (t.data) return t; if (!Vt) return console.warn("No position buffer data found to compute bounds"), Vt = !0 } computeBoundingBox(t) { t || (t = this.getPosition()); let i = t.data, r = t.size; this.bounds || (this.bounds = { min: new y, max: new y, center: new y, scale: new y, radius: 1 / 0 }); let s = this.bounds.min, n = this.bounds.max, a = this.bounds.center, h = this.bounds.scale; s.set(1 / 0), n.set(-1 / 0); for (let o = 0, l = i.length; o < l; o += r) { let c = i[o], f = i[o + 1], u = i[o + 2]; s.x = Math.min(c, s.x), s.y = Math.min(f, s.y), s.z = Math.min(u, s.z), n.x = Math.max(c, n.x), n.y = Math.max(f, n.y), n.z = Math.max(u, n.z) } h.sub(n, s), a.add(s, n).divide(2) } computeBoundingSphere(t) { t || (t = this.getPosition()); let i = t.data, r = t.size; this.bounds || this.computeBoundingBox(t); let s = 0; for (let n = 0, a = i.length; n < a; n += r)Bt.fromArray(i, n), s = Math.max(s, this.bounds.center.squaredDistance(Bt)); this.bounds.radius = Math.sqrt(s) } remove() { for (let t in this.VAOs) this.gl.renderer.deleteVertexArray(this.VAOs[t]), delete this.VAOs[t]; for (let t in this.attributes) this.gl.deleteBuffer(this.attributes[t].buffer), delete this.attributes[t] } }; var ke = 1, Ut = {}, N = class {
+        constructor(t, { vertex: i, fragment: r, uniforms: s = {}, transparent: n = !1, cullFace: a = t.BACK, frontFace: h = t.CCW, depthTest: o = !0, depthWrite: l = !0, depthFunc: c = t.LEQUAL } = {}) { t.canvas || console.error("gl not passed as first argument to Program"), this.gl = t, this.uniforms = s, this.id = ke++, i || console.warn("vertex shader not supplied"), r || console.warn("fragment shader not supplied"), this.transparent = n, this.cullFace = a, this.frontFace = h, this.depthTest = o, this.depthWrite = l, this.depthFunc = c, this.blendFunc = {}, this.blendEquation = {}, this.stencilFunc = {}, this.stencilOp = {}, this.transparent && !this.blendFunc.src && (this.gl.renderer.premultipliedAlpha ? this.setBlendFunc(this.gl.ONE, this.gl.ONE_MINUS_SRC_ALPHA) : this.setBlendFunc(this.gl.SRC_ALPHA, this.gl.ONE_MINUS_SRC_ALPHA)), this.vertexShader = t.createShader(t.VERTEX_SHADER), this.fragmentShader = t.createShader(t.FRAGMENT_SHADER), this.program = t.createProgram(), t.attachShader(this.program, this.vertexShader), t.attachShader(this.program, this.fragmentShader), this.setShaders({ vertex: i, fragment: r }) } setShaders({ vertex: t, fragment: i }) {
+          if (t && (this.gl.shaderSource(this.vertexShader, t), this.gl.compileShader(this.vertexShader), this.gl.getShaderInfoLog(this.vertexShader) !== "" && console.warn(`${this.gl.getShaderInfoLog(this.vertexShader)}
+Vertex Shader
+${kt(t)}`)), i && (this.gl.shaderSource(this.fragmentShader, i), this.gl.compileShader(this.fragmentShader), this.gl.getShaderInfoLog(this.fragmentShader) !== "" && console.warn(`${this.gl.getShaderInfoLog(this.fragmentShader)}
+Fragment Shader
+${kt(i)}`)), this.gl.linkProgram(this.program), !this.gl.getProgramParameter(this.program, this.gl.LINK_STATUS)) return console.warn(this.gl.getProgramInfoLog(this.program)); this.uniformLocations = new Map; let r = this.gl.getProgramParameter(this.program, this.gl.ACTIVE_UNIFORMS); for (let a = 0; a < r; a++) { let h = this.gl.getActiveUniform(this.program, a); this.uniformLocations.set(h, this.gl.getUniformLocation(this.program, h.name)); let o = h.name.match(/(\w+)/g); h.uniformName = o[0], h.nameComponents = o.slice(1) } this.attributeLocations = new Map; let s = [], n = this.gl.getProgramParameter(this.program, this.gl.ACTIVE_ATTRIBUTES); for (let a = 0; a < n; a++) { let h = this.gl.getActiveAttrib(this.program, a), o = this.gl.getAttribLocation(this.program, h.name); o !== -1 && (s[o] = h.name, this.attributeLocations.set(h, o)) } this.attributeOrder = s.join("")
+        } setBlendFunc(t, i, r, s) { this.blendFunc.src = t, this.blendFunc.dst = i, this.blendFunc.srcAlpha = r, this.blendFunc.dstAlpha = s, t && (this.transparent = !0) } setBlendEquation(t, i) { this.blendEquation.modeRGB = t, this.blendEquation.modeAlpha = i } setStencilFunc(t, i, r) { this.stencilRef = i, this.stencilFunc.func = t, this.stencilFunc.ref = i, this.stencilFunc.mask = r } setStencilOp(t, i, r) { this.stencilOp.stencilFail = t, this.stencilOp.depthFail = i, this.stencilOp.depthPass = r } applyState() { this.depthTest ? this.gl.renderer.enable(this.gl.DEPTH_TEST) : this.gl.renderer.disable(this.gl.DEPTH_TEST), this.cullFace ? this.gl.renderer.enable(this.gl.CULL_FACE) : this.gl.renderer.disable(this.gl.CULL_FACE), this.blendFunc.src ? this.gl.renderer.enable(this.gl.BLEND) : this.gl.renderer.disable(this.gl.BLEND), this.cullFace && this.gl.renderer.setCullFace(this.cullFace), this.gl.renderer.setFrontFace(this.frontFace), this.gl.renderer.setDepthMask(this.depthWrite), this.gl.renderer.setDepthFunc(this.depthFunc), this.blendFunc.src && this.gl.renderer.setBlendFunc(this.blendFunc.src, this.blendFunc.dst, this.blendFunc.srcAlpha, this.blendFunc.dstAlpha), this.gl.renderer.setBlendEquation(this.blendEquation.modeRGB, this.blendEquation.modeAlpha), this.stencilFunc.func || this.stencilOp.stencilFail ? this.gl.renderer.enable(this.gl.STENCIL_TEST) : this.gl.renderer.disable(this.gl.STENCIL_TEST), this.gl.renderer.setStencilFunc(this.stencilFunc.func, this.stencilFunc.ref, this.stencilFunc.mask), this.gl.renderer.setStencilOp(this.stencilOp.stencilFail, this.stencilOp.depthFail, this.stencilOp.depthPass) } use({ flipFaces: t = !1 } = {}) { let i = -1; this.gl.renderer.state.currentProgram === this.id || (this.gl.useProgram(this.program), this.gl.renderer.state.currentProgram = this.id), this.uniformLocations.forEach((s, n) => { let a = this.uniforms[n.uniformName]; for (let h of n.nameComponents) { if (!a) break; if (h in a) a = a[h]; else { if (Array.isArray(a.value)) break; a = void 0; break } } if (!a) return Gt(`Active uniform ${n.name} has not been supplied`); if (a && a.value === void 0) return Gt(`${n.name} uniform is missing a value parameter`); if (a.value.texture) return i = i + 1, a.value.update(i), at(this.gl, n.type, s, i); if (a.value.length && a.value[0].texture) { let h = []; return a.value.forEach(o => { i = i + 1, o.update(i), h.push(i) }), at(this.gl, n.type, s, h) } at(this.gl, n.type, s, a.value) }), this.applyState(), t && this.gl.renderer.setFrontFace(this.frontFace === this.gl.CCW ? this.gl.CW : this.gl.CCW) } remove() { this.gl.deleteProgram(this.program) }
+      }; function at(e, t, i, r) { r = r.length ? Ge(r) : r; let s = e.renderer.state.uniformLocations.get(i); if (r.length) if (s === void 0 || s.length !== r.length) e.renderer.state.uniformLocations.set(i, r.slice(0)); else { if (Xe(s, r)) return; s.set ? s.set(r) : We(s, r), e.renderer.state.uniformLocations.set(i, s) } else { if (s === r) return; e.renderer.state.uniformLocations.set(i, r) } switch (t) { case 5126: return r.length ? e.uniform1fv(i, r) : e.uniform1f(i, r); case 35664: return e.uniform2fv(i, r); case 35665: return e.uniform3fv(i, r); case 35666: return e.uniform4fv(i, r); case 35670: case 5124: case 35678: case 36306: case 35680: case 36289: return r.length ? e.uniform1iv(i, r) : e.uniform1i(i, r); case 35671: case 35667: return e.uniform2iv(i, r); case 35672: case 35668: return e.uniform3iv(i, r); case 35673: case 35669: return e.uniform4iv(i, r); case 35674: return e.uniformMatrix2fv(i, !1, r); case 35675: return e.uniformMatrix3fv(i, !1, r); case 35676: return e.uniformMatrix4fv(i, !1, r) } } function kt(e) {
+        let t = e.split(`
+`); for (let i = 0; i < t.length; i++)t[i] = i + 1 + ": " + t[i]; return t.join(`
+`)
+      } function Ge(e) { let t = e.length, i = e[0].length; if (i === void 0) return e; let r = t * i, s = Ut[r]; s || (Ut[r] = s = new Float32Array(r)); for (let n = 0; n < t; n++)s.set(e[n], n * i); return s } function Xe(e, t) { if (e.length !== t.length) return !1; for (let i = 0, r = e.length; i < r; i++)if (e[i] !== t[i]) return !1; return !0 } function We(e, t) { for (let i = 0, r = e.length; i < r; i++)e[i] = t[i] } var ot = 0; function Gt(e) { ot > 100 || (console.warn(e), ot++, ot > 100 && console.warn("More than 100 program warnings - stopping logs.")) } var ht = new y, qe = 1, Y = class { constructor({ canvas: t = document.createElement("canvas"), width: i = 300, height: r = 150, dpr: s = 1, alpha: n = !1, depth: a = !0, stencil: h = !1, antialias: o = !1, premultipliedAlpha: l = !1, preserveDrawingBuffer: c = !1, powerPreference: f = "default", autoClear: u = !0, webgl: p = 2 } = {}) { let d = { alpha: n, depth: a, stencil: h, antialias: o, premultipliedAlpha: l, preserveDrawingBuffer: c, powerPreference: f }; this.dpr = s, this.alpha = n, this.color = !0, this.depth = a, this.stencil = h, this.premultipliedAlpha = l, this.autoClear = u, this.id = qe++, p === 2 && (this.gl = t.getContext("webgl2", d)), this.isWebgl2 = !!this.gl, this.gl || (this.gl = t.getContext("webgl", d)), this.gl || console.error("unable to create webgl context"), this.gl.renderer = this, this.setSize(i, r), this.state = {}, this.state.blendFunc = { src: this.gl.ONE, dst: this.gl.ZERO }, this.state.blendEquation = { modeRGB: this.gl.FUNC_ADD }, this.state.cullFace = !1, this.state.frontFace = this.gl.CCW, this.state.depthMask = !0, this.state.depthFunc = this.gl.LEQUAL, this.state.premultiplyAlpha = !1, this.state.flipY = !1, this.state.unpackAlignment = 4, this.state.framebuffer = null, this.state.viewport = { x: 0, y: 0, width: null, height: null }, this.state.textureUnits = [], this.state.activeTextureUnit = 0, this.state.boundBuffer = null, this.state.uniformLocations = new Map, this.state.currentProgram = null, this.extensions = {}, this.isWebgl2 ? (this.getExtension("EXT_color_buffer_float"), this.getExtension("OES_texture_float_linear")) : (this.getExtension("OES_texture_float"), this.getExtension("OES_texture_float_linear"), this.getExtension("OES_texture_half_float"), this.getExtension("OES_texture_half_float_linear"), this.getExtension("OES_element_index_uint"), this.getExtension("OES_standard_derivatives"), this.getExtension("EXT_sRGB"), this.getExtension("WEBGL_depth_texture"), this.getExtension("WEBGL_draw_buffers")), this.getExtension("WEBGL_compressed_texture_astc"), this.getExtension("EXT_texture_compression_bptc"), this.getExtension("WEBGL_compressed_texture_s3tc"), this.getExtension("WEBGL_compressed_texture_etc1"), this.getExtension("WEBGL_compressed_texture_pvrtc"), this.getExtension("WEBKIT_WEBGL_compressed_texture_pvrtc"), this.vertexAttribDivisor = this.getExtension("ANGLE_instanced_arrays", "vertexAttribDivisor", "vertexAttribDivisorANGLE"), this.drawArraysInstanced = this.getExtension("ANGLE_instanced_arrays", "drawArraysInstanced", "drawArraysInstancedANGLE"), this.drawElementsInstanced = this.getExtension("ANGLE_instanced_arrays", "drawElementsInstanced", "drawElementsInstancedANGLE"), this.createVertexArray = this.getExtension("OES_vertex_array_object", "createVertexArray", "createVertexArrayOES"), this.bindVertexArray = this.getExtension("OES_vertex_array_object", "bindVertexArray", "bindVertexArrayOES"), this.deleteVertexArray = this.getExtension("OES_vertex_array_object", "deleteVertexArray", "deleteVertexArrayOES"), this.drawBuffers = this.getExtension("WEBGL_draw_buffers", "drawBuffers", "drawBuffersWEBGL"), this.parameters = {}, this.parameters.maxTextureUnits = this.gl.getParameter(this.gl.MAX_COMBINED_TEXTURE_IMAGE_UNITS), this.parameters.maxAnisotropy = this.getExtension("EXT_texture_filter_anisotropic") ? this.gl.getParameter(this.getExtension("EXT_texture_filter_anisotropic").MAX_TEXTURE_MAX_ANISOTROPY_EXT) : 0 } setSize(t, i) { this.width = t, this.height = i, this.gl.canvas.width = t * this.dpr, this.gl.canvas.height = i * this.dpr, this.gl.canvas.style && Object.assign(this.gl.canvas.style, { width: t + "px", height: i + "px" }) } setViewport(t, i, r = 0, s = 0) { this.state.viewport.width === t && this.state.viewport.height === i || (this.state.viewport.width = t, this.state.viewport.height = i, this.state.viewport.x = r, this.state.viewport.y = s, this.gl.viewport(r, s, t, i)) } setScissor(t, i, r = 0, s = 0) { this.gl.scissor(r, s, t, i) } enable(t) { this.state[t] !== !0 && (this.gl.enable(t), this.state[t] = !0) } disable(t) { this.state[t] !== !1 && (this.gl.disable(t), this.state[t] = !1) } setBlendFunc(t, i, r, s) { this.state.blendFunc.src === t && this.state.blendFunc.dst === i && this.state.blendFunc.srcAlpha === r && this.state.blendFunc.dstAlpha === s || (this.state.blendFunc.src = t, this.state.blendFunc.dst = i, this.state.blendFunc.srcAlpha = r, this.state.blendFunc.dstAlpha = s, r !== void 0 ? this.gl.blendFuncSeparate(t, i, r, s) : this.gl.blendFunc(t, i)) } setBlendEquation(t, i) { t = t || this.gl.FUNC_ADD, !(this.state.blendEquation.modeRGB === t && this.state.blendEquation.modeAlpha === i) && (this.state.blendEquation.modeRGB = t, this.state.blendEquation.modeAlpha = i, i !== void 0 ? this.gl.blendEquationSeparate(t, i) : this.gl.blendEquation(t)) } setCullFace(t) { this.state.cullFace !== t && (this.state.cullFace = t, this.gl.cullFace(t)) } setFrontFace(t) { this.state.frontFace !== t && (this.state.frontFace = t, this.gl.frontFace(t)) } setDepthMask(t) { this.state.depthMask !== t && (this.state.depthMask = t, this.gl.depthMask(t)) } setDepthFunc(t) { this.state.depthFunc !== t && (this.state.depthFunc = t, this.gl.depthFunc(t)) } setStencilMask(t) { this.state.stencilMask !== t && (this.state.stencilMask = t, this.gl.stencilMask(t)) } setStencilFunc(t, i, r) { this.state.stencilFunc === t && this.state.stencilRef === i && this.state.stencilFuncMask === r || (this.state.stencilFunc = t || this.gl.ALWAYS, this.state.stencilRef = i || 0, this.state.stencilFuncMask = r || 0, this.gl.stencilFunc(t || this.gl.ALWAYS, i || 0, r || 0)) } setStencilOp(t, i, r) { this.state.stencilFail === t && this.state.stencilDepthFail === i && this.state.stencilDepthPass === r || (this.state.stencilFail = t, this.state.stencilDepthFail = i, this.state.stencilDepthPass = r, this.gl.stencilOp(t, i, r)) } activeTexture(t) { this.state.activeTextureUnit !== t && (this.state.activeTextureUnit = t, this.gl.activeTexture(this.gl.TEXTURE0 + t)) } bindFramebuffer({ target: t = this.gl.FRAMEBUFFER, buffer: i = null } = {}) { this.state.framebuffer !== i && (this.state.framebuffer = i, this.gl.bindFramebuffer(t, i)) } getExtension(t, i, r) { return i && this.gl[i] ? this.gl[i].bind(this.gl) : (this.extensions[t] || (this.extensions[t] = this.gl.getExtension(t)), i ? this.extensions[t] ? this.extensions[t][r].bind(this.extensions[t]) : null : this.extensions[t]) } sortOpaque(t, i) { return t.renderOrder !== i.renderOrder ? t.renderOrder - i.renderOrder : t.program.id !== i.program.id ? t.program.id - i.program.id : t.zDepth !== i.zDepth ? t.zDepth - i.zDepth : i.id - t.id } sortTransparent(t, i) { return t.renderOrder !== i.renderOrder ? t.renderOrder - i.renderOrder : t.zDepth !== i.zDepth ? i.zDepth - t.zDepth : i.id - t.id } sortUI(t, i) { return t.renderOrder !== i.renderOrder ? t.renderOrder - i.renderOrder : t.program.id !== i.program.id ? t.program.id - i.program.id : i.id - t.id } getRenderList({ scene: t, camera: i, frustumCull: r, sort: s }) { let n = []; if (i && r && i.updateFrustum(), t.traverse(a => { if (!a.visible) return !0; a.draw && (r && a.frustumCulled && i && !i.frustumIntersectsMesh(a) || n.push(a)) }), s) { let a = [], h = [], o = []; n.forEach(l => { l.program.transparent ? l.program.depthTest ? h.push(l) : o.push(l) : a.push(l), l.zDepth = 0, !(l.renderOrder !== 0 || !l.program.depthTest || !i) && (l.worldMatrix.getTranslation(ht), ht.applyMatrix4(i.projectionViewMatrix), l.zDepth = ht.z) }), a.sort(this.sortOpaque), h.sort(this.sortTransparent), o.sort(this.sortUI), n = a.concat(h, o) } return n } render({ scene: t, camera: i, target: r = null, update: s = !0, sort: n = !0, frustumCull: a = !0, clear: h }) { r === null ? (this.bindFramebuffer(), this.setViewport(this.width * this.dpr, this.height * this.dpr)) : (this.bindFramebuffer(r), this.setViewport(r.width, r.height)), (h || this.autoClear && h !== !1) && (this.depth && (!r || r.depth) && (this.enable(this.gl.DEPTH_TEST), this.setDepthMask(!0)), (this.stencil || !r || r.stencil) && (this.enable(this.gl.STENCIL_TEST), this.setStencilMask(255)), this.gl.clear((this.color ? this.gl.COLOR_BUFFER_BIT : 0) | (this.depth ? this.gl.DEPTH_BUFFER_BIT : 0) | (this.stencil ? this.gl.STENCIL_BUFFER_BIT : 0))), s && t.updateMatrixWorld(), i && i.updateMatrixWorld(), this.getRenderList({ scene: t, camera: i, frustumCull: a, sort: n }).forEach(l => { l.draw({ camera: i }) }) } }; function lt(e, t) { return e[0] = t[0], e[1] = t[1], e[2] = t[2], e[3] = t[3], e } function ct(e, t, i, r, s) { return e[0] = t, e[1] = i, e[2] = r, e[3] = s, e } function ft(e, t) { let i = t[0], r = t[1], s = t[2], n = t[3], a = i * i + r * r + s * s + n * n; return a > 0 && (a = 1 / Math.sqrt(a)), e[0] = i * a, e[1] = r * a, e[2] = s * a, e[3] = n * a, e } function ut(e, t) { return e[0] * t[0] + e[1] * t[1] + e[2] * t[2] + e[3] * t[3] } function Wt(e) { return e[0] = 0, e[1] = 0, e[2] = 0, e[3] = 1, e } function qt(e, t, i) { i = i * .5; let r = Math.sin(i); return e[0] = r * t[0], e[1] = r * t[1], e[2] = r * t[2], e[3] = Math.cos(i), e } function pt(e, t, i) { let r = t[0], s = t[1], n = t[2], a = t[3], h = i[0], o = i[1], l = i[2], c = i[3]; return e[0] = r * c + a * h + s * l - n * o, e[1] = s * c + a * o + n * h - r * l, e[2] = n * c + a * l + r * o - s * h, e[3] = a * c - r * h - s * o - n * l, e } function Yt(e, t, i) { i *= .5; let r = t[0], s = t[1], n = t[2], a = t[3], h = Math.sin(i), o = Math.cos(i); return e[0] = r * o + a * h, e[1] = s * o + n * h, e[2] = n * o - s * h, e[3] = a * o - r * h, e } function jt(e, t, i) { i *= .5; let r = t[0], s = t[1], n = t[2], a = t[3], h = Math.sin(i), o = Math.cos(i); return e[0] = r * o - n * h, e[1] = s * o + a * h, e[2] = n * o + r * h, e[3] = a * o - s * h, e } function Ht(e, t, i) { i *= .5; let r = t[0], s = t[1], n = t[2], a = t[3], h = Math.sin(i), o = Math.cos(i); return e[0] = r * o + s * h, e[1] = s * o - r * h, e[2] = n * o + a * h, e[3] = a * o - n * h, e } function Qt(e, t, i, r) { let s = t[0], n = t[1], a = t[2], h = t[3], o = i[0], l = i[1], c = i[2], f = i[3], u, p, d, m, g; return p = s * o + n * l + a * c + h * f, p < 0 && (p = -p, o = -o, l = -l, c = -c, f = -f), 1 - p > 1e-6 ? (u = Math.acos(p), d = Math.sin(u), m = Math.sin((1 - r) * u) / d, g = Math.sin(r * u) / d) : (m = 1 - r, g = r), e[0] = m * s + g * o, e[1] = m * n + g * l, e[2] = m * a + g * c, e[3] = m * h + g * f, e } function Kt(e, t) { let i = t[0], r = t[1], s = t[2], n = t[3], a = i * i + r * r + s * s + n * n, h = a ? 1 / a : 0; return e[0] = -i * h, e[1] = -r * h, e[2] = -s * h, e[3] = n * h, e } function Zt(e, t) { return e[0] = -t[0], e[1] = -t[1], e[2] = -t[2], e[3] = t[3], e } function $t(e, t) { let i = t[0] + t[4] + t[8], r; if (i > 0) r = Math.sqrt(i + 1), e[3] = .5 * r, r = .5 / r, e[0] = (t[5] - t[7]) * r, e[1] = (t[6] - t[2]) * r, e[2] = (t[1] - t[3]) * r; else { let s = 0; t[4] > t[0] && (s = 1), t[8] > t[s * 3 + s] && (s = 2); let n = (s + 1) % 3, a = (s + 2) % 3; r = Math.sqrt(t[s * 3 + s] - t[n * 3 + n] - t[a * 3 + a] + 1), e[s] = .5 * r, r = .5 / r, e[3] = (t[n * 3 + a] - t[a * 3 + n]) * r, e[n] = (t[n * 3 + s] + t[s * 3 + n]) * r, e[a] = (t[a * 3 + s] + t[s * 3 + a]) * r } return e } function Jt(e, t, i = "YXZ") { let r = Math.sin(t[0] * .5), s = Math.cos(t[0] * .5), n = Math.sin(t[1] * .5), a = Math.cos(t[1] * .5), h = Math.sin(t[2] * .5), o = Math.cos(t[2] * .5); return i === "XYZ" ? (e[0] = r * a * o + s * n * h, e[1] = s * n * o - r * a * h, e[2] = s * a * h + r * n * o, e[3] = s * a * o - r * n * h) : i === "YXZ" ? (e[0] = r * a * o + s * n * h, e[1] = s * n * o - r * a * h, e[2] = s * a * h - r * n * o, e[3] = s * a * o + r * n * h) : i === "ZXY" ? (e[0] = r * a * o - s * n * h, e[1] = s * n * o + r * a * h, e[2] = s * a * h + r * n * o, e[3] = s * a * o - r * n * h) : i === "ZYX" ? (e[0] = r * a * o - s * n * h, e[1] = s * n * o + r * a * h, e[2] = s * a * h - r * n * o, e[3] = s * a * o + r * n * h) : i === "YZX" ? (e[0] = r * a * o + s * n * h, e[1] = s * n * o + r * a * h, e[2] = s * a * h - r * n * o, e[3] = s * a * o - r * n * h) : i === "XZY" && (e[0] = r * a * o - s * n * h, e[1] = s * n * o - r * a * h, e[2] = s * a * h + r * n * o, e[3] = s * a * o + r * n * h), e } var te = lt, ee = ct; var ie = ut; var re = ft; var U = class extends Array { constructor(t = 0, i = 0, r = 0, s = 1) { super(t, i, r, s), this.onChange = () => { }, this._target = this; let n = ["0", "1", "2", "3"]; return new Proxy(this, { set(a, h) { let o = Reflect.set(...arguments); return o && n.includes(h) && a.onChange(), o } }) } get x() { return this[0] } get y() { return this[1] } get z() { return this[2] } get w() { return this[3] } set x(t) { this._target[0] = t, this.onChange() } set y(t) { this._target[1] = t, this.onChange() } set z(t) { this._target[2] = t, this.onChange() } set w(t) { this._target[3] = t, this.onChange() } identity() { return Wt(this._target), this.onChange(), this } set(t, i, r, s) { return t.length ? this.copy(t) : (ee(this._target, t, i, r, s), this.onChange(), this) } rotateX(t) { return Yt(this._target, this._target, t), this.onChange(), this } rotateY(t) { return jt(this._target, this._target, t), this.onChange(), this } rotateZ(t) { return Ht(this._target, this._target, t), this.onChange(), this } inverse(t = this._target) { return Kt(this._target, t), this.onChange(), this } conjugate(t = this._target) { return Zt(this._target, t), this.onChange(), this } copy(t) { return te(this._target, t), this.onChange(), this } normalize(t = this._target) { return re(this._target, t), this.onChange(), this } multiply(t, i) { return i ? pt(this._target, t, i) : pt(this._target, this._target, t), this.onChange(), this } dot(t) { return ie(this._target, t) } fromMatrix3(t) { return $t(this._target, t), this.onChange(), this } fromEuler(t, i) { return Jt(this._target, t, t.order), i || this.onChange(), this } fromAxisAngle(t, i) { return qt(this._target, t, i), this.onChange(), this } slerp(t, i) { return Qt(this._target, this._target, t, i), this.onChange(), this } fromArray(t, i = 0) { return this._target[0] = t[i], this._target[1] = t[i + 1], this._target[2] = t[i + 2], this._target[3] = t[i + 3], this.onChange(), this } toArray(t = [], i = 0) { return t[i] = this[0], t[i + 1] = this[1], t[i + 2] = this[2], t[i + 3] = this[3], t } }; var He = 1e-6; function se(e, t) { return e[0] = t[0], e[1] = t[1], e[2] = t[2], e[3] = t[3], e[4] = t[4], e[5] = t[5], e[6] = t[6], e[7] = t[7], e[8] = t[8], e[9] = t[9], e[10] = t[10], e[11] = t[11], e[12] = t[12], e[13] = t[13], e[14] = t[14], e[15] = t[15], e } function ne(e, t, i, r, s, n, a, h, o, l, c, f, u, p, d, m, g) { return e[0] = t, e[1] = i, e[2] = r, e[3] = s, e[4] = n, e[5] = a, e[6] = h, e[7] = o, e[8] = l, e[9] = c, e[10] = f, e[11] = u, e[12] = p, e[13] = d, e[14] = m, e[15] = g, e } function ae(e) { return e[0] = 1, e[1] = 0, e[2] = 0, e[3] = 0, e[4] = 0, e[5] = 1, e[6] = 0, e[7] = 0, e[8] = 0, e[9] = 0, e[10] = 1, e[11] = 0, e[12] = 0, e[13] = 0, e[14] = 0, e[15] = 1, e } function oe(e, t) { let i = t[0], r = t[1], s = t[2], n = t[3], a = t[4], h = t[5], o = t[6], l = t[7], c = t[8], f = t[9], u = t[10], p = t[11], d = t[12], m = t[13], g = t[14], x = t[15], v = i * h - r * a, M = i * o - s * a, w = i * l - n * a, A = r * o - s * h, E = r * l - n * h, b = s * l - n * o, L = c * m - f * d, S = c * g - u * d, F = c * x - p * d, P = f * g - u * m, T = f * x - p * m, C = u * x - p * g, _ = v * C - M * T + w * P + A * F - E * S + b * L; return _ ? (_ = 1 / _, e[0] = (h * C - o * T + l * P) * _, e[1] = (s * T - r * C - n * P) * _, e[2] = (m * b - g * E + x * A) * _, e[3] = (u * E - f * b - p * A) * _, e[4] = (o * F - a * C - l * S) * _, e[5] = (i * C - s * F + n * S) * _, e[6] = (g * w - d * b - x * M) * _, e[7] = (c * b - u * w + p * M) * _, e[8] = (a * T - h * F + l * L) * _, e[9] = (r * F - i * T - n * L) * _, e[10] = (d * E - m * w + x * v) * _, e[11] = (f * w - c * E - p * v) * _, e[12] = (h * S - a * P - o * L) * _, e[13] = (i * P - r * S + s * L) * _, e[14] = (m * M - d * A - g * v) * _, e[15] = (c * A - f * M + u * v) * _, e) : null } function dt(e) { let t = e[0], i = e[1], r = e[2], s = e[3], n = e[4], a = e[5], h = e[6], o = e[7], l = e[8], c = e[9], f = e[10], u = e[11], p = e[12], d = e[13], m = e[14], g = e[15], x = t * a - i * n, v = t * h - r * n, M = t * o - s * n, w = i * h - r * a, A = i * o - s * a, E = r * o - s * h, b = l * d - c * p, L = l * m - f * p, S = l * g - u * p, F = c * m - f * d, P = c * g - u * d, T = f * g - u * m; return x * T - v * P + M * F + w * S - A * L + E * b } function mt(e, t, i) { let r = t[0], s = t[1], n = t[2], a = t[3], h = t[4], o = t[5], l = t[6], c = t[7], f = t[8], u = t[9], p = t[10], d = t[11], m = t[12], g = t[13], x = t[14], v = t[15], M = i[0], w = i[1], A = i[2], E = i[3]; return e[0] = M * r + w * h + A * f + E * m, e[1] = M * s + w * o + A * u + E * g, e[2] = M * n + w * l + A * p + E * x, e[3] = M * a + w * c + A * d + E * v, M = i[4], w = i[5], A = i[6], E = i[7], e[4] = M * r + w * h + A * f + E * m, e[5] = M * s + w * o + A * u + E * g, e[6] = M * n + w * l + A * p + E * x, e[7] = M * a + w * c + A * d + E * v, M = i[8], w = i[9], A = i[10], E = i[11], e[8] = M * r + w * h + A * f + E * m, e[9] = M * s + w * o + A * u + E * g, e[10] = M * n + w * l + A * p + E * x, e[11] = M * a + w * c + A * d + E * v, M = i[12], w = i[13], A = i[14], E = i[15], e[12] = M * r + w * h + A * f + E * m, e[13] = M * s + w * o + A * u + E * g, e[14] = M * n + w * l + A * p + E * x, e[15] = M * a + w * c + A * d + E * v, e } function he(e, t, i) { let r = i[0], s = i[1], n = i[2], a, h, o, l, c, f, u, p, d, m, g, x; return t === e ? (e[12] = t[0] * r + t[4] * s + t[8] * n + t[12], e[13] = t[1] * r + t[5] * s + t[9] * n + t[13], e[14] = t[2] * r + t[6] * s + t[10] * n + t[14], e[15] = t[3] * r + t[7] * s + t[11] * n + t[15]) : (a = t[0], h = t[1], o = t[2], l = t[3], c = t[4], f = t[5], u = t[6], p = t[7], d = t[8], m = t[9], g = t[10], x = t[11], e[0] = a, e[1] = h, e[2] = o, e[3] = l, e[4] = c, e[5] = f, e[6] = u, e[7] = p, e[8] = d, e[9] = m, e[10] = g, e[11] = x, e[12] = a * r + c * s + d * n + t[12], e[13] = h * r + f * s + m * n + t[13], e[14] = o * r + u * s + g * n + t[14], e[15] = l * r + p * s + x * n + t[15]), e } function le(e, t, i) { let r = i[0], s = i[1], n = i[2]; return e[0] = t[0] * r, e[1] = t[1] * r, e[2] = t[2] * r, e[3] = t[3] * r, e[4] = t[4] * s, e[5] = t[5] * s, e[6] = t[6] * s, e[7] = t[7] * s, e[8] = t[8] * n, e[9] = t[9] * n, e[10] = t[10] * n, e[11] = t[11] * n, e[12] = t[12], e[13] = t[13], e[14] = t[14], e[15] = t[15], e } function ce(e, t, i, r) { let s = r[0], n = r[1], a = r[2], h = Math.hypot(s, n, a), o, l, c, f, u, p, d, m, g, x, v, M, w, A, E, b, L, S, F, P, T, C, _, q; return Math.abs(h) < He ? null : (h = 1 / h, s *= h, n *= h, a *= h, o = Math.sin(i), l = Math.cos(i), c = 1 - l, f = t[0], u = t[1], p = t[2], d = t[3], m = t[4], g = t[5], x = t[6], v = t[7], M = t[8], w = t[9], A = t[10], E = t[11], b = s * s * c + l, L = n * s * c + a * o, S = a * s * c - n * o, F = s * n * c - a * o, P = n * n * c + l, T = a * n * c + s * o, C = s * a * c + n * o, _ = n * a * c - s * o, q = a * a * c + l, e[0] = f * b + m * L + M * S, e[1] = u * b + g * L + w * S, e[2] = p * b + x * L + A * S, e[3] = d * b + v * L + E * S, e[4] = f * F + m * P + M * T, e[5] = u * F + g * P + w * T, e[6] = p * F + x * P + A * T, e[7] = d * F + v * P + E * T, e[8] = f * C + m * _ + M * q, e[9] = u * C + g * _ + w * q, e[10] = p * C + x * _ + A * q, e[11] = d * C + v * _ + E * q, t !== e && (e[12] = t[12], e[13] = t[13], e[14] = t[14], e[15] = t[15]), e) } function fe(e, t) { return e[0] = t[12], e[1] = t[13], e[2] = t[14], e } function gt(e, t) { let i = t[0], r = t[1], s = t[2], n = t[4], a = t[5], h = t[6], o = t[8], l = t[9], c = t[10]; return e[0] = Math.hypot(i, r, s), e[1] = Math.hypot(n, a, h), e[2] = Math.hypot(o, l, c), e } function ue(e) { let t = e[0], i = e[1], r = e[2], s = e[4], n = e[5], a = e[6], h = e[8], o = e[9], l = e[10], c = t * t + i * i + r * r, f = s * s + n * n + a * a, u = h * h + o * o + l * l; return Math.sqrt(Math.max(c, f, u)) } var xt = (function () { let e = [1, 1, 1]; return function (t, i) { let r = e; gt(r, i); let s = 1 / r[0], n = 1 / r[1], a = 1 / r[2], h = i[0] * s, o = i[1] * n, l = i[2] * a, c = i[4] * s, f = i[5] * n, u = i[6] * a, p = i[8] * s, d = i[9] * n, m = i[10] * a, g = h + f + m, x = 0; return g > 0 ? (x = Math.sqrt(g + 1) * 2, t[3] = .25 * x, t[0] = (u - d) / x, t[1] = (p - l) / x, t[2] = (o - c) / x) : h > f && h > m ? (x = Math.sqrt(1 + h - f - m) * 2, t[3] = (u - d) / x, t[0] = .25 * x, t[1] = (o + c) / x, t[2] = (p + l) / x) : f > m ? (x = Math.sqrt(1 + f - h - m) * 2, t[3] = (p - l) / x, t[0] = (o + c) / x, t[1] = .25 * x, t[2] = (u + d) / x) : (x = Math.sqrt(1 + m - h - f) * 2, t[3] = (o - c) / x, t[0] = (p + l) / x, t[1] = (u + d) / x, t[2] = .25 * x), t } })(); function pe(e, t, i, r) { let s = V([e[0], e[1], e[2]]), n = V([e[4], e[5], e[6]]), a = V([e[8], e[9], e[10]]); dt(e) < 0 && (s = -s), i[0] = e[12], i[1] = e[13], i[2] = e[14]; let o = e.slice(), l = 1 / s, c = 1 / n, f = 1 / a; o[0] *= l, o[1] *= l, o[2] *= l, o[4] *= c, o[5] *= c, o[6] *= c, o[8] *= f, o[9] *= f, o[10] *= f, xt(t, o), r[0] = s, r[1] = n, r[2] = a } function de(e, t, i, r) { let s = e, n = t[0], a = t[1], h = t[2], o = t[3], l = n + n, c = a + a, f = h + h, u = n * l, p = n * c, d = n * f, m = a * c, g = a * f, x = h * f, v = o * l, M = o * c, w = o * f, A = r[0], E = r[1], b = r[2]; return s[0] = (1 - (m + x)) * A, s[1] = (p + w) * A, s[2] = (d - M) * A, s[3] = 0, s[4] = (p - w) * E, s[5] = (1 - (u + x)) * E, s[6] = (g + v) * E, s[7] = 0, s[8] = (d + M) * b, s[9] = (g - v) * b, s[10] = (1 - (u + m)) * b, s[11] = 0, s[12] = i[0], s[13] = i[1], s[14] = i[2], s[15] = 1, s } function me(e, t) { let i = t[0], r = t[1], s = t[2], n = t[3], a = i + i, h = r + r, o = s + s, l = i * a, c = r * a, f = r * h, u = s * a, p = s * h, d = s * o, m = n * a, g = n * h, x = n * o; return e[0] = 1 - f - d, e[1] = c + x, e[2] = u - g, e[3] = 0, e[4] = c - x, e[5] = 1 - l - d, e[6] = p + m, e[7] = 0, e[8] = u + g, e[9] = p - m, e[10] = 1 - l - f, e[11] = 0, e[12] = 0, e[13] = 0, e[14] = 0, e[15] = 1, e } function ge(e, t, i, r, s) { let n = 1 / Math.tan(t / 2), a = 1 / (r - s); return e[0] = n / i, e[1] = 0, e[2] = 0, e[3] = 0, e[4] = 0, e[5] = n, e[6] = 0, e[7] = 0, e[8] = 0, e[9] = 0, e[10] = (s + r) * a, e[11] = -1, e[12] = 0, e[13] = 0, e[14] = 2 * s * r * a, e[15] = 0, e } function xe(e, t, i, r, s, n, a) { let h = 1 / (t - i), o = 1 / (r - s), l = 1 / (n - a); return e[0] = -2 * h, e[1] = 0, e[2] = 0, e[3] = 0, e[4] = 0, e[5] = -2 * o, e[6] = 0, e[7] = 0, e[8] = 0, e[9] = 0, e[10] = 2 * l, e[11] = 0, e[12] = (t + i) * h, e[13] = (s + r) * o, e[14] = (a + n) * l, e[15] = 1, e } function ye(e, t, i, r) { let s = t[0], n = t[1], a = t[2], h = r[0], o = r[1], l = r[2], c = s - i[0], f = n - i[1], u = a - i[2], p = c * c + f * f + u * u; p === 0 ? u = 1 : (p = 1 / Math.sqrt(p), c *= p, f *= p, u *= p); let d = o * u - l * f, m = l * c - h * u, g = h * f - o * c; return p = d * d + m * m + g * g, p === 0 && (l ? h += 1e-6 : o ? l += 1e-6 : o += 1e-6, d = o * u - l * f, m = l * c - h * u, g = h * f - o * c, p = d * d + m * m + g * g), p = 1 / Math.sqrt(p), d *= p, m *= p, g *= p, e[0] = d, e[1] = m, e[2] = g, e[3] = 0, e[4] = f * g - u * m, e[5] = u * d - c * g, e[6] = c * m - f * d, e[7] = 0, e[8] = c, e[9] = f, e[10] = u, e[11] = 0, e[12] = s, e[13] = n, e[14] = a, e[15] = 1, e } function yt(e, t, i) { return e[0] = t[0] + i[0], e[1] = t[1] + i[1], e[2] = t[2] + i[2], e[3] = t[3] + i[3], e[4] = t[4] + i[4], e[5] = t[5] + i[5], e[6] = t[6] + i[6], e[7] = t[7] + i[7], e[8] = t[8] + i[8], e[9] = t[9] + i[9], e[10] = t[10] + i[10], e[11] = t[11] + i[11], e[12] = t[12] + i[12], e[13] = t[13] + i[13], e[14] = t[14] + i[14], e[15] = t[15] + i[15], e } function wt(e, t, i) { return e[0] = t[0] - i[0], e[1] = t[1] - i[1], e[2] = t[2] - i[2], e[3] = t[3] - i[3], e[4] = t[4] - i[4], e[5] = t[5] - i[5], e[6] = t[6] - i[6], e[7] = t[7] - i[7], e[8] = t[8] - i[8], e[9] = t[9] - i[9], e[10] = t[10] - i[10], e[11] = t[11] - i[11], e[12] = t[12] - i[12], e[13] = t[13] - i[13], e[14] = t[14] - i[14], e[15] = t[15] - i[15], e } function we(e, t, i) { return e[0] = t[0] * i, e[1] = t[1] * i, e[2] = t[2] * i, e[3] = t[3] * i, e[4] = t[4] * i, e[5] = t[5] * i, e[6] = t[6] * i, e[7] = t[7] * i, e[8] = t[8] * i, e[9] = t[9] * i, e[10] = t[10] * i, e[11] = t[11] * i, e[12] = t[12] * i, e[13] = t[13] * i, e[14] = t[14] * i, e[15] = t[15] * i, e } var I = class extends Array { constructor(t = 1, i = 0, r = 0, s = 0, n = 0, a = 1, h = 0, o = 0, l = 0, c = 0, f = 1, u = 0, p = 0, d = 0, m = 0, g = 1) { return super(t, i, r, s, n, a, h, o, l, c, f, u, p, d, m, g), this } get x() { return this[12] } get y() { return this[13] } get z() { return this[14] } get w() { return this[15] } set x(t) { this[12] = t } set y(t) { this[13] = t } set z(t) { this[14] = t } set w(t) { this[15] = t } set(t, i, r, s, n, a, h, o, l, c, f, u, p, d, m, g) { return t.length ? this.copy(t) : (ne(this, t, i, r, s, n, a, h, o, l, c, f, u, p, d, m, g), this) } translate(t, i = this) { return he(this, i, t), this } rotate(t, i, r = this) { return ce(this, r, t, i), this } scale(t, i = this) { return le(this, i, typeof t == "number" ? [t, t, t] : t), this } add(t, i) { return i ? yt(this, t, i) : yt(this, this, t), this } sub(t, i) { return i ? wt(this, t, i) : wt(this, this, t), this } multiply(t, i) { return t.length ? i ? mt(this, t, i) : mt(this, this, t) : we(this, this, t), this } identity() { return ae(this), this } copy(t) { return se(this, t), this } fromPerspective({ fov: t, aspect: i, near: r, far: s } = {}) { return ge(this, t, i, r, s), this } fromOrthogonal({ left: t, right: i, bottom: r, top: s, near: n, far: a }) { return xe(this, t, i, r, s, n, a), this } fromQuaternion(t) { return me(this, t), this } setPosition(t) { return this.x = t[0], this.y = t[1], this.z = t[2], this } inverse(t = this) { return oe(this, t), this } compose(t, i, r) { return de(this, t, i, r), this } decompose(t, i, r) { return pe(this, t, i, r), this } getRotation(t) { return xt(t, this), this } getTranslation(t) { return fe(t, this), this } getScaling(t) { return gt(t, this), this } getMaxScaleOnAxis() { return ue(this) } lookAt(t, i, r) { return ye(this, t, i, r), this } determinant() { return dt(this) } fromArray(t, i = 0) { return this[0] = t[i], this[1] = t[i + 1], this[2] = t[i + 2], this[3] = t[i + 3], this[4] = t[i + 4], this[5] = t[i + 5], this[6] = t[i + 6], this[7] = t[i + 7], this[8] = t[i + 8], this[9] = t[i + 9], this[10] = t[i + 10], this[11] = t[i + 11], this[12] = t[i + 12], this[13] = t[i + 13], this[14] = t[i + 14], this[15] = t[i + 15], this } toArray(t = [], i = 0) { return t[i] = this[0], t[i + 1] = this[1], t[i + 2] = this[2], t[i + 3] = this[3], t[i + 4] = this[4], t[i + 5] = this[5], t[i + 6] = this[6], t[i + 7] = this[7], t[i + 8] = this[8], t[i + 9] = this[9], t[i + 10] = this[10], t[i + 11] = this[11], t[i + 12] = this[12], t[i + 13] = this[13], t[i + 14] = this[14], t[i + 15] = this[15], t } }; function Me(e, t, i = "YXZ") { return i === "XYZ" ? (e[1] = Math.asin(Math.min(Math.max(t[8], -1), 1)), Math.abs(t[8]) < .99999 ? (e[0] = Math.atan2(-t[9], t[10]), e[2] = Math.atan2(-t[4], t[0])) : (e[0] = Math.atan2(t[6], t[5]), e[2] = 0)) : i === "YXZ" ? (e[0] = Math.asin(-Math.min(Math.max(t[9], -1), 1)), Math.abs(t[9]) < .99999 ? (e[1] = Math.atan2(t[8], t[10]), e[2] = Math.atan2(t[1], t[5])) : (e[1] = Math.atan2(-t[2], t[0]), e[2] = 0)) : i === "ZXY" ? (e[0] = Math.asin(Math.min(Math.max(t[6], -1), 1)), Math.abs(t[6]) < .99999 ? (e[1] = Math.atan2(-t[2], t[10]), e[2] = Math.atan2(-t[4], t[5])) : (e[1] = 0, e[2] = Math.atan2(t[1], t[0]))) : i === "ZYX" ? (e[1] = Math.asin(-Math.min(Math.max(t[2], -1), 1)), Math.abs(t[2]) < .99999 ? (e[0] = Math.atan2(t[6], t[10]), e[2] = Math.atan2(t[1], t[0])) : (e[0] = 0, e[2] = Math.atan2(-t[4], t[5]))) : i === "YZX" ? (e[2] = Math.asin(Math.min(Math.max(t[1], -1), 1)), Math.abs(t[1]) < .99999 ? (e[0] = Math.atan2(-t[9], t[5]), e[1] = Math.atan2(-t[2], t[0])) : (e[0] = 0, e[1] = Math.atan2(t[8], t[10]))) : i === "XZY" && (e[2] = Math.asin(-Math.min(Math.max(t[4], -1), 1)), Math.abs(t[4]) < .99999 ? (e[0] = Math.atan2(t[6], t[5]), e[1] = Math.atan2(t[8], t[0])) : (e[0] = Math.atan2(-t[9], t[10]), e[1] = 0)), e } var Ee = new I, j = class extends Array { constructor(t = 0, i = t, r = t, s = "YXZ") { super(t, i, r), this.order = s, this.onChange = () => { }, this._target = this; let n = ["0", "1", "2"]; return new Proxy(this, { set(a, h) { let o = Reflect.set(...arguments); return o && n.includes(h) && a.onChange(), o } }) } get x() { return this[0] } get y() { return this[1] } get z() { return this[2] } set x(t) { this._target[0] = t, this.onChange() } set y(t) { this._target[1] = t, this.onChange() } set z(t) { this._target[2] = t, this.onChange() } set(t, i = t, r = t) { return t.length ? this.copy(t) : (this._target[0] = t, this._target[1] = i, this._target[2] = r, this.onChange(), this) } copy(t) { return this._target[0] = t[0], this._target[1] = t[1], this._target[2] = t[2], this.onChange(), this } reorder(t) { return this._target.order = t, this.onChange(), this } fromRotationMatrix(t, i = this.order) { return Me(this._target, t, i), this.onChange(), this } fromQuaternion(t, i = this.order, r) { return Ee.fromQuaternion(t), this._target.fromRotationMatrix(Ee, i), r || this.onChange(), this } fromArray(t, i = 0) { return this._target[0] = t[i], this._target[1] = t[i + 1], this._target[2] = t[i + 2], this } toArray(t = [], i = 0) { return t[i] = this[0], t[i + 1] = this[1], t[i + 2] = this[2], t } }; var O = class { constructor() { this.parent = null, this.children = [], this.visible = !0, this.matrix = new I, this.worldMatrix = new I, this.matrixAutoUpdate = !0, this.worldMatrixNeedsUpdate = !1, this.position = new y, this.quaternion = new U, this.scale = new y(1), this.rotation = new j, this.up = new y(0, 1, 0), this.rotation._target.onChange = () => this.quaternion.fromEuler(this.rotation, !0), this.quaternion._target.onChange = () => this.rotation.fromQuaternion(this.quaternion, void 0, !0) } setParent(t, i = !0) { this.parent && t !== this.parent && this.parent.removeChild(this, !1), this.parent = t, i && t && t.addChild(this, !1) } addChild(t, i = !0) { ~this.children.indexOf(t) || this.children.push(t), i && t.setParent(this, !1) } removeChild(t, i = !0) { ~this.children.indexOf(t) && this.children.splice(this.children.indexOf(t), 1), i && t.setParent(null, !1) } updateMatrix() { this.matrix.compose(this.quaternion, this.position, this.scale), this.worldMatrixNeedsUpdate = !0 } updateMatrixWorld(t) { this.matrixAutoUpdate && this.updateMatrix(), (this.worldMatrixNeedsUpdate || t) && (this.parent === null ? this.worldMatrix.copy(this.matrix) : this.worldMatrix.multiply(this.parent.worldMatrix, this.matrix), this.worldMatrixNeedsUpdate = !1, t = !0); for (let i = 0, r = this.children.length; i < r; i++)this.children[i].updateMatrixWorld(t) } traverse(t) { if (!t(this)) for (let i = 0, r = this.children.length; i < r; i++)this.children[i].traverse(t) } decompose() { this.matrix.decompose(this.quaternion._target, this.position, this.scale), this.rotation.fromQuaternion(this.quaternion) } lookAt(t, i = !1) { i ? this.matrix.lookAt(this.position, t, this.up) : this.matrix.lookAt(t, this.position, this.up), this.matrix.getRotation(this.quaternion._target), this.rotation.fromQuaternion(this.quaternion) } }; function Ae(e, t) { return e[0] = t[0], e[1] = t[1], e[2] = t[2], e[3] = t[4], e[4] = t[5], e[5] = t[6], e[6] = t[8], e[7] = t[9], e[8] = t[10], e } function _e(e, t) { let i = t[0], r = t[1], s = t[2], n = t[3], a = i + i, h = r + r, o = s + s, l = i * a, c = r * a, f = r * h, u = s * a, p = s * h, d = s * o, m = n * a, g = n * h, x = n * o; return e[0] = 1 - f - d, e[3] = c - x, e[6] = u + g, e[1] = c + x, e[4] = 1 - l - d, e[7] = p - m, e[2] = u - g, e[5] = p + m, e[8] = 1 - l - f, e } function ve(e, t) { return e[0] = t[0], e[1] = t[1], e[2] = t[2], e[3] = t[3], e[4] = t[4], e[5] = t[5], e[6] = t[6], e[7] = t[7], e[8] = t[8], e } function be(e, t, i, r, s, n, a, h, o, l) { return e[0] = t, e[1] = i, e[2] = r, e[3] = s, e[4] = n, e[5] = a, e[6] = h, e[7] = o, e[8] = l, e } function Fe(e) { return e[0] = 1, e[1] = 0, e[2] = 0, e[3] = 0, e[4] = 1, e[5] = 0, e[6] = 0, e[7] = 0, e[8] = 1, e } function Te(e, t) { let i = t[0], r = t[1], s = t[2], n = t[3], a = t[4], h = t[5], o = t[6], l = t[7], c = t[8], f = c * a - h * l, u = -c * n + h * o, p = l * n - a * o, d = i * f + r * u + s * p; return d ? (d = 1 / d, e[0] = f * d, e[1] = (-c * r + s * l) * d, e[2] = (h * r - s * a) * d, e[3] = u * d, e[4] = (c * i - s * o) * d, e[5] = (-h * i + s * n) * d, e[6] = p * d, e[7] = (-l * i + r * o) * d, e[8] = (a * i - r * n) * d, e) : null } function Mt(e, t, i) { let r = t[0], s = t[1], n = t[2], a = t[3], h = t[4], o = t[5], l = t[6], c = t[7], f = t[8], u = i[0], p = i[1], d = i[2], m = i[3], g = i[4], x = i[5], v = i[6], M = i[7], w = i[8]; return e[0] = u * r + p * a + d * l, e[1] = u * s + p * h + d * c, e[2] = u * n + p * o + d * f, e[3] = m * r + g * a + x * l, e[4] = m * s + g * h + x * c, e[5] = m * n + g * o + x * f, e[6] = v * r + M * a + w * l, e[7] = v * s + M * h + w * c, e[8] = v * n + M * o + w * f, e } function Re(e, t, i) { let r = t[0], s = t[1], n = t[2], a = t[3], h = t[4], o = t[5], l = t[6], c = t[7], f = t[8], u = i[0], p = i[1]; return e[0] = r, e[1] = s, e[2] = n, e[3] = a, e[4] = h, e[5] = o, e[6] = u * r + p * a + l, e[7] = u * s + p * h + c, e[8] = u * n + p * o + f, e } function ze(e, t, i) { let r = t[0], s = t[1], n = t[2], a = t[3], h = t[4], o = t[5], l = t[6], c = t[7], f = t[8], u = Math.sin(i), p = Math.cos(i); return e[0] = p * r + u * a, e[1] = p * s + u * h, e[2] = p * n + u * o, e[3] = p * a - u * r, e[4] = p * h - u * s, e[5] = p * o - u * n, e[6] = l, e[7] = c, e[8] = f, e } function Le(e, t, i) { let r = i[0], s = i[1]; return e[0] = r * t[0], e[1] = r * t[1], e[2] = r * t[2], e[3] = s * t[3], e[4] = s * t[4], e[5] = s * t[5], e[6] = t[6], e[7] = t[7], e[8] = t[8], e } function Se(e, t) { let i = t[0], r = t[1], s = t[2], n = t[3], a = t[4], h = t[5], o = t[6], l = t[7], c = t[8], f = t[9], u = t[10], p = t[11], d = t[12], m = t[13], g = t[14], x = t[15], v = i * h - r * a, M = i * o - s * a, w = i * l - n * a, A = r * o - s * h, E = r * l - n * h, b = s * l - n * o, L = c * m - f * d, S = c * g - u * d, F = c * x - p * d, P = f * g - u * m, T = f * x - p * m, C = u * x - p * g, _ = v * C - M * T + w * P + A * F - E * S + b * L; return _ ? (_ = 1 / _, e[0] = (h * C - o * T + l * P) * _, e[1] = (o * F - a * C - l * S) * _, e[2] = (a * T - h * F + l * L) * _, e[3] = (s * T - r * C - n * P) * _, e[4] = (i * C - s * F + n * S) * _, e[5] = (r * F - i * T - n * L) * _, e[6] = (m * b - g * E + x * A) * _, e[7] = (g * w - d * b - x * M) * _, e[8] = (d * E - m * w + x * v) * _, e) : null } var k = class extends Array { constructor(t = 1, i = 0, r = 0, s = 0, n = 1, a = 0, h = 0, o = 0, l = 1) { return super(t, i, r, s, n, a, h, o, l), this } set(t, i, r, s, n, a, h, o, l) { return t.length ? this.copy(t) : (be(this, t, i, r, s, n, a, h, o, l), this) } translate(t, i = this) { return Re(this, i, t), this } rotate(t, i = this) { return ze(this, i, t), this } scale(t, i = this) { return Le(this, i, t), this } multiply(t, i) { return i ? Mt(this, t, i) : Mt(this, this, t), this } identity() { return Fe(this), this } copy(t) { return ve(this, t), this } fromMatrix4(t) { return Ae(this, t), this } fromQuaternion(t) { return _e(this, t), this } fromBasis(t, i, r) { return this.set(t[0], t[1], t[2], i[0], i[1], i[2], r[0], r[1], r[2]), this } inverse(t = this) { return Te(this, t), this } getNormalMatrix(t) { return Se(this, t), this } }; var $e = 0, z = class extends O { constructor(t, { geometry: i, program: r, mode: s = t.TRIANGLES, frustumCulled: n = !0, renderOrder: a = 0 } = {}) { super(), t.canvas || console.error("gl not passed as first argument to Mesh"), this.gl = t, this.id = $e++, this.geometry = i, this.program = r, this.mode = s, this.frustumCulled = n, this.renderOrder = a, this.modelViewMatrix = new I, this.normalMatrix = new k, this.beforeRenderCallbacks = [], this.afterRenderCallbacks = [] } onBeforeRender(t) { return this.beforeRenderCallbacks.push(t), this } onAfterRender(t) { return this.afterRenderCallbacks.push(t), this } draw({ camera: t } = {}) { t && (this.program.uniforms.modelMatrix || Object.assign(this.program.uniforms, { modelMatrix: { value: null }, viewMatrix: { value: null }, modelViewMatrix: { value: null }, normalMatrix: { value: null }, projectionMatrix: { value: null }, cameraPosition: { value: null } }), this.program.uniforms.projectionMatrix.value = t.projectionMatrix, this.program.uniforms.cameraPosition.value = t.worldPosition, this.program.uniforms.viewMatrix.value = t.viewMatrix, this.modelViewMatrix.multiply(t.viewMatrix, this.worldMatrix), this.normalMatrix.getNormalMatrix(this.modelViewMatrix), this.program.uniforms.modelMatrix.value = this.worldMatrix, this.program.uniforms.modelViewMatrix.value = this.modelViewMatrix, this.program.uniforms.normalMatrix.value = this.normalMatrix), this.beforeRenderCallbacks.forEach(r => r && r({ mesh: this, camera: t })); let i = this.program.cullFace && this.worldMatrix.determinant() < 0; this.program.use({ flipFaces: i }), this.geometry.draw({ mode: this.mode, program: this.program }), this.afterRenderCallbacks.forEach(r => r && r({ mesh: this, camera: t })) } }; var Vi = new Uint8Array(4); var B = class extends R { constructor(t, { attributes: i = {} } = {}) { Object.assign(i, { position: { size: 2, data: new Float32Array([-1, -1, 3, -1, -1, 3]) }, uv: { size: 2, data: new Float32Array([0, 0, 2, 0, 0, 2]) } }), super(t, i) } }; var Et = "catmullrom", At = "cubicbezier", Ie = "quadraticbezier", G = new y, X = new y, $ = new y, Pe = new y; function ii(e, t, i = .168, r = .168) { if (t < 1 ? G.sub(e[1], e[0]).scale(i).add(e[0]) : G.sub(e[t + 1], e[t - 1]).scale(i).add(e[t]), t > e.length - 3) { let s = e.length - 1; X.sub(e[s - 1], e[s]).scale(r).add(e[s]) } else X.sub(e[t], e[t + 2]).scale(r).add(e[t + 1]); return [G.clone(), X.clone()] } function Ce(e, t, i, r) { let s = 1 - e; G.copy(t).scale(s ** 2), X.copy(i).scale(2 * s * e), $.copy(r).scale(e ** 2); let n = new y; return n.add(G, X).add($), n } function Ne(e, t, i, r, s) { let n = 1 - e; G.copy(t).scale(n ** 3), X.copy(i).scale(3 * n ** 2 * e), $.copy(r).scale(3 * n * e ** 2), Pe.copy(s).scale(e ** 3); let a = new y; return a.add(G, X).add($).add(Pe), a } var W = class e { constructor({ points: t = [new y(0, 0, 0), new y(0, 1, 0), new y(1, 1, 0), new y(1, 0, 0)], divisions: i = 12, type: r = Et } = {}) { this.points = t, this.divisions = i, this.type = r } _getQuadraticBezierPoints(t = this.divisions) { let i = [], r = this.points.length; if (r < 3) return console.warn("Not enough points provided."), []; let s = this.points[0], n = this.points[1], a = this.points[2]; for (let o = 0; o <= t; o++) { let l = Ce(o / t, s, n, a); i.push(l) } let h = 3; for (; r - h > 0;) { s.copy(a), n = a.scale(2).sub(n), a = this.points[h]; for (let o = 1; o <= t; o++) { let l = Ce(o / t, s, n, a); i.push(l) } h++ } return i } _getCubicBezierPoints(t = this.divisions) { let i = [], r = this.points.length; if (r < 4) return console.warn("Not enough points provided."), []; let s = this.points[0], n = this.points[1], a = this.points[2], h = this.points[3]; for (let l = 0; l <= t; l++) { let c = Ne(l / t, s, n, a, h); i.push(c) } let o = 4; for (; r - o > 1;) { s.copy(h), n = h.scale(2).sub(a), a = this.points[o], h = this.points[o + 1]; for (let l = 1; l <= t; l++) { let c = Ne(l / t, s, n, a, h); i.push(c) } o += 2 } return i } _getCatmullRomPoints(t = this.divisions, i = .168, r = .168) { let s = []; if (this.points.length <= 2) return this.points; let a; return this.points.forEach((h, o) => { if (o === 0) a = h; else { let [l, c] = ii(this.points, o - 1, i, r), f = new e({ points: [a, l, c, h], type: At }); s.pop(), s.push(...f.getPoints(t)), a = h } }), s } getPoints(t = this.divisions, i = .168, r = .168) { let s = this.type; return s === Ie ? this._getQuadraticBezierPoints(t) : s === At ? this._getCubicBezierPoints(t) : s === Et ? this._getCatmullRomPoints(t, i, r) : this.points } }; W.CATMULLROM = Et; W.CUBICBEZIER = At; W.QUADRATICBEZIER = Ie; window.OGL = { Renderer: Y, Program: N, Triangle: B, Mesh: z };
+    })();
+  </script>
+  <script>
+    // ---------- SIDE RAYS: capa decorativa de luz de fondo para la seccion "Tratamientos capilares" (WebGL via ogl) ----------
+    (function initSideRays() {
+      try {
+        const container = document.getElementById('tcRaysContainer');
+        if (!container) return;
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!window.OGL) { console.warn('Side Rays: la librería ogl no se cargó.'); return; }
+        const { Renderer, Program, Triangle, Mesh } = window.OGL;
+
+        const options = {
+          speed: reduceMotion ? 0 : 2.2,
+          rayColor1: '#34d399',
+          rayColor2: '#ffffff',
+          intensity: 2.6,
+          spread: 2.2,
+          origin: 'top-right',
+          tilt: 0,
+          saturation: 1.3,
+          blend: 0.5,
+          falloff: 1.25,
+          opacity: 1
+        };
+
+        const hexToRgb = (hex) => {
+          const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+          return m ? [parseInt(m[1], 16) / 255, parseInt(m[2], 16) / 255, parseInt(m[3], 16) / 255] : [1, 1, 1];
+        };
+
+        const originToFlip = (origin) => {
+          switch (origin) {
+            case 'top-left': return [1, 0];
+            case 'bottom-right': return [0, 1];
+            case 'bottom-left': return [1, 1];
+            default: return [0, 0]; // "top-right"
+          }
+        };
+
+        const renderer = new Renderer({ dpr: Math.min(window.devicePixelRatio || 1, 2), alpha: true });
+        const gl = renderer.gl;
+        gl.canvas.style.width = '100%';
+        gl.canvas.style.height = '100%';
+        container.appendChild(gl.canvas);
+
+        const vert = `
+attribute vec2 position;
+void main() {
+  gl_Position = vec4(position, 0.0, 1.0);
+}`;
+
+        const frag = `precision highp float;
+
+uniform float iTime;
+uniform vec2 iResolution;
+uniform float iSpeed;
+uniform vec3 iRayColor1;
+uniform vec3 iRayColor2;
+uniform float iIntensity;
+uniform float iSpread;
+uniform float iFlipX;
+uniform float iFlipY;
+uniform float iTilt;
+uniform float iSaturation;
+uniform float iBlend;
+uniform float iFalloff;
+uniform float iOpacity;
+
+float rayStrength(vec2 raySource, vec2 rayRefDirection, vec2 coord, float seedA, float seedB, float speed) {
+  vec2 sourceToCoord = coord - raySource;
+  float cosAngle = dot(normalize(sourceToCoord), rayRefDirection);
+  return clamp(
+    (0.45 + 0.15 * sin(cosAngle * seedA + iTime * speed)) +
+    (0.3 + 0.2 * cos(-cosAngle * seedB + iTime * speed)),
+    0.0, 1.0) *
+    clamp((iResolution.x - length(sourceToCoord)) / iResolution.x, 0.5, 1.0);
+}
+
+void main() {
+  vec2 fragCoord = gl_FragCoord.xy;
+  if (iFlipX > 0.5) fragCoord.x = iResolution.x - fragCoord.x;
+  if (iFlipY > 0.5) fragCoord.y = iResolution.y - fragCoord.y;
+
+  vec2 coord = vec2(fragCoord.x, iResolution.y - fragCoord.y);
+  vec2 rayPos = vec2(iResolution.x * 1.1, -0.5 * iResolution.y);
+
+  float tiltRad = iTilt * 3.14159265 / 180.0;
+  float cs = cos(tiltRad);
+  float sn = sin(tiltRad);
+  vec2 rel = coord - rayPos;
+  vec2 tiltedCoord = vec2(rel.x * cs - rel.y * sn, rel.x * sn + rel.y * cs) + rayPos;
+
+  float halfSpread = iSpread * 0.275;
+  vec2 rayRefDir1 = normalize(vec2(cos(0.785398 + halfSpread), sin(0.785398 + halfSpread)));
+  vec2 rayRefDir2 = normalize(vec2(cos(0.785398 - halfSpread), sin(0.785398 - halfSpread)));
+
+  vec4 rays1 = vec4(iRayColor1, 1.0) * rayStrength(rayPos, rayRefDir1, tiltedCoord, 36.2214, 21.11349, iSpeed);
+  vec4 rays2 = vec4(iRayColor2, 1.0) * rayStrength(rayPos, rayRefDir2, tiltedCoord, 22.3991, 18.0234, iSpeed * 0.2);
+
+  vec4 color = rays1 * (1.0 - iBlend) * 0.9 + rays2 * iBlend * 0.9;
+
+  float distanceToLight = length(fragCoord.xy - vec2(rayPos.x, iResolution.y - rayPos.y)) / iResolution.y;
+  float brightness = iIntensity * 0.4 / pow(max(distanceToLight, 0.001), iFalloff);
+  color.rgb *= brightness;
+
+  float gray = dot(color.rgb, vec3(0.299, 0.587, 0.114));
+  color.rgb = mix(vec3(gray), color.rgb, iSaturation);
+
+  color.a = max(color.r, max(color.g, color.b)) * iOpacity;
+  gl_FragColor = color;
+}`;
+
+        const [flipX, flipY] = originToFlip(options.origin);
+        const uniforms = {
+          iTime: { value: 0 },
+          iResolution: { value: [1, 1] },
+          iSpeed: { value: options.speed },
+          iRayColor1: { value: hexToRgb(options.rayColor1) },
+          iRayColor2: { value: hexToRgb(options.rayColor2) },
+          iIntensity: { value: options.intensity },
+          iSpread: { value: options.spread },
+          iFlipX: { value: flipX },
+          iFlipY: { value: flipY },
+          iTilt: { value: options.tilt },
+          iSaturation: { value: options.saturation },
+          iBlend: { value: options.blend },
+          iFalloff: { value: options.falloff },
+          iOpacity: { value: options.opacity }
+        };
+
+        const geometry = new Triangle(gl);
+        const program = new Program(gl, { vertex: vert, fragment: frag, uniforms });
+        const mesh = new Mesh(gl, { geometry, program });
+
+        let sized = false;
+        function updateSize() {
+          const w = container.clientWidth;
+          const h = container.clientHeight;
+          if (!w || !h) return false; // el hero aun no tiene tamaño real, se reintenta
+          renderer.dpr = Math.min(window.devicePixelRatio || 1, 2);
+          renderer.setSize(w, h);
+          uniforms.iResolution.value = [w * renderer.dpr, h * renderer.dpr];
+          return true;
+        }
+
+        function loop(t) {
+          if (!sized) sized = updateSize();
+          uniforms.iTime.value = t * 0.001;
+          try {
+            renderer.render({ scene: mesh });
+          } catch (err) {
+            console.warn('Error renderizando Side Rays:', err);
+            return; // detener el bucle si el render falla de forma persistente
+          }
+          if (!reduceMotion) requestAnimationFrame(loop);
+        }
+
+        window.addEventListener('resize', () => { updateSize(); });
+        updateSize();
+        requestAnimationFrame(loop);
+      } catch (err) {
+        console.warn('No se pudo iniciar el fondo Side Rays:', err);
+      }
+    })();
+  </script>
+</body>
+
+</html>

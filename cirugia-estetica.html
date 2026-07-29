@@ -1,0 +1,4159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./logo_medicalinares.ico">
+  <link rel="icon" type="image/png" href="./logo_medicallinares.png">
+  <title>Cirugía Estética — Medical Linares</title>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,500&display=swap">
+  <style>
+    :root {
+      --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --color-black: #272727;
+      --color-white: #fff;
+      --spacing: .25rem;
+      --container-sm: 24rem;
+      --container-md: 28rem;
+      --container-xl: 36rem;
+      --container-3xl: 48rem;
+      --container-4xl: 56rem;
+      --container-6xl: 72rem;
+      --container-7xl: 80rem;
+      --text-xs: .75rem;
+      --text-xs--line-height: calc(1 / .75);
+      --text-sm: .875rem;
+      --text-sm--line-height: calc(1.25 / .875);
+      --text-base: 1rem;
+      --text-base--line-height: calc(1.5 / 1);
+      --text-lg: 1.125rem;
+      --text-lg--line-height: calc(1.75 / 1.125);
+      --text-xl: 1.25rem;
+      --text-xl--line-height: calc(1.75 / 1.25);
+      --text-2xl: 1.5rem;
+      --text-2xl--line-height: calc(2 / 1.5);
+      --text-3xl: 1.875rem;
+      --text-3xl--line-height: calc(2.25 / 1.875);
+      --text-4xl: 2.25rem;
+      --text-4xl--line-height: calc(2.5 / 2.25);
+      --text-5xl: 3rem;
+      --text-5xl--line-height: 1;
+      --font-weight-normal: 400;
+      --font-weight-medium: 500;
+      --tracking-tight: -.05em;
+      --tracking-normal: -.03em;
+      --tracking-widest: .008em;
+      --radius-xs: .125rem;
+      --radius-sm: .25rem;
+      --radius-md: .375rem;
+      --radius-lg: .5rem;
+      --radius-3xl: 1.5rem;
+      --ease-in: cubic-bezier(.4, 0, 1, 1);
+      --ease-out: cubic-bezier(0, 0, .2, 1);
+      --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+      --blur-sm: 8px;
+      --blur-md: 12px;
+      --perspective-midrange: 800px;
+      --aspect-video: 16 / 9;
+      --default-transition-duration: .15s;
+      --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+      --default-font-family: var(--font-sans);
+      --default-mono-font-family: var(--font-mono);
+      --color-cream: #e6e4e2;
+      --color-grey-light: #9c9c9c;
+      --color-grey-line: #434343;
+      --color-cream-line: #d8d8d8;
+      --color-dark-font: #434343;
+      --color-light-font: #d8d8d8;
+      --animate-arrowPulse: arrowPulse 1.8s ease-in-out infinite;
+      --pl-black: #000;
+      --pl-white: #fff;
+      --pl-panel-gray: #c8c8c8;
+      --pl-line-gray: #434343;
+      --pl-corner-plus-offset: calc(-6px - 6.5px);
+      --pl-mono: "Space Mono", monospace;
+      --pl-display: "Bebas Neue", sans-serif;
+      --size: 750;
+      --bg: #040508;
+      --white: #fff;
+      --ink-soft: #0a0a0a8c;
+      --glass-line: #ffffff2e;
+      --ease-soft: cubic-bezier(.22, 1, .36, 1);
+      --ts-color-bg: #040508;
+      --ts-color-hint: #d8d8d8bf;
+      --ts-color-name: #c8c8c8;
+      --ts-color-role: #d8d8d880;
+      --ts-color-scan-id: #d8d8d8bf;
+      --ts-color-detected: #d8d8d8eb;
+      --font-neue: "Neue Montreal", "Neue Haas Grotesk Display", "neueHaas Fallback", var(--font-sans);
+      --font-ppeditorial: "ppEditorial", "ppEditorial Fallback", serif;
+      --font-martian: "martianMono", "martianMono Fallback", var(--font-mono);
+      --font-familjen: "familjen", "familjen Fallback", var(--font-sans);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    html,
+    body {
+      background: var(--bg);
+      color: var(--color-light-font);
+      font-family: var(--font-neue);
+      letter-spacing: var(--tracking-normal);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    .wrap {
+      max-width: 100%;
+      margin-inline: 0;
+      padding-inline: calc(var(--spacing) * 10);
+    }
+
+    /* ---------- BUTTON (glass pill) ---------- */
+    .button_wrapper {
+      position: relative;
+      width: fit-content;
+    }
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #4a9c7a 0%, #2c6b52 100%);
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, .18);
+      border-radius: 999px;
+      padding: .3rem .3rem .3rem 1.6rem;
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .3),
+        inset 0 -6px 10px rgba(0, 0, 0, .2),
+        0 10px 24px rgba(20, 60, 45, .35);
+      transition: box-shadow .35s var(--ease-soft), transform .35s var(--ease-soft);
+    }
+
+    .btn:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .4),
+        inset 0 -6px 10px rgba(0, 0, 0, .25),
+        0 14px 30px rgba(20, 60, 45, .45);
+      transform: translateY(-1px);
+    }
+
+    .btn .word {
+      position: relative;
+      display: inline-flex;
+      font-weight: var(--font-weight-medium);
+      white-space: nowrap;
+    }
+
+    .btn .arrow-circle {
+      position: relative;
+      flex-shrink: 0;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .55), rgba(255, 255, 255, .05) 55%),
+        rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      overflow: hidden;
+      transition: transform .4s var(--ease-soft), background .4s var(--ease-soft);
+    }
+
+    .btn .arrow-circle svg {
+      position: relative;
+      transition: transform .4s var(--ease-soft);
+    }
+
+    .btn:hover .arrow-circle {
+      transform: scale(1.06);
+    }
+
+    .btn:hover .arrow-circle svg {
+      transform: translate(2px, -2px);
+    }
+
+    /* legacy classes kept as no-ops so old markup references don't break */
+    .underline,
+    .u-right,
+    .u-left {
+      display: none;
+    }
+
+    /* ---------- TOP NAV ---------- */
+    .topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 60;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem calc(var(--spacing) * 10);
+      border-bottom: 1px solid rgba(255, 255, 255, .18);
+
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+
+    .topnav-brand {
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+    }
+
+    .topnav-logo-link {
+      display: flex;
+      align-items: center;
+    }
+
+    .topnav-logo {
+      height: 2.1rem;
+      width: auto;
+      display: block;
+      filter: brightness(0) invert(1);
+      transition: filter .4s var(--ease-soft);
+    }
+
+    .topnav.on-light .topnav-logo {
+      filter: none;
+    }
+
+    .topnav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.85rem;
+    }
+
+    .nav-link {
+      position: relative;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      opacity: 1;
+      padding-bottom: .5rem;
+      transition: color .4s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .nav-link:hover {
+      opacity: .7;
+    }
+
+    .topnav.on-light .nav-link {
+      color: #000;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .6s var(--ease-soft);
+    }
+
+    .topnav.on-light .nav-link::after {
+      background: #000;
+    }
+
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }
+
+    .topnav .btn .arrow-circle {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    .topnav .btn .word {
+      font-size: var(--text-xs);
+    }
+
+    /* ---------- BOTON HAMBURGUESA (solo movil) ---------- */
+    .nav-toggle {
+      display: none;
+      position: relative;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background .3s var(--ease-soft);
+    }
+
+    .nav-toggle:hover {
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .nav-toggle-bar {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.15rem;
+      height: 1px;
+      background: #fff;
+      transform: translate(-50%, -50%);
+      transition: transform .35s var(--ease-soft), opacity .25s var(--ease-soft), margin-top .35s var(--ease-soft);
+    }
+
+    .nav-toggle-bar:nth-child(1) {
+      margin-top: -6px;
+    }
+
+    .nav-toggle-bar:nth-child(3) {
+      margin-top: 6px;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(3) {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    /* ---------- MENU PRINCIPAL EN MOVIL: se convierte en desplegable ---------- */
+    @media(max-width: 840px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      .topnav-actions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgba(4, 5, 8, .97);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, .14);
+        padding: .5rem calc(var(--spacing) * 10) 1.75rem;
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .35s var(--ease-soft), transform .35s var(--ease-soft), visibility 0s linear .35s;
+      }
+
+      .topnav-actions.is-open {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity .35s var(--ease-soft), transform .35s var(--ease-soft), visibility 0s linear 0s;
+      }
+
+      .topnav-actions .nav-link {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .08);
+      }
+
+      .topnav-actions .nav-link::after {
+        display: none;
+      }
+
+      .topnav-actions .button_wrapper {
+        margin-top: 1.25rem;
+        width: 100%;
+      }
+
+      .topnav-actions .btn {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    /* ---------- FLOWING MENU: desplegable de "Especialidades" ---------- */
+    .flowing-menu-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: #120F17;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .5s var(--ease-soft), visibility 0s linear .5s;
+    }
+
+    .flowing-menu-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .5s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    .flowing-menu-close {
+      position: absolute;
+      top: 1.85rem;
+      right: calc(var(--spacing) * 10);
+      z-index: 2;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      color: #fff;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft), transform .4s var(--ease-soft);
+    }
+
+    .flowing-menu-close:hover {
+      background: rgba(255, 255, 255, .18);
+      transform: rotate(90deg);
+    }
+
+    .specialty-submenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .specialty-row.is-open .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    /* Cirugía Estética: el submenú (Lipoláser) se despliega al pasar el ratón, no con clic */
+    .specialty-row.has-sub-hover:hover .specialty-submenu,
+    .specialty-row.has-sub-hover:focus-within .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    .specialty-sublink {
+      display: block;
+      font-size: var(--text-base);
+      color: #171717;
+      opacity: .65;
+      text-decoration: none;
+      padding: .6rem calc(var(--spacing) * 9) .6rem calc(var(--spacing) * 15);
+      transition: background .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .specialty-sublink:hover {
+      background: #f1f1ef;
+      opacity: 1;
+    }
+
+    .menu-wrap {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+      padding: 0 calc(var(--spacing) * 10);
+      list-style: none;
+    }
+
+    .menu__item {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid;
+    }
+
+    .menu__item:first-child {
+      border-top: none;
+    }
+
+    .menu__item-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: clamp(1.3rem, 4vh, 2.6rem);
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .menu__item-link:hover {
+      color: inherit;
+    }
+
+    .menu__item-link:focus:not(:focus-visible) {
+      color: inherit;
+    }
+
+    .marquee {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      transform: translate3d(0, 101%, 0);
+    }
+
+    .marquee__inner-wrap {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .marquee__inner {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 100%;
+      width: fit-content;
+      will-change: transform;
+    }
+
+    .marquee__part {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .marquee span {
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: clamp(1.3rem, 4vh, 2.6rem);
+      line-height: 1;
+      padding: 0 1vw;
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .marquee__img {
+      width: 200px;
+      height: 7vh;
+      margin: 2em 2vw;
+      padding: 1em 0;
+      border-radius: 50px;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+
+    @media(max-width: 900px) {
+
+      .menu__item-link,
+      .marquee span {
+        font-size: clamp(1.05rem, 3.2vh, 1.7rem);
+      }
+
+      .marquee__img {
+        width: 130px;
+      }
+    }
+
+    /* ---------- PORTADA (hero): reutilizable en todas las paginas de servicio ---------- */
+    .ic-hero {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .ic-hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .ic-hero-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ic-hero-media::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, .32) 42%, rgba(0, 0, 0, .3) 62%, rgba(0, 0, 0, .72) 100%);
+    }
+
+    .ic-hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+      padding-inline: calc(var(--spacing) * 10);
+    }
+
+    .ic-hero-kicker {
+      display: block;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      opacity: .65;
+      margin-bottom: 1.4rem;
+    }
+
+    .ic-hero-title {
+      font-size: clamp(2.6rem, 7vw, 5.5rem);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.02;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      display: inline-block;
+      background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 35%, #37ff93 50%, #ffffff 65%, #ffffff 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shinySweep 2s linear infinite;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ic-hero-title {
+        animation: none;
+        -webkit-text-fill-color: #fff;
+      }
+    }
+
+    .ic-hero-caption {
+      position: absolute;
+      left: 50%;
+      bottom: clamp(2.5rem, 6vw, 4.5rem);
+      transform: translateX(-50%);
+      z-index: 2;
+      width: 100%;
+      max-width: 34rem;
+      text-align: center;
+      padding-inline: calc(var(--spacing) * 10);
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.7;
+      color: var(--color-light-font);
+      opacity: .75;
+    }
+
+    /* pastilla "Lipoláser": subcategoria clicable bajo el titulo, hace scroll a su seccion */
+    .ic-hero-subcat {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      gap: .55rem;
+      margin: 1.5rem auto 0;
+      padding: .55rem .5rem .55rem 1.2rem;
+      border: 1px solid rgba(255, 255, 255, .3);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .06);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #fff;
+      text-decoration: none;
+      text-align: center;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      transition: background .35s var(--ease-soft), border-color .35s var(--ease-soft);
+    }
+
+    .footer-title-icon {
+      height: 2.4rem;
+      width: auto;
+      display: inline-block;
+      flex-shrink: 0;
+      filter: brightness(0) invert(1);
+      -webkit-text-fill-color: initial;
+      opacity: .85;
+    }
+
+    .ic-hero-subcat:hover {
+      background: rgba(255, 255, 255, .16);
+      border-color: rgba(255, 255, 255, .5);
+    }
+
+    .ic-hero-subcat .ic-hero-subcat-arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .14);
+      animation: icHeroSubcatBounce 1.8s ease-in-out infinite;
+    }
+
+    @keyframes icHeroSubcatBounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(3px);
+      }
+    }
+
+    @media(max-width: 640px) {
+      .ic-hero-title {
+        font-size: clamp(2.2rem, 11vw, 3rem);
+      }
+
+      .ic-hero-caption {
+        bottom: 2rem;
+        font-size: .68rem;
+      }
+    }
+
+    /* ---------- FOOTER: estilo cinematico (aurora, grid, marquee, glass pills) ---------- */
+    .site-footer {
+      position: relative;
+      background: linear-gradient(180deg, #061710 0%, #030d09 45%, #000 100%);
+      overflow: hidden;
+      isolation: isolate;
+      padding-block: calc(var(--spacing) * 26) calc(var(--spacing) * 8);
+    }
+
+    .footer-aurora {
+      position: absolute;
+      left: 50%;
+      top: 38%;
+      width: 78vw;
+      height: 52vh;
+      transform: translate(-50%, -50%) scale(1);
+      background: radial-gradient(circle at 50% 50%, rgba(52, 211, 153, .2) 0%, rgba(16, 163, 127, .12) 45%, transparent 72%);
+      border-radius: 50%;
+      filter: blur(70px);
+      z-index: 0;
+      pointer-events: none;
+      animation: footer-breathe 9s ease-in-out infinite alternate;
+    }
+
+    @keyframes footer-breathe {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: .55;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1.14);
+        opacity: .9;
+      }
+    }
+
+    .footer-grid-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-size: 60px 60px;
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, .045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, .045) 1px, transparent 1px);
+      -webkit-mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      pointer-events: none;
+    }
+
+    .footer-giant-text {
+      position: absolute;
+      left: 50%;
+      bottom: -3.2vw;
+      transform: translateX(-50%);
+      font-size: 11vw;
+      line-height: .8;
+      font-weight: 700;
+      letter-spacing: -.03em;
+      white-space: nowrap;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, .07);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .1) 0%, transparent 65%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .footer-marquee {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+      padding-block: .9rem;
+      margin-bottom: calc(var(--spacing) * 16);
+      background: rgba(255, 255, 255, .02);
+      transform: rotate(-1deg) scale(1.03);
+    }
+
+    .footer-marquee-track {
+      display: flex;
+      width: max-content;
+      animation: footer-marquee 34s linear infinite;
+    }
+
+    .footer-marquee-group {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding-inline: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .footer-marquee-group span {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .55;
+      white-space: nowrap;
+    }
+
+    .footer-marquee-group .dot {
+      opacity: .35;
+    }
+
+    @keyframes footer-marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-title {
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      line-height: 1.1;
+      font-weight: var(--font-weight-normal);
+      letter-spacing: var(--tracking-tight);
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, .35) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 24px rgba(255, 255, 255, .12));
+      margin-bottom: calc(var(--spacing) * 12);
+      width: fit-content;
+    }
+
+    .footer-locations {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 3rem;
+      padding-bottom: calc(var(--spacing) * 14);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .footer-loc {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+    }
+
+    .footer-loc-name {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+    }
+
+    .footer-loc-address {
+      font-size: var(--text-sm);
+      line-height: 1.55;
+      color: var(--color-light-font);
+      opacity: .7;
+      max-width: 20rem;
+    }
+
+    .footer-loc-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: .6rem;
+      font-size: var(--text-sm);
+    }
+
+    .footer-label {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .45;
+    }
+
+    .footer-value {
+      color: var(--color-light-font);
+      opacity: .85;
+      text-decoration: none;
+    }
+
+    /* pastilla de cristal (glass pill) reutilizable, con efecto iman via JS */
+    .footer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem 1.1rem;
+      border-radius: 999px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .06) 0%, rgba(255, 255, 255, .015) 100%);
+      border: 1px solid rgba(255, 255, 255, .1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, .12), 0 8px 18px -8px rgba(0, 0, 0, .5);
+      text-decoration: none;
+      color: var(--color-light-font);
+      width: fit-content;
+      transition: background .4s var(--ease-soft), border-color .4s var(--ease-soft), color .3s var(--ease-soft);
+    }
+
+    .footer-pill:hover {
+      background: linear-gradient(145deg, rgba(255, 255, 255, .12) 0%, rgba(255, 255, 255, .04) 100%);
+      border-color: rgba(255, 255, 255, .24);
+      color: #fff;
+    }
+
+    .footer-tel {
+      font-size: var(--text-sm);
+    }
+
+    .footer-treatments {
+      display: flex;
+      flex-direction: column;
+      gap: .65rem;
+    }
+
+    .footer-treatments a {
+      font-size: var(--text-sm);
+      color: var(--color-light-font);
+      opacity: .7;
+      text-decoration: none;
+      width: fit-content;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .footer-treatments a:hover {
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .footer-treatments a.footer-all {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding-top: calc(var(--spacing) * 8);
+    }
+
+    .footer-copy {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .5;
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+
+    .footer-legal a {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+    }
+
+    .footer-right-group {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+
+    .footer-icon-btn {
+      width: 3.1rem;
+      height: 3.1rem;
+      padding: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .footer-icon-btn svg {
+      transition: transform .3s var(--ease-soft);
+    }
+
+    .footer-icon-btn:hover svg {
+      transform: translateY(-2px);
+    }
+
+    .footer-top-btn:hover svg {
+      transform: translateY(-3px);
+    }
+
+    .footer-credit {
+      margin-top: calc(var(--spacing) * 6);
+      padding-top: calc(var(--spacing) * 6);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      text-align: center;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .4;
+    }
+
+    @media(max-width: 900px) {
+      .footer-locations {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-treatments {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media(max-width: 560px) {
+      .footer-locations {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-giant-text {
+        font-size: 18vw;
+      }
+    }
+
+    /* ---------- TRATAMIENTOS: tarjetas de 2 en 2 / 3 en 3 (componente compartido) ---------- */
+    .tc-section {
+      position: relative;
+      background: var(--bg);
+      overflow: hidden;
+    }
+
+    #lipolaser {
+      scroll-margin-top: 6rem;
+    }
+
+    .tc-intro {
+      padding-top: clamp(4.5rem, 9vw, 7rem);
+      padding-bottom: clamp(2rem, 5vw, 3rem);
+      padding-inline: calc(var(--spacing) * 10);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .tc-kicker {
+      display: block;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .55;
+    }
+
+    /* grid de 2 columnas con los 4 primeros tratamientos */
+    .tc-items {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(3.5rem, 6vw, 5.5rem) clamp(2.5rem, 6vw, 5rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+      padding-inline: calc(var(--spacing) * 10);
+      padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
+    }
+
+    .tc-divider {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, .14);
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .tc-plus {
+      position: absolute;
+      left: 50%;
+      width: 11px;
+      height: 11px;
+      transform: translate(-50%, -50%);
+    }
+
+    .tc-plus::before,
+    .tc-plus::after {
+      content: '';
+      position: absolute;
+      background: rgba(255, 255, 255, .4);
+    }
+
+    .tc-plus::before {
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      transform: translateX(-50%);
+    }
+
+    .tc-plus::after {
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    .tc-plus-top {
+      top: var(--pl-corner-plus-offset);
+    }
+
+    .tc-plus-bottom {
+      bottom: var(--pl-corner-plus-offset);
+      top: auto;
+    }
+
+    /* tarjeta individual: imagen arriba, texto debajo */
+    .tc-item {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    /* ── ANIMACIÓN DESACTIVADA: todos los tratamientos son siempre visibles ── */
+    .tc-item,
+    .tc-item.visible,
+    .tc-item.animate,
+    .tc-item.reveal {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .tc-media img {
+      transform: scale(1.05) !important;
+      transition: none !important;
+    }
+
+    /* grid de 3 columnas con los 3 tratamientos restantes, debajo del grupo de 4 */
+    .tc-items-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(3rem, 5vw, 4rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+      padding-inline: calc(var(--spacing) * 10);
+      padding-top: clamp(3.5rem, 6vw, 5.5rem);
+      padding-bottom: clamp(4rem, 8vw, 6.5rem);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .tc-media {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      width: 100%;
+      background: var(--pl-panel-gray);
+      border: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .tc-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.15);
+    }
+
+    .tc-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .tc-block-title {
+      margin-bottom: 1.5rem;
+    }
+
+    .tc-title {
+      font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .tc-block-lead {
+      margin-bottom: .15rem;
+      max-width: 26rem;
+    }
+
+    .tc-lead-highlight {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .tc-block-lead-desc {
+      margin-bottom: 1.75rem;
+      max-width: 26rem;
+    }
+
+    .tc-lead-desc {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      color: var(--color-light-font);
+      line-height: 1.6;
+    }
+
+    .tc-focus {
+      margin-bottom: 1.85rem;
+      max-width: 26rem;
+    }
+
+    .tc-block-label {
+      margin-bottom: .65rem;
+    }
+
+    .tc-label {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .5;
+    }
+
+    .tc-small {
+      font-size: var(--text-sm);
+      line-height: 1.65;
+      color: var(--color-light-font);
+      opacity: .75;
+      font-weight: var(--font-weight-normal);
+    }
+
+    .tc-cta {
+      margin-top: .25rem;
+    }
+
+    @media(max-width: 900px) {
+      .tc-items {
+        grid-template-columns: 1fr;
+        gap: 3.25rem;
+      }
+
+      .tc-items-3 {
+        grid-template-columns: 1fr;
+        gap: 3.25rem;
+        padding-top: 3.25rem;
+      }
+
+      .tc-divider {
+        display: none;
+      }
+    }
+
+    /* ---------- BLUR TEXT: revelado por palabras al entrar en pantalla (secciones de equipo/FAQ) ---------- */
+    .blur-text {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .blur-text .bt-word {
+      display: inline-block;
+      filter: blur(10px);
+      opacity: 0;
+      transform: translateY(50px);
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      will-change: transform, filter, opacity;
+    }
+
+    .blur-text[data-direction="top"] .bt-word {
+      transform: translateY(-50px);
+    }
+
+    .blur-text.is-visible .bt-word {
+      animation-name: blurTextInBottom;
+      animation-duration: .7s;
+    }
+
+    .blur-text[data-direction="top"].is-visible .bt-word {
+      animation-name: blurTextInTop;
+    }
+
+    @keyframes blurTextInBottom {
+      0% {
+        filter: blur(10px);
+        opacity: 0;
+        transform: translateY(50px);
+      }
+
+      50% {
+        filter: blur(5px);
+        opacity: .5;
+        transform: translateY(-5px);
+      }
+
+      100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes blurTextInTop {
+      0% {
+        filter: blur(10px);
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+
+      50% {
+        filter: blur(5px);
+        opacity: .5;
+        transform: translateY(5px);
+      }
+
+      100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ---------- EQUIPO: intro "Mas informacion sobre nuestro equipo" ---------- */
+    .eq-intro {
+      position: relative;
+      background: var(--bg);
+      padding: clamp(6rem, 12vw, 9rem) calc(var(--spacing) * 10) clamp(5rem, 9vw, 7.5rem);
+    }
+
+    .eq-intro-top {
+      display: flex;
+      justify-content: center;
+      margin-bottom: clamp(5rem, 11vw, 8.5rem);
+    }
+
+    .eq-intro-heading-wrap {
+      max-width: 34rem;
+      text-align: center;
+    }
+
+    .eq-intro-heading .blur-text {
+      justify-content: center;
+      font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.3;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .eq-intro-desc {
+      margin-top: 1.75rem;
+      max-width: 24rem;
+      margin-inline: auto;
+      text-align: left;
+    }
+
+    .eq-intro-desc .blur-text {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.8;
+      color: var(--color-light-font);
+      opacity: .7;
+    }
+
+    .eq-intro-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1.6fr;
+      gap: clamp(3rem, 6vw, 5rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .eq-intro-col-title .blur-text {
+      font-size: clamp(1.5rem, 2.6vw, 2rem);
+      font-weight: var(--font-weight-medium);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      margin-bottom: 1.4rem;
+    }
+
+    .eq-intro-col-text .blur-text {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.85;
+      color: var(--color-light-font);
+      opacity: .7;
+      max-width: 28rem;
+    }
+
+    .eq-intro-detail-pair {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .eq-intro-detail-divider {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, .14);
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .eq-intro-sub-title .blur-text {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .eq-intro-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .95rem;
+    }
+
+    .eq-intro-list li {
+      padding-bottom: .95rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .eq-intro-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .eq-intro-list li .blur-text {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .75;
+    }
+
+    @media(max-width: 900px) {
+      .eq-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .eq-intro-detail-pair {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .eq-intro-detail-divider {
+        display: none;
+      }
+    }
+
+    /* ---------- PREGUNTAS FRECUENTES: acordeon ---------- */
+    .faq-section {
+      position: relative;
+      background: var(--bg);
+      padding: clamp(2rem, 5vw, 3.5rem) calc(var(--spacing) * 10) clamp(6rem, 10vw, 8rem);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      align-items: center;
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .faq-label .blur-text {
+      font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+      font-weight: var(--font-weight-medium);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+    }
+
+    .faq-item {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: .75rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 1.1rem 1.5rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      color: #fff;
+      transition: background .3s var(--ease-soft);
+    }
+
+    .faq-question:hover {
+      background: rgba(255, 255, 255, .03);
+    }
+
+    .faq-question-text.blur-text {
+      font-size: var(--text-sm);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.4;
+    }
+
+    .faq-icon {
+      position: relative;
+      flex-shrink: 0;
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+
+    .faq-icon::before,
+    .faq-icon::after {
+      content: '';
+      position: absolute;
+      background: #fff;
+      opacity: .8;
+      transition: transform .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .faq-icon::before {
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    .faq-icon::after {
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+
+    .faq-item.is-open .faq-icon::after {
+      opacity: 0;
+      transform: translateX(-50%) rotate(90deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .faq-answer-inner {
+      padding: 0 1.5rem 1.35rem;
+      font-size: var(--text-sm);
+      line-height: 1.7;
+      color: var(--color-light-font);
+      opacity: .8;
+    }
+
+    @media(max-width: 780px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 1.75rem;
+      }
+    }
+
+    /* ---------- RESULTADO FINAL: foto de cierre (sin CSS en el original, estilo minimo añadido) ---------- */
+    .cs-section {
+      position: relative;
+      background: var(--bg);
+      padding: 0 calc(var(--spacing) * 10) clamp(6rem, 10vw, 8rem);
+    }
+
+    .cs-inner {
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .cs-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .cs-card-inner {
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .cs-card-inner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ---------- SHINY TEXT: brillo animado que recorre el texto en bucle ---------- */
+    .shiny-text {
+      display: inline-block;
+      background-image: linear-gradient(120deg, var(--color-grey-light) 0%, var(--color-grey-light) 32%, #fff 50%, var(--color-grey-light) 68%, var(--color-grey-light) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: var(--color-grey-light);
+      animation: shinySweep 3.8s linear infinite;
+    }
+
+    @keyframes shinySweep {
+      0% {
+        background-position: 150% center;
+      }
+
+      100% {
+        background-position: -50% center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .shiny-text {
+        animation: none;
+        -webkit-text-fill-color: var(--color-grey-light);
+      }
+    }
+
+    /* ---------- TODO LO QUE TRATAMOS: 7 a la izquierda, 7 a la derecha, titulo en medio ---------- */
+    .tw-section {
+      position: relative;
+      background: var(--bg);
+      padding: clamp(5rem, 10vw, 7.5rem) calc(var(--spacing) * 10);
+    }
+
+    .tw-inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: clamp(2rem, 5vw, 4rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .tw-col {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .tw-col-left {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .tw-col-right {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .tw-col .shiny-text {
+      font-size: clamp(.95rem, 1.3vw, 1.15rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-normal);
+    }
+
+    .tw-title {
+      font-size: clamp(1.9rem, 4vw, 3.2rem);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: var(--tracking-tight);
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      max-width: 15rem;
+    }
+
+    @media(max-width: 900px) {
+      .tw-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .tw-title {
+        order: -1;
+        max-width: none;
+        margin-bottom: .5rem;
+      }
+
+      .tw-col-left,
+      .tw-col-right {
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+
+    /* terminos clicables: al pulsar abren el modal con una breve explicacion */
+    .tw-clickable {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      padding: 0;
+      font: inherit;
+      -webkit-tap-highlight-color: transparent;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .tw-clickable:hover,
+    .tw-clickable:focus-visible {
+      opacity: .8;
+    }
+
+    .tw-clickable:focus-visible {
+      outline: 1px solid rgba(255, 255, 255, .5);
+      outline-offset: 4px;
+    }
+
+    /* ---------- PANEL LATERAL: breve explicacion de cada tratamiento de "Todo lo que tratamos", se abre por la izquierda ---------- */
+    .tw-drawer-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: rgba(4, 5, 8, .55);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear .45s;
+    }
+
+    .tw-drawer-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    .tw-drawer {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100dvh;
+      width: min(26rem, 100vw);
+      background: linear-gradient(165deg, #101314 0%, #05070a 100%);
+      color: var(--color-light-font);
+      z-index: 91;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: transform .55s var(--ease-soft);
+      box-shadow: 20px 0 60px rgba(0, 0, 0, .45);
+    }
+
+    .tw-drawer.is-open {
+      transform: translateX(0);
+    }
+
+    .tw-drawer-header {
+      font-family: var(--font-neue);
+      letter-spacing: var(--tracking-normal);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      color: var(--color-light-font);
+      box-sizing: border-box;
+      margin: 0;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      padding: 1.5rem calc(var(--spacing) * 7) 1.25rem;
+    }
+
+    .tw-drawer-brand {
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+    }
+
+    .tw-drawer-close {
+      flex-shrink: 0;
+      width: 2.1rem;
+      height: 2.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .14);
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft);
+    }
+
+    .tw-drawer-close:hover {
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .tw-drawer-body {
+      font-family: var(--font-neue);
+      letter-spacing: var(--tracking-normal);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      color: var(--color-light-font);
+      box-sizing: border-box;
+      margin: 0;
+      flex: 1;
+      overflow-y: auto;
+      padding: calc(var(--spacing) * 8) calc(var(--spacing) * 7);
+    }
+
+    .tw-drawer-eyebrow {
+      display: block;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #4a9c7a;
+      margin-bottom: 1rem;
+    }
+
+    .tw-drawer-title {
+      font-size: clamp(1.6rem, 3.4vw, 2rem);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      margin-bottom: 1.25rem;
+    }
+
+    .tw-drawer-text {
+      font-size: var(--text-base);
+      line-height: 1.65;
+      opacity: .85;
+    }
+
+    body.tw-drawer-open {
+      overflow: hidden;
+    }
+
+
+    .footer-bottom-extra {
+      margin-top: calc(var(--spacing) * 6);
+      padding-top: calc(var(--spacing) * 6);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-junta-link {
+      display: inline-block;
+      flex-shrink: 0;
+      line-height: 0;
+    }
+
+    .footer-junta-logo {
+      height: 2.8rem;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: .45;
+      transition: opacity .3s ease;
+    }
+
+    .footer-junta-link:hover .footer-junta-logo {
+      opacity: .75;
+    }
+
+    .footer-credit {
+      font-size: var(--text-xs, .75rem);
+      color: var(--color-light-font, #d8d8d8);
+      opacity: .4;
+      text-transform: uppercase;
+    }
+
+    /* ---------- ESPECIALIDADES: menu lateral off-canvas (blanco, minimalista) ---------- */
+    .specialties-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 95;
+      background: rgba(4, 5, 8, .35);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear .45s;
+    }
+
+    .specialties-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    body.specialties-open {
+      overflow: hidden;
+    }
+
+    .specialties-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100dvh;
+      width: min(26rem, 100vw);
+      background: #fff;
+      color: #171717;
+      z-index: 96;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform .55s var(--ease-soft);
+      overflow-y: auto;
+      box-shadow: -20px 0 60px rgba(0, 0, 0, .18);
+    }
+
+    .specialties-panel.is-open {
+      transform: translateX(0);
+    }
+
+    .specialties-header {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.85rem calc(var(--spacing) * 9) 1.5rem;
+    }
+
+    .specialties-eyebrow {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #171717;
+    }
+
+    .specialties-close {
+      flex-shrink: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      background: #e8e8e6;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft), transform .3s var(--ease-soft);
+    }
+
+    .specialties-close:hover {
+      background: #d9d9d6;
+      transform: rotate(90deg);
+    }
+
+    .specialties-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: calc(var(--spacing) * 10);
+    }
+
+    .specialty-row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .specialty-link,
+    .specialty-toggle {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: clamp(1.35rem, 4.6vw, 1.7rem);
+      letter-spacing: var(--tracking-normal);
+      color: #171717;
+      text-decoration: none;
+      cursor: pointer;
+      padding: .85rem calc(var(--spacing) * 9);
+      transition: background .3s var(--ease-soft);
+    }
+
+    .specialty-link:hover,
+    .specialty-toggle:hover {
+      background: #f1f1ef;
+    }
+
+    .specialty-submenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .specialty-row.is-open .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    .specialty-sublink {
+      display: block;
+      font-size: var(--text-base);
+      color: #171717;
+      opacity: .65;
+      text-decoration: none;
+      padding: .6rem calc(var(--spacing) * 9) .6rem calc(var(--spacing) * 15);
+      transition: background .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .specialty-sublink:hover {
+      background: #f1f1ef;
+      opacity: 1;
+    }
+
+    .specialties-footer {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem 1.5rem;
+      padding: 1.5rem calc(var(--spacing) * 9) 1.85rem;
+      border-top: 1px solid #ececea;
+    }
+
+    .specialties-social,
+    .specialties-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: var(--text-sm);
+      color: #171717;
+      text-decoration: none;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .specialties-phone span {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .specialties-social:hover,
+    .specialties-phone:hover {
+      opacity: .6;
+    }
+
+    @media (max-width: 480px) {
+      .specialties-header {
+        padding: 1.5rem calc(var(--spacing) * 7) 1.25rem;
+      }
+
+      .specialty-link,
+      .specialty-toggle {
+        padding: .8rem calc(var(--spacing) * 7);
+      }
+
+      .specialty-sublink {
+        padding-left: calc(var(--spacing) * 13);
+      }
+
+      .specialties-footer {
+        padding: 1.25rem calc(var(--spacing) * 7) 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="topnav" id="topnav">
+    <a class="topnav-logo-link" href="index.html" aria-label="Ir al inicio â€” Medical Linares"
+      title="Bienvenido a Medical Linares">
+      <img src="./img/medicalinareslogo.png" alt="Medical Linares" class="topnav-logo" id="topnavLogo">
+    </a>
+    <div class="topnav-actions" id="topnavActions">
+      <a class="nav-link" href="index.html#services-section" id="navEspecialidades">Especialidades</a>
+      <a class="nav-link" href="ciudades.html">Ciudades</a>
+      <a class="nav-link" href="nuestro-origen.html">Nuestro origen</a>
+      <a class="nav-link" href="blog.html">Blog</a>
+      <a class="nav-link" href="equipo.html">Equipo</a>
+      <div class="button_wrapper">
+        <a class="btn" href="contacto.html">
+          <span class="word">Pedir cita</span>
+          <span class="arrow-circle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#151515" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.44 1.32 4.94L2 22l5.24-1.37c1.44.79 3.06 1.2 4.8 1.2 5.5 0 9.96-4.45 9.96-9.96C22 6.46 17.54 2 12.04 2Zm0 18.2c-1.55 0-3.06-.42-4.38-1.2l-.31-.19-3.11.82.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.27-8.25 8.27Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29Z" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+      aria-controls="topnavActions">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </nav>
+
+  <div class="specialties-overlay" id="specialtiesOverlay" aria-hidden="true"></div>
+  <aside class="specialties-panel" id="specialtiesPanel" aria-hidden="true" aria-label="Especialidades">
+    <div class="specialties-header">
+      <span class="specialties-eyebrow">Especialidades</span>
+      <button class="specialties-close" id="specialtiesClose" type="button" aria-label="Cerrar menú de especialidades">
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L13 13M13 1L1 13" stroke="#171717" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="specialties-body" aria-label="Lista de especialidades">
+      <div class="specialty-row">
+        <a class="specialty-link" href="injerto-capilar.html">Injerto Capilar</a>
+      </div>
+
+      <div class="specialty-row has-sub has-sub-hover">
+        <a class="specialty-link" href="cirugia-estetica.html">Cirugía Estética</a>
+        <div class="specialty-submenu">
+          <a class="specialty-sublink" href="cirugia-estetica.html#lipolaser">Lipoláser</a>
+        </div>
+      </div>
+
+      <div class="specialty-row has-sub has-sub-hover">
+        <a class="specialty-link" href="medicina-estetica.html">Medicina Estética</a>
+        <div class="specialty-submenu">
+          <a class="specialty-sublink" href="medicina-estetica.html#vascular">Vascular</a>
+        </div>
+      </div>
+
+      <div class="specialty-row">
+        <a class="specialty-link" href="dermatologia.html">Dermatología</a>
+      </div>
+
+      <div class="specialty-row">
+        <a class="specialty-link" href="ttos-faciales-y-corporales.html">Tratamientos Faciales &amp; Corporales</a>
+      </div>
+    </nav>
+
+    <div class="specialties-footer">
+      <a class="specialties-social" href="https://www.instagram.com/medical_linares/?hl=es" target="_blank"
+        rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span>Medical_linares</span>
+      </a>
+      <a class="specialties-phone" href="tel:+34645036752">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </svg>
+        <span>645 03 67 52</span>
+      </a>
+    </div>
+  </aside>
+
+
+
+  <main>
+
+    <section class="ic-hero">
+      <div class="ic-hero-media" aria-hidden="true">
+        <img src="./img/cirugia-estetica-hero.webp" alt="">
+      </div>
+      <div class="ic-hero-content">
+        <span class="ic-hero-kicker">Cirugía facial de alta precisión</span>
+        <h1 class="ic-hero-title">Cirugía Estética</h1>
+        <a class="ic-hero-subcat" href="#lipolaser">
+          <span>Lipoláser</span>
+          <span class="ic-hero-subcat-arrow" aria-hidden="true">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </span>
+        </a>
+      </div>
+      <p class="ic-hero-caption">Procedimientos quirúrgicos faciales y auriculares con planificación personalizada,
+        técnicas avanzadas y un equipo médico especializado, para resultados naturales y duraderos.</p>
+    </section>
+
+    <section class="tc-section" id="cirugia-estetica">
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Cirugía Estética Periocular</h2>
+      </div>
+
+      <div class="tc-items">
+        <div class="tc-divider" aria-hidden="true">
+          <span class="tc-plus tc-plus-top"></span>
+          <span class="tc-plus tc-plus-bottom"></span>
+        </div>
+
+        <!-- 1. Blefaroplastia Superior -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica1.webp" alt="Blefaroplastia Superior — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Blefaroplastia Superior</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Mirada más despejada.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Elimina el exceso de piel del párpado superior.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Retiramos el exceso de piel y grasa del párpado superior para abrir la mirada y
+                  corregir la sensación de pesadez, con cicatrices ocultas en el pliegue natural del párpado.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 2. Blefaroplastia Inferior -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica2.webp" alt="Blefaroplastia Inferior — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Blefaroplastia Inferior</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Reduce bolsas y ojeras.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Rejuvenece la zona baja del ojo.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Corregimos las bolsas y el exceso de piel del párpado inferior, suavizando la
+                  transición entre el párpado y la mejilla para lograr una mirada más descansada.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 3. Blefaroplastia Completa -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica3.webp" alt="Blefaroplastia Completa — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Blefaroplastia Completa</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Rejuvenece toda la mirada.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Combina párpado superior e inferior en una sola intervención.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Combinamos la corrección del párpado superior e inferior en un mismo procedimiento,
+                  consiguiendo un rejuvenecimiento completo y armónico de la mirada.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 4. Corrección de Ectropión -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica4.webp" alt="Corrección de Ectropión — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Corrección de Ectropión</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Recupera la posición del párpado.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Corrige la eversión del párpado inferior.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Corregimos la eversión o caída del párpado inferior, devolviéndole su posición
+                  natural, protegiendo la salud del ojo y mejorando el aspecto de la mirada.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Cirugía Estética Auricular</h2>
+      </div>
+
+      <div class="tc-items-3">
+        <!-- 5. Otoplastia -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica5.webp" alt="Otoplastia — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Otoplastia</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Orejas más proporcionadas.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Corrige orejas prominentes o despegadas.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Remodelamos el cartílago auricular para corregir orejas prominentes o despegadas,
+                  consiguiendo una forma más proporcionada y natural respecto al resto del rostro.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 6. Remodelación del Pabellón Auricular -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica6.webp" alt="Remodelación del Pabellón Auricular — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Remodelación del Pabellón Auricular</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Armoniza la forma de la oreja.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Corrige irregularidades congénitas o adquiridas.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Corregimos irregularidades en la forma del pabellón auricular, de origen congénito o
+                  adquiridas, para lograr un contorno más armónico y natural.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 7. Reparación de Lóbulo Rasgado -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica7.webp" alt="Reparación de Lóbulo Rasgado — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Reparación de Lóbulo Rasgado</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Repara el lóbulo dañado.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Reconstruye desgarros por pendientes o traumatismos.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Reconstruimos el lóbulo de la oreja cuando se ha rasgado por el uso de pendientes
+                  pesados, tirones o traumatismos, devolviéndole su forma natural.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 8. Corrección de Orificios por Dilatadores -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica8.webp" alt="Corrección de Orificios por Dilatadores — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Corrección de Orificios por Dilatadores</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Cierra y remodela el lóbulo.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Recupera el lóbulo tras el uso de expansores.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Cerramos y remodelamos el lóbulo tras el uso prolongado de dilatadores o expansores,
+                  recuperando su forma y grosor natural.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 9. Lobuloplastia -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica9.webp" alt="Lobuloplastia — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lobuloplastia</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Perfila el lóbulo de la oreja.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Reduce o remodela lóbulos caídos o alargados.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Reducimos o remodelamos lóbulos caídos, alargados o asimétricos, aportando un
+                  contorno auricular más equilibrado y proporcionado.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Rejuvenecimiento Facial y Cervical</h2>
+      </div>
+
+      <div class="tc-items-3">
+        <!-- 10. Lifting Temporal -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica10.webp" alt="Lifting Temporal — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lifting Temporal</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Eleva la ceja y la sien.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Rejuvenece el tercio superior del rostro.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Elevamos la zona de la sien y la cola de la ceja para suavizar la caída propia del
+                  envejecimiento, aportando una mirada más abierta y descansada.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 11. Lifting de Tercio Medio -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica11.webp" alt="Lifting de Tercio Medio — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lifting de Tercio Medio</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Recupera el volumen de la mejilla.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Reposiciona los tejidos del pómulo.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Reposicionamos los tejidos de la mejilla y el pómulo para corregir la caída del
+                  tercio medio facial, suavizando el surco nasogeniano y devolviendo firmeza al rostro.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 12. Minilifting -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica12.webp" alt="Minilifting — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Minilifting</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Tensa sin grandes cicatrices.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Corrige la flacidez inicial del óvalo facial.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Corregimos la flacidez incipiente del óvalo facial mediante incisiones más
+                  reducidas, ideal para signos de envejecimiento moderados y una recuperación más rápida.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 13. Plicatura Platismal -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica13.webp" alt="Plicatura Platismal — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Plicatura Platismal</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Define el ángulo del cuello.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Corrige las bandas del músculo platisma.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Corregimos las bandas verticales del músculo platisma en el cuello, recuperando un
+                  ángulo cervicomentoniano más definido y un contorno de cuello más estilizado.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 14. Lifting Cervicofacial Deep Plane -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica14.jpg" alt="Lifting Cervicofacial Deep Plane — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lifting Cervicofacial Deep Plane</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Rejuvenecimiento facial completo.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Técnica avanzada de plano profundo.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Trabajamos sobre los planos profundos del rostro y el cuello para conseguir un
+                  reposicionamiento más natural y duradero de los tejidos, evitando el efecto de piel tirante.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 15. Lipofilling Facial -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica15.webp" alt="Lipofilling Facial — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lipofilling Facial</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Volumen con tu propia grasa.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Rellena e hidrata el rostro de forma natural.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Extraemos grasa de otras zonas del cuerpo y la reinyectamos en el rostro para
+                  recuperar volumen perdido, mejorando además la calidad y luminosidad de la piel.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 16. Tratamiento Estético de la Parálisis Facial -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica16.webp" alt="Tratamiento Estético de la Parálisis Facial — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Tratamiento Estético de la Parálisis Facial</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Recupera la simetría del rostro.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Mejora las secuelas estéticas de la parálisis.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Combinamos distintas técnicas quirúrgicas y no quirúrgicas para mejorar la simetría
+                  facial y suavizar las secuelas estéticas derivadas de una parálisis facial.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Cirugía Labial y Facial</h2>
+      </div>
+
+      <div class="tc-items-3">
+        <!-- 17. Lip Lift -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica17.webp" alt="Lip Lift — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lip Lift</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Labio superior más definido.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Acorta la distancia entre nariz y labio.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Acortamos la distancia entre la base de la nariz y el borde del labio superior,
+                  consiguiendo un labio más definido, con más exposición del bermellón y un aspecto más juvenil.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 18. Retirada de Biopolímeros -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica18.webp" alt="Retirada de Biopolímeros — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Retirada de Biopolímeros</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Elimina rellenos no reabsorbibles.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Retiramos productos que generan complicaciones.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Extraemos biopolímeros u otros materiales de relleno permanentes que generan
+                  complicaciones estéticas o inflamatorias, buscando restaurar en lo posible la anatomía original de la
+                  zona.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 19. Corrección de Orificios de Piercing -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica19.jpg" alt="Corrección de Orificios de Piercing — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Corrección de Orificios de Piercing</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Cierra o remodela el orificio.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Recupera la piel tras retirar un piercing.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Cerramos o remodelamos los orificios dejados por piercings faciales o auriculares,
+                  recuperando la continuidad y el aspecto natural de la piel.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Cirugía del Contorno Facial</h2>
+      </div>
+
+      <div class="tc-items-3">
+        <!-- 20. Frontoplastia -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica20.webp" alt="Frontoplastia — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Frontoplastia</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Armoniza la frente.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Corrige el contorno óseo frontal.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Remodelamos el contorno óseo de la frente para corregir su proyección, buscando un
+                  perfil más armónico y equilibrado con el resto del rostro.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 21. Mentoplastia de Avance -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica21.webp" alt="Mentoplastia de Avance — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Mentoplastia de Avance</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Proyecta el mentón.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Corrige la retrogenia mediante avance óseo.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Avanzamos quirúrgicamente el hueso del mentón para corregir la retrogenia, mejorando
+                  el equilibrio del perfil facial.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 22. Mentoplastia con Prótesis -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica22.webp" alt="Mentoplastia con Prótesis — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Mentoplastia con Prótesis</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Define el mentón.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Aporta proyección mediante implante.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Colocamos una prótesis de mentón a medida para aportar proyección y definición,
+                  logrando un perfil más armónico y equilibrado.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 23. Masculinización del Ángulo Mandibular -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica23.webp" alt="Masculinización del Ángulo Mandibular — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Masculinización del Ángulo Mandibular</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Mandíbula más angulosa.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Refuerza el ángulo mandibular.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Reforzamos el ángulo mandibular mediante prótesis o técnicas de aumento óseo,
+                  consiguiendo un perfil más marcado y masculino.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 24. Prótesis Malares -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica24.webp" alt="Prótesis Malares — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Prótesis Malares</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Pómulos más proyectados.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Aporta volumen quirúrgico al pómulo.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Colocamos prótesis a medida en la zona malar para aportar proyección y volumen
+                  permanente al pómulo, mejorando la estructura y armonía del rostro.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 25. Bichectomía -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica25.jpg" alt="Bichectomía — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Bichectomía</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Afina el óvalo facial.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Retira las bolas de Bichat.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Retiramos parte de la bola adiposa de Bichat para afinar las mejillas y marcar el
+                  contorno facial, consiguiendo un óvalo del rostro más estilizado.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- 26. Liposucción de Papada -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/cirugia-estetica26.webp" alt="Liposucción de Papada — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Liposucción de Papada</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Define el óvalo facial.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Elimina el exceso de grasa bajo el mentón.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Eliminamos el exceso de grasa localizada bajo el mentón para marcar el ángulo
+                  cervicomentoniano y definir el contorno del óvalo facial.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="tc-section" id="lipolaser">
+
+      <div class="tc-intro wrap">
+        <style>
+          #lipolaser {
+            scroll-margin-top: 100px;
+          }
+        </style>
+        <h2 class="tc-kicker" id="lipolaser">Lipoláser</h2>
+      </div>
+
+      <div class="tc-items">
+        <div class="tc-divider" aria-hidden="true">
+          <span class="tc-plus tc-plus-top"></span>
+          <span class="tc-plus tc-plus-bottom"></span>
+        </div>
+
+        <!-- 1. Lipoláser abdominal -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/lipolaser1.webp" alt="Lipoláser abdominal — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lipoláser Abdominal</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Abdomen más definido.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Elimina grasa localizada y tensa la piel.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Eliminamos la grasa localizada en el abdomen combinando la eficacia de la
+                  liposucción con la precisión del láser, que además favorece la retracción y el tensado de la piel de
+                  la zona.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Lipoláser de cartucheras -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/lipolaser2.webp" alt="Lipoláser de cartucheras — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lipoláser de Cartucheras</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Silueta más armónica.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Reduce el volumen en la zona de la cadera.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Tratamos la grasa acumulada en las cartucheras, una de las zonas más resistentes a
+                  la dieta y el ejercicio, consiguiendo una silueta más proporcionada y armónica.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Lipoláser de papada -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/lipolaser3.webp" alt="Lipoláser de papada — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lipoláser de Papada</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Perfil de cuello más definido.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Elimina el exceso de grasa bajo el mentón.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Eliminamos el exceso de grasa localizada bajo el mentón para marcar el ángulo
+                  cervicomentoniano y definir el contorno del óvalo facial y el cuello.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Lipoláser de brazos -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/lipolaser4.webp" alt="Lipoláser de brazos — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="tc-block-title">
+              <h3 class="tc-title">Lipoláser de Brazos</h3>
+            </div>
+            <div class="tc-block-lead">
+              <h3 class="tc-lead-highlight">Brazos más tonificados.</h3>
+            </div>
+            <div class="tc-block-lead-desc">
+              <p class="tc-lead-desc">Reduce grasa y mejora la firmeza de la piel.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="tc-block-label">
+                <p class="tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="tc-block-small">
+                <p class="tc-small">Reducimos la grasa localizada en la parte posterior de los brazos, mejorando la
+                  firmeza y el contorno de la zona gracias al efecto tensor del láser.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="tw-section" id="todo-lo-que-tratamos">
+      <div class="tw-inner">
+
+        <div class="tw-col tw-col-left">
+          <span class="shiny-text tw-clickable" style="animation-delay:0s" role="button" tabindex="0"
+            data-tw-title="Párpados caídos y bolsas"
+            data-tw-text="Corregimos el exceso de piel y grasa en los párpados mediante blefaroplastia superior o inferior, abriendo la mirada y reduciendo la sensación de cansancio.">Párpados
+            caídos y bolsas</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-.5s" role="button" tabindex="0"
+            data-tw-title="Orejas prominentes o asimétricas"
+            data-tw-text="Con la otoplastia remodelamos el cartílago auricular para conseguir unas orejas más proporcionadas y pegadas a la cabeza.">Orejas
+            prominentes o asimétricas</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-1s" role="button" tabindex="0"
+            data-tw-title="Flacidez del óvalo facial"
+            data-tw-text="El lifting cervicofacial y el minilifting recuperan la firmeza del óvalo facial, suavizando la caída propia del envejecimiento.">Flacidez
+            del óvalo facial</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-1.5s" role="button" tabindex="0"
+            data-tw-title="Papada y grasa cervical"
+            data-tw-text="Eliminamos la grasa localizada bajo el mentón y tensamos el cuello mediante liposucción de papada o plicatura platismal.">Papada
+            y grasa cervical</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-2s" role="button" tabindex="0"
+            data-tw-title="Falta de proyección del mentón"
+            data-tw-text="La mentoplastia, de avance o con prótesis, aporta el volumen y la proyección que le faltan al mentón.">Falta
+            de proyección del mentón</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-2.5s" role="button" tabindex="0"
+            data-tw-title="Secuelas de parálisis facial"
+            data-tw-text="Combinamos técnicas quirúrgicas y no quirúrgicas para mejorar la simetría facial y suavizar las secuelas estéticas de una parálisis facial.">Secuelas
+            de parálisis facial</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-3s" role="button" tabindex="0"
+            data-tw-title="Exceso de volumen en mejillas"
+            data-tw-text="La bichectomía retira el exceso de grasa de las mejillas (bolas de Bichat) para definir el óvalo facial.">Exceso
+            de volumen en mejillas</span>
+        </div>
+
+        <h2 class="tw-title">Todo lo que tratamos</h2>
+
+        <div class="tw-col tw-col-right">
+          <span class="shiny-text tw-clickable" style="animation-delay:-.3s" role="button" tabindex="0"
+            data-tw-title="Blefaroplastia"
+            data-tw-text="Cirugía que elimina el exceso de piel y grasa de los párpados para rejuvenecer la mirada.">Blefaroplastia</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-.8s" role="button" tabindex="0"
+            data-tw-title="Otoplastia"
+            data-tw-text="Procedimiento que corrige la forma o posición de las orejas prominentes o asimétricas.">Otoplastia</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-1.3s" role="button" tabindex="0"
+            data-tw-title="Lifting cervicofacial"
+            data-tw-text="Reposiciona los tejidos del rostro y el cuello en un plano profundo para un rejuvenecimiento facial completo y natural.">Lifting
+            cervicofacial</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-1.8s" role="button" tabindex="0"
+            data-tw-title="Lipofilling facial"
+            data-tw-text="Reinyectamos grasa propia del paciente en el rostro para recuperar volumen perdido y mejorar la calidad de la piel.">Lipofilling
+            facial</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-2.3s" role="button" tabindex="0"
+            data-tw-title="Mentoplastia"
+            data-tw-text="Corrige el tamaño o la proyección del mentón, ya sea reduciéndolo, avanzándolo o aumentándolo con prótesis.">Mentoplastia</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-2.8s" role="button" tabindex="0"
+            data-tw-title="Bichectomía"
+            data-tw-text="Extrae las bolas de Bichat para afinar y definir el contorno de las mejillas y el óvalo facial.">Bichectomía</span>
+          <span class="shiny-text tw-clickable" style="animation-delay:-3.3s" role="button" tabindex="0"
+            data-tw-title="Prótesis faciales"
+            data-tw-text="Implantes que aportan volumen y definición en pómulos o mandíbula para armonizar el rostro.">Prótesis
+            faciales</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="eq-intro">
+
+      <div class="eq-intro-top">
+        <div class="eq-intro-heading-wrap">
+          <h2 class="eq-intro-heading">
+            <p class="blur-text" data-direction="bottom" data-delay="80">Más información</p>
+            <p class="blur-text" data-direction="bottom" data-delay="80">sobre nuestro equipo</p>
+          </h2>
+          <div class="eq-intro-desc">
+            <p class="blur-text" data-direction="bottom" data-delay="30">Conoce a nuestro equipo médico especializado en
+              cirugía estética facial y auricular y a nuestro quirófano adaptado para procedimientos quirúrgicos de
+              última generación.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="eq-intro-grid">
+
+        <div class="eq-intro-col eq-intro-col-main">
+          <div class="eq-intro-col-title">
+            <h2 class="blur-text" data-direction="bottom" data-delay="60">¿Qué tratamos?</h2>
+          </div>
+          <div class="eq-intro-col-text">
+            <p class="blur-text" data-direction="bottom" data-delay="20">En Medical Linares realizamos cirugía estética
+              facial, periocular, auricular y del contorno facial con un enfoque médico riguroso. Evaluamos cada caso de
+              forma individual para diseñar un plan quirúrgico seguro, personalizado y orientado a conseguir resultados
+              naturales y armónicos, siempre respetando la anatomía propia de cada paciente.</p>
+          </div>
+        </div>
+
+        <div class="eq-intro-detail-pair">
+          <div class="eq-intro-detail-divider" aria-hidden="true"></div>
+
+          <div class="eq-intro-col">
+            <div class="eq-intro-sub-title">
+              <h3 class="blur-text" data-direction="bottom" data-delay="60">Valoración quirúrgica</h3>
+            </div>
+            <ul class="eq-intro-list">
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Historial clínico</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Antecedentes</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Análisis facial y corporal</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Objetivos del paciente</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Plan quirúrgico personalizado</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="eq-intro-col">
+            <div class="eq-intro-sub-title">
+              <h3 class="blur-text" data-direction="bottom" data-delay="60">Resultados y expectativas</h3>
+            </div>
+            <ul class="eq-intro-list">
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Cicatrices disimuladas en pliegues
+                  naturales</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Resultados progresivos durante los primeros
+                  meses</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Recuperación acompañada con revisiones
+                  periódicas</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Resultados duraderos con un envejecimiento
+                  natural</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-grid">
+        <div class="faq-label">
+          <h2 class="blur-text" data-direction="bottom" data-delay="40">Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1"
+              id="faq-question-1">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Es dolorosa la cirugía
+                estética facial?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+              <p class="faq-answer-inner">Los procedimientos se realizan con anestesia local, sedación o general según
+                el caso, por lo que no sientes dolor durante la intervención. El postoperatorio puede generar molestias
+                leves, controladas con la medicación pautada.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2"
+              id="faq-question-2">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Cuánto dura la
+                recuperación?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+              <p class="faq-answer-inner">Depende de la técnica: procedimientos como la blefaroplastia suelen tener una
+                recuperación de una a dos semanas, mientras que un lifting facial completo puede requerir dos o tres
+                semanas antes de volver a la vida social.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3"
+              id="faq-question-3">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Las cicatrices son
+                visibles?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+              <p class="faq-answer-inner">Planificamos las incisiones en pliegues naturales o zonas ocultas, como el
+                pliegue del párpado o detrás de la oreja, para que las cicatrices sean prácticamente imperceptibles con
+                el tiempo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4"
+              id="faq-question-4">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿A partir de qué edad se
+                puede operar?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+              <p class="faq-answer-inner">Cada procedimiento tiene sus propias indicaciones. Valoramos cada caso de
+                forma individual, priorizando siempre el criterio médico sobre la edad concreta del paciente.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5"
+              id="faq-question-5">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Los resultados son
+                permanentes?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+              <p class="faq-answer-inner">La mayoría de las cirugías de contorno facial, como la mentoplastia, las
+                prótesis malares o la otoplastia, ofrecen resultados permanentes, mientras que los liftings evolucionan
+                con el envejecimiento natural del paciente.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" id="csSection">
+      <div class="cs-inner">
+        <div class="cs-card" id="csCard">
+          <div class="cs-card-inner">
+            <img src="./img/cirugia-estetica-final.webp"
+              alt="Recupera la armonía de tu rostro con nuestra cirugía estética personalizada — Medical Linares">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Las siguientes secciones (fondo negro) se iran añadiendo aqui -->
+
+  </main>
+
+  <div class="tw-drawer-overlay" id="twModalOverlay" aria-hidden="true"></div>
+  <aside class="tw-drawer" id="twModal" role="dialog" aria-modal="true" aria-labelledby="twModalTitle"
+    aria-hidden="true">
+    <div class="tw-drawer-header">
+      <span class="tw-drawer-brand">Medical Linares</span>
+      <button class="tw-drawer-close" id="twModalClose" type="button" aria-label="Cerrar">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"
+          stroke-linecap="round">
+          <path d="M1 1L13 13M13 1L1 13" />
+        </svg>
+      </button>
+    </div>
+    <div class="tw-drawer-body">
+      <span class="tw-drawer-eyebrow">Sobre este tratamiento</span>
+      <h3 class="tw-drawer-title" id="twModalTitle"></h3>
+      <p class="tw-drawer-text" id="twModalText"></p>
+    </div>
+  </aside>
+
+
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-aurora" aria-hidden="true"></div>
+    <div class="footer-grid-bg" aria-hidden="true"></div>
+    <div class="footer-giant-text" id="footerGiantText" aria-hidden="true">Medical Linares</div>
+
+    <div class="footer-marquee" aria-hidden="true">
+      <div class="footer-marquee-track">
+        <div class="footer-marquee-group">
+          <span>Medicina Estética</span><span class="dot">✦</span>
+          <span>Dermatología</span><span class="dot">✦</span>
+          <span>Injerto Capilar</span><span class="dot">✦</span>
+          <span>Confianza</span><span class="dot">✦</span>
+          <span>Láser</span><span class="dot">✦</span>
+          <span>Cuidado Real</span><span class="dot">✦</span>
+        </div>
+        <div class="footer-marquee-group">
+          <span>Medicina Estética</span><span class="dot">✦</span>
+          <span>Dermatología</span><span class="dot">✦</span>
+          <span>Injerto Capilar</span><span class="dot">✦</span>
+          <span>Confianza</span><span class="dot">✦</span>
+          <span>Láser</span><span class="dot">✦</span>
+          <span>Cuidado Real</span><span class="dot">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap footer-inner" id="footerInner">
+      <h2 class="footer-title"><img src="./img/IconoMedical.png" alt="Medical Linares" class="footer-title-icon">
+        Medical Linares</h2>
+
+      <div class="footer-locations">
+        <div class="footer-loc">
+          <span class="footer-loc-name">Linares</span>
+          <p class="footer-loc-address">C. República Argentina, 7, 23700 Linares, Jaén.</p>
+          <div class="footer-loc-row">
+            <span class="footer-label">Horario L-V</span>
+            <span class="footer-value">09:30 – 13:15</span>
+            <span class="footer-value">17:00 – 20:00</span>
+          </div>
+          <a class="footer-pill footer-tel" href="tel:+34645036752">645 03 67 52</a>
+        </div>
+
+        <div class="footer-loc">
+          <span class="footer-loc-name">Granada</span>
+          <p class="footer-loc-address">Esquina Pablo Neruda, Av. Dr. López Cantarero Ballesteros, 1, 18200 Maracena,
+            Granada</p>
+          <div class="footer-loc-row">
+            <span class="footer-label">Horario L-V</span>
+            <span class="footer-value">09:30 – 13:15</span>
+            <span class="footer-value">17:00 – 20:00</span>
+          </div>
+          <a class="footer-pill footer-tel" href="tel:+34650064923">650 06 49 23</a>
+        </div>
+
+        <nav class="footer-loc footer-treatments" aria-label="Tratamientos">
+          <span class="footer-loc-name">Tratamientos</span>
+          <a href="./injerto-capilar.html" target="_blank" rel="noopener">Injerto Capilar</a>
+          <a href="./lipolaser.html" target="_blank" rel="noopener">Lipoláser</a>
+          <a href="./medicina-estetica.html" target="_blank" rel="noopener">Medicina Estética</a>
+          <a href="./dermatologia.html" target="_blank" rel="noopener">Dermatología</a>
+          <a href="./ttos-faciales-y-corporales.html " target="_blank" rel="noopener">Tratamientos
+            Faciales y Corporales</a>
+          <a href="./vascular.html" target="_blank" rel="noopener">Vascular</a>
+          <a href="./laser.html" target="_blank" rel="noopener">Láser</a>
+          <a class="footer-pill footer-all" href="./index.html" target="_blank" rel="noopener">Todos →</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Medical Linares · Todos los derechos reservados</span>
+        <div class="footer-legal">
+          <a class="footer-pill" href="politicasdeprivacidad.html">Política de cookies</a>
+          <a class="footer-pill" href="politicasdeprivacidad.html">Aviso legal</a>
+          <a class="footer-pill" href="politicasdeprivacidad.html">Política de privacidad</a>
+        </div>
+        <div class="footer-right-group">
+          <div class="footer-social">
+            <a class="footer-pill footer-icon-btn" href="https://www.instagram.com/medical_linares" target="_blank"
+              rel="noopener" aria-label="Instagram de Medical Linares">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a class="footer-pill footer-icon-btn" href="https://www.facebook.com/medicallinares" target="_blank"
+              rel="noopener" aria-label="Facebook de Medical Linares">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+          <button class="footer-pill footer-icon-btn footer-top-btn" id="footerTopBtn" aria-label="Volver arriba"
+            type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom-extra">
+        <div class="footer-credit">Página creada y diseñada por Angel Mind SEO</div>
+        <a class="footer-junta-link" href="https://www.juntadeandalucia.es" target="_blank" rel="noopener"
+          aria-label="Junta de Andalucía">
+          <img src="https://www.juntadeandalucia.es/sites/default/files/2023-02/byn_1.png" alt="Junta de Andalucía"
+            class="footer-junta-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    // Menu: linea blanca que se forma de izquierda a derecha al seleccionar una opcion
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      if (link.id === 'navEspecialidades') return; // este abre el desplegable, no cambia de pagina
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.nav-link').forEach((l) => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // ---------- MENU MOVIL: boton hamburguesa que despliega el menu principal ----------
+    (function initMobileNav() {
+      const toggle = document.getElementById('navToggle');
+      const actions = document.getElementById('topnavActions');
+      if (!toggle || !actions) return;
+
+      function closeMobileNav() {
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        actions.classList.remove('is-open');
+      }
+      function openMobileNav() {
+        toggle.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        actions.classList.add('is-open');
+      }
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.contains('is-open') ? closeMobileNav() : openMobileNav();
+      });
+
+      // cerrar el desplegable al elegir cualquier opcion (incluida "Especialidades", que ademas abre su propio overlay)
+      actions.querySelectorAll('a, .btn').forEach((el) => {
+        el.addEventListener('click', closeMobileNav);
+      });
+
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape') closeMobileNav();
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 840) closeMobileNav();
+      });
+    })();
+
+    // ---------- FLOWING MENU: desplegable de "Especialidades" con todos los servicios ----------
+    // ---------- ESPECIALIDADES: panel lateral off-canvas ----------
+    (function initSpecialtiesPanel() {
+      const overlay = document.getElementById('specialtiesOverlay');
+      const panel = document.getElementById('specialtiesPanel');
+      const closeBtn = document.getElementById('specialtiesClose');
+      const triggers = [
+        document.getElementById('navEspecialidades'),
+        document.getElementById('heroEspecialidadesToggle') // presente en la home; en el resto de paginas no existe y se ignora
+      ].filter(Boolean);
+      if (!overlay || !panel || !triggers.length) return;
+
+      function resetAccordion() {
+        panel.querySelectorAll('.specialty-row.is-open').forEach((row) => {
+          row.classList.remove('is-open');
+          const toggle = row.querySelector('.specialty-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      function openPanel(ev) {
+        if (ev) ev.preventDefault();
+        overlay.classList.add('is-open');
+        panel.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        panel.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('specialties-open');
+      }
+
+      function closePanel() {
+        overlay.classList.remove('is-open');
+        panel.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        panel.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('specialties-open');
+        setTimeout(resetAccordion, 400);
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', (ev) => {
+          ev.preventDefault();
+          panel.classList.contains('is-open') ? closePanel() : openPanel();
+        });
+      });
+      closeBtn?.addEventListener('click', closePanel);
+      overlay.addEventListener('click', closePanel);
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape' && panel.classList.contains('is-open')) closePanel();
+      });
+
+      // Acordeon: Cirugia Estetica / Medicina Estetica
+      panel.querySelectorAll('.specialty-toggle').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const row = btn.closest('.specialty-row');
+          if (!row) return;
+          const willOpen = !row.classList.contains('is-open');
+          row.classList.toggle('is-open', willOpen);
+          btn.setAttribute('aria-expanded', String(willOpen));
+        });
+      });
+
+      // Cerrar el panel al navegar a un enlace real
+      panel.querySelectorAll('a.specialty-link, a.specialty-sublink').forEach((link) => {
+        link.addEventListener('click', closePanel);
+      });
+    })();
+  </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    (function initCinematicFooter() {
+      if (typeof gsap === 'undefined') return;
+
+      // Efecto iman en las pastillas de cristal (tel, legal, redes, "todos", volver arriba)
+      document.querySelectorAll('.footer-pill').forEach((el) => {
+        el.addEventListener('mousemove', (e) => {
+          const rect = el.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          gsap.to(el, { x: x * 0.3, y: y * 0.3, duration: 0.4, ease: 'power2.out' });
+        });
+        el.addEventListener('mouseleave', () => {
+          gsap.to(el, { x: 0, y: 0, duration: 1, ease: 'elastic.out(1, 0.3)' });
+        });
+      });
+
+      // Texto gigante de fondo: entra con la sensacion de profundidad al hacer scroll
+      const giant = document.getElementById('footerGiantText');
+      if (giant) {
+        gsap.fromTo(giant, { y: '8vh', opacity: 0 }, {
+          y: '0vh', opacity: 1, ease: 'power1.out',
+          scrollTrigger: { trigger: '#site-footer', start: 'top 85%', end: 'top 25%', scrub: 1 }
+        });
+      }
+
+      // Contenido del footer: aparece de forma escalonada
+      const footerInner = document.getElementById('footerInner');
+      if (footerInner) {
+        gsap.fromTo([footerInner.querySelector('.footer-title'), footerInner.querySelector('.footer-locations')], { y: 40, opacity: 0 }, {
+          y: 0, opacity: 1, stagger: 0.15, ease: 'power3.out',
+          scrollTrigger: { trigger: '#site-footer', start: 'top 70%', end: 'top 25%', scrub: 1 }
+        });
+      }
+
+      // Volver arriba
+      document.getElementById('footerTopBtn')?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+  <!-- ANIMACIÓN DE TRATAMIENTOS DESACTIVADA: el bloque initTcReveal se ha comentado
+       para que los bloques .tc-item sean completamente estáticos desde el inicio.
+  <script>
+    // ---------- TRATAMIENTOS: aparicion en bloque + parallax de imagen ----------
+    (function initTcReveal() {
+      if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+
+      document.querySelectorAll('.tc-item').forEach((item) => {
+        const media = item.querySelector('.tc-media img');
+
+        gsap.fromTo(item, { y: 60, opacity: 0 }, {
+          y: 0, opacity: 1, duration: 1, ease: 'power3.out',
+          scrollTrigger: { trigger: item, start: 'top 82%' }
+        });
+
+        if (media) {
+          gsap.fromTo(media, { scale: 1.18 }, {
+            scale: 1.05, ease: 'none',
+            scrollTrigger: { trigger: item, start: 'top bottom', end: 'bottom top', scrub: true }
+          });
+        }
+      });
+    })();
+  </script>
+  -->
+
+  <script>
+    // ---------- BLUR TEXT: divide en palabras y revela al entrar en pantalla (equipo / FAQ) ----------
+    (function initBlurText() {
+      const containers = document.querySelectorAll('.blur-text');
+      if (!containers.length) return;
+
+      containers.forEach((el) => {
+        if (el.dataset.split === 'true') return;
+        const text = el.textContent.trim().replace(/\s+/g, ' ');
+        const words = text.split(' ');
+        el.textContent = '';
+        words.forEach((word, i) => {
+          const span = document.createElement('span');
+          span.className = 'bt-word';
+          span.textContent = word + (i < words.length - 1 ? '\u00A0' : '');
+          el.appendChild(span);
+        });
+        el.dataset.split = 'true';
+      });
+
+      if (!('IntersectionObserver' in window)) {
+        containers.forEach((el) => el.classList.add('is-visible'));
+        return;
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const delay = parseFloat(el.dataset.delay || '80');
+          el.querySelectorAll('.bt-word').forEach((span, i) => {
+            span.style.animationDelay = (i * delay) + 'ms';
+          });
+          el.classList.add('is-visible');
+          io.unobserve(el);
+        });
+      }, { threshold: 0.1 });
+
+      containers.forEach((el) => io.observe(el));
+    })();
+  </script>
+
+  <script>
+    // ---------- PREGUNTAS FRECUENTES: acordeon (uno abierto a la vez) ----------
+    (function initFaqAccordion() {
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        const btn = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        if (!btn || !answer) return;
+
+        btn.addEventListener('click', () => {
+          const isOpen = item.classList.contains('is-open');
+
+          document.querySelectorAll('.faq-item.is-open').forEach((openItem) => {
+            if (openItem !== item) {
+              openItem.classList.remove('is-open');
+              openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+              openItem.querySelector('.faq-answer').style.maxHeight = '0px';
+            }
+          });
+
+          if (isOpen) {
+            item.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+            answer.style.maxHeight = '0px';
+          } else {
+            item.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    // ---------- TODO LO QUE TRATAMOS: panel lateral con breve explicacion al pinchar un termino ----------
+    (function initTwDrawer() {
+      const overlay = document.getElementById('twModalOverlay');
+      const modal = document.getElementById('twModal');
+      const closeBtn = document.getElementById('twModalClose');
+      const titleEl = document.getElementById('twModalTitle');
+      const textEl = document.getElementById('twModalText');
+      const triggers = document.querySelectorAll('.tw-clickable');
+      if (!overlay || !modal || !triggers.length) return;
+
+      let lastTrigger = null;
+
+      function openModal(trigger) {
+        lastTrigger = trigger;
+        titleEl.textContent = trigger.dataset.twTitle || trigger.textContent;
+        textEl.textContent = trigger.dataset.twText || '';
+        overlay.classList.add('is-open');
+        modal.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('tw-drawer-open');
+        closeBtn.focus();
+      }
+
+      function closeModal() {
+        overlay.classList.remove('is-open');
+        modal.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('tw-drawer-open');
+        if (lastTrigger) lastTrigger.focus();
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', () => openModal(trigger));
+        trigger.addEventListener('keydown', (ev) => {
+          if (ev.key === 'Enter' || ev.key === ' ') {
+            ev.preventDefault();
+            openModal(trigger);
+          }
+        });
+      });
+
+      closeBtn.addEventListener('click', closeModal);
+      overlay.addEventListener('click', closeModal);
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+      });
+    })();
+  </script>
+</body>
+
+</html>

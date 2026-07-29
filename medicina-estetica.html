@@ -1,0 +1,3616 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="./logo_medicalinares.ico">
+  <link rel="icon" type="image/png" href="./logo_medicallinares.png">
+  <title>Medicina Estética — Medical Linares</title>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,500&display=swap">
+  <style>
+    :root {
+      --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --color-black: #272727;
+      --color-white: #fff;
+      --spacing: .25rem;
+      --container-sm: 24rem;
+      --container-md: 28rem;
+      --container-xl: 36rem;
+      --container-3xl: 48rem;
+      --container-4xl: 56rem;
+      --container-6xl: 72rem;
+      --container-7xl: 80rem;
+      --text-xs: .75rem;
+      --text-xs--line-height: calc(1 / .75);
+      --text-sm: .875rem;
+      --text-sm--line-height: calc(1.25 / .875);
+      --text-base: 1rem;
+      --text-base--line-height: calc(1.5 / 1);
+      --text-lg: 1.125rem;
+      --text-lg--line-height: calc(1.75 / 1.125);
+      --text-xl: 1.25rem;
+      --text-xl--line-height: calc(1.75 / 1.25);
+      --text-2xl: 1.5rem;
+      --text-2xl--line-height: calc(2 / 1.5);
+      --text-3xl: 1.875rem;
+      --text-3xl--line-height: calc(2.25 / 1.875);
+      --text-4xl: 2.25rem;
+      --text-4xl--line-height: calc(2.5 / 2.25);
+      --text-5xl: 3rem;
+      --text-5xl--line-height: 1;
+      --font-weight-normal: 400;
+      --font-weight-medium: 500;
+      --tracking-tight: -.05em;
+      --tracking-normal: -.03em;
+      --tracking-widest: .008em;
+      --radius-xs: .125rem;
+      --radius-sm: .25rem;
+      --radius-md: .375rem;
+      --radius-lg: .5rem;
+      --radius-3xl: 1.5rem;
+      --ease-in: cubic-bezier(.4, 0, 1, 1);
+      --ease-out: cubic-bezier(0, 0, .2, 1);
+      --ease-in-out: cubic-bezier(.4, 0, .2, 1);
+      --blur-sm: 8px;
+      --blur-md: 12px;
+      --perspective-midrange: 800px;
+      --aspect-video: 16 / 9;
+      --default-transition-duration: .15s;
+      --default-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+      --default-font-family: var(--font-sans);
+      --default-mono-font-family: var(--font-mono);
+      --color-cream: #e6e4e2;
+      --color-grey-light: #9c9c9c;
+      --color-grey-line: #434343;
+      --color-cream-line: #d8d8d8;
+      --color-dark-font: #434343;
+      --color-light-font: #d8d8d8;
+      --animate-arrowPulse: arrowPulse 1.8s ease-in-out infinite;
+      --pl-black: #000;
+      --pl-white: #fff;
+      --pl-panel-gray: #c8c8c8;
+      --pl-line-gray: #434343;
+      --pl-corner-plus-offset: calc(-6px - 6.5px);
+      --pl-mono: "Space Mono", monospace;
+      --pl-display: "Bebas Neue", sans-serif;
+      --size: 750;
+      --bg: #040508;
+      --white: #fff;
+      --ink-soft: #0a0a0a8c;
+      --glass-line: #ffffff2e;
+      --ease-soft: cubic-bezier(.22, 1, .36, 1);
+      --ts-color-bg: #040508;
+      --ts-color-hint: #d8d8d8bf;
+      --ts-color-name: #c8c8c8;
+      --ts-color-role: #d8d8d880;
+      --ts-color-scan-id: #d8d8d8bf;
+      --ts-color-detected: #d8d8d8eb;
+      --font-neue: "Neue Montreal", "Neue Haas Grotesk Display", "neueHaas Fallback", var(--font-sans);
+      --font-ppeditorial: "ppEditorial", "ppEditorial Fallback", serif;
+      --font-martian: "martianMono", "martianMono Fallback", var(--font-mono);
+      --font-familjen: "familjen", "familjen Fallback", var(--font-sans);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      background: var(--bg);
+      color: var(--color-light-font);
+      font-family: var(--font-neue);
+      letter-spacing: var(--tracking-normal);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .wrap {
+      max-width: 100%;
+      margin-inline: 0;
+      padding-inline: calc(var(--spacing) * 10);
+    }
+
+    /* ---------- BUTTON (glass pill) ---------- */
+    .button_wrapper {
+      position: relative;
+      width: fit-content;
+    }
+
+    .btn {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      gap: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      cursor: pointer;
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      background: linear-gradient(180deg, rgba(55, 55, 55, .85) 0%, rgba(5, 5, 5, .95) 100%);
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 999px;
+      padding: .3rem .3rem .3rem 1.6rem;
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .25),
+        inset 0 -6px 10px rgba(0, 0, 0, .4),
+        0 10px 24px rgba(0, 0, 0, .35);
+      transition: box-shadow .35s var(--ease-soft), transform .35s var(--ease-soft);
+    }
+
+    .btn:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .35),
+        inset 0 -6px 10px rgba(0, 0, 0, .45),
+        0 14px 30px rgba(0, 0, 0, .45);
+      transform: translateY(-1px);
+    }
+
+    .btn .word {
+      position: relative;
+      display: inline-flex;
+      font-weight: var(--font-weight-medium);
+      white-space: nowrap;
+    }
+
+    .btn .arrow-circle {
+      position: relative;
+      flex-shrink: 0;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .55), rgba(255, 255, 255, .05) 55%),
+        rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      overflow: hidden;
+      transition: transform .4s var(--ease-soft), background .4s var(--ease-soft);
+    }
+
+    .btn .arrow-circle svg {
+      position: relative;
+      transition: transform .4s var(--ease-soft);
+    }
+
+    .btn:hover .arrow-circle {
+      transform: scale(1.06);
+    }
+
+    .btn:hover .arrow-circle svg {
+      transform: translate(2px, -2px);
+    }
+
+    /* ---------- PEDIR CITA: version negativa (blanca) del boton, solo aqui ---------- */
+    .btn-negative {
+      color: #111;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .96) 0%, rgba(232, 232, 232, .98) 100%);
+      border: 1px solid rgba(0, 0, 0, .10);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .7),
+        inset 0 -6px 10px rgba(0, 0, 0, .05),
+        0 10px 24px rgba(0, 0, 0, .18);
+    }
+
+    .btn-negative:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .8),
+        inset 0 -6px 10px rgba(0, 0, 0, .07),
+        0 14px 30px rgba(0, 0, 0, .22);
+    }
+
+    .btn-negative .arrow-circle {
+      background:
+        radial-gradient(circle at 32% 28%, rgba(0, 0, 0, .3), rgba(0, 0, 0, .03) 55%),
+        rgba(0, 0, 0, .05);
+      border-color: rgba(0, 0, 0, .14);
+    }
+
+    /* ---------- RESERVAR CONSULTA / PEDIR CITA: version verde del boton ---------- */
+    .btn-green {
+      color: #fff;
+      background: linear-gradient(180deg, #4a9c7a 0%, #2c6b52 100%);
+      border: 1px solid rgba(255, 255, 255, .18);
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .3),
+        inset 0 -6px 10px rgba(0, 0, 0, .2),
+        0 10px 24px rgba(20, 60, 45, .35);
+    }
+
+    .btn-green:hover {
+      box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, .4),
+        inset 0 -6px 10px rgba(0, 0, 0, .25),
+        0 14px 30px rgba(20, 60, 45, .45);
+    }
+
+    .btn-green .arrow-circle {
+      background:
+        radial-gradient(circle at 32% 28%, rgba(255, 255, 255, .55), rgba(255, 255, 255, .08) 55%),
+        rgba(255, 255, 255, .14);
+      border-color: rgba(255, 255, 255, .28);
+    }
+
+    /* legacy classes kept as no-ops so old markup references don't break */
+    .underline,
+    .u-right,
+    .u-left {
+      display: none;
+    }
+
+    /* ---------- TOP NAV ---------- */
+    .topnav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 60;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem calc(var(--spacing) * 10);
+      border-bottom: 1px solid rgba(255, 255, 255, .18);
+
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .specialty-submenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .specialty-row.is-open .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    /* Cirugía Estética: el submenú (Lipoláser) se despliega al pasar el ratón, no con clic */
+    .specialty-row.has-sub-hover:hover .specialty-submenu,
+    .specialty-row.has-sub-hover:focus-within .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    .specialty-sublink {
+      display: block;
+      font-size: var(--text-base);
+      color: #171717;
+      opacity: .65;
+      text-decoration: none;
+      padding: .6rem calc(var(--spacing) * 9) .6rem calc(var(--spacing) * 15);
+      transition: background .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .specialty-sublink:hover {
+      background: #f1f1ef;
+      opacity: 1;
+    }
+
+    .topnav-brand {
+      font-size: var(--text-sm);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+    }
+
+    .topnav-logo-link {
+      display: flex;
+      align-items: center;
+    }
+
+    .topnav-logo {
+      height: 2.1rem;
+      width: auto;
+      display: block;
+      filter: brightness(0) invert(1);
+      transition: filter .4s var(--ease-soft);
+    }
+
+    .topnav.on-light .topnav-logo {
+      filter: none;
+    }
+
+    .topnav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.85rem;
+    }
+
+    .nav-link {
+      position: relative;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      opacity: 1;
+      padding-bottom: .5rem;
+      transition: color .4s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .nav-link:hover {
+      opacity: .7;
+    }
+
+    .topnav.on-light .nav-link {
+      color: #000;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: #fff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform .6s var(--ease-soft);
+    }
+
+    .topnav.on-light .nav-link::after {
+      background: #000;
+    }
+
+    .nav-link.active::after {
+      transform: scaleX(1);
+    }
+
+    .topnav .btn .arrow-circle {
+      width: 2.2rem;
+      height: 2.2rem;
+    }
+
+    .topnav .btn .word {
+      font-size: var(--text-xs);
+    }
+
+    /* ---------- BOTON HAMBURGUESA (solo movil) ---------- */
+    .nav-toggle {
+      display: none;
+      position: relative;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      transition: background .3s var(--ease-soft);
+    }
+
+    .nav-toggle:hover {
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .nav-toggle-bar {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 1.15rem;
+      height: 1px;
+      background: #fff;
+      transform: translate(-50%, -50%);
+      transition: transform .35s var(--ease-soft), opacity .25s var(--ease-soft), margin-top .35s var(--ease-soft);
+    }
+
+    .nav-toggle-bar:nth-child(1) {
+      margin-top: -6px;
+    }
+
+    .nav-toggle-bar:nth-child(3) {
+      margin-top: 6px;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(1) {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.is-open .nav-toggle-bar:nth-child(3) {
+      margin-top: 0;
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    /* ---------- MENU PRINCIPAL EN MOVIL: se convierte en desplegable ---------- */
+    @media(max-width: 840px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      .topnav-actions {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: rgba(4, 5, 8, .97);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, .14);
+        padding: .5rem calc(var(--spacing) * 10) 1.75rem;
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity .35s var(--ease-soft), transform .35s var(--ease-soft), visibility 0s linear .35s;
+      }
+
+      .topnav-actions.is-open {
+        opacity: 1;
+        transform: translateY(0);
+        visibility: visible;
+        pointer-events: auto;
+        transition: opacity .35s var(--ease-soft), transform .35s var(--ease-soft), visibility 0s linear 0s;
+      }
+
+      .topnav-actions .nav-link {
+        padding: 1rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .08);
+      }
+
+      .topnav-actions .nav-link::after {
+        display: none;
+      }
+
+      .topnav-actions .button_wrapper {
+        margin-top: 1.25rem;
+        width: 100%;
+      }
+
+      .topnav-actions .btn {
+        width: 100%;
+        justify-content: space-between;
+      }
+    }
+
+    /* ---------- FLOWING MENU: desplegable de "Especialidades" ---------- */
+    .flowing-menu-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 90;
+      background: #120F17;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .5s var(--ease-soft), visibility 0s linear .5s;
+    }
+
+    .flowing-menu-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .5s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    .flowing-menu-close {
+      position: absolute;
+      top: 1.85rem;
+      right: calc(var(--spacing) * 10);
+      z-index: 2;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      color: #fff;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft), transform .4s var(--ease-soft);
+    }
+
+    .flowing-menu-close:hover {
+      background: rgba(255, 255, 255, .18);
+      transform: rotate(90deg);
+    }
+
+    .menu-wrap {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin: 0;
+      padding: 0 calc(var(--spacing) * 10);
+      list-style: none;
+    }
+
+    .menu__item {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      border-top: 1px solid;
+    }
+
+    .menu__item:first-child {
+      border-top: none;
+    }
+
+    .menu__item-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      font-weight: 600;
+      font-size: clamp(1.3rem, 4vh, 2.6rem);
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .menu__item-link:hover {
+      color: inherit;
+    }
+
+    .menu__item-link:focus:not(:focus-visible) {
+      color: inherit;
+    }
+
+    .marquee {
+      position: absolute;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      transform: translate3d(0, 101%, 0);
+    }
+
+    .marquee__inner-wrap {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .marquee__inner {
+      display: flex;
+      align-items: center;
+      position: relative;
+      height: 100%;
+      width: fit-content;
+      will-change: transform;
+    }
+
+    .marquee__part {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .marquee span {
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: clamp(1.3rem, 4vh, 2.6rem);
+      line-height: 1;
+      padding: 0 1vw;
+      letter-spacing: var(--tracking-tight);
+    }
+
+    .marquee__img {
+      width: 200px;
+      height: 7vh;
+      margin: 2em 2vw;
+      padding: 1em 0;
+      border-radius: 50px;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+
+    @media(max-width: 900px) {
+
+      .menu__item-link,
+      .marquee span {
+        font-size: clamp(1.05rem, 3.2vh, 1.7rem);
+      }
+
+      .marquee__img {
+        width: 130px;
+      }
+    }
+
+    /* ---------- PORTADA (hero): reutilizable en todas las paginas de servicio ---------- */
+    .ic-hero {
+      position: relative;
+      min-height: 100vh;
+      overflow: hidden;
+      background: var(--bg);
+    }
+
+    .ic-hero-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .ic-hero-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .ic-hero-media::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, .32) 42%, rgba(0, 0, 0, .3) 62%, rgba(0, 0, 0, .72) 100%);
+    }
+
+    .ic-hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+      padding-inline: calc(var(--spacing) * 10);
+    }
+
+    .ic-hero-kicker {
+      display: block;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      opacity: .65;
+      margin-bottom: 1.4rem;
+    }
+
+    .ic-hero-title {
+      font-size: clamp(2.6rem, 7vw, 5.5rem);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.02;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .ic-hero-title.shiny-text {
+      display: block;
+    }
+
+    .ic-hero-subnav {
+      display: inline-flex;
+      align-items: center;
+      text-align: center;
+      gap: .55rem;
+      margin-top: 1.5rem;
+      padding: .55rem .5rem .55rem 1.2rem;
+      width: fit-content;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #fff;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background .35s var(--ease-soft), border-color .35s var(--ease-soft);
+    }
+
+    .ic-hero-subnav:hover {
+      background: rgba(255, 255, 255, .14);
+      border-color: rgba(255, 255, 255, .5);
+    }
+
+    .ic-hero-caption {
+      position: absolute;
+      left: 50%;
+      bottom: clamp(2.5rem, 6vw, 4.5rem);
+      transform: translateX(-50%);
+      z-index: 2;
+      width: 100%;
+      max-width: 34rem;
+      text-align: center;
+      padding-inline: calc(var(--spacing) * 10);
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.7;
+      color: var(--color-light-font);
+      opacity: .75;
+    }
+
+    @media(max-width: 640px) {
+      .ic-hero-title {
+        font-size: clamp(2.2rem, 11vw, 3rem);
+      }
+
+      .ic-hero-caption {
+        bottom: 2rem;
+        font-size: .68rem;
+      }
+    }
+
+    /* ---------- FOOTER: estilo cinematico (aurora, grid, marquee, glass pills) ---------- */
+    .site-footer {
+      position: relative;
+      background: linear-gradient(180deg, #061710 0%, #030d09 45%, #000 100%);
+      overflow: hidden;
+      isolation: isolate;
+      padding-block: calc(var(--spacing) * 26) calc(var(--spacing) * 8);
+    }
+
+    .footer-aurora {
+      position: absolute;
+      left: 50%;
+      top: 38%;
+      width: 78vw;
+      height: 52vh;
+      transform: translate(-50%, -50%) scale(1);
+      background: radial-gradient(circle at 50% 50%, rgba(52, 211, 153, .2) 0%, rgba(16, 163, 127, .12) 45%, transparent 72%);
+      border-radius: 50%;
+      filter: blur(70px);
+      z-index: 0;
+      pointer-events: none;
+      animation: footer-breathe 9s ease-in-out infinite alternate;
+    }
+
+    @keyframes footer-breathe {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: .55;
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1.14);
+        opacity: .9;
+      }
+    }
+
+    .footer-grid-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-size: 60px 60px;
+      background-image:
+        linear-gradient(to right, rgba(255, 255, 255, .045) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, .045) 1px, transparent 1px);
+      -webkit-mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      mask-image: linear-gradient(to bottom, transparent, black 25%, black 75%, transparent);
+      pointer-events: none;
+    }
+
+    .footer-giant-text {
+      position: absolute;
+      left: 50%;
+      bottom: -3.2vw;
+      transform: translateX(-50%);
+      font-size: 11vw;
+      line-height: .8;
+      font-weight: 700;
+      letter-spacing: -.03em;
+      white-space: nowrap;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, .07);
+      background: linear-gradient(180deg, rgba(255, 255, 255, .1) 0%, transparent 65%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      z-index: 0;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .footer-marquee {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      overflow: hidden;
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+      padding-block: .9rem;
+      margin-bottom: calc(var(--spacing) * 16);
+      background: rgba(255, 255, 255, .02);
+      transform: rotate(-1deg) scale(1.03);
+    }
+
+    .footer-marquee-track {
+      display: flex;
+      width: max-content;
+      animation: footer-marquee 34s linear infinite;
+    }
+
+    .footer-marquee-group {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      padding-inline: 1.25rem;
+      flex-shrink: 0;
+    }
+
+    .footer-marquee-group span {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .55;
+      white-space: nowrap;
+    }
+
+    .footer-marquee-group .dot {
+      opacity: .35;
+    }
+
+    @keyframes footer-marquee {
+      from {
+        transform: translateX(0);
+      }
+
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-title {
+      font-size: clamp(1.9rem, 4.5vw, 3rem);
+      line-height: 1.1;
+      font-weight: var(--font-weight-normal);
+      letter-spacing: var(--tracking-tight);
+      text-transform: uppercase;
+      background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, .35) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 0 24px rgba(255, 255, 255, .12));
+      margin-bottom: calc(var(--spacing) * 12);
+      width: fit-content;
+    }
+
+    .footer-locations {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 3rem;
+      padding-bottom: calc(var(--spacing) * 14);
+      border-bottom: 1px solid rgba(255, 255, 255, .12);
+    }
+
+    .footer-loc {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+    }
+
+    .footer-loc-name {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+    }
+
+    .footer-loc-address {
+      font-size: var(--text-sm);
+      line-height: 1.55;
+      color: var(--color-light-font);
+      opacity: .7;
+      max-width: 20rem;
+    }
+
+    .footer-loc-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      gap: .6rem;
+      font-size: var(--text-sm);
+    }
+
+    .footer-label {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .45;
+    }
+
+    .footer-value {
+      color: var(--color-light-font);
+      opacity: .85;
+      text-decoration: none;
+    }
+
+    /* pastilla de cristal (glass pill) reutilizable, con efecto iman via JS */
+    .footer-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .5rem 1.1rem;
+      border-radius: 999px;
+      background: linear-gradient(145deg, rgba(255, 255, 255, .06) 0%, rgba(255, 255, 255, .015) 100%);
+      border: 1px solid rgba(255, 255, 255, .1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: inset 0 1px 1px rgba(255, 255, 255, .12), 0 8px 18px -8px rgba(0, 0, 0, .5);
+      text-decoration: none;
+      color: var(--color-light-font);
+      width: fit-content;
+      transition: background .4s var(--ease-soft), border-color .4s var(--ease-soft), color .3s var(--ease-soft);
+    }
+
+    .footer-pill:hover {
+      background: linear-gradient(145deg, rgba(255, 255, 255, .12) 0%, rgba(255, 255, 255, .04) 100%);
+      border-color: rgba(255, 255, 255, .24);
+      color: #fff;
+    }
+
+    .footer-tel {
+      font-size: var(--text-sm);
+    }
+
+    .footer-treatments {
+      display: flex;
+      flex-direction: column;
+      gap: .65rem;
+    }
+
+    .footer-treatments a {
+      font-size: var(--text-sm);
+      color: var(--color-light-font);
+      opacity: .7;
+      text-decoration: none;
+      width: fit-content;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .footer-treatments a:hover {
+      opacity: 1;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .footer-treatments a.footer-all {
+      opacity: 1;
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+      padding-top: calc(var(--spacing) * 8);
+    }
+
+    .footer-copy {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .5;
+    }
+
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+
+    .footer-legal a {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+    }
+
+    .footer-right-group {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+
+    .footer-social {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+
+    .footer-icon-btn {
+      width: 3.1rem;
+      height: 3.1rem;
+      padding: 0;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .footer-icon-btn svg {
+      transition: transform .3s var(--ease-soft);
+    }
+
+    .footer-icon-btn:hover svg {
+      transform: translateY(-2px);
+    }
+
+    .footer-top-btn:hover svg {
+      transform: translateY(-3px);
+    }
+
+    .footer-credit {
+      margin-top: calc(var(--spacing) * 6);
+      padding-top: calc(var(--spacing) * 6);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      text-align: center;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .4;
+    }
+
+    @media(max-width: 900px) {
+      .footer-locations {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-treatments {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media(max-width: 560px) {
+      .footer-locations {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-giant-text {
+        font-size: 18vw;
+      }
+    }
+
+    /* componente ScrollReveal generico: cada bloque .scroll-reveal revela sus palabras al hacer scroll */
+    .scroll-reveal {
+      margin: 0;
+    }
+
+    .scroll-reveal-text {
+      font-size: clamp(1.6rem, 4vw, 3rem);
+      line-height: 1.5;
+      font-weight: var(--font-weight-medium);
+    }
+
+    .word {
+      display: inline-block;
+    }
+
+    /* ---------- TRATAMIENTOS: tarjetas de 2 en 2 / 3 en 3, Scroll Reveal (componente compartido) ---------- */
+    .tc-section {
+      position: relative;
+      background: var(--bg);
+      overflow: hidden;
+    }
+
+    .tc-intro {
+      padding-top: clamp(4.5rem, 9vw, 7rem);
+      padding-bottom: clamp(2rem, 5vw, 3rem);
+      padding-inline: calc(var(--spacing) * 10);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .tc-kicker {
+      display: block;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .55;
+    }
+
+    /* grid de 2 columnas con los 4 primeros tratamientos */
+    .tc-items {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(3.5rem, 6vw, 5.5rem) clamp(2.5rem, 6vw, 5rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+      padding-inline: calc(var(--spacing) * 10);
+      padding-bottom: clamp(3.5rem, 7vw, 5.5rem);
+    }
+
+    .tc-divider {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, .14);
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .tc-plus {
+      position: absolute;
+      left: 50%;
+      width: 11px;
+      height: 11px;
+      transform: translate(-50%, -50%);
+    }
+
+    .tc-plus::before,
+    .tc-plus::after {
+      content: '';
+      position: absolute;
+      background: rgba(255, 255, 255, .4);
+    }
+
+    .tc-plus::before {
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      transform: translateX(-50%);
+    }
+
+    .tc-plus::after {
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    .tc-plus-top {
+      top: var(--pl-corner-plus-offset);
+    }
+
+    .tc-plus-bottom {
+      bottom: var(--pl-corner-plus-offset);
+      top: auto;
+    }
+
+    /* tarjeta individual: imagen arriba, texto debajo */
+    .tc-item {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+
+    #tratamientos-vasculares {
+      scroll-margin-top: 6rem;
+    }
+
+    /* grid de 3 columnas con los 3 tratamientos restantes, debajo del grupo de 4 */
+    .tc-items-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: clamp(3rem, 5vw, 4rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+      padding-inline: calc(var(--spacing) * 10);
+      padding-top: clamp(3.5rem, 6vw, 5.5rem);
+      padding-bottom: clamp(4rem, 8vw, 6.5rem);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .tc-media {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      width: 100%;
+      background: var(--pl-panel-gray);
+      border: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .tc-media img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.15);
+    }
+
+    .tc-content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .tc-block-title {
+      margin-bottom: 1.5rem;
+    }
+
+    .scroll-reveal-text.tc-title {
+      font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+      font-weight: 600;
+      line-height: 1.15;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .tc-block-lead {
+      margin-bottom: .15rem;
+      max-width: 26rem;
+    }
+
+    .scroll-reveal-text.tc-lead-highlight {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    .tc-block-lead-desc {
+      margin-bottom: 1.75rem;
+      max-width: 26rem;
+    }
+
+    .scroll-reveal-text.tc-lead-desc {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      color: var(--color-light-font);
+      line-height: 1.6;
+    }
+
+    .tc-focus {
+      margin-bottom: 1.85rem;
+      max-width: 26rem;
+    }
+
+    .tc-block-label {
+      margin-bottom: .65rem;
+    }
+
+    .scroll-reveal-text.tc-label {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .5;
+    }
+
+    .scroll-reveal-text.tc-small {
+      font-size: var(--text-sm);
+      line-height: 1.65;
+      color: var(--color-light-font);
+      opacity: .75;
+      font-weight: var(--font-weight-normal);
+    }
+
+    .tc-cta {
+      margin-top: .25rem;
+    }
+
+    /* ---------- TRATAMIENTO: panel de detalle, se abre por la izquierda al clicar una tarjeta ---------- */
+    .tc-item {
+      cursor: pointer;
+    }
+
+    #tc-panel-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 95;
+      background: rgba(4, 5, 8, .45);
+      backdrop-filter: blur(14px) saturate(120%);
+      -webkit-backdrop-filter: blur(14px) saturate(120%);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .5s var(--ease-soft), visibility 0s linear .5s;
+    }
+
+    body.tc-panel-open #tc-panel-overlay {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .5s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    body.tc-panel-open {
+      overflow: hidden;
+    }
+
+    #tc-panel {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100dvh;
+      width: min(28rem, 92vw);
+      background: linear-gradient(195deg, rgba(30, 30, 32, .92), rgba(4, 5, 8, .97));
+      backdrop-filter: blur(20px) saturate(140%);
+      -webkit-backdrop-filter: blur(20px) saturate(140%);
+      border-right: 1px solid rgba(255, 255, 255, .1);
+      box-shadow: 20px 0 60px rgba(0, 0, 0, .5);
+      color: var(--color-light-font);
+      z-index: 96;
+      transform: translateX(-100%);
+      transition: transform .55s var(--ease-soft);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    body.tc-panel-open #tc-panel {
+      transform: translateX(0);
+    }
+
+    .tc-panel-header {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+      padding: 1.5rem calc(var(--spacing) * 7) 1.25rem;
+    }
+
+    .tc-panel-brand {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .75;
+    }
+
+    #tc-panel-close {
+      flex-shrink: 0;
+      width: 2.6rem;
+      height: 2.6rem;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .08);
+      border: 1px solid rgba(255, 255, 255, .18);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft), transform .3s var(--ease-soft);
+    }
+
+    #tc-panel-close:hover {
+      background: rgba(255, 255, 255, .18);
+      transform: rotate(90deg);
+    }
+
+    .tc-panel-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: calc(var(--spacing) * 8) calc(var(--spacing) * 7);
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+    }
+
+    .tc-panel-eyebrow {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #37ff93;
+    }
+
+    .tc-panel-body h3 {
+      font-size: var(--text-2xl);
+      font-weight: 700;
+      line-height: 1.2;
+      color: #fff;
+      margin-top: .2rem;
+    }
+
+    #tc-panel-desc {
+      font-size: var(--text-sm);
+      color: var(--color-light-font);
+      opacity: .85;
+      line-height: 1.6;
+    }
+
+    @media(max-width: 900px) {
+      .tc-items {
+        grid-template-columns: 1fr;
+        gap: 3.25rem;
+      }
+
+      .tc-items-3 {
+        grid-template-columns: 1fr;
+        gap: 3.25rem;
+        padding-top: 3.25rem;
+      }
+
+      .tc-divider {
+        display: none;
+      }
+    }
+
+    /* ---------- BLUR TEXT: revelado por palabras al entrar en pantalla (secciones de equipo/FAQ) ---------- */
+    .blur-text {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .blur-text .bt-word {
+      display: inline-block;
+      filter: blur(10px);
+      opacity: 0;
+      transform: translateY(50px);
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+      will-change: transform, filter, opacity;
+    }
+
+    .blur-text[data-direction="top"] .bt-word {
+      transform: translateY(-50px);
+    }
+
+    .blur-text.is-visible .bt-word {
+      animation-name: blurTextInBottom;
+      animation-duration: .7s;
+    }
+
+    .blur-text[data-direction="top"].is-visible .bt-word {
+      animation-name: blurTextInTop;
+    }
+
+    .footer-title-icon {
+      height: 2.4rem;
+      width: auto;
+      display: inline-block;
+      flex-shrink: 0;
+      filter: brightness(0) invert(1);
+      -webkit-text-fill-color: initial;
+      opacity: .85;
+    }
+
+    @keyframes blurTextInBottom {
+      0% {
+        filter: blur(10px);
+        opacity: 0;
+        transform: translateY(50px);
+      }
+
+      50% {
+        filter: blur(5px);
+        opacity: .5;
+        transform: translateY(-5px);
+      }
+
+      100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes blurTextInTop {
+      0% {
+        filter: blur(10px);
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+
+      50% {
+        filter: blur(5px);
+        opacity: .5;
+        transform: translateY(5px);
+      }
+
+      100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ---------- EQUIPO: intro "Mas informacion sobre nuestro equipo" ---------- */
+    .eq-intro {
+      position: relative;
+      background: var(--bg);
+      padding: clamp(6rem, 12vw, 9rem) calc(var(--spacing) * 10) clamp(5rem, 9vw, 7.5rem);
+    }
+
+    .eq-intro-top {
+      display: flex;
+      justify-content: center;
+      margin-bottom: clamp(5rem, 11vw, 8.5rem);
+    }
+
+    .eq-intro-heading-wrap {
+      max-width: 34rem;
+      text-align: center;
+    }
+
+    .eq-intro-heading .blur-text {
+      justify-content: center;
+      font-size: clamp(1.8rem, 3.4vw, 2.5rem);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.3;
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .eq-intro-desc {
+      margin-top: 1.75rem;
+      max-width: 24rem;
+      margin-inline: auto;
+      text-align: left;
+    }
+
+    .eq-intro-desc .blur-text {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.8;
+      color: var(--color-light-font);
+      opacity: .7;
+    }
+
+    .eq-intro-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1.6fr;
+      gap: clamp(3rem, 6vw, 5rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .eq-intro-col-title .blur-text {
+      font-size: clamp(1.5rem, 2.6vw, 2rem);
+      font-weight: var(--font-weight-medium);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+      margin-bottom: 1.4rem;
+    }
+
+    .eq-intro-col-text .blur-text {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      line-height: 1.85;
+      color: var(--color-light-font);
+      opacity: .7;
+      max-width: 28rem;
+    }
+
+    .eq-intro-detail-pair {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .eq-intro-detail-divider {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: rgba(255, 255, 255, .14);
+      transform: translateX(-50%);
+      pointer-events: none;
+    }
+
+    .eq-intro-sub-title .blur-text {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+
+    .eq-intro-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: .95rem;
+    }
+
+    .eq-intro-list li {
+      padding-bottom: .95rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .08);
+    }
+
+    .eq-intro-list li:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .eq-intro-list li .blur-text {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: var(--color-light-font);
+      opacity: .75;
+    }
+
+    @media(max-width: 900px) {
+      .eq-intro-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .eq-intro-detail-pair {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .eq-intro-detail-divider {
+        display: none;
+      }
+    }
+
+    /* ---------- PREGUNTAS FRECUENTES: acordeon ---------- */
+    .faq-section {
+      position: relative;
+      background: var(--bg);
+      padding: clamp(2rem, 5vw, 3.5rem) calc(var(--spacing) * 10) clamp(6rem, 10vw, 8rem);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: clamp(2.5rem, 5vw, 4rem);
+      align-items: center;
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .faq-label .blur-text {
+      font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+      font-weight: var(--font-weight-medium);
+      letter-spacing: var(--tracking-tight);
+      color: #fff;
+    }
+
+    .faq-list {
+      display: flex;
+      flex-direction: column;
+      gap: .9rem;
+    }
+
+    .faq-item {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid rgba(255, 255, 255, .08);
+      border-radius: .75rem;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 1.1rem 1.5rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      color: #fff;
+      transition: background .3s var(--ease-soft);
+    }
+
+    .faq-question:hover {
+      background: rgba(255, 255, 255, .03);
+    }
+
+    .faq-question-text.blur-text {
+      font-size: var(--text-sm);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.4;
+    }
+
+    .faq-icon {
+      position: relative;
+      flex-shrink: 0;
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+
+    .faq-icon::before,
+    .faq-icon::after {
+      content: '';
+      position: absolute;
+      background: #fff;
+      opacity: .8;
+      transition: transform .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .faq-icon::before {
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+      transform: translateY(-50%);
+    }
+
+    .faq-icon::after {
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+
+    .faq-item.is-open .faq-icon::after {
+      opacity: 0;
+      transform: translateX(-50%) rotate(90deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .faq-answer-inner {
+      padding: 0 1.5rem 1.35rem;
+      font-size: var(--text-sm);
+      line-height: 1.7;
+      color: var(--color-light-font);
+      opacity: .8;
+    }
+
+    @media(max-width: 780px) {
+      .faq-grid {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 1.75rem;
+      }
+    }
+
+    /* ---------- RESULTADO FINAL: foto de cierre (sin CSS en el original, estilo minimo añadido) ---------- */
+    .cs-section {
+      position: relative;
+      background: var(--bg);
+      padding: 0 calc(var(--spacing) * 10) clamp(6rem, 10vw, 8rem);
+    }
+
+    .cs-inner {
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .cs-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .cs-card-inner {
+      position: relative;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .cs-card-inner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ---------- SHINY TEXT: brillo animado que recorre el texto en bucle ---------- */
+    .shiny-text {
+      display: inline-block;
+      background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 35%, #37ff93 50%, #ffffff 65%, #ffffff 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: #ffffff;
+      animation: shinySweep 2s linear infinite;
+    }
+
+    @keyframes shinySweep {
+      0% {
+        background-position: 150% center;
+      }
+
+      100% {
+        background-position: -50% center;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .shiny-text {
+        animation: none;
+        -webkit-text-fill-color: #ffffff;
+      }
+    }
+
+    /* ---------- TODO LO QUE TRATAMOS: 7 a la izquierda, 7 a la derecha, titulo en medio ---------- */
+    .tw-section {
+      position: relative;
+      background: var(--bg);
+      padding: clamp(5rem, 10vw, 7.5rem) calc(var(--spacing) * 10);
+    }
+
+    .tw-inner {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: clamp(2rem, 5vw, 4rem);
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+    }
+
+    .tw-col {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(1rem, 2vw, 1.5rem);
+    }
+
+    .tw-col-left {
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .tw-col-right {
+      align-items: flex-end;
+      text-align: right;
+    }
+
+    .tw-col .shiny-text {
+      cursor: pointer;
+      font-size: clamp(.95rem, 1.3vw, 1.15rem);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: var(--tracking-normal);
+    }
+
+    .tw-title {
+      font-size: clamp(1.9rem, 4vw, 3.2rem);
+      font-weight: 600;
+      line-height: 1.1;
+      letter-spacing: var(--tracking-tight);
+      text-transform: uppercase;
+      color: #fff;
+      text-align: center;
+      max-width: 15rem;
+    }
+
+    @media(max-width: 900px) {
+      .tw-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .tw-title {
+        order: -1;
+        max-width: none;
+        margin-bottom: .5rem;
+      }
+
+      .tw-col-left,
+      .tw-col-right {
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+
+
+    .footer-bottom-extra {
+      margin-top: calc(var(--spacing) * 6);
+      padding-top: calc(var(--spacing) * 6);
+      border-top: 1px solid rgba(255, 255, 255, .08);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-junta-link {
+      display: inline-block;
+      flex-shrink: 0;
+      line-height: 0;
+    }
+
+    .footer-junta-logo {
+      height: 2.8rem;
+      width: auto;
+      filter: brightness(0) invert(1);
+      opacity: .45;
+      transition: opacity .3s ease;
+    }
+
+    .footer-junta-link:hover .footer-junta-logo {
+      opacity: .75;
+    }
+
+    .footer-credit {
+      font-size: var(--text-xs, .75rem);
+      color: var(--color-light-font, #d8d8d8);
+      opacity: .4;
+      text-transform: uppercase;
+    }
+
+    /* ---------- ESPECIALIDADES: menu lateral off-canvas (blanco, minimalista) ---------- */
+    .specialties-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 95;
+      background: rgba(4, 5, 8, .35);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear .45s;
+    }
+
+    .specialties-overlay.is-open {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transition: opacity .45s var(--ease-soft), visibility 0s linear 0s;
+    }
+
+    body.specialties-open {
+      overflow: hidden;
+    }
+
+    .specialties-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100dvh;
+      width: min(26rem, 100vw);
+      background: #fff;
+      color: #171717;
+      z-index: 96;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform .55s var(--ease-soft);
+      overflow-y: auto;
+      box-shadow: -20px 0 60px rgba(0, 0, 0, .18);
+    }
+
+    .specialties-panel.is-open {
+      transform: translateX(0);
+    }
+
+    .specialties-header {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.85rem calc(var(--spacing) * 9) 1.5rem;
+    }
+
+    .specialties-eyebrow {
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      color: #171717;
+    }
+
+    .specialties-close {
+      flex-shrink: 0;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 50%;
+      background: #e8e8e6;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background .3s var(--ease-soft), transform .3s var(--ease-soft);
+    }
+
+    .specialties-close:hover {
+      background: #d9d9d6;
+      transform: rotate(90deg);
+    }
+
+    .specialties-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: calc(var(--spacing) * 10);
+    }
+
+    .specialty-row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .specialty-link,
+    .specialty-toggle {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      font-family: inherit;
+      font-size: clamp(1.35rem, 4.6vw, 1.7rem);
+      letter-spacing: var(--tracking-normal);
+      color: #171717;
+      text-decoration: none;
+      cursor: pointer;
+      padding: .85rem calc(var(--spacing) * 9);
+      transition: background .3s var(--ease-soft);
+    }
+
+    .specialty-link:hover,
+    .specialty-toggle:hover {
+      background: #f1f1ef;
+    }
+
+    .specialty-submenu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s var(--ease-soft);
+    }
+
+    .specialty-row.is-open .specialty-submenu {
+      max-height: 4rem;
+    }
+
+    .specialty-sublink {
+      display: block;
+      font-size: var(--text-base);
+      color: #171717;
+      opacity: .65;
+      text-decoration: none;
+      padding: .6rem calc(var(--spacing) * 9) .6rem calc(var(--spacing) * 15);
+      transition: background .3s var(--ease-soft), opacity .3s var(--ease-soft);
+    }
+
+    .specialty-sublink:hover {
+      background: #f1f1ef;
+      opacity: 1;
+    }
+
+    .specialties-footer {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem 1.5rem;
+      padding: 1.5rem calc(var(--spacing) * 9) 1.85rem;
+      border-top: 1px solid #ececea;
+    }
+
+    .specialties-social,
+    .specialties-phone {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      font-size: var(--text-sm);
+      color: #171717;
+      text-decoration: none;
+      transition: opacity .3s var(--ease-soft);
+    }
+
+    .specialties-phone span {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .specialties-social:hover,
+    .specialties-phone:hover {
+      opacity: .6;
+    }
+
+    @media (max-width: 480px) {
+      .specialties-header {
+        padding: 1.5rem calc(var(--spacing) * 7) 1.25rem;
+      }
+
+      .specialty-link,
+      .specialty-toggle {
+        padding: .8rem calc(var(--spacing) * 7);
+      }
+
+      .specialty-sublink {
+        padding-left: calc(var(--spacing) * 13);
+      }
+
+      .specialties-footer {
+        padding: 1.25rem calc(var(--spacing) * 7) 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="topnav" id="topnav">
+
+    <a class="topnav-logo-link" href="index.html" aria-label="Ir al inicio â€” Medical Linares"
+      title="Bienvenido a Medical Linares">
+      <img src="./img/medicalinareslogo.png" alt="Medical Linares" class="topnav-logo" id="topnavLogo">
+    </a>
+    <div class="topnav-actions" id="topnavActions">
+      <a class="nav-link" href="index.html#services-section" id="navEspecialidades">Especialidades</a>
+      <a class="nav-link" href="ciudades.html">Ciudades</a>
+      <a class="nav-link" href="nuestro-origen.html">Nuestro origen</a>
+      <a class="nav-link" href="blog.html">Blog</a>
+      <a class="nav-link" href="equipo.html">Equipo</a>
+      <div class="button_wrapper">
+        <a class="btn btn-green" href="contacto.html">
+          <span class="word">Pedir cita</span>
+          <span class="arrow-circle">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.44 1.32 4.94L2 22l5.24-1.37c1.44.79 3.06 1.2 4.8 1.2 5.5 0 9.96-4.45 9.96-9.96C22 6.46 17.54 2 12.04 2Zm0 18.2c-1.55 0-3.06-.42-4.38-1.2l-.31-.19-3.11.82.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.27-8.25 8.27Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29Z" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false"
+      aria-controls="topnavActions">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+  </nav>
+
+  <div id="tc-panel-overlay"></div>
+  <aside id="tc-panel" aria-hidden="true">
+    <div class="tc-panel-header">
+      <span class="tc-panel-brand">Medical Linares</span>
+      <button id="tc-panel-close" aria-label="Cerrar">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+    <div class="tc-panel-body">
+      <span id="tc-panel-eyebrow" class="tc-panel-eyebrow"></span>
+      <h3 id="tc-panel-title"></h3>
+      <p id="tc-panel-desc"></p>
+    </div>
+  </aside>
+
+  <div class="specialties-overlay" id="specialtiesOverlay" aria-hidden="true"></div>
+  <aside class="specialties-panel" id="specialtiesPanel" aria-hidden="true" aria-label="Especialidades">
+    <div class="specialties-header">
+      <span class="specialties-eyebrow">Especialidades</span>
+      <button class="specialties-close" id="specialtiesClose" type="button" aria-label="Cerrar menú de especialidades">
+        <svg width="13" height="13" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L13 13M13 1L1 13" stroke="#171717" stroke-width="1.4" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+
+    <nav class="specialties-body" aria-label="Lista de especialidades">
+      <div class="specialty-row">
+        <a class="specialty-link" href="injerto-capilar.html">Injerto Capilar</a>
+      </div>
+
+      <div class="specialty-row has-sub has-sub-hover">
+        <a class="specialty-link" href="cirugia-estetica.html">Cirugía Estética</a>
+        <div class="specialty-submenu">
+          <a class="specialty-sublink" href="cirugia-estetica.html#lipolaser">Lipoláser</a>
+        </div>
+      </div>
+
+      <div class="specialty-row has-sub has-sub-hover">
+        <a class="specialty-link" href="medicina-estetica.html">Medicina Estética</a>
+        <div class="specialty-submenu">
+          <a class="specialty-sublink" href="medicina-estetica.html#vascular">Vascular</a>
+        </div>
+      </div>
+
+      <div class="specialty-row">
+        <a class="specialty-link" href="dermatologia.html">Dermatología</a>
+      </div>
+
+      <div class="specialty-row">
+        <a class="specialty-link" href="ttos-faciales-y-corporales.html">Tratamientos Faciales &amp; Corporales</a>
+      </div>
+    </nav>
+
+    <div class="specialties-footer">
+      <a class="specialties-social" href="https://www.instagram.com/medical_linares/?hl=es" target="_blank"
+        rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span>Medical_linares</span>
+      </a>
+      <a class="specialties-phone" href="tel:+34645036752">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.6"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z">
+          </path>
+        </svg>
+        <span>645 03 67 52</span>
+      </a>
+    </div>
+  </aside>
+
+
+
+  <main>
+
+    <section class="ic-hero">
+      <div class="ic-hero-media" aria-hidden="true">
+        <img src="./img/medicina-estetica-hero.webp" alt="">
+      </div>
+      <div class="ic-hero-content">
+        <span class="ic-hero-kicker">Rejuvenece tu piel y realza tu belleza</span>
+        <h1 class="ic-hero-title shiny-text">Medicina Estética</h1>
+        <a class="ic-hero-subnav" href="#tratamientos-vasculares">
+          <span>Vascular</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 4.5L6 8.5L10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+      <p class="ic-hero-caption">Medicina estética en Linares con tratamientos mínimamente invasivos y tecnología de
+        última generación, para resultados naturales, sin cirugía y con recuperación rápida.</p>
+    </section>
+
+    <section class="tc-section" id="tratamientos-estetica">
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Tratamientos faciales con hidratación</h2>
+      </div>
+
+      <div class="tc-items">
+        <div class="tc-divider" aria-hidden="true">
+          <span class="tc-plus tc-plus-top"></span>
+          <span class="tc-plus tc-plus-bottom"></span>
+        </div>
+
+        <!-- 1. Relleno de pómulos -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica1.webp" alt="Relleno de pómulos — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Relleno de Pómulos</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Realza tus pómulos.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Efecto "lifting" sin cirugía, con contorno y estructura en
+                minutos.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Conseguimos proyectar los pómulos y devolverle estructura al
+                  rostro, aportando frescura y juventud. Es un tratamiento ideal para quienes notan pérdida de volumen
+                  con el paso del tiempo.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Surco nasogeniano -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica2.webp" alt="Tratamiento del surco nasogeniano — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Surco Nasogeniano</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Suaviza el surco.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Rejuvenece la sonrisa suavizando el llamado "código de la
+                amargura".</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">La hidratación en los surcos nasogenianos suaviza esas arrugas
+                  profundas que aparecen entre la nariz y la boca, logrando un aspecto más descansado y natural.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Ojeras -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica3.webp" alt="Relleno de ojeras — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Relleno de Ojeras</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Mirada más fresca.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Corrige el hundimiento y la sombra con un resultado natural.
+              </h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">El relleno de ojeras con inyección corrige hundimientos y mejora
+                  el aspecto de la mirada, reduciendo el cansancio facial.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4. Perfilado y relleno de labios -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica4.webp" alt="Perfilado y relleno de labios — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Perfilado y Relleno de Labios</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Labios más definidos.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Perfil, volumen y simetría con un acabado natural.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Perfilamos el contorno de los labios y aplicamos relleno para
+                  aportar hidratación, volumen y simetría, con un resultado natural y precios ajustados.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Medicina regenerativa estética</h2>
+      </div>
+
+      <div class="tc-items-3">
+
+        <!-- 5. Bioestimulación facial -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica5.webp" alt="Bioestimulación facial — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Bioestimulación Facial</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Regenera tu piel.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Luz, firmeza y textura desde dentro.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Obtenemos material regenerativo a partir de tu propia sangre y lo
+                  infiltramos en la piel para mejorar su textura, luminosidad y firmeza.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6. Cóctel de vitaminas -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica6.webp" alt="Cóctel de vitaminas — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Cóctel de Vitaminas</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Extra de luminosidad.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Efecto "piel descansada" e hidratada.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Aplicamos cócteles personalizados de vitaminas y antioxidantes
+                  para revitalizar la piel cansada, mejorar la hidratación y devolver la luminosidad natural.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7. Bioestimulador de colágeno -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica7.webp" alt="Bioestimulador de colágeno — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Bioestimulador de Colágeno</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Activa el colágeno.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Efecto lifting sin bisturí.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Utilizamos bioestimuladores como la hidroxiapatita cálcica para
+                  tratar la flacidez, tensar la piel y conseguir un efecto lifting sin cirugía.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Tratamientos corporales</h2>
+      </div>
+
+      <div class="tc-items">
+        <div class="tc-divider" aria-hidden="true">
+          <span class="tc-plus tc-plus-top"></span>
+          <span class="tc-plus tc-plus-bottom"></span>
+        </div>
+
+        <!-- 8. Aumento de glúteos -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica8.webp" alt="Aumento de glúteos con hidratación — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Aumento de Glúteos</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Volumen y forma.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Proyección inmediata y natural.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Es una alternativa no quirúrgica a los implantes que permite
+                  aumentar el volumen y la proyección de los glúteos, con resultados inmediatos y naturales.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9. Marcación mandibular -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica9.webp" alt="Marcación mandibular — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Marcación Mandibular</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Mandíbula más marcada.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Perfil armónico y contundente.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Definimos el contorno mandibular con rellenos y bioestimuladores,
+                  aportando un perfil más armónico y una expresión más definida.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10. Celulitis -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica10.webp" alt="Ondas de choque para celulitis — Medical Linares"
+              loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Ondas de Choque para Celulitis</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Mejora la celulitis.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Piel más lisa y firme.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Las ondas de choque son ideales para tratar la celulitis, mejorar
+                  la circulación y alisar la textura de la piel en muslos, glúteos o abdomen.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11. Fibrosis postoperatoria -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/medicina-estetica11.webp" alt="Fibrosis postoperatoria — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Fibrosis Postoperatoria</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Reduce la fibrosis.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Suaviza durezas y mejora el resultado.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">En casos de cirugías previas o liposucciones, tratamos la
+                  fibrosis postoperatoria con técnicas de drenaje linfático y aparatología específica para mejorar el
+                  resultado final.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="tc-section" id="tratamientos-vasculares">
+      <div class="tc-intro wrap">
+        <style>
+          #vascular {
+            scroll-margin-top: 100px;
+          }
+        </style>
+        <h2 class="tc-kicker" id="vascular">Vascular</h2>
+      </div>
+
+      <div class="tc-items-3">
+
+        <!-- 1. Láser vascular -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/vascular1.webp" alt="Láser vascular — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Láser Vascular</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Elimina arañas vasculares.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Capilares visibles y rojeces, tratados con precisión.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Cómo actúa?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">El láser actúa directamente sobre el vaso sanguíneo, coagulándolo
+                  y haciendo que desaparezca de forma progresiva sin dañar la piel circundante. Es un tratamiento
+                  rápido, seguro y con muy buena tolerancia.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Esclerosis vascular -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/vascular2.webp" alt="Esclerosis vascular — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Esclerosis Vascular</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Reduce varices finas.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Cierre efectivo con muy buen resultado estético.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Cómo actúa?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Consiste en la infiltración de una sustancia esclerosante en los
+                  vasos dilatados, provocando su cierre y desaparición. Está indicada en varículas de mayor calibre y
+                  puede combinarse con el láser para optimizar resultados en pocas sesiones.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3. Piernas cansadas y pesadez -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/vascular3.webp" alt="Piernas cansadas y pesadez — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Piernas Cansadas y Pesadez</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Alivio y ligereza.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Mejora la circulación y reduce la sensación de pesadez.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué incluye el plan?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Diseñamos planes personalizados que combinan hábitos saludables y
+                  ejercicio, medidas de compresión cuando están indicadas, tratamientos médicos y estéticos para mejorar
+                  la circulación, y protocolos con aparatología que favorecen el drenaje venoso y linfático.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="tw-section" id="todo-lo-que-tratamos">
+      <div class="tw-inner">
+
+        <div class="tw-col tw-col-left">
+          <span class="shiny-text" style="animation-delay:0s"
+            data-desc="Con el paso del tiempo el rostro pierde grasa y colágeno, lo que resta definición a pómulos, mejillas y contorno.">Pérdida
+            de volumen facial</span>
+          <span class="shiny-text" style="animation-delay:-.5s"
+            data-desc="La piel pierde firmeza y elasticidad, y puede notarse un aspecto más caído en rostro y cuerpo.">Flacidez
+            cutánea</span>
+          <span class="shiny-text" style="animation-delay:-1s"
+            data-desc="Líneas que se marcan por la repetición de gestos (frente, entrecejo, patas de gallo) y con el tiempo quedan visibles en reposo.">Arrugas
+            de expresión</span>
+          <span class="shiny-text" style="animation-delay:-1.5s"
+            data-desc="La zona bajo los ojos pierde volumen y se marca una sombra que da aspecto de cansancio.">Ojeras y
+            hundimiento periorbital</span>
+          <span class="shiny-text" style="animation-delay:-2s"
+            data-desc="Pequeñas diferencias naturales entre ambos lados del rostro que pueden acentuarse con la edad o los gestos habituales.">Asimetría
+            facial</span>
+          <span class="shiny-text" style="animation-delay:-2.5s"
+            data-desc="Cambios en la piel y el tejido subcutáneo que dan un aspecto irregular ('piel de naranja') o zonas más duras al tacto.">Celulitis
+            y fibrosis</span>
+          <span class="shiny-text" style="animation-delay:-3s"
+            data-desc="Piel apagada o con tono irregular, algo habitual por deshidratación, estrés o el paso del tiempo.">Falta
+            de luminosidad en la piel</span>
+        </div>
+
+        <h2 class="tw-title">Todo lo que tratamos</h2>
+
+        <div class="tw-col tw-col-right">
+          <span class="shiny-text" style="animation-delay:-.3s"
+            data-desc="Ácido hialurónico inyectado para recuperar volumen, definir contornos o suavizar surcos, con resultado inmediato.">Relleno
+            de ácido hialurónico</span>
+          <span class="shiny-text" style="animation-delay:-.8s"
+            data-desc="Sustancias que activan la producción natural de colágeno para mejorar la firmeza y calidad de la piel de forma progresiva.">Bioestimuladores
+            de colágeno</span>
+          <span class="shiny-text" style="animation-delay:-1.3s"
+            data-desc="Microinyecciones de vitaminas y activos que hidratan y aportan luminosidad a la piel.">Mesoterapia
+            facial</span>
+          <span class="shiny-text" style="animation-delay:-1.8s"
+            data-desc="Combinaciones de vitaminas y antioxidantes para revitalizar la piel y aportar un extra de luminosidad.">Cócteles
+            de vitaminas</span>
+          <span class="shiny-text" style="animation-delay:-2.3s"
+            data-desc="Técnica no quirúrgica para aportar volumen y mejorar la forma de los glúteos con resultados naturales.">Aumento
+            de glúteos</span>
+          <span class="shiny-text" style="animation-delay:-2.8s"
+            data-desc="Tratamiento para definir y marcar la línea de la mandíbula, aportando un perfil más armónico.">Marcación
+            mandibular</span>
+          <span class="shiny-text" style="animation-delay:-3.3s"
+            data-desc="Tecnología que mejora la circulación y la textura de la piel, útil frente a la celulitis y la fibrosis.">Ondas
+            de choque corporales</span>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="eq-intro">
+
+      <div class="eq-intro-top">
+        <div class="eq-intro-heading-wrap">
+          <h2 class="eq-intro-heading">
+            <p class="blur-text" data-direction="bottom" data-delay="80">Más información</p>
+            <p class="blur-text" data-direction="bottom" data-delay="80">sobre nuestro equipo</p>
+          </h2>
+          <div class="eq-intro-desc">
+            <p class="blur-text" data-direction="bottom" data-delay="30">Conoce a nuestro equipo médico especializado en
+              medicina estética y a nuestro quirófano adaptado para tratamientos estéticos de última generación.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="eq-intro-grid">
+
+        <div class="eq-intro-col eq-intro-col-main">
+          <div class="eq-intro-col-title">
+            <p class="blur-text" data-direction="bottom" data-delay="60">¿Qué tratamos?</p>
+          </div>
+          <div class="eq-intro-col-text">
+            <p class="blur-text" data-direction="bottom" data-delay="20">En Medical Linares entendemos la medicina
+              estética como una herramienta para potenciar la belleza natural de cada persona, sin artificios ni cambios
+              radicales. Nuestro enfoque se basa en mejorar la armonía del rostro y el cuerpo, rejuvenecer la piel y
+              redefinir facciones de forma sutil, siempre con un resultado natural y seguro.</p>
+          </div>
+        </div>
+
+        <div class="eq-intro-detail-pair">
+          <div class="eq-intro-detail-divider" aria-hidden="true"></div>
+
+          <div class="eq-intro-col">
+            <div class="eq-intro-sub-title">
+              <p class="blur-text" data-direction="bottom" data-delay="60">Valoración estética</p>
+            </div>
+            <ul class="eq-intro-list">
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Historial clínico</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Antecedentes</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Análisis facial y corporal</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Objetivos del tratamiento</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Plan personalizado</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="eq-intro-col">
+            <div class="eq-intro-sub-title">
+              <h2 class="blur-text" data-direction="bottom" data-delay="60">Resultados y expectativas</h2>
+            </div>
+            <ul class="eq-intro-list">
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Rellenos: efecto inmediato y natural</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Bioestimuladores: resultados progresivos
+                  (12–18 meses)</p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Aumento de glúteos: resultados inmediatos
+                </p>
+              </li>
+              <li>
+                <p class="blur-text" data-direction="bottom" data-delay="20">Ondas de choque: requieren varias sesiones
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="faq-grid">
+        <div class="faq-label">
+          <h2 class="blur-text" data-direction="bottom" data-delay="40">Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-1"
+              id="faq-question-1">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿El tratamiento es
+                seguro?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+              <p class="faq-answer-inner">Sí, utilizamos productos de máxima calidad, reabsorbibles y totalmente
+                compatibles con el organismo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-2"
+              id="faq-question-2">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Cuánto duran los
+                resultados?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+              <p class="faq-answer-inner">Entre 4 y 6 meses; el ácido hialurónico, entre 9 y 18 meses según la zona y el
+                metabolismo.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-3"
+              id="faq-question-3">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿El aumento de glúteos
+                es permanente?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+              <p class="faq-answer-inner">No, tiene una duración de 12 a 18 meses, pero se pueden realizar retoques de
+                mantenimiento.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-4"
+              id="faq-question-4">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Los tratamientos
+                regenerativos se pueden combinar?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+              <p class="faq-answer-inner">Sí, de hecho, suelen integrarse en planes combinados para potenciar los
+                resultados.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-section" id="csSection">
+      <div class="cs-inner">
+        <div class="cs-card" id="csCard">
+          <div class="cs-card-inner">
+            <img src="./img/medicina-estetica-final.webp"
+              alt="Di adiós a las arrugas y la flacidez con nuestra medicina estética personalizada — Medical Linares">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Las siguientes secciones (fondo negro) se iran añadiendo aqui -->
+
+  </main>
+  <footer class="site-footer" id="site-footer">
+    <div class="footer-aurora" aria-hidden="true"></div>
+    <div class="footer-grid-bg" aria-hidden="true"></div>
+    <div class="footer-giant-text" id="footerGiantText" aria-hidden="true">Medical Linares</div>
+
+    <div class="footer-marquee" aria-hidden="true">
+      <div class="footer-marquee-track">
+        <div class="footer-marquee-group">
+          <span>Medicina Estética</span><span class="dot">✦</span>
+          <span>Dermatología</span><span class="dot">✦</span>
+          <span>Injerto Capilar</span><span class="dot">✦</span>
+          <span>Confianza</span><span class="dot">✦</span>
+          <span>Láser</span><span class="dot">✦</span>
+          <span>Cuidado Real</span><span class="dot">✦</span>
+        </div>
+        <div class="footer-marquee-group">
+          <span>Medicina Estética</span><span class="dot">✦</span>
+          <span>Dermatología</span><span class="dot">✦</span>
+          <span>Injerto Capilar</span><span class="dot">✦</span>
+          <span>Confianza</span><span class="dot">✦</span>
+          <span>Láser</span><span class="dot">✦</span>
+          <span>Cuidado Real</span><span class="dot">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap footer-inner" id="footerInner">
+      <h2 class="footer-title"><img src="./img/IconoMedical.png" alt="Medical Linares" class="footer-title-icon">
+        Medical Linares</h2>
+
+      <div class="footer-locations">
+        <div class="footer-loc">
+          <span class="footer-loc-name">Linares</span>
+          <p class="footer-loc-address">C. República Argentina, 7, 23700 Linares, Jaén.</p>
+          <div class="footer-loc-row">
+            <span class="footer-label">Horario L-V</span>
+            <span class="footer-value">09:30 – 13:15</span>
+            <span class="footer-value">17:00 – 20:00</span>
+          </div>
+          <a class="footer-pill footer-tel" href="tel:+34645036752">645 03 67 52</a>
+        </div>
+
+        <div class="footer-loc">
+          <span class="footer-loc-name">Granada</span>
+          <p class="footer-loc-address">Esquina Pablo Neruda, Av. Dr. López Cantarero Ballesteros, 1, 18200 Maracena,
+            Granada</p>
+          <div class="footer-loc-row">
+            <span class="footer-label">Horario L-V</span>
+            <span class="footer-value">09:30 – 13:15</span>
+            <span class="footer-value">17:00 – 20:00</span>
+          </div>
+          <a class="footer-pill footer-tel" href="tel:+34650064923">650 06 49 23</a>
+        </div>
+
+        <nav class="footer-loc footer-treatments" aria-label="Tratamientos">
+          <span class="footer-loc-name">Tratamientos</span>
+          <a href="./injerto-capilar.html" target="_blank" rel="noopener">Injerto Capilar</a>
+          <a href="./lipolaser.html" target="_blank" rel="noopener">Lipoláser</a>
+          <a href="./medicina-estetica.html" target="_blank" rel="noopener">Medicina Estética</a>
+          <a href="./dermatologia.html" target="_blank" rel="noopener">Dermatología</a>
+          <a href="./ttos-faciales-y-corporales.html " target="_blank" rel="noopener">Tratamientos
+            Faciales y Corporales</a>
+          <a href="./vascular.html" target="_blank" rel="noopener">Vascular</a>
+          <a href="./laser.html" target="_blank" rel="noopener">Láser</a>
+          <a class="footer-pill footer-all" href="./index.html" target="_blank" rel="noopener">Todos →</a>
+        </nav>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Medical Linares · Todos los derechos reservados</span>
+        <div class="footer-legal">
+          <a class="footer-pill" href="politicasdeprivacidad.html">Política de cookies</a>
+          <a class="footer-pill" href="politicasdeprivacidad.html">Aviso legal</a>
+          <a class="footer-pill" href="politicasdeprivacidad.html">Política de privacidad</a>
+        </div>
+        <div class="footer-right-group">
+          <div class="footer-social">
+            <a class="footer-pill footer-icon-btn" href="https://www.instagram.com/medical_linares" target="_blank"
+              rel="noopener" aria-label="Instagram de Medical Linares">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a class="footer-pill footer-icon-btn" href="https://www.facebook.com/medicallinares" target="_blank"
+              rel="noopener" aria-label="Facebook de Medical Linares">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+          </div>
+          <button class="footer-pill footer-icon-btn footer-top-btn" id="footerTopBtn" aria-label="Volver arriba"
+            type="button">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="footer-bottom-extra">
+        <div class="footer-credit">Página creada y diseñada por Angel Mind SEO</div>
+        <a class="footer-junta-link" href="https://www.juntadeandalucia.es" target="_blank" rel="noopener"
+          aria-label="Junta de Andalucía">
+          <img src="https://www.juntadeandalucia.es/sites/default/files/2023-02/byn_1.png" alt="Junta de Andalucía"
+            class="footer-junta-logo">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script>
+    // Menu: linea blanca que se forma de izquierda a derecha al seleccionar una opcion
+    document.querySelectorAll('.nav-link').forEach((link) => {
+      if (link.id === 'navEspecialidades') return; // este abre el desplegable, no cambia de pagina
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.nav-link').forEach((l) => l.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+
+    // ---------- MENU MOVIL: boton hamburguesa que despliega el menu principal ----------
+    (function initMobileNav() {
+      const toggle = document.getElementById('navToggle');
+      const actions = document.getElementById('topnavActions');
+      if (!toggle || !actions) return;
+
+      function closeMobileNav() {
+        toggle.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        actions.classList.remove('is-open');
+      }
+      function openMobileNav() {
+        toggle.classList.add('is-open');
+        toggle.setAttribute('aria-expanded', 'true');
+        actions.classList.add('is-open');
+      }
+
+      toggle.addEventListener('click', () => {
+        toggle.classList.contains('is-open') ? closeMobileNav() : openMobileNav();
+      });
+
+      // cerrar el desplegable al elegir cualquier opcion (incluida "Especialidades", que ademas abre su propio overlay)
+      actions.querySelectorAll('a, .btn').forEach((el) => {
+        el.addEventListener('click', closeMobileNav);
+      });
+
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape') closeMobileNav();
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 840) closeMobileNav();
+      });
+    })();
+
+    // ---------- FLOWING MENU: desplegable de "Especialidades" con todos los servicios ----------
+    // ---------- ESPECIALIDADES: panel lateral off-canvas ----------
+    (function initSpecialtiesPanel() {
+      const overlay = document.getElementById('specialtiesOverlay');
+      const panel = document.getElementById('specialtiesPanel');
+      const closeBtn = document.getElementById('specialtiesClose');
+      const triggers = [
+        document.getElementById('navEspecialidades'),
+        document.getElementById('heroEspecialidadesToggle') // presente en la home; en el resto de paginas no existe y se ignora
+      ].filter(Boolean);
+      if (!overlay || !panel || !triggers.length) return;
+
+      function resetAccordion() {
+        panel.querySelectorAll('.specialty-row.is-open').forEach((row) => {
+          row.classList.remove('is-open');
+          const toggle = row.querySelector('.specialty-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
+
+      function openPanel(ev) {
+        if (ev) ev.preventDefault();
+        overlay.classList.add('is-open');
+        panel.classList.add('is-open');
+        overlay.setAttribute('aria-hidden', 'false');
+        panel.setAttribute('aria-hidden', 'false');
+        document.body.classList.add('specialties-open');
+      }
+
+      function closePanel() {
+        overlay.classList.remove('is-open');
+        panel.classList.remove('is-open');
+        overlay.setAttribute('aria-hidden', 'true');
+        panel.setAttribute('aria-hidden', 'true');
+        document.body.classList.remove('specialties-open');
+        setTimeout(resetAccordion, 400);
+      }
+
+      triggers.forEach((trigger) => {
+        trigger.addEventListener('click', (ev) => {
+          ev.preventDefault();
+          panel.classList.contains('is-open') ? closePanel() : openPanel();
+        });
+      });
+      closeBtn?.addEventListener('click', closePanel);
+      overlay.addEventListener('click', closePanel);
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape' && panel.classList.contains('is-open')) closePanel();
+      });
+
+      // Acordeon: Cirugia Estetica / Medicina Estetica
+      panel.querySelectorAll('.specialty-toggle').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const row = btn.closest('.specialty-row');
+          if (!row) return;
+          const willOpen = !row.classList.contains('is-open');
+          row.classList.toggle('is-open', willOpen);
+          btn.setAttribute('aria-expanded', String(willOpen));
+        });
+      });
+
+      // Cerrar el panel al navegar a un enlace real
+      panel.querySelectorAll('a.specialty-link, a.specialty-sublink').forEach((link) => {
+        link.addEventListener('click', closePanel);
+      });
+    })();
+  </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    (function initCinematicFooter() {
+      if (typeof gsap === 'undefined') return;
+
+      // Efecto iman en las pastillas de cristal (tel, legal, redes, "todos", volver arriba)
+      document.querySelectorAll('.footer-pill').forEach((el) => {
+        el.addEventListener('mousemove', (e) => {
+          const rect = el.getBoundingClientRect();
+          const x = e.clientX - rect.left - rect.width / 2;
+          const y = e.clientY - rect.top - rect.height / 2;
+          gsap.to(el, { x: x * 0.3, y: y * 0.3, duration: 0.4, ease: 'power2.out' });
+        });
+        el.addEventListener('mouseleave', () => {
+          gsap.to(el, { x: 0, y: 0, duration: 1, ease: 'elastic.out(1, 0.3)' });
+        });
+      });
+
+      // Texto gigante de fondo: entra con la sensacion de profundidad al hacer scroll
+      const giant = document.getElementById('footerGiantText');
+      if (giant) {
+        gsap.fromTo(giant, { y: '8vh', opacity: 0 }, {
+          y: '0vh', opacity: 1, ease: 'power1.out',
+          scrollTrigger: { trigger: '#site-footer', start: 'top 85%', end: 'top 25%', scrub: 1 }
+        });
+      }
+
+      // Contenido del footer: aparece de forma escalonada
+      const footerInner = document.getElementById('footerInner');
+      if (footerInner) {
+        gsap.fromTo([footerInner.querySelector('.footer-title'), footerInner.querySelector('.footer-locations')], { y: 40, opacity: 0 }, {
+          y: 0, opacity: 1, stagger: 0.15, ease: 'power3.out',
+          scrollTrigger: { trigger: '#site-footer', start: 'top 70%', end: 'top 25%', scrub: 1 }
+        });
+      }
+
+      // Volver arriba
+      document.getElementById('footerTopBtn')?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  </script>
+  <script>
+    // ---------- TRATAMIENTOS: aparicion en bloque + parallax de imagen ----------
+    (function initTcReveal() {
+      if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+
+      document.querySelectorAll('.tc-item').forEach((item) => {
+        const media = item.querySelector('.tc-media img');
+
+        gsap.fromTo(item, { y: 60, opacity: 0 }, {
+          y: 0, opacity: 1, duration: 1, ease: 'power3.out',
+          scrollTrigger: { trigger: item, start: 'top 82%' }
+        });
+
+        if (media) {
+          gsap.fromTo(media, { scale: 1.18 }, {
+            scale: 1.05, ease: 'none',
+            scrollTrigger: { trigger: item, start: 'top bottom', end: 'bottom top', scrub: true }
+          });
+        }
+      });
+    })();
+  </script>
+
+  <script>
+    // ---------- PANEL DE DETALLE: tratamientos (con imagen) y items de "Todo lo que tratamos" (solo texto) ----------
+    (function initTcPanel() {
+      const tcItems = document.querySelectorAll('.tc-item');
+      const twItems = document.querySelectorAll('.tw-col span.shiny-text');
+      const panel = document.getElementById('tc-panel');
+      const overlay = document.getElementById('tc-panel-overlay');
+      const closeBtn = document.getElementById('tc-panel-close');
+      const eyebrowEl = document.getElementById('tc-panel-eyebrow');
+      const titleEl = document.getElementById('tc-panel-title');
+      const descEl = document.getElementById('tc-panel-desc');
+      if ((!tcItems.length && !twItems.length) || !panel || !overlay) return;
+
+      function openPanel({ eyebrow, title, desc }) {
+        eyebrowEl.textContent = eyebrow || '';
+        titleEl.textContent = title || '';
+        descEl.textContent = desc || '';
+
+        document.body.classList.add('tc-panel-open');
+        panel.setAttribute('aria-hidden', 'false');
+        overlay.setAttribute('aria-hidden', 'false');
+      }
+
+      function openFromTcItem(item) {
+        const lead = item.querySelector('.tc-lead-highlight')?.textContent.trim() || '';
+        const shortDesc = item.querySelector('.tc-lead-desc')?.textContent.trim() || '';
+        const small = item.querySelector('.tc-small')?.textContent.trim() || '';
+        openPanel({
+          eyebrow: 'Sobre este tratamiento',
+          title: item.querySelector('.tc-title')?.textContent || '',
+          desc: [lead, shortDesc, small].filter(Boolean).join(' ')
+        });
+      }
+
+      function openFromTwItem(span) {
+        openPanel({
+          eyebrow: 'Información',
+          title: span.textContent || '',
+          desc: span.dataset.desc || ''
+        });
+      }
+
+      function closePanel() {
+        document.body.classList.remove('tc-panel-open');
+        panel.setAttribute('aria-hidden', 'true');
+        overlay.setAttribute('aria-hidden', 'true');
+      }
+
+      tcItems.forEach((item) => {
+        item.setAttribute('tabindex', '0');
+        item.addEventListener('click', (e) => {
+          if (e.target.closest('.tc-cta')) return; // "Reservar Consulta" navega con normalidad
+          openFromTcItem(item);
+        });
+        item.addEventListener('keydown', (e) => {
+          if (e.target.closest('.tc-cta')) return;
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openFromTcItem(item); }
+        });
+      });
+
+      twItems.forEach((span) => {
+        span.setAttribute('tabindex', '0');
+        span.setAttribute('role', 'button');
+        span.addEventListener('click', () => openFromTwItem(span));
+        span.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openFromTwItem(span); }
+        });
+      });
+
+      closeBtn?.addEventListener('click', closePanel);
+      overlay.addEventListener('click', closePanel);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && document.body.classList.contains('tc-panel-open')) closePanel();
+      });
+    })();
+  </script>
+
+  <script>
+    // ---------- BLUR TEXT: divide en palabras y revela al entrar en pantalla (equipo / FAQ) ----------
+    (function initBlurText() {
+      // Solo se anima el texto dentro de "eq-intro" (peticion expresa de mantener
+      // esas animaciones); fuera de ahi (ej. FAQ) el texto queda fijo/visible desde el principio.
+      const containers = document.querySelectorAll('.eq-intro .blur-text');
+      if (!containers.length) return;
+
+      containers.forEach((el) => {
+        if (el.dataset.split === 'true') return;
+        const text = el.textContent.trim().replace(/\s+/g, ' ');
+        const words = text.split(' ');
+        el.textContent = '';
+        words.forEach((word, i) => {
+          const span = document.createElement('span');
+          span.className = 'bt-word';
+          span.textContent = word + (i < words.length - 1 ? '\u00A0' : '');
+          el.appendChild(span);
+        });
+        el.dataset.split = 'true';
+      });
+
+      if (!('IntersectionObserver' in window)) {
+        containers.forEach((el) => el.classList.add('is-visible'));
+        return;
+      }
+
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const delay = parseFloat(el.dataset.delay || '80');
+          el.querySelectorAll('.bt-word').forEach((span, i) => {
+            span.style.animationDelay = (i * delay) + 'ms';
+          });
+          el.classList.add('is-visible');
+          io.unobserve(el);
+        });
+      }, { threshold: 0.1 });
+
+      containers.forEach((el) => io.observe(el));
+    })();
+  </script>
+
+  <script>
+    // ---------- PREGUNTAS FRECUENTES: acordeon (uno abierto a la vez) ----------
+    (function initFaqAccordion() {
+      document.querySelectorAll('.faq-item').forEach((item) => {
+        const btn = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        if (!btn || !answer) return;
+
+        btn.addEventListener('click', () => {
+          const isOpen = item.classList.contains('is-open');
+
+          document.querySelectorAll('.faq-item.is-open').forEach((openItem) => {
+            if (openItem !== item) {
+              openItem.classList.remove('is-open');
+              openItem.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+              openItem.querySelector('.faq-answer').style.maxHeight = '0px';
+            }
+          });
+
+          if (isOpen) {
+            item.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+            answer.style.maxHeight = '0px';
+          } else {
+            item.classList.add('is-open');
+            btn.setAttribute('aria-expanded', 'true');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+
+</html>
