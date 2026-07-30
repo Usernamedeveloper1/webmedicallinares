@@ -881,6 +881,7 @@
       position: absolute;
       inset: 0;
       z-index: 0;
+      background-color: #e4e2df;
       background-image: url('https://scontent.fsvq1-1.fna.fbcdn.net/v/t51.82787-15/670740313_18005003465861447_2409278655222152015_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1440&ctp=s1080x1440&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=vi2Hno6ubusQ7kNvwG7mbgB&_nc_oc=Adp20XHcHL2vCLcF98R1Kmnb_wqyuSBwKiVpNLKMc1jczTVD0apGXRmJWowd3wPeIUc&_nc_zt=23&_nc_ht=scontent.fsvq1-1.fna&_nc_gid=JshKt45KPB55SDHVIkybbw&_nc_ss=7b289&oh=00_AQDr-LTj-cVxuDnzGaxVc_S_-ke2rLkppZ5y0rTjsfFr2Q&oe=6A6C0DB4');
       background-size: cover;
       background-position: center 25%;
@@ -984,6 +985,7 @@
       height: clamp(20rem, 44vw, 32rem);
       border-radius: 1.25rem;
       overflow: hidden;
+      background-color: #0e2a1f;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -1028,6 +1030,7 @@
       border-radius: 1.25rem;
       overflow: hidden;
       box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .5);
+      background-color: #0e2a1f;
     }
 
     .stack-media-card-img {
@@ -1035,6 +1038,7 @@
       height: 100%;
       border-radius: 1.25rem;
       overflow: hidden;
+      background-color: #0e2a1f;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -1274,6 +1278,44 @@
       background: #7ee8b0;
     }
 
+    /* ---------- NUESTRO COMPROMISO + EQUIPO: dos columnas dentro de una misma seccion ---------- */
+    .expand-content-columns-wrap {
+      max-width: var(--container-7xl);
+      margin-inline: auto;
+      padding-inline: calc(var(--spacing) * 10);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: clamp(3rem, 6vw, 5.5rem);
+      align-items: start;
+    }
+
+    .expand-content-columns-wrap .expand-content-inner {
+      max-width: none;
+      margin-inline: 0;
+      padding-inline: 0;
+    }
+
+    .expand-content-column {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .expand-content-column+.expand-content-column {
+      padding-top: 0;
+    }
+
+    @media(max-width: 900px) {
+      .expand-content-columns-wrap {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+      }
+
+      .expand-content-column+.expand-content-column {
+        padding-top: 2.5rem;
+        border-top: 1px solid rgba(255, 255, 255, .08);
+      }
+    }
+
     @media(max-width: 767px) {
       .expand-hint {
         bottom: 1.75rem;
@@ -1303,6 +1345,13 @@
       color: #7ee8b0;
       opacity: .85;
       margin-bottom: .85rem;
+    }
+
+    /* ---------- EFECTO DE LECTURA: las palabras del texto se iluminan progresivamente segun se hace scroll ---------- */
+    .rr-word {
+      display: inline-block;
+      opacity: .18;
+      will-change: opacity;
     }
 
     /* ---------- FOOTER: estilo cinematico (aurora, grid, marquee, glass pills) ---------- */
@@ -1962,7 +2011,7 @@
       <div class="stack-card reveal-up">
         <div class="stack-grid">
           <div class="stack-media"
-            style="background-image:url('https://scontent.fmad7-1.fna.fbcdn.net/v/t51.82787-15/681979930_18006563300861447_7599495951701119581_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1405&amp;ctp=s1080x1405&amp;_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=heJ9Amfy04YQ7kNvwFU3I6N&amp;_nc_oc=AdppF4Xpjl-va66qqLHDC-NjQxw32eYOmG4ZudJqiwQv6hymcgtm0_elQh3Let54Vt4&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad7-1.fna&amp;_nc_gid=vGpdWxAzFoMOTbwruevjdA&amp;_nc_ss=7b289&amp;oh=00_AQDAANZPGzaNgBfjYyTpFvlnOjoq9PMk3jZhRSjRSbsf5A&amp;oe=6A679402')">
+            style="background-image:url('https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/671220978_18006563327861447_7450483610175631470_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1405&amp;ctp=s1080x1405&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=kYwm7bCrRk8Q7kNvwHe5x1e&amp;_nc_oc=Adq3st9nx-8hSosatoPHTKiYbBlA9_dOFQo9st-KRUwkwpZZUcicGapwySlAGjha2T8&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad8-1.fna&amp;_nc_gid=7QGY43AMklfaHHvpJCGulw&amp;_nc_ss=7b289&amp;oh=00_AQGvX5nBcnLG-gsQcirVenI1YdKXMifT_yhwsRGlzgu6fg&amp;oe=6A710760')">
           </div>
           <div class="stack-content">
             <span class="stack-eyebrow">Nuestra visión</span>
@@ -1985,7 +2034,7 @@
         <div class="stack-grid">
           <div class="stack-media-card">
             <div class="stack-media-card-img"
-              style="background-image:url('https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/682700561_18006563336861447_4040634398469351930_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1405&amp;ctp=s1080x1405&amp;_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=b8ryuEOjqUAQ7kNvwGJpdAz&amp;_nc_oc=AdoGXFPaOczycFxRDY7udflWPOksB2tYBPDAtckPDwWP7Hh0r80pZbFks3hsNEKo6uk&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad8-1.fna&amp;_nc_gid=wEj1t_pbjp5aM0MJSDBibA&amp;_nc_ss=7b289&amp;oh=00_AQBoW6nqAClGIq9x7DELGuC1e026CqL21LJ5NjrE1SBeTA&amp;oe=6A6794A9')">
+              style="background-image:url('https://scontent.fmad7-1.fna.fbcdn.net/v/t51.82787-15/684731504_18006563333861447_3873591983084209382_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1405&amp;ctp=s1080x1405&amp;_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=k19BmhAFXBgQ7kNvwEOlZ4O&amp;_nc_oc=AdpuAhcDe_ITWzPyIRg0P-ibqKFxFNlb7QeTrhOmKBUvZjJXrxb3BLU938FgBr_O29E&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad7-1.fna&amp;_nc_gid=Z3o0U2s64UtXIZyI9H8-Qw&amp;_nc_ss=7b289&amp;oh=00_AQH_3OVJE6EsWYdii4UKwgHytAx2pvJryv0s8_7tDKSjmA&amp;oe=6A70F59B')">
             </div>
           </div>
           <div class="stack-content">
@@ -2025,13 +2074,13 @@
     <section class="expand-media-section">
       <div class="expand-media-track">
         <div class="expand-bg"
-          style="background-image:url('https://scontent.fmad7-1.fna.fbcdn.net/v/t39.30808-6/481238772_622968360590083_6481629942433976608_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1440x1440&amp;ctp=s1440x1440&amp;_nc_cat=107&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=cH0OVWriTMYQ7kNvwGTkjI9&amp;_nc_oc=AdrtOwTalmwhy-F_7KFbStKQFPF6FY5VEwsyrE5Q5PoPvDq2AJ7DwlVCjdiCwpMg0hg&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad7-1.fna&amp;_nc_gid=ST0Px4xMtzKZrW71dVGRTQ&amp;_nc_ss=7b289&amp;oh=00_AQDoHk9sv8QMVrEbeCLJkq-yqiop98nD8sib-Bp2_75DTQ&amp;oe=6A678373')">
+          style="background-image:url('https://scontent.fmad7-1.fna.fbcdn.net/v/t39.30808-6/482026512_628817670005152_6785019862055953390_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx2048x1382&amp;ctp=s2048x1382&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=cc71e4&amp;_nc_ohc=gv8kBEjZcUgQ7kNvwHMfSAG&amp;_nc_oc=AdraD2PwkdHq34Ixjp9v9rAvd1gRSenXCaVHOykSpPI--_jOHjNTtBUhYXn72FKIIC0&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad7-1.fna&amp;_nc_gid=KbvezduXF_t8_45DuHZUWQ&amp;_nc_ss=7b289&amp;oh=00_AQH1FrIDfHxR7q7ywmSMd0J5ka-EgtbgWpzqKevgMfVKWw&amp;oe=6A710FDA')">
         </div>
         <div class="expand-bg-scrim"></div>
 
         <div class="expand-media-box">
           <div class="expand-media-img"
-            style="background-image:url('https://scontent.fmad7-1.fna.fbcdn.net/v/t51.82787-15/735376871_18015751895861447_2804796934644260420_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1350&amp;ctp=s1080x1350&amp;_nc_cat=106&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=dZX81aX75KcQ7kNvwG1bj5x&amp;_nc_oc=AdrO2WsA-CtXVc1-4TvDE25Zl9_YKhzEYDxsBRLPUKkp_57Gus56vBPqXhaRzgO-9G8&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad7-1.fna&amp;_nc_gid=xv47fFhBUggN_JYF0pg_EA&amp;_nc_ss=7b289&amp;oh=00_AQBbp4aDed-EFrsw0InYYL3meXh77dbsiGNPL86idoWIQQ&amp;oe=6A679B2B')">
+            style="background-image:url('https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/731111394_18015751904861447_154715544446473783_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1350&amp;ctp=s1080x1350&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=fMQMdHi8OHgQ7kNvwGIY-mz&amp;_nc_oc=AdqaOeVdvdKifMT2dYhgoBR5rfBlY0m2sjV3mzR6bSFwvGLw2EjbIwNRFGhEZdpaCgQ&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad8-1.fna&amp;_nc_gid=pR3rgqDRzUBPuuXTJDju3Q&amp;_nc_ss=7b289&amp;oh=00_AQFAHL_YkWDCrABAfT0IDsxyE8QG-0TOG8UvJqjUQvF0CA&amp;oe=6A710322')">
           </div>
           <div class="expand-media-overlay"></div>
         </div>
@@ -2047,55 +2096,62 @@
       </div>
     </section>
 
-    <section class="expand-content-section reveal-up">
-      <div class="expand-content-inner">
-        <p>Somos una <strong class="hl">clínica de referencia</strong> en <strong class="hl">injerto capilar</strong>,
-          <strong class="hl">medicina estética</strong> y <strong class="hl">cirugía estética</strong> en <strong
-            class="hl">Jaén y Granada</strong>, con vocación de seguir creciendo como referente en Andalucía.
-        </p>
-        <p>Nuestro compromiso es ofrecer siempre una combinación de:</p>
-        <ul class="expand-list">
-          <li><strong class="hl">Profesionalidad médica.</strong></li>
-          <li><strong class="hl">Técnicas avanzadas.</strong></li>
-          <li><strong class="hl">Resultados naturales.</strong></li>
-          <li><strong class="hl">Cercanía y trato humano.</strong></li>
-        </ul>
-        <p>Porque en Medical Linares no entendemos la medicina como una serie de tratamientos, sino como una forma de
-          cuidar a las personas.</p>
-      </div>
-    </section>
-    <!-- ================= UNA CLINICA CON NOMBRE PROPIO ================= -->
-    <section class="expand-content-section" id="equipo">
-      <div class="expand-content-inner">
-        <span class="sec-eyebrow blur-text" data-direction="bottom" data-delay="15">Quiénes somos</span>
-        <h2 class="stack-title shiny-text" style="margin-bottom:1.75rem;">Una clínica con nombre propio</h2>
+    <!-- ================= NUESTRO COMPROMISO + UNA CLINICA CON NOMBRE PROPIO: dos columnas dentro de una misma seccion ================= -->
+    <section class="expand-content-section expand-content-columns reveal-up">
+      <div class="expand-content-columns-wrap">
 
-        <p>Detrás de <strong class="hl">Medical Linares</strong> hay dos personas que han impulsado y dado forma a este
-          proyecto: <strong class="hl">Raquel Peinado</strong> y el <strong class="hl">Dr. Alfonso Rodríguez
-            Jiménez</strong>.</p>
-
-        <div class="team-member">
-          <h3 class="team-member-name">Raquel Peinado</h3>
-          <span class="team-member-role">Dirección y fundación de Medical Linares</span>
-          <p>Figura clave en la creación, dirección y evolución del centro, <strong class="hl">Raquel Peinado</strong>
-            representa la esencia de <strong class="hl">Medical Linares</strong>: una forma cercana, humana y
-            personalizada de entender la atención al paciente, cuidando cada detalle de su experiencia.</p>
+        <div class="expand-content-column">
+          <div class="expand-content-inner">
+            <p>Somos una <strong class="hl">clínica de referencia</strong> en <strong class="hl">injerto capilar</strong>,
+              <strong class="hl">medicina estética</strong> y <strong class="hl">cirugía estética</strong> en <strong
+                class="hl">Jaén y Granada</strong>, con vocación de seguir creciendo como referente en Andalucía.
+            </p>
+            <p>Nuestro compromiso es ofrecer siempre una combinación de:</p>
+            <ul class="expand-list">
+              <li><strong class="hl">Profesionalidad médica.</strong></li>
+              <li><strong class="hl">Técnicas avanzadas.</strong></li>
+              <li><strong class="hl">Resultados naturales.</strong></li>
+              <li><strong class="hl">Cercanía y trato humano.</strong></li>
+            </ul>
+            <p>Porque en Medical Linares no entendemos la medicina como una serie de tratamientos, sino como una forma de
+              cuidar a las personas.</p>
+          </div>
         </div>
 
-        <div class="team-member">
-          <h3 class="team-member-name">Dr. Alfonso Rodríguez Jiménez</h3>
-          <span class="team-member-role">Dirección médica</span>
-          <p>Junto a Raquel Peinado, el <strong class="hl">Dr. Alfonso Rodríguez Jiménez</strong> aporta una visión
-            conjunta donde la gestión, el criterio médico y el compromiso profesional se unen para ofrecer una atención
-            integral y adaptada a cada persona.</p>
+        <div class="expand-content-column" id="equipo">
+          <div class="expand-content-inner">
+            <span class="sec-eyebrow blur-text" data-direction="bottom" data-delay="15">Quiénes somos</span>
+            <h2 class="stack-title shiny-text" style="margin-bottom:1.75rem;">Una clínica con nombre propio</h2>
+
+            <p>Detrás de <strong class="hl">Medical Linares</strong> hay dos personas que han impulsado y dado forma a este
+              proyecto: <strong class="hl">Raquel Peinado</strong> y el <strong class="hl">Dr. Alfonso Rodríguez
+                Jiménez</strong>.</p>
+
+            <div class="team-member">
+              <h3 class="team-member-name">Raquel Peinado</h3>
+              <span class="team-member-role">Dirección y fundación de Medical Linares</span>
+              <p>Figura clave en la creación, dirección y evolución del centro, <strong class="hl">Raquel Peinado</strong>
+                representa la esencia de <strong class="hl">Medical Linares</strong>: una forma cercana, humana y
+                personalizada de entender la atención al paciente, cuidando cada detalle de su experiencia.</p>
+            </div>
+
+            <div class="team-member">
+              <h3 class="team-member-name">Dr. Alfonso Rodríguez Jiménez</h3>
+              <span class="team-member-role">Dirección médica</span>
+              <p>Junto a Raquel Peinado, el <strong class="hl">Dr. Alfonso Rodríguez Jiménez</strong> aporta una visión
+                conjunta donde la gestión, el criterio médico y el compromiso profesional se unen para ofrecer una atención
+                integral y adaptada a cada persona.</p>
+            </div>
+
+            <p>Gracias a su liderazgo, dedicación y forma de entender la medicina, <strong class="hl">Medical
+                Linares</strong> se ha consolidado como una de las clínicas de referencia en <strong class="hl">Andalucía
+                Oriental</strong>, con un equipo de profesionales que comparte una misma filosofía: cuidar de cada paciente
+              desde la confianza, la cercanía y la profesionalidad.</p>
+
+            <p>Porque detrás de una gran clínica siempre hay personas que la hacen posible.</p>
+          </div>
         </div>
 
-        <p>Gracias a su liderazgo, dedicación y forma de entender la medicina, <strong class="hl">Medical
-            Linares</strong> se ha consolidado como una de las clínicas de referencia en <strong class="hl">Andalucía
-            Oriental</strong>, con un equipo de profesionales que comparte una misma filosofía: cuidar de cada paciente
-          desde la confianza, la cercanía y la profesionalidad.</p>
-
-        <p>Porque detrás de una gran clínica siempre hay personas que la hacen posible.</p>
       </div>
     </section>
 
@@ -2896,6 +2952,65 @@ void main() {
         end: 'bottom bottom',
         scrub: 0.4,
         onUpdate: (self) => render(self.progress)
+      });
+    })();
+  </script>
+
+  <script>
+    // ---------- EFECTO DE LECTURA: las palabras del texto se iluminan progresivamente segun se hace scroll ----------
+    // Aplica el mismo patron que "Nuestra especialidad" (scroll-reveal-text) al resto de
+    // parrafos de la pagina, respetando las etiquetas internas (<strong class="hl">...</strong>)
+    (function initReadingReveal() {
+      if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
+
+      // Envuelve cada palabra de un nodo en un span .rr-word, sin romper elementos hijos (strong, etc.)
+      function wrapWords(node) {
+        Array.from(node.childNodes).forEach((child) => {
+          if (child.nodeType === Node.TEXT_NODE) {
+            if (!child.textContent.trim()) return;
+            const parts = child.textContent.split(/(\s+)/);
+            const frag = document.createDocumentFragment();
+            parts.forEach((part) => {
+              if (part.trim() === '') {
+                frag.appendChild(document.createTextNode(part));
+              } else {
+                const span = document.createElement('span');
+                span.className = 'rr-word';
+                span.textContent = part;
+                frag.appendChild(span);
+              }
+            });
+            node.replaceChild(frag, child);
+          } else if (child.nodeType === Node.ELEMENT_NODE) {
+            wrapWords(child);
+          }
+        });
+      }
+
+      const targets = document.querySelectorAll(
+        '.stack-text p, .expand-content-inner > p, .team-member p, .expand-list li'
+      );
+      if (!targets.length) return;
+
+      targets.forEach((el) => {
+        wrapWords(el);
+        const words = el.querySelectorAll('.rr-word');
+        if (!words.length) return;
+
+        gsap.fromTo(words,
+          { opacity: 0.18 },
+          {
+            opacity: 1,
+            stagger: 0.03,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: el,
+              start: 'top 88%',
+              end: 'bottom 65%',
+              scrub: 0.5
+            }
+          }
+        );
       });
     })();
   </script>
