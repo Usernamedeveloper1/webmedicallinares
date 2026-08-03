@@ -646,6 +646,9 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
   }
+  @media (min-width: 1120px){
+    .blog-grid{ grid-template-columns: repeat(4, 1fr); }
+  }
   .blog-card{
     position: relative;
     isolation: isolate;
@@ -1408,6 +1411,7 @@
     }
   }
 
+  [data-blur="block"]{
     transition: filter .7s cubic-bezier(.22,1,.36,1), opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
   }
   html.js-blur-ready [data-blur="block"]{
@@ -1548,44 +1552,20 @@
     <div class="blog-hero-glow" aria-hidden="true"></div>
 
     <div class="blog-hero-floating" id="blogHeroFloating" aria-hidden="true">
-      <div class="blog-float-item" data-depth="2" style="top:9%; left:4%; width:8.5rem; height:10.6rem;">
-        <img src="https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/629666520_17998016333861447_1409677138874363000_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pJtxLvqb7mUQ7kNvwE1ir7P&_nc_oc=AdoUTzmNWyy9KO5hK1zb50uw5UlwhQsknm1Uvj95UxQ7cMflRW34drW5VXBWmbP9chQ&_nc_zt=23&_nc_ht=scontent.fmad8-1.fna&_nc_gid=dv3orSXqY2EE9_p0YyFLYQ&_nc_ss=7b289&oh=00_AQAcaefJwp3b1E74NKy0Hl0AA_4JDwcTbjtbzMe3Fg2Log&oe=6A6E0EC8" alt="" loading="lazy">
-      
+      <div class="blog-float-item" data-depth="2" style="top:10%; left:6%; width:14rem; height:17.5rem;">
+        <img src="./img/blogimg1.webp" alt="" loading="lazy">
         <span class="blog-float-word">Resiliencia</span>
       </div>
-      <div class="blog-float-item" data-depth="4.5" style="top:29%; left:15%; width:6rem; height:7.5rem;">
-        <img src="https://scontent.fmad7-1.fna.fbcdn.net/v/t51.82787-15/634963500_17998016321861447_2696957566173527188_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=_1ZsmbW-nYoQ7kNvwHIOU_Q&_nc_oc=AdpUwLecWLKSW2fzz7_qlDBKHZAqunrmicPjJshY8TNYLARfptWDtWVdWXqtU38PAbs&_nc_zt=23&_nc_ht=scontent.fmad7-1.fna&_nc_gid=3q443kQLdK1k3e8wXtLC2w&_nc_ss=7b289&oh=00_AQB7Cqc2kWbT2ZR3V7qdOpgBs8pCaWieC0iUQzEnYMrhVQ&oe=6A6E0A99" alt="" loading="lazy">
-      
-        <span class="blog-float-word">Autoestima</span>
-      </div>
-      <div class="blog-float-item" data-depth="3" style="top:7%; right:5%; width:9rem; height:11.25rem;">
-        <img src="https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/635961595_17998016330861447_7614052087690603378_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=L-0lo0ei-fkQ7kNvwE5RXz_&_nc_oc=AdpieKxyWlc2kSF-xhruR3JUvYW-axH4kYD2bDyT1y6iLjbE7UG7KnLclbIa_ezlo9E&_nc_zt=23&_nc_ht=scontent.fmad8-1.fna&_nc_gid=VRB1Cesl4KwkqtAHqypdGQ&_nc_ss=7b289&oh=00_AQAIkoE8rEQBBkRZmLpOVpw5SiSht3E9yCb2aTIqQ4SOMg&oe=6A6E3115" alt="" loading="lazy">
-      
-        <span class="blog-float-word">Seguridad</span>
-      </div>
-      <div class="blog-float-item" data-depth="5" style="top:27%; right:16%; width:6.5rem; height:8.1rem;">
-        <img src="https://scontent.fmad7-1.fna.fbcdn.net/v/t51.82787-15/637713643_17998016309861447_6989450195397051374_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=WNLOL0ZiHHAQ7kNvwFas8Qg&_nc_oc=Adrxh36CSqEN-9gdCgY99QhA0uPOq0HrXBe4U9Ibk9UV3zJevkyVpjOzKKcz9AzzpAk&_nc_zt=23&_nc_ht=scontent.fmad7-1.fna&_nc_gid=IYTA5N_w_OXnoTuZwalcgg&_nc_ss=7b289&oh=00_AQDnGK3mOLC9TG8VYAHbh99RS8_igkBLZ_CAFbdGh4QPDQ&oe=6A6E306E" alt="" loading="lazy">
-      
+      <div class="blog-float-item" data-depth="3" style="top:10%; right:6%; width:15rem; height:18.75rem;">
+        <img src="./img/blogimg2.webp" alt="" loading="lazy">
         <span class="blog-float-word">Confianza</span>
       </div>
-      <div class="blog-float-item" data-depth="2.5" style="bottom:10%; left:6%; width:8rem; height:10rem;">
-        <img src="https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/560426522_17984239361861447_129797218899640540_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=VTdeI8EXNjsQ7kNvwHle62W&_nc_oc=AdosO8c-yHiPxI8FRdKHeMotyDfrnlDHhO-8HzOgTNQV0b6vNXwAgSUsY6rngDLb4vg&_nc_zt=23&_nc_ht=scontent.fmad8-1.fna&_nc_gid=5puZZOTCC6kSD2uTP1AGvQ&_nc_ss=7b289&oh=00_AQDoF2aMbMY2iqif8_t29gelWdptMupSzTearw0Dsny5nw&oe=6A6E2171" alt="" loading="lazy">
-      
-        <span class="blog-float-word">Superación</span>
-      </div>
-      <div class="blog-float-item" data-depth="5.5" style="bottom:27%; left:18%; width:6rem; height:7.5rem;">
-        <img src="https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/560553558_17984239349861447_3248314393032486965_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=8999g-pWmxcQ7kNvwHQq1iz&_nc_oc=Adq0L3itXlx3ZV6ztFmUOTmoX6PelK1o4X1kzFTwTg2TByS1xNifqDW_Y3Ng2nofy2M&_nc_zt=23&_nc_ht=scontent.fmad8-1.fna&_nc_gid=BnNrBYyjKLO9hub9GrLbBA&_nc_ss=7b289&oh=00_AQDtJ_GyPZnt9Zk2m4KaqPW0tpmEoNSo2Dj-u_vaWyWUKA&oe=6A6E1615" alt="" loading="lazy">
-      
+      <div class="blog-float-item" data-depth="2.5" style="bottom:11%; left:7%; width:14rem; height:17.5rem;">
+        <img src="./img/blogimg3.webp" alt="" loading="lazy">
         <span class="blog-float-word">Bienestar</span>
       </div>
-      <div class="blog-float-item" data-depth="3" style="bottom:8%; right:4%; width:8.5rem; height:10.6rem;">
-        <img src="https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/560442765_17984239352861447_7380004771092635975_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=drCy0M1meKAQ7kNvwHkleCa&_nc_oc=Adqpj22al_qYJn_EtOYZ18oIVgAymTfsng-eWqVLVua3MqYqZPCu8xezLGYYOBg5ca4&_nc_zt=23&_nc_ht=scontent.fmad8-1.fna&_nc_gid=5DNgz2PKpEq8fKazjubl9Q&_nc_ss=7b289&oh=00_AQCcsBMwaLLg9Q4uyrFa3yCVskzRY_l1cpi-6r3TWukjMw&oe=6A6E3716" alt="" loading="lazy">
-      
-        <span class="blog-float-word">Fortaleza</span>
-      </div>
-      <div class="blog-float-item" data-depth="4.5" style="bottom:25%; right:17%; width:6rem; height:7.5rem;">
-        <img src="https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/520459095_17975360321861447_2298229041694378650_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1350&ctp=s1080x1350&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=YHe8NZ3UvNUQ7kNvwFLF40O&_nc_oc=AdqJcwg-WrpgVygv5q1T_5k-II2-Q2uCp1rzj_Qngx5CC0_Gdmr9lI44YuBlcK0W28Y&_nc_zt=23&_nc_ht=scontent.fmad8-1.fna&_nc_gid=C-UDt2VwkKEf_t-iEkDpUw&_nc_ss=7b289&oh=00_AQDDWH1laxBVbmb5wuhayiErcvhTxp4lvU2v3qJzFQaVTA&oe=6A6E07F0" alt="" loading="lazy">
-      
+      <div class="blog-float-item" data-depth="3.5" style="bottom:11%; right:6%; width:15rem; height:18.75rem;">
+        <img src="./img/blogimg4.webp" alt="" loading="lazy">
         <span class="blog-float-word">Renovación</span>
       </div>
     </div>
@@ -1680,6 +1660,28 @@
             <div class="blog-card-meta">
               <span>6 min de lectura</span>
               <a class="blog-card-link js-open-article" href="pinzas-o-dhi-trasplante-capilar.html" data-article="modal-pinzas-dhi">Leer artículo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card border-glow-card" data-blur="block" data-blur-delay="360">
+          <span class="edge-light" aria-hidden="true"></span>
+          <a class="blog-card-media js-open-article" href="efluvio-telogeno-caida-estacional.html" data-article="modal-efluvio-telogeno" tabindex="-1" aria-hidden="true">
+            <img src="./img/blogimg5.webp" alt="" loading="lazy">
+          </a>
+          <div class="blog-card-body">
+            <span class="blog-card-tag">Caída del Cabello</span>
+            <h3 class="blog-card-title">
+              <a class="js-open-article" href="efluvio-telogeno-caida-estacional.html" data-article="modal-efluvio-telogeno">¿Por qué se me cae tanto el pelo? Caída estacional y efluvio telógeno</a>
+            </h3>
+            <p class="blog-card-excerpt">
+              Perder más cabello de lo habitual no siempre significa alopecia. Te explicamos qué es un efluvio
+              telógeno, por qué aparece y cómo diferenciarlo de una caída estacional o de una alopecia
+              androgenética.
+            </p>
+            <div class="blog-card-meta">
+              <span>7 min de lectura</span>
+              <a class="blog-card-link js-open-article" href="efluvio-telogeno-caida-estacional.html" data-article="modal-efluvio-telogeno">Leer artículo →</a>
             </div>
           </div>
         </article>
@@ -2106,6 +2108,128 @@
 
       <div class="article-modal-cta">
         <p>¿Quieres saber qué técnica se adapta mejor a tu caso?</p>
+        <div class="button_wrapper">
+          <a class="btn btn-negative" href="contacto.html">
+            <span class="word">Pedir cita</span>
+            <span class="arrow-circle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.44 1.32 4.94L2 22l5.24-1.37c1.44.79 3.06 1.2 4.8 1.2 5.5 0 9.96-4.45 9.96-9.96C22 6.46 17.54 2 12.04 2Zm0 18.2c-1.55 0-3.06-.42-4.38-1.2l-.31-.19-3.11.82.83-3.03-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24s-3.7 8.27-8.25 8.27Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.24-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.16-.25.24-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08s.89 2.41 1.02 2.58c.12.17 1.75 2.68 4.25 3.75.59.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29Z"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="article-modal" id="modal-efluvio-telogeno" role="dialog" aria-modal="true" aria-labelledby="modalTitleEfluvio" tabindex="-1">
+    <button class="article-modal-close" type="button" aria-label="Cerrar artículo">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L13 13M13 1L1 13" stroke="#fff" stroke-width="1.4" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <div class="article-modal-media">
+      <img class="article-modal-img" src="./img/blogimg5.webp" alt="Caída del cabello y efluvio telógeno en Medical Linares">
+      <div class="article-modal-media-overlay" aria-hidden="true"></div>
+      <div class="article-modal-heading">
+        <span class="article-modal-tag">Caída del Cabello</span>
+        <h2 class="article-modal-title" id="modalTitleEfluvio">¿Por qué se me cae tanto el pelo?</h2>
+        <span class="article-modal-kicker">Caída estacional y efluvio telógeno</span>
+        <span class="article-modal-time">7 min de lectura</span>
+      </div>
+    </div>
+
+    <div class="article-modal-content">
+      <div class="article-modal-summary">
+        <p class="article-summary-title">No toda caída del cabello significa alopecia</p>
+        <p>En la mayoría de los casos, comprender el origen de la caída es el primer paso para recuperar la tranquilidad. Muchas veces responde a una alteración transitoria del ciclo capilar, sin que exista un daño permanente del folículo piloso.</p>
+      </div>
+
+      <p class="article-lead">No toda caída del cabello significa alopecia.</p>
+      <p>Perder más cabello de lo habitual suele generar una preocupación inmediata. Encontrar pelos en la ducha, sobre la almohada o al peinarse hace que muchas personas piensen que están desarrollando una alopecia.</p>
+      <p>Sin embargo, la realidad es diferente. La caída del cabello puede tener múltiples causas y, en muchas ocasiones, responde a una alteración transitoria del ciclo capilar, sin que exista un daño permanente del folículo piloso.</p>
+      <p>Comprender qué está ocurriendo no solo ayuda a reducir la incertidumbre, sino que también permite tomar decisiones basadas en un diagnóstico y no en el miedo. Porque en medicina capilar, conocer la causa siempre es el primer paso hacia la solución.</p>
+
+      <h3>El cabello también tiene su propio ciclo de vida</h3>
+      <p>El cabello no crece de forma continua. Cada folículo piloso funciona como una pequeña unidad biológica independiente que atraviesa un ciclo perfectamente regulado de crecimiento, transición, reposo y renovación.</p>
+      <p>Gracias a que millones de folículos se encuentran en fases diferentes al mismo tiempo, mantenemos una densidad capilar estable y la caída diaria pasa prácticamente desapercibida.</p>
+      <p>Este ciclo se divide en cuatro fases fundamentales:</p>
+
+      <h4>Fase anágena (crecimiento)</h4>
+      <p>Es la fase de crecimiento activo del cabello y la más prolongada del ciclo. Puede durar entre 2 y 7 años, dependiendo principalmente de factores genéticos y hormonales. Aproximadamente el 85-90 % del cabello del cuero cabelludo se encuentra en esta etapa.</p>
+
+      <h4>Fase catágena (transición)</h4>
+      <p>Es una fase breve, de apenas dos o tres semanas, durante la cual el folículo piloso cesa progresivamente su actividad y comienza un proceso fisiológico de regresión.</p>
+
+      <h4>Fase telógena (reposo)</h4>
+      <p>Durante aproximadamente tres meses el cabello permanece unido al folículo, aunque ya no continúa creciendo. Entre un 10 y un 15 % del cabello se encuentra normalmente en esta fase.</p>
+
+      <h4>Fase exógena (caída)</h4>
+      <p>Es la fase final del ciclo, en la que el cabello se desprende para dejar espacio a uno nuevo que iniciará nuevamente la fase anágena.</p>
+      <p>Por este motivo, perder entre 50 y 100 cabellos al día forma parte de un proceso completamente fisiológico y necesario para la renovación del cabello.</p>
+
+      <h3>¿Qué es un efluvio telógeno?</h3>
+      <p>El efluvio telógeno es una de las causas más frecuentes de caída difusa del cabello.</p>
+      <p>Se produce cuando un número elevado de folículos pilosos entra de forma prematura y sincronizada en fase telógena. Como consecuencia, entre dos y cuatro meses después, esos cabellos comienzan a desprenderse de forma prácticamente simultánea, haciendo que la caída del cabello resulte mucho más evidente.</p>
+      <p>Es importante transmitir un mensaje de tranquilidad. En un efluvio telógeno, el folículo piloso permanece sano. No desaparece, no se destruye y mantiene intacta su capacidad para producir un nuevo cabello una vez desaparece la causa que alteró el ciclo.</p>
+      <p>Por ello, en la mayoría de los pacientes hablamos de un proceso reversible.</p>
+
+      <h3>¿Por qué puede aparecer?</h3>
+      <p>El folículo piloso responde con gran sensibilidad a los cambios que experimenta nuestro organismo. Entre las causas más frecuentes encontramos:</p>
+      <ul>
+        <li>Estrés físico o emocional.</li>
+        <li>Procesos infecciosos o fiebre.</li>
+        <li>Cirugías o ingresos hospitalarios.</li>
+        <li>Embarazo y posparto.</li>
+        <li>Dietas muy restrictivas o pérdidas importantes de peso.</li>
+        <li>Déficit de hierro, vitamina D o vitamina B12.</li>
+        <li>Alteraciones hormonales o tiroideas.</li>
+        <li>Determinados tratamientos farmacológicos.</li>
+      </ul>
+      <p>Un aspecto muy importante es que la caída del cabello no suele aparecer inmediatamente después del acontecimiento que la desencadena. Lo habitual es que comience entre dos y cuatro meses más tarde, motivo por el que muchos pacientes no relacionan ambos episodios.</p>
+
+      <h3>¿Existe realmente la caída estacional del cabello?</h3>
+      <p>Sí. Durante determinadas épocas del año, especialmente al finalizar el verano y durante el otoño, es relativamente frecuente observar un aumento de la caída estacional del cabello.</p>
+      <p>Aunque todavía se siguen investigando los mecanismos implicados, diferentes estudios sugieren que el ciclo capilar presenta pequeñas variaciones fisiológicas estacionales que pueden favorecer un incremento temporal de la fase telógena.</p>
+      <p>Sin embargo, es importante no atribuir toda caída del cabello a la estación del año. Cuando la caída es muy intensa, persiste durante varios meses o se acompaña de una disminución evidente de la densidad capilar, es recomendable realizar una valoración médica para descartar otras causas.</p>
+
+      <h3>¿Cómo diferenciar un efluvio telógeno de una alopecia androgenética?</h3>
+      <p>Aunque ambos procesos pueden coexistir, representan situaciones completamente diferentes.</p>
+      <p>En el efluvio telógeno, la caída suele ser difusa y homogénea, mientras que el folículo piloso conserva su capacidad de regeneración. Por el contrario, la alopecia androgenética es un proceso progresivo de miniaturización folicular que produce cabellos cada vez más finos y una pérdida gradual de densidad.</p>
+      <p>Una exploración clínica junto con una tricoscopia digital permite diferenciar ambos procesos y establecer un diagnóstico preciso.</p>
+
+      <h3>¿Cómo se trata un efluvio telógeno?</h3>
+      <p>No existe un tratamiento único para todos los pacientes.</p>
+      <p>El objetivo principal no es frenar la caída de forma inmediata, sino identificar la causa que ha alterado el ciclo capilar y corregirla cuando sea posible.</p>
+      <p>En algunos casos será suficiente con realizar un seguimiento clínico y permitir que el cabello recupere su ciclo fisiológico de forma espontánea. En otros será necesario corregir déficits nutricionales, tratar enfermedades asociadas o indicar un tratamiento para la caída del cabello adaptado a cada paciente.</p>
+      <p>La medicina basada en la evidencia nos recuerda que el mejor tratamiento siempre comienza con un diagnóstico correcto.</p>
+
+      <h3>¿Cuándo debería consultar con un especialista?</h3>
+      <p>Es recomendable acudir a un especialista en caída del cabello cuando:</p>
+      <ul>
+        <li>La caída del cabello persiste durante más de dos o tres meses.</li>
+        <li>Se aprecia una disminución evidente de la densidad capilar.</li>
+        <li>Existen antecedentes familiares de alopecia androgenética.</li>
+        <li>La caída aparece tras una enfermedad importante o sin una causa aparente.</li>
+        <li>La preocupación por la pérdida de cabello comienza a afectar al bienestar o a la calidad de vida.</li>
+      </ul>
+      <p>Un diagnóstico precoz permite actuar cuando realmente es necesario y evitar tratamientos innecesarios.</p>
+
+      <h3>Cada caída del cabello tiene una historia diferente</h3>
+      <p>Uno de los errores más frecuentes es pensar que todas las caídas del cabello tienen la misma causa.</p>
+      <p>Sin embargo, detrás de un efluvio telógeno puede existir un episodio de estrés, un déficit nutricional, una alteración hormonal o simplemente la respuesta fisiológica del organismo tras una enfermedad o una intervención quirúrgica.</p>
+      <p>Por ello, antes de iniciar cualquier tratamiento, es fundamental realizar una historia clínica completa, explorar el cuero cabelludo y, cuando está indicado, complementar el estudio con una tricoscopia digital o pruebas analíticas que permitan identificar el origen del problema.</p>
+      <p>En medicina capilar, un buen diagnóstico sigue siendo la herramienta más importante.</p>
+
+      <div class="article-modal-summary">
+        <p class="article-summary-title">Una reflexión del Director Médico</p>
+        <p>"La caída del cabello puede generar incertidumbre, preocupación e incluso afectar a la forma en la que una persona se percibe a sí misma. Por eso creemos que ningún paciente debería recibir un tratamiento sin haber recibido antes un diagnóstico. Escuchar, explorar y comprender qué está ocurriendo es el verdadero punto de partida de la medicina capilar. Solo así podemos ofrecer soluciones honestas, personalizadas y respaldadas por la evidencia científica. Esa es la forma en la que entendemos la medicina. Esa es la esencia de Medical Linares."</p>
+        <p style="margin-top:.35rem; color:#fff; opacity:1;">— Dr. Alfonso Rodríguez Jiménez, Director Médico de Medical Linares</p>
+      </div>
+
+      <div class="article-modal-cta">
+        <p>¿Te preocupa la caída de tu cabello?</p>
         <div class="button_wrapper">
           <a class="btn btn-negative" href="contacto.html">
             <span class="word">Pedir cita</span>
