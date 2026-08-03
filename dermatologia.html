@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="./logo_medicalinares.ico">
   <link rel="icon" type="image/png" href="./logo_medicallinares.png">
-  <title>Dermatología — Medical Linares</title>
-  <meta name="description" content="Cuida la salud de tu piel y recupera su luminosidad. Diagnóstico y tratamientos dermatológicos personalizados en Medical Linares. Consulta aquí.">
+  <title>Dermatología y Láser Médico — Medical Linares</title>
+  <meta name="description" content="Tratamientos dermatológicos y láser médico en Medical Linares: manchas, arañas vasculares, acné y cicatrices. Resultados naturales, consulta aquí.">
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,500&display=swap">
   <style>
     :root {
@@ -733,6 +733,41 @@
         bottom: 2rem;
         font-size: .68rem;
       }
+    }
+
+    /* ---------- BOTON "LÁSER": ancla bajo el titular del hero hacia #tratamientos-vasculares ---------- */
+    .ic-hero-subnav {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      margin-top: 1.5rem;
+      padding: .55rem .5rem .55rem 1.2rem;
+      width: fit-content;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .06);
+      border: 1px solid rgba(255, 255, 255, .3);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      color: #fff;
+      font-size: var(--text-xs);
+      letter-spacing: var(--tracking-widest);
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background .35s var(--ease-soft), border-color .35s var(--ease-soft);
+    }
+
+    .ic-hero-subnav:hover {
+      background: rgba(255, 255, 255, .14);
+      border-color: rgba(255, 255, 255, .5);
+    }
+
+    .ic-hero-subnav svg {
+      flex-shrink: 0;
+      transition: transform .35s var(--ease-soft);
+    }
+
+    .ic-hero-subnav:hover svg {
+      transform: translateY(2px);
     }
 
     /* ---------- FOOTER: estilo cinematico (aurora, grid, marquee, glass pills) ---------- */
@@ -2437,6 +2472,12 @@
       <div class="ic-hero-content">
         <span class="ic-hero-kicker">Cuida tu piel y recupera su luminosidad</span>
         <h1 class="ic-hero-title shiny-text">Dermatología</h1>
+        <a class="ic-hero-subnav" href="#tratamientos-vasculares">
+          <span>Láser</span>
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 4.5L6 8.5L10 4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </a>
       </div>
       <p class="ic-hero-caption">Dermatología avanzada con diagnóstico preciso y tecnología de última generación para
         acné, manchas, dermatitis y lesiones cutáneas, con tratamientos personalizados y resultados naturales.</p>
@@ -2578,7 +2619,7 @@
         <!-- 3. Psoriasis y Eccema -->
         <article class="tc-item">
           <div class="tc-media">
-            <img src="./img/tratamientodermatologia3.webp" alt="Psoriasis y Eccema — Medical Linares" loading="lazy">
+            <img src="https://images.pexels.com/photos/4046564/pexels-photo-4046564.jpeg?_gl=1*dsqdlc*_ga*NTM5NTczNzc3LjE3ODU3NTc3NDk.*_ga_8JE65Q40S6*czE3ODU3NTc3NDkkbzEkZzEkdDE3ODU3NTc3NzQkajM1JGwwJGgw" alt="Psoriasis y Eccema — Medical Linares" loading="lazy">
           </div>
           <div class="tc-content">
             <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
@@ -2621,7 +2662,7 @@
         <!-- 4. Infecciones cutáneas -->
         <article class="tc-item">
           <div class="tc-media">
-            <img src="./img/tratamientodermatologia4.webp" alt="Infecciones cutáneas — Medical Linares" loading="lazy">
+            <img src="https://images.pexels.com/photos/5712684/pexels-photo-5712684.jpeg?_gl=1*gl2p4l*_ga*NTM5NTczNzc3LjE3ODU3NTc3NDk.*_ga_8JE65Q40S6*czE3ODU3NTc3NDkkbzEkZzEkdDE3ODU3NTc5MTMkajQkbDAkaDA" alt="Infecciones cutáneas — Medical Linares" loading="lazy">
           </div>
           <div class="tc-content">
             <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
@@ -2820,6 +2861,112 @@
                 data-blur-strength="4">
                 <p class="scroll-reveal-text tc-small">Protocolos combinados con láser, bioestimulación y dermocosmética
                   para suavizar su aspecto y mejorar la regeneración de la piel.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+    <section class="tc-section" id="tratamientos-vasculares">
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Tratamientos con láser médico</h2>
+      </div>
+
+      <div class="tc-items">
+        <div class="tc-divider" aria-hidden="true">
+          <span class="tc-plus tc-plus-top"></span>
+          <span class="tc-plus tc-plus-bottom"></span>
+        </div>
+
+        <!-- 1. Manchas y Pigmentación -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="https://images.pexels.com/photos/7479572/pexels-photo-7479572.jpeg?_gl=1*1wmhdp7*_ga*NTM5NTczNzc3LjE3ODU3NTc3NDk.*_ga_8JE65Q40S6*czE3ODU3NTc3NDkkbzEkZzEkdDE3ODU3NTgwNzEkajU0JGwwJGgw" alt="Manchas y pigmentación — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Manchas y Pigmentación</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Tono más uniforme.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Láser médico para lentigos, tono uniforme y luminoso.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">Láser Q-Switched e IPL</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Combinamos el láser Q-Switched, ideal para manchas oscuras y
+                  tatuajes, con luz pulsada intensa (IPL) para mejorar el tono apagado de la piel. Ambas tecnologías
+                  eliminan el exceso de pigmento y estimulan la regeneración celular, logrando un tono más
+                  uniforme.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-reservar" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2. Arañas Vasculares -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/aeanasvasculares.webp" alt="Arañas vasculares — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Arañas Vasculares</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Piernas más uniformes.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <p class="scroll-reveal-text tc-lead-desc">Láser vascular que elimina capilares visibles y rojeces
+                localizadas con alta precisión.</p>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <h3 class="scroll-reveal-text tc-label">Láser vascular</h3>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Tratamos arañas vasculares, telangiectasias y cuperosis
+                  aplicando la energía láser directamente sobre el vaso, que se coagula y desaparece sin afectar al
+                  tejido sano circundante. En pocas sesiones la piel recupera un aspecto uniforme, tanto en el rostro
+                  como en las piernas.</p>
               </div>
             </div>
             <div class="button_wrapper tc-cta">
@@ -3038,6 +3185,61 @@
             <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
               <p class="faq-answer-inner">Siempre buscamos dejar la menor marca posible y aplicamos técnicas de cierre
                 estético, además de protocolos de cuidado posterior para mejorar la cicatrización.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-5"
+              id="faq-question-5">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿El tratamiento con
+                láser duele?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+              <p class="faq-answer-inner">Son tratamientos mínimamente invasivos y muy bien tolerados. Puede notarse
+                una ligera molestia o calor localizado durante la sesión, con una recuperación rápida y sin necesidad
+                de anestesia en la mayoría de los casos.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-6"
+              id="faq-question-6">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Cuánto duran los
+                resultados del láser?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+              <p class="faq-answer-inner">Los resultados son duraderos: las manchas y arañas vasculares tratadas no
+                suelen reaparecer en la misma zona, aunque recomendamos fotoprotección diaria para evitar la
+                aparición de nuevas lesiones.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-7"
+              id="faq-question-7">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿Cuántas sesiones de
+                láser son necesarias?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
+              <p class="faq-answer-inner">Depende del tratamiento: las manchas suelen necesitar entre 1 y 3 sesiones,
+                mientras que las arañas vasculares, estrías y cicatrices mejoran de forma progresiva en varias
+                sesiones según su extensión.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-8"
+              id="faq-question-8">
+              <span class="faq-question-text blur-text" data-direction="bottom" data-delay="15">¿El láser deja marcas
+                o cicatrices?</span>
+              <span class="faq-icon" aria-hidden="true"></span>
+            </button>
+            <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
+              <p class="faq-answer-inner">No. Los tratamientos que realizamos son seguros y no dañan el tejido
+                circundante.</p>
             </div>
           </div>
 
