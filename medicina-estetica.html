@@ -7,7 +7,7 @@
   <link rel="icon" type="image/x-icon" href="./logo_medicalinares.ico">
   <link rel="icon" type="image/png" href="./logo_medicallinares.png">
   <title>Medicina Estética — Medical Linares</title>
-  <meta name="description" content="Medicina estética en Linares y Maracena (Granada): rellenos, bioestimuladores, neuromoduladores y tratamiento vascular, con resultados naturales y sin cirugía.">
+  <meta name="description" content="Rejuvenece tu piel y realza tu belleza natural con tratamientos de medicina estética facial y corporal sin cirugía. ¡Reserva tu valoración!">
   <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=neue-montreal@400,500&display=swap">
   <style>
     :root {
@@ -1209,7 +1209,6 @@
       display: flex;
       flex-direction: column;
       gap: 1.75rem;
-      height: 100%;
     }
 
     #tratamientos-vasculares {
@@ -1265,6 +1264,11 @@
       line-height: 1.15;
       letter-spacing: var(--tracking-tight);
       color: #fff;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: calc(1.15em * 2);
     }
 
     .tc-block-lead {
@@ -1289,6 +1293,11 @@
       font-weight: var(--font-weight-normal);
       color: var(--color-light-font);
       line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: calc(1.6em * 2);
     }
 
     .tc-focus {
@@ -1314,38 +1323,16 @@
       color: var(--color-light-font);
       opacity: .75;
       font-weight: var(--font-weight-normal);
-    }
-
-    /* ---------- ZONAS DE APLICACION: caja informativa dentro de la intro de un bloque (ej. Neuromoduladores) ---------- */
-    .tc-zones {
-      margin-top: 1.5rem;
-      max-width: 44rem;
-      padding: 1.1rem 1.5rem;
-      border-radius: .75rem;
-      background: rgba(255, 255, 255, .04);
-      border: 1px solid rgba(255, 255, 255, .08);
-    }
-
-    .tc-zones-title {
-      font-size: var(--text-xs);
-      letter-spacing: var(--tracking-widest);
-      text-transform: uppercase;
-      color: var(--color-light-font);
-      opacity: .55;
-      margin-bottom: .5rem;
-      font-weight: var(--font-weight-medium);
-    }
-
-    .tc-zones-list {
-      font-size: var(--text-sm);
-      line-height: 1.65;
-      color: var(--color-light-font);
-      opacity: .85;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      min-height: calc(1.65em * 4);
     }
 
     .tc-cta {
       margin-top: auto;
-      padding-top: 1.5rem;
+      padding-top: .25rem;
     }
 
     /* ---------- TRATAMIENTO: panel de detalle, se abre por la izquierda al clicar una tarjeta ---------- */
@@ -2265,6 +2252,9 @@
         <a class="specialty-link" href="dermatologia.html">Dermatología</a>
       </div>
 
+      <div class="specialty-row">
+        <a class="specialty-link" href="ttos-faciales-y-corporales.html">Tratamientos Faciales &amp; Corporales</a>
+      </div>
     </nav>
 
     <div class="specialties-footer">
@@ -2505,105 +2495,6 @@
       </div>
 
       <div class="tc-intro wrap">
-        <h2 class="tc-kicker">Renovación facial y arrugas de expresión</h2>
-      </div>
-
-      <div class="tc-items">
-        <div class="tc-divider" aria-hidden="true">
-          <span class="tc-plus tc-plus-top"></span>
-          <span class="tc-plus tc-plus-bottom"></span>
-        </div>
-
-        <!-- Inyectables faciales -->
-        <article class="tc-item">
-          <div class="tc-media">
-            <img src="./img/ttos-faciales-y-corporales2.webp" alt="Inyectables faciales para arrugas de expresión — Medical Linares" loading="lazy">
-          </div>
-          <div class="tc-content">
-            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
-              data-blur-strength="6">
-              <h3 class="scroll-reveal-text tc-title">Inyectables Faciales</h3>
-            </div>
-            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
-              data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-highlight">Suaviza arrugas de expresión.</h3>
-            </div>
-            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
-              data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-desc">Manteniendo siempre la naturalidad del gesto.</h3>
-            </div>
-            <div class="tc-focus">
-              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
-                data-blur-strength="3">
-                <p class="scroll-reveal-text tc-label">¿Para qué lo utilizamos?</p>
-              </div>
-              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
-                data-blur-strength="4">
-                <p class="scroll-reveal-text tc-small">Es ideal para atenuar arrugas de expresión: suavizamos las
-                  líneas horizontales de la frente, reducimos la tensión del entrecejo y rejuvenecemos el contorno de
-                  los ojos frente a las patas de gallo.</p>
-              </div>
-            </div>
-            <div class="button_wrapper tc-cta">
-              <a class="btn btn-green" href="contacto.html">
-                <span class="word">Reservar Consulta</span>
-                <span class="arrow-circle">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 17L17 7M17 7H8M17 7V16" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- Peelings médicos -->
-        <article class="tc-item">
-          <div class="tc-media">
-            <img src="./img/ttos-faciales-y-corporales4.webp" alt="Peelings médicos faciales — Medical Linares" loading="lazy">
-          </div>
-          <div class="tc-content">
-            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
-              data-blur-strength="6">
-              <h3 class="scroll-reveal-text tc-title">Peelings Médicos</h3>
-            </div>
-            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
-              data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-highlight">Renueva la piel.</h3>
-            </div>
-            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
-              data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-desc">Textura uniforme y más luminosidad.</h3>
-            </div>
-            <div class="tc-focus">
-              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
-                data-blur-strength="3">
-                <p class="scroll-reveal-text tc-label">¿Qué tratamos?</p>
-              </div>
-              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
-                data-blur-strength="4">
-                <p class="scroll-reveal-text tc-small">Disponemos de distintos peelings químicos para manchas, acné y
-                  cicatrices. Según el caso, empleamos peelings superficiales, medios o profundos para renovar la
-                  piel, mejorar la textura y unificar el tono.</p>
-              </div>
-            </div>
-            <div class="button_wrapper tc-cta">
-              <a class="btn btn-green" href="contacto.html">
-                <span class="word">Reservar Consulta</span>
-                <span class="arrow-circle">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 17L17 7M17 7H8M17 7V16" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-
-      <div class="tc-intro wrap">
         <h2 class="tc-kicker">Medicina regenerativa estética</h2>
       </div>
 
@@ -2612,7 +2503,7 @@
         <!-- 5. Bioestimulación facial -->
         <article class="tc-item">
           <div class="tc-media">
-            <img src="./img/medicina-estetica5.webp" alt="Bioestimulación facial — Medical Linares" loading="lazy">
+            <img src="https://images.pexels.com/photos/4586711/pexels-photo-4586711.jpeg" alt="Bioestimulación facial — Medical Linares" loading="lazy">
           </div>
           <div class="tc-content">
             <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
@@ -2697,36 +2588,80 @@
 
         <!-- 7. Bioestimulador de colágeno -->
         <article class="tc-item">
-         <div class="tc-media">
-  <img
-    src="https://images.pexels.com/photos/14438367/pexels-photo-14438367.jpeg?_gl=1*19mytqf*_ga*MTE0ODE0ODUzNi4xNzg1NDI1Mjg2*_ga_8JE65Q40S6*czE3ODU2NzI0ODEkbzIkZzEkdDE3ODU2NzQwMzckajUyJGwwJGgw"
-    alt="Bioestimulador de colágeno — Medical Linares"
-    loading="lazy"
-  >
-</div>
+          <div class="tc-media">
+            <img src="https://images.pexels.com/photos/34220536/pexels-photo-34220536.jpeg" alt="Bioestimulador de colágeno — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0" data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Bioestimulador de Colágeno</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0" data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Activa el colágeno.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0" data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Efecto lifting sin bisturí.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0" data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0" data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Utilizamos bioestimuladores como la hidroxiapatita cálcica para tratar la flacidez, tensar la piel y conseguir un efecto lifting sin cirugía.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
 
+      </div>
+
+      <div class="tc-intro wrap">
+        <h2 class="tc-kicker">Inyectables y renovación facial</h2>
+      </div>
+
+      <div class="tc-items">
+        <div class="tc-divider" aria-hidden="true">
+          <span class="tc-plus tc-plus-top"></span>
+          <span class="tc-plus tc-plus-bottom"></span>
+        </div>
+
+        <!-- 8. Inyectables faciales -->
+        <article class="tc-item">
+       <div class="tc-media">
+  <img src="https://images.pexels.com/photos/34220540/pexels-photo-34220540.jpeg" alt="Inyectables faciales — Medical Linares" loading="lazy">
+</div>
           <div class="tc-content">
             <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
               data-blur-strength="6">
-              <h3 class="scroll-reveal-text tc-title">Bioestimulador de Colágeno</h3>
+              <h3 class="scroll-reveal-text tc-title">Inyectables Faciales</h3>
             </div>
             <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
               data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-highlight">Activa el colágeno.</h3>
+              <h3 class="scroll-reveal-text tc-lead-highlight">Suaviza arrugas de expresión.</h3>
             </div>
             <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
               data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-desc">Efecto lifting sin bisturí.</h3>
+              <h3 class="scroll-reveal-text tc-lead-desc">Manteniendo siempre la naturalidad del gesto.</h3>
             </div>
             <div class="tc-focus">
               <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
                 data-blur-strength="3">
-                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+                <p class="scroll-reveal-text tc-label">¿Para qué lo utilizamos?</p>
               </div>
               <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
                 data-blur-strength="4">
-                <p class="scroll-reveal-text tc-small">Utilizamos bioestimuladores como la hidroxiapatita cálcica para
-                  tratar la flacidez, tensar la piel y conseguir un efecto lifting sin cirugía.</p>
+                <p class="scroll-reveal-text tc-small">Es ideal para atenuar arrugas de expresión: suavizamos las
+                  líneas horizontales de la frente, reducimos la tensión del entrecejo y rejuvenecemos el contorno de
+                  los ojos frente a las patas de gallo.</p>
               </div>
             </div>
             <div class="button_wrapper tc-cta">
@@ -2742,31 +2677,52 @@
             </div>
           </div>
         </article>
-      </div>
 
-      <div class="tc-intro wrap">
-        <h2 class="tc-kicker">Neuromoduladores</h2>
-        <div class="scroll-reveal" data-base-opacity="0.1" data-base-rotation="0" data-blur-strength="4"
-          style="margin-top:1.1rem; max-width:44rem;">
-          <p class="scroll-reveal-text tc-lead-desc">Los neuromoduladores son un tratamiento médico-estético seguro y
-            eficaz que relaja de forma temporal los músculos responsables de las arrugas de expresión, logrando un
-            rostro más descansado, armónico y rejuvenecido, sin perder la naturalidad. Es apto tanto para mujeres
-            como para hombres, adaptándose siempre a la anatomía, fuerza muscular y objetivos de cada paciente.</p>
-        </div>
-        <div class="tc-zones">
-          <h3 class="tc-zones-title">Zonas más frecuentes de aplicación</h3>
-          <p class="tc-zones-list">Arrugas de expresión, patas de gallo, elevación de cejas, sonrisa gingival y
-            bruxismo (maseteros).</p>
-        </div>
-      </div>
+        <!-- 9. Peelings médicos -->
+        <article class="tc-item">
+          <div class="tc-media">
+            <img src="./img/ttos-faciales-y-corporales4.webp" alt="Peelings médicos — Medical Linares" loading="lazy">
+          </div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Peelings Médicos</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Renueva la piel.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Textura uniforme y más luminosidad.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué tratamos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">Disponemos de distintos peelings químicos para manchas, acné y
+                  cicatrices. Según el caso, empleamos peelings superficiales, medios o profundos para renovar la
+                  piel, mejorar la textura y unificar el tono.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
 
-      <div class="tc-items">
-        <div class="tc-divider" aria-hidden="true">
-          <span class="tc-plus tc-plus-top"></span>
-          <span class="tc-plus tc-plus-bottom"></span>
-        </div>
-
-        <!-- Neuromoduladores en mujeres -->
+        <!-- 10. Neuromoduladores en mujeres -->
         <article class="tc-item">
           <div class="tc-media">
             <img src="./img/neuromoduladormujer.png" alt="Neuromoduladores en mujeres — Medical Linares" loading="lazy">
@@ -2782,7 +2738,8 @@
             </div>
             <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
               data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-desc">Frente y entrecejo más relajados, sin perder naturalidad.</h3>
+              <h3 class="scroll-reveal-text tc-lead-desc">Frente y entrecejo más relajados, sin perder naturalidad.
+              </h3>
             </div>
             <div class="tc-focus">
               <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
@@ -2810,7 +2767,7 @@
           </div>
         </article>
 
-        <!-- Neuromoduladores en hombres -->
+        <!-- 11. Neuromoduladores en hombres -->
         <article class="tc-item">
           <div class="tc-media">
             <img src="./img/neuromoduladorhombre.png" alt="Neuromoduladores en hombres — Medical Linares" loading="lazy">
@@ -2913,7 +2870,7 @@
         <!-- 9. Marcación mandibular -->
         <article class="tc-item">
           <div class="tc-media">
-            <img src="./img/marcacionmandibulaer.jpg" alt="Marcación mandibular — Medical Linares" loading="lazy">
+            <img src="./img/marcacionmandibular.jpg" alt="Marcación mandibular — Medical Linares" loading="lazy">
           </div>
           <div class="tc-content">
             <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
@@ -2953,56 +2910,10 @@
           </div>
         </article>
 
-        <!-- Masculinización facial -->
-        <article class="tc-item">
-          <div class="tc-media">
-            <img
-              src="https://images.pexels.com/photos/38167589/pexels-photo-38167589.jpeg?_gl=1*e37cwn*_ga*MTE0ODE0ODUzNi4xNzg1NDI1Mjg2*_ga_8JE65Q40S6*czE3ODU2ODAzMDMkbzMkZzEkdDE3ODU2ODAzMzQkajI5JGwwJGgw"
-              alt="Masculinización facial — Medical Linares" loading="lazy">
-          </div>
-          <div class="tc-content">
-            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
-              data-blur-strength="6">
-              <h3 class="scroll-reveal-text tc-title">Masculinización Facial</h3>
-            </div>
-            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
-              data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-highlight">Perfil más masculino.</h3>
-            </div>
-            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
-              data-blur-strength="4">
-              <h3 class="scroll-reveal-text tc-lead-desc">Rasgos marcados y en equilibrio.</h3>
-            </div>
-            <div class="tc-focus">
-              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
-                data-blur-strength="3">
-                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
-              </div>
-              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
-                data-blur-strength="4">
-                <p class="scroll-reveal-text tc-small">En pacientes masculinos, reforzamos pómulos, mandíbula y
-                  mentón para conseguir unas facciones más marcadas y varoniles, siempre con resultados
-                  equilibrados.</p>
-              </div>
-            </div>
-            <div class="button_wrapper tc-cta">
-              <a class="btn btn-green" href="contacto.html">
-                <span class="word">Reservar Consulta</span>
-                <span class="arrow-circle">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M7 17L17 7M17 7H8M17 7V16" />
-                  </svg>
-                </span>
-              </a>
-            </div>
-          </div>
-        </article>
-
         <!-- 10. Celulitis -->
         <article class="tc-item">
           <div class="tc-media">
-            <img src="./img/ondaschoque.png" alt="Ondas de choque para celulitis — Medical Linares"
+            <img src="./img/ondas.jpg" alt="Ondas de choque para celulitis — Medical Linares"
               loading="lazy">
           </div>
           <div class="tc-content">
@@ -3046,13 +2957,8 @@
         <!-- 11. Fibrosis postoperatoria -->
         <article class="tc-item">
           <div class="tc-media">
-  <img
-    src="https://images.pexels.com/photos/9486633/pexels-photo-9486633.jpeg?_gl=1*185eig1*_ga*MTE0ODE0ODUzNi4xNzg1NDI1Mjg2*_ga_8JE65Q40S6*czE3ODU2NzI0ODEkbzIkZzEkdDE3ODU2NzQ5MDckajQxJGwwJGgw"
-    alt="Fibrosis postoperatoria — Medical Linares"
-    loading="lazy"
-  >
-</div>
-
+            <img src="./img/medicina-estetica11.webp" alt="Fibrosis postoperatoria — Medical Linares" loading="lazy">
+          </div>
           <div class="tc-content">
             <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
               data-blur-strength="6">
@@ -3076,6 +2982,50 @@
                 <p class="scroll-reveal-text tc-small">En casos de cirugías previas o liposucciones, tratamos la
                   fibrosis postoperatoria con técnicas de drenaje linfático y aparatología específica para mejorar el
                   resultado final.</p>
+              </div>
+            </div>
+            <div class="button_wrapper tc-cta">
+              <a class="btn btn-green" href="contacto.html">
+                <span class="word">Reservar Consulta</span>
+                <span class="arrow-circle">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#151515" stroke-width="2.2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 17L17 7M17 7H8M17 7V16" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12. Masculinización facial -->
+        <article class="tc-item">
+         <div class="tc-media">
+  <img src="https://images.pexels.com/photos/38167589/pexels-photo-38167589.jpeg" alt="Masculinización facial — Medical Linares" loading="lazy">
+</div>
+          <div class="tc-content">
+            <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="6">
+              <h3 class="scroll-reveal-text tc-title">Masculinización Facial</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead" data-base-opacity="0.12" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-highlight">Perfil más masculino.</h3>
+            </div>
+            <div class="scroll-reveal tc-block-lead-desc" data-base-opacity="0.1" data-base-rotation="0"
+              data-blur-strength="4">
+              <h3 class="scroll-reveal-text tc-lead-desc">Rasgos marcados y en equilibrio.</h3>
+            </div>
+            <div class="tc-focus">
+              <div class="scroll-reveal tc-block-label" data-base-opacity="0.15" data-base-rotation="0"
+                data-blur-strength="3">
+                <p class="scroll-reveal-text tc-label">¿Qué conseguimos?</p>
+              </div>
+              <div class="scroll-reveal tc-block-small" data-base-opacity="0.1" data-base-rotation="0"
+                data-blur-strength="4">
+                <p class="scroll-reveal-text tc-small">En pacientes masculinos, reforzamos pómulos, mandíbula y
+                  mentón para conseguir unas facciones más marcadas y varoniles, siempre con resultados
+                  equilibrados.</p>
               </div>
             </div>
             <div class="button_wrapper tc-cta">
@@ -3153,14 +3103,9 @@
 
         <!-- 2. Esclerosis vascular -->
         <article class="tc-item">
-         <div class="tc-media">
-  <img
-    src="https://images.pexels.com/photos/6643071/pexels-photo-6643071.jpeg?_gl=1*p39frr*_ga*MTE0ODE0ODUzNi4xNzg1NDI1Mjg2*_ga_8JE65Q40S6*czE3ODU2NzI0ODEkbzIkZzEkdDE3ODU2NzUwNjAkajQzJGwwJGgw"
-    alt="Esclerosis vascular — Medical Linares"
-    loading="lazy"
-  >
-</div>
-
+          <div class="tc-media">
+            <img src="./img/vascular2.webp" alt="Esclerosis vascular — Medical Linares" loading="lazy">
+          </div>
           <div class="tc-content">
             <div class="scroll-reveal tc-block-title" data-base-opacity="0.1" data-base-rotation="0"
               data-blur-strength="6">
@@ -3272,6 +3217,18 @@
           <span class="shiny-text" style="animation-delay:-3s"
             data-desc="Piel apagada o con tono irregular, algo habitual por deshidratación, estrés o el paso del tiempo.">Falta
             de luminosidad en la piel</span>
+          <span class="shiny-text" style="animation-delay:-3.5s"
+            data-desc="Líneas finas que aparecen alrededor de los ojos al sonreír o gesticular, uno de los primeros signos de expresión que se marcan con el tiempo.">Patas
+            de gallo</span>
+          <span class="shiny-text" style="animation-delay:-4s"
+            data-desc="La caída del extremo de la ceja puede dar un aspecto de cansancio; elevarla aporta una mirada más despierta y descansada.">Elevación
+            de cejas</span>
+          <span class="shiny-text" style="animation-delay:-4.5s"
+            data-desc="Cuando la sonrisa muestra una banda de encía más amplia de lo deseado, restando armonía al conjunto de la sonrisa.">Sonrisa
+            gingival</span>
+          <span class="shiny-text" style="animation-delay:-5s"
+            data-desc="El apretamiento o rechinar de dientes sobrecarga los músculos maseteros, generando tensión, dolor y un ensanchamiento del óvalo facial.">Bruxismo
+            (maseteros)</span>
         </div>
 
         <h2 class="tw-title">Todo lo que tratamos</h2>
@@ -3298,6 +3255,14 @@
           <span class="shiny-text" style="animation-delay:-3.3s"
             data-desc="Tecnología que mejora la circulación y la textura de la piel, útil frente a la celulitis y la fibrosis.">Ondas
             de choque corporales</span>
+          <span class="shiny-text" style="animation-delay:-3.8s"
+            data-desc="Relajan de forma temporal los músculos responsables de las arrugas de expresión, logrando un rostro más descansado y natural.">Neuromoduladores</span>
+          <span class="shiny-text" style="animation-delay:-4.3s"
+            data-desc="Renuevan la piel en profundidad para mejorar manchas, acné y cicatrices, unificando el tono y la textura.">Peelings
+            médicos</span>
+          <span class="shiny-text" style="animation-delay:-4.8s"
+            data-desc="Utiliza tus propias plaquetas para estimular el colágeno y mejorar la textura, luminosidad y firmeza de la piel.">Bioestimulación
+            facial</span>
         </div>
 
       </div>
@@ -3453,7 +3418,7 @@
       <div class="cs-inner">
         <div class="cs-card" id="csCard">
           <div class="cs-card-inner">
-            <img src="./img/medicina-estetica-final.webp"
+         
               alt="Di adiós a las arrugas y la flacidez con nuestra medicina estética personalizada — Medical Linares">
           </div>
         </div>
@@ -3736,12 +3701,17 @@
     })();
   </script>
   <script>
-    // ---------- TRATAMIENTOS: parallax de imagen (sin animacion de entrada, las tarjetas quedan estaticas) ----------
+    // ---------- TRATAMIENTOS: aparicion en bloque + parallax de imagen ----------
     (function initTcReveal() {
       if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
 
       document.querySelectorAll('.tc-item').forEach((item) => {
         const media = item.querySelector('.tc-media img');
+
+        gsap.fromTo(item, { y: 60, opacity: 0 }, {
+          y: 0, opacity: 1, duration: 1, ease: 'power3.out',
+          scrollTrigger: { trigger: item, start: 'top 82%' }
+        });
 
         if (media) {
           gsap.fromTo(media, { scale: 1.18 }, {
