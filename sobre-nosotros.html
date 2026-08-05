@@ -947,6 +947,50 @@
       margin-top: 2rem;
     }
 
+    /* ---------- HERO: indicador de scroll animado, invita a bajar ---------- */
+    .hero-scroll-hint {
+      position: absolute;
+      left: 50%;
+      bottom: clamp(1.5rem, 4vw, 2.75rem);
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      color: #9a9a9a;
+      pointer-events: none;
+    }
+
+    .hero-scroll-line {
+      width: 1px;
+      height: 2.4rem;
+      background: linear-gradient(180deg, rgba(154, 154, 154, 0) 0%, rgba(154, 154, 154, .6) 100%);
+    }
+
+    .hero-scroll-arrow {
+      display: block;
+      animation: heroScrollBounce 1.8s ease-in-out infinite;
+    }
+
+    @keyframes heroScrollBounce {
+      0%, 100% {
+        transform: translateY(0);
+        opacity: .4;
+      }
+
+      50% {
+        transform: translateY(7px);
+        opacity: .95;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .hero-scroll-arrow {
+        animation: none;
+      }
+    }
+
     /* ---------- CONTENEDOR GENERICO DE SECCION ---------- */
     .blog-section {
       position: relative;
@@ -1133,24 +1177,18 @@
       color: #fff;
     }
 
-    /* ---------- NUESTRO COMPROMISO: media que se expande al hacer scroll (sticky + scrub) ---------- */
-    .expand-media-section {
+    /* ---------- NUESTRO COMPROMISO: imagen de fondo fija con titular centrado (sin animacion) ---------- */
+    .commitment-section {
       position: relative;
-      background: #000;
-      height: 200vh;
-    }
-
-    .expand-media-track {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow: hidden;
+      min-height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      overflow: hidden;
+      background: #000;
     }
 
-    .expand-bg {
+    .commitment-bg {
       position: absolute;
       inset: 0;
       background-size: cover;
@@ -1159,74 +1197,25 @@
       filter: grayscale(100%);
     }
 
-    .expand-bg-scrim {
+    .commitment-scrim {
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, .35);
+      background: rgba(0, 0, 0, .55);
     }
 
-    .expand-media-box {
+    .commitment-inner {
       position: relative;
-      z-index: 2;
-      width: 300px;
-      height: 400px;
-      max-width: 95vw;
-      max-height: 85vh;
-      border-radius: 1.25rem;
-      overflow: hidden;
-      box-shadow: 0 0 50px rgba(0, 0, 0, .45);
+      z-index: 1;
+      text-align: center;
+      padding-inline: calc(var(--spacing) * 10);
+      padding-block: clamp(4rem, 10vw, 6rem);
     }
 
-    .expand-media-img {
-      position: absolute;
-      inset: 0;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .expand-media-overlay {
-      position: absolute;
-      inset: 0;
-      background: #000;
-      opacity: .7;
-    }
-
-    .expand-title-row {
-      position: absolute;
-      z-index: 3;
-      top: 12%;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: .55em;
-      pointer-events: none;
-    }
-
-    .expand-title-heading {
-      display: flex;
-      gap: .55em;
-    }
-
-    .expand-title-word {
+    .commitment-title {
       font-size: clamp(2.4rem, 7vw, 5.2rem);
       font-weight: 600;
       letter-spacing: var(--tracking-tight);
       color: #fff;
-      white-space: nowrap;
-    }
-
-    .expand-hint {
-      position: absolute;
-      z-index: 3;
-      bottom: 2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: var(--text-xs);
-      letter-spacing: var(--tracking-widest);
-      text-transform: uppercase;
-      color: var(--color-light-font);
-      opacity: .5;
     }
 
     .expand-content-section {
@@ -1243,8 +1232,8 @@
     }
 
     .expand-content-inner p {
-      font-size: var(--text-sm);
-      line-height: 1.8;
+      font-size: 1rem;
+      line-height: 1.75;
       color: var(--color-light-font);
       opacity: .8;
       margin-bottom: 1.25rem;
@@ -1261,8 +1250,8 @@
 
     .expand-list li {
       position: relative;
-      font-size: var(--text-sm);
-      line-height: 1.6;
+      font-size: 1rem;
+      line-height: 1.65;
       color: #fff;
       opacity: .9;
     }
@@ -1933,9 +1922,6 @@
       <div class="specialty-row">
         <a class="specialty-link" href="dermatologia.html">Dermatología</a>
       </div>
-
-      
-      </div>
     </nav>
 
     <div class="specialties-footer">
@@ -1999,6 +1985,14 @@
           </a>
         </div>
       </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span class="hero-scroll-line"></span>
+        <svg class="hero-scroll-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 9l6 6 6-6" />
+        </svg>
+      </div>
     </section>
 
     <!-- ================= MAS QUE UNA CLINICA CAPILAR: presentacion editorial, imagen a la izquierda y texto a la derecha ================= -->
@@ -2006,7 +2000,7 @@
       <div class="stack-card reveal-up">
         <div class="stack-grid">
           <div class="stack-media"
-            style="background-image:url('https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/671220978_18006563327861447_7450483610175631470_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1405&amp;ctp=s1080x1405&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=kYwm7bCrRk8Q7kNvwHe5x1e&amp;_nc_oc=Adq3st9nx-8hSosatoPHTKiYbBlA9_dOFQo9st-KRUwkwpZZUcicGapwySlAGjha2T8&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad8-1.fna&amp;_nc_gid=7QGY43AMklfaHHvpJCGulw&amp;_nc_ss=7b289&amp;oh=00_AQGvX5nBcnLG-gsQcirVenI1YdKXMifT_yhwsRGlzgu6fg&amp;oe=6A710760')">
+            style="background-image:url('https://scontent-mad1-1.xx.fbcdn.net/v/t51.82787-15/671220978_18006563327861447_7450483610175631470_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1405&amp;ctp=s1080x1405&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=qomklu0jV3YQ7kNvwGHb8nr&amp;_nc_oc=AdrCvP4XFZ3DnLGoJlr4QZBLiB1_SjJzUO8PrPXSnKF0ONunx_jV9pPKbFONyd9AIqI&amp;_nc_zt=23&amp;_nc_ht=scontent-mad1-1.xx&amp;_nc_gid=kYR3Ag1-byi08AJ3JNKnOg&amp;_nc_ss=7b289&amp;oh=00_AQG-X9LWdJjmkV7Mx3M4pv1q4UdO_wVEKG-VLSkDrSa3cQ&amp;oe=6A7766A0')">
           </div>
           <div class="stack-content">
             <span class="stack-eyebrow">Nuestra visión</span>
@@ -2029,7 +2023,7 @@
         <div class="stack-grid">
           <div class="stack-media-card">
             <div class="stack-media-card-img"
-              style="background-image:url('https://scontent.fmad7-1.fna.fbcdn.net/v/t51.82787-15/684731504_18006563333861447_3873591983084209382_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1405&amp;ctp=s1080x1405&amp;_nc_cat=102&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=k19BmhAFXBgQ7kNvwEOlZ4O&amp;_nc_oc=AdpuAhcDe_ITWzPyIRg0P-ibqKFxFNlb7QeTrhOmKBUvZjJXrxb3BLU938FgBr_O29E&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad7-1.fna&amp;_nc_gid=Z3o0U2s64UtXIZyI9H8-Qw&amp;_nc_ss=7b289&amp;oh=00_AQH_3OVJE6EsWYdii4UKwgHytAx2pvJryv0s8_7tDKSjmA&amp;oe=6A70F59B')">
+              style="background-image:url('https://scontent-mad2-1.xx.fbcdn.net/v/t51.82787-15/682700561_18006563336861447_4040634398469351930_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1405&amp;ctp=s1080x1405&amp;_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=ejwmMo_Q8lwQ7kNvwGmP8z_&amp;_nc_oc=Ados2Qr1uykaTdiGYhFB7LcT0yYW8gGTSh-EcfnaCpmAajLV-9ptViMysfpileSxgDM&amp;_nc_zt=23&amp;_nc_ht=scontent-mad2-1.xx&amp;_nc_gid=BwQTHdsQhzLEl_LVesqP0A&amp;_nc_ss=7b289&amp;oh=00_AQGrMkCJOoUtGyyepkTaSQemOSvIw10y6Fx3oUlXYDgyVA&amp;oe=6A7766A9')">
             </div>
           </div>
           <div class="stack-content">
@@ -2065,29 +2059,14 @@
       </div>
     </section>
 
-    <!-- ================= NUESTRO COMPROMISO: media que se expande al hacer scroll ================= -->
-    <section class="expand-media-section">
-      <div class="expand-media-track">
-        <div class="expand-bg"
-          style="background-image:url('https://scontent.fmad7-1.fna.fbcdn.net/v/t39.30808-6/482026512_628817670005152_6785019862055953390_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx2048x1382&amp;ctp=s2048x1382&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=cc71e4&amp;_nc_ohc=gv8kBEjZcUgQ7kNvwHMfSAG&amp;_nc_oc=AdraD2PwkdHq34Ixjp9v9rAvd1gRSenXCaVHOykSpPI--_jOHjNTtBUhYXn72FKIIC0&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad7-1.fna&amp;_nc_gid=KbvezduXF_t8_45DuHZUWQ&amp;_nc_ss=7b289&amp;oh=00_AQH1FrIDfHxR7q7ywmSMd0J5ka-EgtbgWpzqKevgMfVKWw&amp;oe=6A710FDA')">
-        </div>
-        <div class="expand-bg-scrim"></div>
-
-        <div class="expand-media-box">
-          <div class="expand-media-img"
-            style="background-image:url('https://scontent.fmad8-1.fna.fbcdn.net/v/t51.82787-15/731111394_18015751904861447_154715544446473783_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx1080x1350&amp;ctp=s1080x1350&amp;_nc_cat=105&amp;ccb=1-7&amp;_nc_sid=127cfc&amp;_nc_ohc=fMQMdHi8OHgQ7kNvwGIY-mz&amp;_nc_oc=AdqaOeVdvdKifMT2dYhgoBR5rfBlY0m2sjV3mzR6bSFwvGLw2EjbIwNRFGhEZdpaCgQ&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad8-1.fna&amp;_nc_gid=pR3rgqDRzUBPuuXTJDju3Q&amp;_nc_ss=7b289&amp;oh=00_AQFAHL_YkWDCrABAfT0IDsxyE8QG-0TOG8UvJqjUQvF0CA&amp;oe=6A710322')">
-          </div>
-          <div class="expand-media-overlay"></div>
-        </div>
-
-        <div class="expand-title-row">
-          <h2 class="expand-title-heading">
-            <span class="expand-title-word expand-title-left shiny-text">Nuestro</span>
-            <span class="expand-title-word expand-title-right shiny-text">compromiso</span>
-          </h2>
-        </div>
-
-        <span class="expand-hint">Desliza para descubrir más</span>
+    <!-- ================= NUESTRO COMPROMISO: imagen de fondo con titular (sin animacion) ================= -->
+    <section class="commitment-section">
+      <div class="commitment-bg"
+        style="background-image:url('https://scontent.fmad7-1.fna.fbcdn.net/v/t39.30808-6/482026512_628817670005152_6785019862055953390_n.jpg?stp=dst-jpg_tt6&amp;cstp=mx2048x1382&amp;ctp=s2048x1382&amp;_nc_cat=100&amp;ccb=1-7&amp;_nc_sid=cc71e4&amp;_nc_ohc=gv8kBEjZcUgQ7kNvwHMfSAG&amp;_nc_oc=AdraD2PwkdHq34Ixjp9v9rAvd1gRSenXCaVHOykSpPI--_jOHjNTtBUhYXn72FKIIC0&amp;_nc_zt=23&amp;_nc_ht=scontent.fmad7-1.fna&amp;_nc_gid=KbvezduXF_t8_45DuHZUWQ&amp;_nc_ss=7b289&amp;oh=00_AQH1FrIDfHxR7q7ywmSMd0J5ka-EgtbgWpzqKevgMfVKWw&amp;oe=6A710FDA')">
+      </div>
+      <div class="commitment-scrim"></div>
+      <div class="commitment-inner">
+        <h2 class="commitment-title shiny-text">Nuestro compromiso</h2>
       </div>
     </section>
 
@@ -2118,32 +2097,40 @@
             <span class="sec-eyebrow blur-text" data-direction="bottom" data-delay="15">Quiénes somos</span>
             <h2 class="stack-title shiny-text" style="margin-bottom:1.75rem;">Una clínica con nombre propio</h2>
 
-            <p>Detrás de <strong class="hl">Medical Linares</strong> hay dos personas que han impulsado y dado forma a este
-              proyecto: <strong class="hl">Raquel Peinado</strong> y el <strong class="hl">Dr. Alfonso Rodríguez
-                Jiménez</strong>.</p>
+            <p>Detrás de <strong class="hl">Medical Linares</strong> hay dos personas que han convertido una visión
+              en un proyecto de referencia: <strong class="hl">Raquel Peinado Fernández</strong> y <strong
+                class="hl">Alfonso Rodríguez Jiménez</strong>.</p>
 
             <div class="team-member">
-              <h3 class="team-member-name">Raquel Peinado</h3>
-              <span class="team-member-role">Dirección y fundación de Medical Linares</span>
-              <p>Figura clave en la creación, dirección y evolución del centro, <strong class="hl">Raquel Peinado</strong>
-                representa la esencia de <strong class="hl">Medical Linares</strong>: una forma cercana, humana y
-                personalizada de entender la atención al paciente, cuidando cada detalle de su experiencia.</p>
+              <h3 class="team-member-name">Raquel Peinado Fernández</h3>
+              <span class="team-member-role">Directora de Medical Linares</span>
+              <p><strong class="hl">Raquel Peinado</strong>, directora de Medical Linares, ha sido una pieza
+                fundamental en la creación, crecimiento y consolidación de la clínica. Su liderazgo, cercanía y
+                dedicación han definido una forma de trabajar donde cada paciente recibe una <strong
+                  class="hl">atención personalizada</strong>, humana y cuidada hasta el último detalle.</p>
             </div>
 
             <div class="team-member">
-              <h3 class="team-member-name">Dr. Alfonso Rodríguez Jiménez</h3>
-              <span class="team-member-role">Dirección médica</span>
-              <p>Junto a Raquel Peinado, el <strong class="hl">Dr. Alfonso Rodríguez Jiménez</strong> aporta una visión
-                conjunta donde la gestión, el criterio médico y el compromiso profesional se unen para ofrecer una atención
-                integral y adaptada a cada persona.</p>
+              <h3 class="team-member-name">Alfonso Rodríguez Jiménez</h3>
+              <span class="team-member-role">Director médico</span>
+              <p>Junto a ella, el <strong class="hl">Alfonso Rodríguez Jiménez</strong>, director médico, aporta el
+                rigor científico, la experiencia quirúrgica y el compromiso asistencial que distinguen a Medical
+                Linares. Su apuesta por la <strong class="hl">innovación</strong>, la excelencia médica y la
+                formación continua ha permitido ofrecer tratamientos de vanguardia con los más altos estándares de
+                calidad y seguridad.</p>
             </div>
 
-            <p>Gracias a su liderazgo, dedicación y forma de entender la medicina, <strong class="hl">Medical
-                Linares</strong> se ha consolidado como una de las clínicas de referencia en <strong class="hl">Andalucía
-                Oriental</strong>, con un equipo de profesionales que comparte una misma filosofía: cuidar de cada paciente
-              desde la confianza, la cercanía y la profesionalidad.</p>
+            <p>La unión entre una dirección cercana y una dirección médica de excelencia ha dado lugar a una clínica
+              donde la <strong class="hl">confianza</strong>, la honestidad y la profesionalidad son la base de cada
+              tratamiento.</p>
 
-            <p>Porque detrás de una gran clínica siempre hay personas que la hacen posible.</p>
+            <p>Hoy, <strong class="hl">Medical Linares</strong> es una de las clínicas de referencia en <strong
+                class="hl">Andalucía Oriental</strong> gracias a un equipo que comparte una misma filosofía: poner
+              siempre al paciente en el centro de todo, ofreciendo una medicina personalizada, responsable y basada
+              en la excelencia.</p>
+
+            <p>Porque detrás de una gran clínica siempre hay personas que hacen que cada historia tenga el mejor
+              resultado posible.</p>
           </div>
         </div>
 
@@ -2897,56 +2884,6 @@ void main() {
           end: 'bottom 25%',
           scrub: 0.6
         }
-      });
-    })();
-  </script>
-
-  <script>
-    // ---------- NUESTRO COMPROMISO: la media se expande al hacer scroll (sticky + progreso ligado al scroll) ----------
-    (function initExpandMedia() {
-      if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-      const section = document.querySelector('.expand-media-section');
-      if (!section) return;
-      const bg = section.querySelector('.expand-bg');
-      const box = section.querySelector('.expand-media-box');
-      const overlay = section.querySelector('.expand-media-overlay');
-      const left = section.querySelector('.expand-title-left');
-      const right = section.querySelector('.expand-title-right');
-      const hint = section.querySelector('.expand-hint');
-      if (!bg || !box || !overlay || !left || !right) return;
-
-      function render(progress) {
-        const isMobile = window.innerWidth < 768;
-        const textDelta = isMobile ? 180 : 150;
-
-        // El tamaño final se calcula a partir del viewport real (coincidiendo con
-        // los límites max-width:95vw / max-height:85vh del CSS) para que la caja
-        // termine de crecer justo al final del scroll, sin quedarse "congelada"
-        // a mitad de camino dejando un espacio muerto hasta la siguiente sección.
-        const targetWidth = Math.min(window.innerWidth * 0.92, 1550);
-        const targetHeight = Math.min(window.innerHeight * 0.8, 800);
-
-        const width = 300 + progress * (targetWidth - 300);
-        const height = 400 + progress * (targetHeight - 400);
-        const textTranslate = progress * textDelta;
-
-        box.style.width = width + 'px';
-        box.style.height = height + 'px';
-        bg.style.opacity = String(1 - progress);
-        overlay.style.opacity = String(0.7 - progress * 0.3);
-        left.style.transform = `translateX(-${textTranslate}vw)`;
-        right.style.transform = `translateX(${textTranslate}vw)`;
-        if (hint) hint.style.opacity = String(Math.max(0, 0.5 - progress * 1.5));
-      }
-
-      render(0);
-
-      ScrollTrigger.create({
-        trigger: section,
-        start: 'top top',
-        end: 'bottom bottom',
-        scrub: 0.4,
-        onUpdate: (self) => render(self.progress)
       });
     })();
   </script>
